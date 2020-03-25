@@ -1,0 +1,179 @@
+﻿<reserved_header_section
+	templateID="780"
+	templateFile="messaggi.html"
+	templateDescription="HTML content template (Settings)"
+></reserved_header_section>
+
+<!-- *** HEADER *** -->
+<widget_pageHeader />
+
+<div class="container-fluid pageBody">
+
+	<div class="margin-h-15">
+
+		<!-- *** SEZIONE ERRORI *** -->
+		<div class="card card-info input-context">
+			<div class="card-title card-errori" ref="Errori">
+				<a href="#btn" data-toggle="collapse" data-target="#Errori" aria-expanded="false">
+					<i class="fa fa-times-circle ico-error"></i>
+					<i class="fa fa-exclamation-circle ico-warning"></i>
+					<span class="text">
+						<i class="fa fa-pencil-alt margin-r-5"></i>
+						Errori
+					</span>
+					<span class="ico">
+						<span id="errCnt">(0)</span>
+						<i class="fa fa-chevron-right ico-close"></i>
+						<i class="fa fa-chevron-down ico-open"></i>
+					</span>
+				</a>
+			</div>
+			<div id="Errori" class="collapse box_Lev_1">
+				<div class="card-body">
+					<table class="messages">
+						<thead>
+							<tr>
+								<th>Nr</th>
+								<th>Descrizione</th>
+								<th>Pagina</th>
+								<th>Campo</th>
+								<th>Anno</th>
+							</tr>
+						</thead>
+						<tbody></tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- *** SEZIONE WARNING *** -->
+		<div class="card card-info input-context">
+			<div class="card-title card-warning" ref="Warning">
+				<a href="#btn" data-toggle="collapse" data-target="#Warning" aria-expanded="false">
+					<i class="fa fa-times-circle ico-error"></i>
+					<i class="fa fa-exclamation-circle ico-warning"></i>
+					<span class="text">
+						<i class="fa fa-pencil-alt margin-r-5"></i>
+						Avvisi
+					</span>
+					<span class="ico">
+						<span id="warnCnt">(0)</span>
+						<i class="fa fa-chevron-right ico-close"></i>
+						<i class="fa fa-chevron-down ico-open"></i>
+					</span>
+				</a>
+			</div>
+			<div id="Warning" class="collapse box_Lev_1">
+				<div class="card-body">
+					<table class="messages">
+						<thead>
+							<tr>
+								<th>Nr</th>
+								<th>Descrizione</th>
+								<th>Pagina</th>
+								<th>Campo</th>
+								<th>Anno</th>
+							</tr>
+						</thead>
+						<tbody></tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- Switcher: abilitazione notifica messaggi -->
+		<div class="notifica border">
+
+			<div class="note">
+				<h5>Notifica degli stati di errore</h5>
+				<p>
+					Se la notifica è abilitata, <span>i campi che riportano errori o segnalazioni</span>, così come le <span>voci del menu e dei titoli dei raggruppamenti
+					che contengono tali campi</span>, verranno contrassegnati con un colore o un simbolo specifico per facilitarne l'identificazione.<br>
+					Se la notifica è disabilitata, tutte le segnalazioni vengono nascoste e i campi e le voci di menu appariranno nel loro stato normale.<br>
+					Anche se la notifica è disabilitata, <span>non vengono tuttavia meno i vincoli di validità generale</span>: ad esempio, sarà sempre impossibile inviare
+					un Business Plan con errori, anche se questi sono nascosti</i>).<br>
+					Ad ogni compilazione del Business Plan, <span>la notifica viene riattivata per default</span>.
+				</p>
+			</div>
+			<div class="checkBtn">
+				<snp_label for="notificaMsg" data-pars="text:='Abilita notifica:'" />
+				<widget_switcher data-pars="value:='1' || key:='notificaMsg'" class="medium d-inline-block margin-l-5">
+			</div>
+
+		</div>
+
+
+		<!-- Leanus: abilitazione e invio report -->
+		<div id="leanus" class="notifica margin-t-40">
+			<h2 class="pageTitle">
+				Richiedi valutazione Business Plan
+			</h2>
+			<div id="testoAvvisi">
+				<div id="layerBlocca"></div>
+				<div class="note padding-h-30 margin-b-30 padding-v-10">
+					<p class="margin-b-5">
+						Prima di poter inviare il Business Plan a Leanus, è necessario <span>prendere visione di tutte le segnalazioni</span>
+						sopra riportate e <span>correggere gli errori bloccanti</span>.<br>
+					</p>
+					<p>
+						È possibile inoltrare un piano con <span>segnalazioni non bloccanti (Avvisi)</span>, accettando implicitamente la validità dei valori che
+						<span>risultano fuori dai parametri di controllo</span> e della loro influenza sul giudizio finale del Business Plan.<br>
+						Per <span>sbloccare il pulsante "Invia richiesta"</span> attiva l'opzione di conferma sottostante.
+					</p>
+					<div class="checkBtn margin-t-20">
+						<snp_label for="avvisi" data-pars="text:='Confermo di aver preso visione degli avvisi e di esserne consapevole:'" />
+						<widget_switcher data-pars="value:='0' || key:='avvisi'" class="medium d-inline-block margin-l-5">
+					</div>
+					<div class="padding-b-20 padding-t-50 textCenter">
+						<a id="btnLeanus" class="padding-h-30 btn btn-action-light disabled" href="#send">
+							<i class="fa fa-sign-out-alt margin-r-5"></i>
+							Invia richiesta
+						</a>
+					</div>
+				</div>
+			</div>
+			<p class="leanusError" id="noCompilato">
+				<b>Non è possibile inviare la richiesta perché il Business Plan non è nello stato "Compilato" o presenta degli errori bloccanti.</b>
+			</p>
+			<div class="leanusOk padding-v-20" id="giaInviato">
+				<h4>La richiesta di valutazione è stata inviata con successo a Leanus.</h4><br>
+				Troverai l'esito della valutazione nella sezione <b>Report</b> alla voce: <b>"Analisi Leanus"</b>.
+				<br><br>
+				Per procedere all'invio di una nuova richiesta di valutazione è necessario prima <b>ricompilare il Business Plan</b>.
+			</div>
+		</div>
+
+
+		<!-- Leanus: abilitazione e invio report -->
+		<div id="analisiDettagliata" class="notifica margin-t-40">
+			<h2 class="pageTitle">
+				Richiedi analisi dettagliata
+			</h2>
+			<div id="testoAnalisi">
+				<div class="note padding-h-30 margin-b-30 padding-v-10">
+
+					<p>
+						Se sono necessarie ulteriori informazioni o valutazioni del piano economico così compilato, è possibile richiedere una
+						<b>analisi dettagliata del Business Plan</b> ai consulenti finanziari di Yeap_FrontEnd.<br>
+						Tramite il link sottostante, verrà inviata una mail di richiesta nella quale specificare l'indirizzo email o il numero telefonico presso il quale
+						si desidera essere ricontattati.
+					</p>
+					<div class="padding-b-20 padding-t-50 textCenter">
+						<a id="btnAnalisi" class="padding-h-30 btn btn-action-light" href="#analisi">
+							<i class="far fa-envelope margin-r-5"></i>
+							Richiedi analisi dettagliata Business Plan
+						</a>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<!-- *** CONSOLE *** -->
+	<widget_btnConsole />
+
+</div>

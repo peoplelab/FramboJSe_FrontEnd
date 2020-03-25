@@ -1,0 +1,138 @@
+﻿// -----------------------------------------------------------------------
+// NAME: graphics.less
+//
+// Definizione stili grafici principali (colori, ombreggiature, ecc.)
+// -----------------------------------------------------------------------
+
+
+@import "./costanti.pvt.less";
+
+
+// definizioni 'main" elements
+ 
+.mainLabel {
+	padding: 0;
+	margin : 0;
+	color  : @mainColor1;
+	font-weight: bold;
+}
+.df-label {
+	padding: 0;
+	/*margin : 0;*/
+	color  : @mainColor1;
+	font-weight: bold;
+}
+.separe {
+	display: inline-block;
+	margin : 0 5px;
+	color  : @mainColor1;
+	//border-left: solid 1px @mainColor1;
+}
+
+
+
+// =======================
+//  BORDI & EVIDENZIATURE
+// -----------------------
+// 1: Variabili:
+	//@borderColor: #9df;
+	@borderColor: #ccc;
+
+// 2: Stili
+	.underline {
+		border-bottom: solid 1px @borderColor;
+	}
+
+	.bold {
+		font-weight: bold;
+	}
+	.bg-grey1 {
+		background: #e4e4e4;
+	}
+	.color1 {
+		color: @mainColor1;
+	}
+	.color2 {
+		color: @mainColor2;
+	}
+
+// ====================
+//  GAUGE & INDICATORI
+// --------------------
+// 1: Variabili:
+// 2: Stili
+.gauge {
+	display: block;
+	height : 18px;
+	width  : 100%;
+	border : 1px #ccc solid;
+	position: relative;
+	overflow: hidden;
+	padding: 0;
+	margin: 6px 0 0;
+        
+    &.red {
+        background: linear-gradient(to right, #c00, #a00);
+    }
+    &.green {
+        background: linear-gradient(to right, #0f0, #0c0);
+    }
+	&.error {
+		background: linear-gradient(to right, #900, #f00);  
+	}
+}
+.gauge-meter {
+	display: block;
+	width: 100%;
+	height: 50px;
+	position: absolute;
+	background: #fff;
+	left: 100%;
+}
+.gauge-value {
+	color: @Yeap_FrontEndBlue1;
+	font-weight: bold;
+	font-size: 18px;
+    padding:0;
+
+    &.finalscore {
+        display: flex;
+        justify-content: center;
+    }
+}
+.progress {
+    align-self: center;
+    padding: 0;
+}
+span.font-pct-150 {
+    font-size: 4em;
+
+    & sup{
+        font-size: 55%;
+        top: -.55em;
+    }
+    & sub{
+        font-size: 55%;
+        bottom: 0;
+    }
+}
+
+/* ADDIZIONAL, NON NECESSARIO*/
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+}

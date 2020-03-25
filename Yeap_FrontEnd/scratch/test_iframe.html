@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<html lang="it">
+<head>
+
+	<title>Yeap_FrontEnd! - Pagina scratch IFrame</title>
+
+	<script type="text/javascript" src="../System/3rd-parties/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="../System/3rd-parties/jquery-ui/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../System/3rd-parties/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="../System/3rd-parties/jquery-ui/jquery-ui.min.css">
+	<link rel="stylesheet" type="text/css" href="../System/3rd-parties/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../System/3rd-parties/fontawesome/css/fa-svg-with-js.css">
+
+	<script type="text/javascript" src="./script_costruttori.js"></script>
+	<script type="text/javascript" src="./script_gestori.js"></script>
+	<script type="text/javascript" src="./script_tools.js"></script>
+	<script type="text/javascript" src="./script2.js"></script>
+	<link rel="stylesheet" type="text/css" href="./styles.css">
+
+</head>
+<body >
+
+	<div id="pageCover" style="background: rgba(240,240,240,.5); position:absolute; top:0;left:0;z-index: 10;display:none"></div>
+	<h2> Test iFrame </h2>
+
+	<hr>
+	<div style="padding: 0px 30px">
+		<div style="width: 30%; float:left">
+		
+			<p>........... .  ............ . ........ . ..... . . .. ... ... . ......... .......... ..</p>
+			<p>.. ...   . .... ......... . ........ . ..... . . .. ... ... . ......... .......... ..</p>
+			<p>........... .  ............ . ........ . ..... . . .. ... ... . ......... .......... ..</p>
+			<p>.......... . ........ . ..... . . .. ... ... . ......... .......... ..</p>
+			<p>........... .  ............ . ........ . ..... . . .. ... ... . ......... .......... ..</p>
+			
+			
+			<a href="https://localhost:8082/public/aspx/Home.aspx?token=jhashjshsad">Test login</a>
+			<hr>
+			<a href="#pag" class="btnPage" ref="/private/aspx/Home.aspx">Home</a><br>
+			<a href="#pag" class="btnPage" ref="/private/aspx/Home.aspx?token=iewewr_wehewuirhewi">Home con token</a><br>
+			<a href="#pag" class="btnPage" ref="/scratch/index.html">Scratch</a><br>
+			<a href="#pag" class="btnPage" ref="/scratch/test-layer.html">Test layer</a><br>
+			<hr>
+			<a id="pippo" onclick="clickPippo()" href="#p">Pippo</a>
+		</div>
+
+		<div style="width: 65%; float:right">
+			<h4>Iframe:</h4>
+			<div style="border: solid 1px #ccc; margin: 40px 0 0;">
+			
+				<div style="position:relative">
+					
+					<!-- <iframe id="mainIframe" height="400px" xwidth="800px" width="100%" src="https://localhost:8082/scratch/index.html"></iframe> -->
+					<!-- <iframe id="mainIframe" height="400px" xwidth="800px" width="100%" src="https://localhost:8082/scratch/test-layer.html"></iframe> -->
+					
+					<div id="iframeCover" style="background: rgba(50,100,150,.2); position:absolute; top:0;left:0;z-index: 100"></div>
+					<iframe id="mainIframe" height="400px" width="100%" src="" style="position:absolute; top:0;left:0;z-index: 50" />
+					
+				</div>
+				
+			</div>
+		</div>
+
+		<div style="clear:both">
+	</div>
+	<hr>
+	
+
+</body>
+<script>
+$(document).ready(function(){
+
+	//$('.btnPage').click(function(e){
+	//
+	//	e.preventDefault();
+	//	
+	//	var ref = $(this).attr('ref');
+	//	$('#mainIframe').prop('src'. ref);
+	//	
+	//});
+
+});
+
+</script>
+</html>
+

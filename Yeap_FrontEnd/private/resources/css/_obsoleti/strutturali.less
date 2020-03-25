@@ -1,0 +1,506 @@
+// -----------------------------------------------------------------------
+// NAME: costanti.less
+//
+// Definizione delle costanti di stile dell'applicazione
+// Il file viene incluso in ogni file .LESS
+// -----------------------------------------------------------------------
+
+@import "./costanti.pvt.less";
+
+
+// =========================
+//  Architettura pagina
+// -------------------------
+
+	// ** Sezione Dashboard **
+	#dashboard {
+		position: fixed;
+		z-index : 110;
+		width   : 100%;
+		left    : 0;
+		top     : 0px;
+	} 
+
+
+	#menuContainer {						// §§§§§ VA PORTATO IL CONTENUTO DI FROMYeap_FrontEnd.LESS §§§§§
+		width: @menuWidth;
+		float: left;
+
+		#mainLogo {
+			text-align: center;
+			padding   : 10px 0;
+			background: @blueMenu_20;	//#ddf;
+			margin    : 0 15px 2px;
+
+			//h1 {color: #666}
+			h1 {color: @greyGrid_100;}
+		}
+		.svg-inline--fa {
+			font-size: 20px;
+		}
+		.menuIco .svg-inline--fa {
+			display: none;
+		}
+		.menuTxt {
+			display: block
+		}
+
+		.menuItem {
+		    padding-left: 20px;
+			.svg-inline--fa {
+				margin-right: 20px;
+			}
+		}
+		
+		&.reduced {
+			//overflow: hidden;
+			.menuItem {
+				padding-left: 15px;
+			}
+			.menuIco .svg-inline--fa {
+				display: inline-block;
+				//margin : 16px 0 0 10px;
+			}
+			.menuTxt {
+				display: none;
+			}
+			#mainLogo {
+				h1 {text-indent: -5000px;}
+			}
+		}
+	}
+
+	#mainContainer {
+		margin-left: @menuWidth;
+	}
+
+
+
+// ===========
+//  Prelaoder
+// -----------
+#preloader {
+
+	position: fixed;
+	top: 0px;
+	left: 0;
+	z-index: 999;
+	height: 100%;
+	width: 100%;
+	background: rgba(0, 80, 128, .1);
+
+	.outer, .middle, .inner {
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		border-width: 6px;
+		border-style: solid;
+		border-radius: 50%;
+		-webkit-border-radius: 50%;
+		-moz-border-radius: 50%;
+	}
+
+	@color: #369; //@main_orange;
+	@passo: 24px;
+	@size1: 100px;
+	@size2: (@size1 - @passo);
+	@size3: (@size2 - @passo);
+	
+	.outer {
+		border-color: darken(@color, 10%);
+		border-right-color: rgba(0, 0, 0, 0) !important;
+		margin: -(@size1 / 2) 0 0 -(@size1 / 2);
+		width : @size1;
+		height: @size1;
+	}
+	.middle {
+		border-color: @color;
+		border-top-color: rgba(0, 0, 0, 0) !important;
+		margin: -(@size2 / 2) 0 0 -(@size2 / 2);
+		width : @size2;
+		height: @size2;
+	}
+	.inner {
+		border-color: lighten(@color, 15%);
+		border-left-color: rgba(0, 0, 0, 0) !important;
+		margin: -(@size3 / 2) 0 0 -(@size3 / 2);
+		width : @size3;
+		height: @size3;
+	}
+	.spin {
+    -webkit-animation: fa-spin 2s infinite linear;
+    animation: fa-spin 2s infinite linear;
+	}
+	.spin-reverse {
+    -webkit-animation: fa-spin 2s infinite linear reverse;
+    animation: fa-spin 2s infinite linear reverse;
+	}
+
+
+	
+//	.loader_html2 {
+//		border-color: rgba(150, 150, 150, .5);
+//		position: fixed;
+//		top: 20%;
+//		left: 50%;
+//		margin: -41px 0 0 -41px;
+//		width: 82px;
+//		height: 82px;
+//		border-width: 10px;
+//		border-style: solid;
+//		border-right-color: rgba(0, 0, 0, 0) !important;
+//		border-radius: 50%;
+//		-webkit-border-radius: 50%;
+//		-moz-border-radius: 50%;
+//		background-color: rgba(200, 200, 200, .75);
+//		padding: 10px;
+//	}
+//	
+//	.loader-animation {
+//		-webkit-animation: fa-spin 2s infinite linear reverse;
+//		animation: fa-spin 2s infinite linear reverse;
+//	}
+
+}
+
+.inner-loader {
+	
+	@size1: 60px;
+	@spinTime: 4s;
+
+	position: relative;
+	height: @size1;
+	width: @size1;
+	margin: 0 auto;
+
+	.outer, .middle, .inner {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		border-width: 4px;
+		border-style: solid;
+		border-radius: 50%;
+		-webkit-border-radius: 50%;
+		-moz-border-radius: 50%;
+	}
+
+	@color: @blueMenu_80;
+	@passo: 15px;
+	@size2: (@size1 - @passo);
+	@size3: (@size2 - @passo);
+	
+	.outer {
+		border-color: darken(@color, 10%);
+		border-right-color: rgba(0, 0, 0, 0) !important;
+		margin: -(@size1 / 2) 0 0 -(@size1 / 2);
+		width : @size1;
+		height: @size1;
+	}
+	.middle {
+		border-color: @color;
+		border-top-color: rgba(0, 0, 0, 0) !important;
+		margin: -(@size2 / 2) 0 0 -(@size2 / 2);
+		width : @size2;
+		height: @size2;
+	}
+	.inner {
+		border-color: lighten(@color, 15%);
+		border-left-color: rgba(0, 0, 0, 0) !important;
+		margin: -(@size3 / 2) 0 0 -(@size3 / 2);
+		width : @size3;
+		height: @size3;
+	}
+	.spin {
+    -webkit-animation: fa-spin 3s infinite linear;
+    animation: fa-spin @spinTime infinite linear;
+	}
+	.spin-reverse {
+    -webkit-animation: fa-spin 3s infinite linear reverse;
+    animation: fa-spin @spinTime infinite linear reverse;
+	}
+
+}
+
+
+
+
+// =========================
+//  Finestre modali e alert
+// -------------------------
+
+	// Stili finestre modali
+	#modal {
+
+		@modalRadius: 15px;
+
+		.modal-content {border-radius: @modalRadius;}
+
+		// 1: Definizioni comuni
+		.modal-header {
+			padding: 15px 15px 0;
+			background: @main_blue;
+			color: #eee;
+			border-bottom: 1px solid #ccc;
+			border-radius: @modalRadius @modalRadius 0 0;
+			h1 {
+				font-size: 18px;
+				font-weight: bold;
+				padding: 0 0 15px;
+			}
+			.closeBox {
+				cursor: pointer;
+				font-size: 24px;
+				background: none;
+				color: inherit;
+				border: none;
+				margin: -2px 0 0;
+				padding: 0 0px;
+				outline: none;
+
+				&:hover, &:focus, &:active {
+					color: lighten(@main_blue, 20%)!important;
+				}
+			}
+		}
+	
+		.modal-body {
+			padding-left: 40px;
+			.icon {font-size: 70px;}
+
+			h2 { 
+				margin: 20px 0 0;
+				font-size: 22px;
+				font-weight: bold;
+			}
+			h3 { 
+				color: #666;
+				margin: 10px 0 0;
+				font-size: 16px; 
+				//font-weight: bold;
+			}
+			#optionBtns {
+				margin: 10px 0 0;
+				.option {
+					width: 90%;
+					font-weight: bold;
+					border-radius: 0;
+					margin: 4px 0px 0 4px;
+					cursor: pointer;
+				}
+			}
+		}
+
+		.modal-footer {
+			background: #e8e8e8;
+			border-top: 1px solid #ddd;
+			border-radius: 0 0 @modalRadius @modalRadius;
+			.closeBox {
+				cursor: pointer;
+			}
+		}
+
+		// 2: Definizioni per tipo finestra
+		.modal-ok {
+			.icon, h2 {
+				color: @colorOK; 
+			}
+		}	
+		.modal-ko {
+			.icon, h2 {
+				color: @colorKO; 
+			}
+		}
+		.modal-choose, .modal-confirm {
+			.icon, h2 {
+				color: @colorWarning; 
+			}
+		
+		}
+		.modal-info {
+			.icon, h2 {
+				color: @colorInfo; 
+			}
+		}
+	
+
+	}
+
+
+// ===================================
+//  Alert box ed elementi informativi
+// -----------------------------------
+	
+	// ** Message container **
+	.alertBox {
+
+		padding: 10px 15px;
+
+		span.glyphicon {
+			float: left;
+			font-size: 40px;
+			margin: 10px 15px;
+		}
+
+		&.notFound {
+			background-color: fadeout(@main_orange, 70%);
+			border: solid 2px @main_orange;
+			color: darken(@main_orange, 0%);
+
+			.svg-inline--fa {
+				font-size: 50px;
+				color: @main_orange
+			}
+		}
+	}
+
+
+	// Card info (collapsible)
+	.card.card-info.result {
+		/*--
+		.card-title {
+			background: #555;
+			margin    : 0;
+
+			a {
+				color     : #fff;
+				display   : block;
+				text-align: left;
+
+				.ico {
+					float: right;
+				}
+				&[aria-expanded=true]  .ico-open  { display: inline-block;}
+				&[aria-expanded=true]  .ico-close { display: none;}
+				&[aria-expanded=false] .ico-open  { display: none;}
+				&[aria-expanded=false] .ico-close { display: inline-block;}
+			}
+			&:hover {
+				background: #666;
+			}
+			h4 {
+				color: #fff;
+				font-size: 16px;
+				padding: 5px 10px;
+			}
+		}
+		.card-body {
+			padding: 10px 20px;
+			border : 1px solid #ccc;
+		}
+
+		.card.best ul, .card.worst ul {
+			span {
+				float: right;
+			}
+			&.old label{
+				color: #999;
+			}
+		}
+		--*/
+	}
+	.noResult {
+		padding: 15px;
+		background: #e8e8e8;
+		border: solid 2px #666;
+	}
+
+
+
+// ==========
+//  PULSANTI
+// ----------
+// 1: Variabili:
+// 2: Stili
+	.btn {
+		border-color: @stdBorder;									// Colore di default dei bordi
+
+		// 1: default
+		&.btn-default {												// Definizione PALETTE:
+			@btnDefault_hue1: @mainColor2;							// Colore 1
+			@btnDefault_hue2: @mainColor3;							// Colore 2
+			@btnDefault_hue3: lighten(@mainColor1, 20%);			// Colore 3
+			@btnDefault_hue4: desaturate(lighten(@mainColor1, 40%),10);			// Colore 4
+
+			color       : @btnDefault_hue1;
+			background  : @btnDefault_hue2;
+			&:hover {
+				color       : @btnDefault_hue2;
+				background  : @btnDefault_hue1;
+				border-color: @btnDefault_hue4;
+				svg {
+					color   : @btnDefault_hue2;
+				}
+			} 
+			&.active {
+				color       : @btnDefault_hue1;
+				background  : @btnDefault_hue4;
+				border-color: @btnDefault_hue3;
+			}
+		}
+
+		// 2: action
+		&.btn-action-light,
+		&.btn-action-l {											// Definizione PALETTE:
+			@btnAction_hue1: @mainColor3;							// Colore 1
+			@btnAction_hue2: @mainColor2;							// Colore 2
+			@btnAction_hue3: lighten(@mainColor2,  -8%);			// Colore 3
+			@btnAction_hue4: lighten(@mainColor2,  20%);			// Colore 4
+			@btnAction_hue5: lighten(@mainColor2, -20%);			// Colore 5
+
+			color       : @btnAction_hue1;
+			background  : @btnAction_hue2;
+			&:hover {
+				color       : @btnAction_hue1;
+				background  : @btnAction_hue3;
+				border-color: @btnAction_hue4;
+			}
+			&.active {
+				color       : @btnAction_hue5;
+				background  : @btnAction_hue4;
+				border-color: @btnAction_hue2;
+			}
+		}
+
+		// 3: action 2
+		&.btn-action-dark,
+		&.btn-action-d {											// Definizione PALETTE:
+			@btnAction_hue1: @mainColor3;							// Colore 1
+			@btnAction_hue2: @mainColor5;							// Colore 2
+			@btnAction_hue3: lighten(@mainColor5,  15%);			// Colore 3
+			@btnAction_hue4: lighten(@mainColor5,  30%);			// Colore 4
+
+			color       : @btnAction_hue1;
+			background  : @btnAction_hue2;
+			&:hover {
+				color       : @btnAction_hue1;
+				background  : @btnAction_hue3;
+				border-color: @btnAction_hue4;
+			}
+			&.active {
+				color       : @btnAction_hue1;
+				background  : @btnAction_hue4;
+				border-color: @btnAction_hue3;
+			}
+		}
+
+	}
+
+
+
+/// Tutti da sistemare
+.collapseClose {display: none}
+.collapseOpen  {display: inline-block}
+.collapsed {
+	.collapseClose {display: inline-block !important;}
+	.collapseOpen  {display: none !important;}
+}
+
+.btn-accordion {
+	width: 100%;
+    text-align: left;
+    cursor: pointer;
+}
+
+
+
+

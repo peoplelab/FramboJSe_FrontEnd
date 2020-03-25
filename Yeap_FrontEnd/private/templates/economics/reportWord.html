@@ -1,0 +1,59 @@
+﻿<reserved_header_section 
+	templateID="782"
+	templateFile="reportWord.html"
+	templateDescription="HTML content template (Settings)"
+></reserved_header_section>
+
+<widget_pageHeader />
+
+
+<div class="container-fluid pageBody">
+
+		<!-- Leanus: abilitazione e invio report -->
+		<div id="leanus" class="notifica margin-t-40">
+			<h2 class="pageTitle">
+				Ottieni il documento Word: <span></span>
+			</h2>
+			<div id="testoAvvisi">
+				<div id="layerBlocca"></div>
+				<div class="note padding-h-30 margin-b-30 padding-v-10">
+
+					<p class="leanusOk visible margin-t-30 padding-v-20 textCenter">	
+					
+						I dati previsionali considerati nei prospetti economici, finanziari e patrimoniali sono <b>elaborati e verificati automaticamente</b> dalla piattaforma Yeap_FrontEnd.<br>
+						<b>Yeap_FrontEnd non è perseguibile nel caso in cui i report vengano scaricati in formato Word e modificati</b>.<br>
+						<br>
+						<b class="bold">L'utente si assume la responsabilità</b> delle eventuali modifiche che comportano incoerenze dei dati o squadrature dei prospetti.
+					</p>
+					<p class="margin-b-50">
+						Per <b>sbloccare il pulsante "Ottieni documento di Word"</b> attiva l'opzione di conferma sottostante.
+					</p>
+					<div class="checkBtn margin-t-20">
+						<snp_label for="confermaWord" data-pars="text:='Confermo di aver preso visione dell&rsquo;avviso e di esserne consapevole:'" />
+						<widget_switcher data-pars="value:='0' || key:='confermaWord'" class="medium d-inline-block margin-l-5">
+					</div>
+					<div class="padding-b-20 padding-t-50 textCenter">
+						<a id="btnReportWord" class="padding-h-30 btn btn-action-light disabled" href="#send">
+							<i class="fa fa-sign-in-alt margin-r-5"></i>
+							Ottieni documento Word
+						</a>
+					</div>
+
+				</div>
+			</div>
+			<p class="leanusError" id="noCompilato">
+				<b>Non è possibile inviare la richiesta perché il Business Plan non è nello stato "Compilato" o presenta degli errori bloccanti.</b>
+			</p>
+			<div class="leanusOk padding-v-20" id="giaInviato">
+				<h4>La richiesta di valutazione è stata inviata con successo a Leanus.</h4><br>
+				Troverai l'esito della valutazione nella sezione <b>Report</b> alla voce: <b>"Analisi Leanus"</b>.
+				<br><br>
+				Per procedere all'invio di una nuova richiesta di valutazione è necessario prima <b>ricompilare il Business Plan</b>.
+			</div>
+		</div>
+
+	
+	<!-- *** CONSOLE *** -->
+	<widget_btnConsole />
+
+</div>
