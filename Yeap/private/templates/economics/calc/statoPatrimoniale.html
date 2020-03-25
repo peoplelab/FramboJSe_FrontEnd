@@ -1,0 +1,222 @@
+﻿<reserved_header_section
+	templateID="707"
+	templateFile="statoPatrimoniale.html"
+	templateDescription="HTML content template (Economics)"
+></reserved_header_section>
+
+<!-- *** HEADER *** -->
+<widget_pageHeader />
+
+
+<div class="container-fluid pageBody">
+
+	<!-- *** Bollini qualità *** -->
+	<snp_qualityBadge />
+
+	<!-- *** STATO PATRIMONIALE *** -->
+	<div class="card card-info prospetti-context">
+		<div class="card-title" ref="Patrimoniale">
+			<a href="#btn" data-toggle="collapse" data-target="#Patrimoniale" aria-expanded="true">
+				<i class="fa fa-times-circle ico-error"></i>
+				<i class="fa fa-exclamation-circle ico-warning"></i>
+				<span class="text">
+					<i class="fa fa-list-alt margin-r-5"></i>
+					Stato patrimoniale
+				</span>
+				<span class="ico">
+					<i class="fa fa-chevron-right ico-close"></i>
+					<i class="fa fa-chevron-down ico-open"></i>
+				</span>
+			</a>
+		</div>
+		<div id="Patrimoniale" class="collapse box_Lev_1 show">
+			<div class="card-body">
+
+				<widget_drawerTitle data-pars="title:='Attivita_SP_title' || mode:= 'prosp' || ref:='Formule_1'" />
+				<div id="Formule_1" class="collapse clearfix margin-v-10 box_Lev_2">
+					<div dsheader></div>
+					<div class="row" dstable
+						data-method="5"
+						data-name="Attivita_SP_ImmobilizzazioniMateriali"
+						data-child="ImmobilizzazioniMateriali"
+						data-parent="Attivita_SP"
+					></div>
+					<div class="row" dstable
+						data-method="5"
+						data-name="Attivita_SP_ImmobilizzazioniImmateriali"
+						data-child="ImmobilizzazioniImmateriali"
+						data-parent="Attivita_SP"
+					></div>
+					<div class="row" dstable
+						data-method="5"
+						data-name="Attivita_SP_ImmobilizzazioniFinanziarie"
+						data-child="ImmobilizzazioniFinanziarie"
+						data-parent="Attivita_SP"
+					></div>
+					<div class="row" dstable
+						data-method="5"
+						data-name="Attivita_SP_Liquidita"
+						data-child="Liquidita"
+						data-parent="Attivita_SP"
+					></div>
+					<div class="row" dstable
+						data-method="5"
+						data-name="Attivita_SP_CreditiClienti"
+						data-child="CreditiClienti"
+						data-parent="Attivita_SP"
+					></div>
+					<div class="row" dstable
+						data-method="5"
+						data-name="Attivita_SP_CreditoIva"
+						xxdata-child="CreditiTributari"
+						data-child="CreditoIva"
+						data-parent="Attivita_SP"
+					></div>
+					<div class="row" dstable
+						data-method="5"
+						data-name="Attivita_SP_CreditiAltri"
+						data-child="CreditiAltri"
+						data-parent="Attivita_SP"
+					></div>
+					<div class="row" dstable
+						data-method="5"
+						data-name="Attivita_SP_Magazzino"
+						data-child="Magazzino"
+						data-parent="Attivita_SP"
+					></div>
+					<div class="row" dstable
+						data-method="6"
+						data-name="Attivita_SP_Totale"
+						data-child="Totale"
+						data-parent="Attivita_SP"
+					></div>
+				</div>
+
+				<widget_drawerTitle data-pars="title:='passivita_SP_title' || mode:= 'prosp' || ref:='Formule_2'" />
+				<div id="Formule_2" class="collapse clearfix margin-v-10 box_Lev_2">
+					<div dsheader></div>
+					<h4 class="subtitle">A breve</h4>
+					<div class="row" dstable
+						data-method="5"
+						data-name="Passivita_SP_DebitiBanche_BT"
+						data-child="DebitiBanche_BT"
+						data-parent="Passivita_SP"
+					></div>
+					<div class="row" dstable
+						data-method="5"
+						data-name="Passivita_SP_DebitiFornitori_BT"
+						data-child="DebitiFornitori_BT"
+						data-parent="Passivita_SP"
+					></div>
+					<div class="row" dstable
+						data-method="5"
+						data-name="Passivita_SP_DebitiAltri_BT"
+						data-child="DebitiAltri_BT"
+						data-parent="Passivita_SP"
+					></div>
+					<div class="row" dstable
+						data-method="5"
+						data-name="Passivita_SP_Tfr_BT"
+						data-child="Tfr_BT"
+						data-parent="Passivita_SP"
+					></div>
+					<div class="row" dstable
+						data-method="6"
+						data-name="Passivita_SP_Totale_BT"
+						data-child="Totale_BT"
+						data-parent="Passivita_SP"
+					></div>
+
+					<h4 class="subtitle">A Medio/Lungo</h4>
+					<div class="row" dstable
+						data-method="5"
+						data-name="Passivita_SP_DebitiBanche_MT"
+						data-child="DebitiBanche_MT"
+						data-parent="Passivita_SP"
+					></div>
+					<div class="row" dstable
+						data-method="5"
+						data-name="Passivita_SP_DebitiAltri_MT"
+						data-child="DebitiAltri_MT"
+						data-parent="Passivita_SP"
+					></div>
+					<div class="row" dstable
+						data-method="6"
+						data-name="Passivita_SP_Totale_MT"
+						data-child="Totale_MT"
+						data-parent="Passivita_SP"
+					></div>
+
+					<h4 class="subtitle">Totali</h4>
+					<div class="row" dstable
+						data-method="6"
+						data-name="Passivita_SP_Totale"
+						data-child="Totale"
+						data-parent="Passivita_SP"
+					></div>
+				</div>
+
+				<widget_drawerTitle data-pars="title:='PatrimonioNetto_SP_title' || mode:= 'prosp' || ref:='Formule_3'" />
+				<div id="Formule_3" class="collapse clearfix margin-v-10 box_Lev_2">
+					<div dsheader></div>
+					<div class="row" dstable
+						data-method="5"
+						data-name="PatrimonioNetto_SP_CapitaleSociale"
+						data-child="CapitaleSociale"
+						data-parent="PatrimonioNetto_SP"
+					></div>
+					<div class="row" dstable
+						data-method="5"
+						data-name="PatrimonioNetto_SP_Riserve"
+						data-child="Riserve"
+						data-parent="PatrimonioNetto_SP"
+					></div>
+					<div class="row" dstable
+						data-method="5"
+						data-name="PatrimonioNetto_SP_UtiliPerdite"
+						data-child="UtiliPerdite"
+						data-parent="PatrimonioNetto_SP"
+					></div>
+					<div class="row" dstable
+						data-method="5"
+						data-name="PatrimonioNetto_SP_UtiliPerditeEsPrec"
+						data-child="UtiliPerditeEsPrec"
+						data-parent="PatrimonioNetto_SP"
+					></div>
+					<div class="row" dstable
+						data-method="6"
+						data-name="PatrimonioNetto_SP_Totale"
+						data-child="Totale"
+						data-parent="PatrimonioNetto_SP"
+					></div>
+
+					<h4 class="subtitle">Totali</h4>
+					<div class="row" dstable
+						data-method="7"
+						data-name="Totale_SP"
+					></div>
+
+					<div class="hide">
+						<div class="row" dstable
+							data-method="7"
+							data-name="Delta_SP"
+						></div>
+					</div>
+					<div class="notifica">
+						<div class="notificaErrorMsg" id="deltaErrMsg">
+							<h5>Attenzione!</h5>
+							Si è verificato un errore grave durante l'elaborazione. È necessario contattare l'assistenza all'indirizzo: <a href="mailto:info@yeapitaly.it">info@yeapitaly.it</a>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+	<!-- *** CONSOLE *** -->
+	<widget_btnConsole />
+
+</div>

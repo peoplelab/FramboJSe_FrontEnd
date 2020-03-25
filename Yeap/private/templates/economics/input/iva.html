@@ -1,0 +1,153 @@
+﻿<reserved_header_section 
+	templateID="761"
+	templateFile="iva.html"
+	templateDescription="HTML content template (Economics)"
+></reserved_header_section>
+
+<!-- *** HEADER *** -->
+<widget_pageHeader />
+
+<div class="container-fluid pageBody">
+
+	<!-- *** SEZIONE INPUT *** -->
+	<div class="card card-info input-context enableLabel">
+		<div class="card-title" ref="Inseriti">
+			<a href="#btn" data-toggle="collapse" data-target="#Inseriti" aria-expanded="true">
+				<i class="fa fa-times-circle ico-error"></i>
+				<i class="fa fa-exclamation-circle ico-warning"></i>
+				<span class="text">
+					<i class="fa fa-pencil-alt margin-r-5"></i>
+					Dati da inserire
+				</span>
+				<span class="ico">
+					<i class="fa fa-chevron-right ico-close"></i>
+					<i class="fa fa-chevron-down ico-open"></i>
+				</span>
+			</a>
+		</div>
+		<div id="Inseriti" class="collapse box_Lev_1 show">
+			<div class="card-body">
+
+				<widget_drawerTitle data-pars="title:='TitleIva1_title' || mode:= 'edit' || ref:='Inseriti_1' || expand:='false'" />
+				<div id="Inseriti_1" class="collapse clearfix margin-v-10 box_Lev_2">
+					<div dsheader></div>
+					<div class="row" dstable
+						data-method="2"
+						data-name="Ricavi"
+						data-type="input"
+					></div>
+					<div class="row" dstable
+						data-method="2"
+						data-name="Acquisti"
+						data-type="input"
+					></div>
+				</div>
+
+				<widget_drawerTitle data-pars="title:='TitleIva2_title' || mode:= 'edit' || ref:='Inseriti_2' || expand:='false'" />
+				<div id="Inseriti_2" class="collapse clearfix margin-v-10 box_Lev_2">
+					<div dsheader></div>
+					<div class="row" dstable
+						data-method="2"
+						data-name="CI_VarComm"
+						data-type="input"
+					></div>
+					<div class="row" dstable
+						data-method="2"
+						data-name="CI_VarProd"
+						data-type="input"
+					></div>
+				</div>
+
+				<widget_drawerTitle data-pars="title:='TitleIva3_title' || mode:= 'edit' || ref:='Inseriti_3' || expand:='false'" />
+				<div id="Inseriti_3" class="collapse clearfix margin-v-10 box_Lev_2">
+					<div dsheader></div>
+					<div class="row" dstable
+						data-method="2"
+						data-name="CI_Marketing"
+						data-type="input"
+					></div>
+					<div class="row" dstable
+						data-method="2"
+						data-name="CI_Comunicazione"
+						data-type="input"
+					></div>
+					<div class="row" dstable
+						data-method="2"
+						data-name="CI_Struttura"
+						data-type="input"
+					></div>
+					<div class="row" dstable
+						data-method="2"
+						data-name="CI_Infrastrutture"
+						data-type="input"
+					></div>
+					<div class="row" dstable
+						data-method="2"
+						data-name="CI_Amministrativi"
+						data-type="input"
+					></div>
+					<div class="row" dstable
+						data-method="2"
+						data-name="CI_Altri"
+						data-type="input"
+					></div>
+				</div>
+
+				<widget_drawerTitle data-pars="title:='TitleIva4_title' || mode:= 'edit' || ref:='Inseriti_4' || expand:='false'" />
+				<div id="Inseriti_4" class="collapse clearfix margin-v-10 box_Lev_2">
+					<div dsheader></div>
+					<div class="row" dstable
+						data-method="2"
+						data-name="IMat_1"
+						data-type="input"
+					></div>
+					<div class="row" dstable
+						data-method="2"
+						data-name="IMat_2"
+						data-type="input"
+					></div>
+					<div class="row" dstable
+						data-method="2"
+						data-name="IMat_3"
+						data-type="input"
+					></div>
+					<div class="row" dstable
+						data-method="2"
+						data-name="IMat_4"
+						data-type="input"
+					></div>
+				</div>
+
+				<widget_drawerTitle data-pars="title:='TitleIva5_title' || mode:= 'edit' || ref:='Inseriti_5' || expand:='false'" />
+				<div id="Inseriti_5" class="collapse clearfix margin-v-10 box_Lev_2">
+					<div dsheader></div>
+					<div class="row" dstable
+						data-method="2"
+						data-name="IImmat_1"
+						data-type="input"
+					></div>
+					<div class="row" dstable
+						data-method="2"
+						data-name="IImmat_2"
+						data-type="input"
+					></div>
+					<div class="row" dstable
+						data-method="2"
+						data-name="IImmat_3"
+						data-type="input"
+					></div>
+					<div class="row" dstable
+						data-method="2"
+						data-name="IImmat_4"
+						data-type="input"
+					></div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- *** CONSOLE *** -->
+	<widget_btnConsole />
+
+</div>

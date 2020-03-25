@@ -1,0 +1,202 @@
+﻿<reserved_header_section templateID="805"
+                         templateFile="scostamenti.html"
+                         templateDescription="HTML content template (welcome)">
+</reserved_header_section>
+
+<!-- *** HEADER *** -->
+<widget_pageHeader />
+
+
+
+<div class="container-fluid pageBody">
+
+	<!-- *** SEZIONE "NASCOSTI" *** -->
+	<div class="card card-info hidden-context">
+		<div class="card-title" ref="Nascosti">
+			<a href="#btn" data-toggle="collapse" data-target="#Nascosti" aria-expanded="false">
+				<i class="fa fa-times-circle ico-error"></i>
+				<i class="fa fa-exclamation-circle ico-warning"></i>
+				<span class="text">
+					<i class="fa fa-puzzle-piece margin-r-5"></i>
+					Valori nascosti
+				</span>
+				<span class="ico">
+					<i class="fa fa-chevron-right ico-close"></i>
+					<i class="fa fa-chevron-down ico-open"></i>
+				</span>
+			</a>
+		</div>
+		<div id="Nascosti" class="collapse box_Lev_1">
+
+			<h4>Valori tabelle dati consuntivati</h4>
+		<!--<div id="TabellaConsuntivi" rawTable groupSize="0" qcfactor="0" init="1" stop="12" type="raw">-->
+			<div id="TabellaConsuntivi" rawTable groupSize="0" qcfactor="0" init="1" stop="12" type="raw">
+				<div ref="head"></div>
+				<div ref="body"></div>
+			</div>
+
+		</div>
+	</div>
+
+
+
+
+    <!-- *** SEZIONE CALCOLATI *** -->
+    <div class="card card-info formula-context">
+
+        <!-- Q1 -->
+        <div class="card-title" ref="Calcolati">
+            <a href="#btn" data-toggle="collapse" data-target="#Quarter1" aria-expanded="true">
+                <i class="fa fa-times-circle ico-error"></i>
+                <i class="fa fa-exclamation-circle ico-warning"></i>
+                <span class="text">
+                    <i class="fa fa-cogs margin-r-5"></i>
+                    Primo trimestre (Q1)
+                </span>
+                <span class="ico">
+                    <i class="fa fa-chevron-right ico-close"></i>
+                    <i class="fa fa-chevron-down ico-open"></i>
+                </span>
+            </a>
+        </div>
+        <div id="Quarter1" class="collapse box_Lev_1 calcolatiCDG show">
+            <!--
+			<div class="card-body scrollable">
+                <div class="card card-info input-context">
+                    <h4 class="subsection">Tabella dei valori</h4>
+                    <div id="TabellaQ1" scrollTable groupSize="3" qcfactor="0" init="1" stop="3" type="double">
+                        placeholder
+                    </div>
+                </div>
+            </div>
+			-->
+			<div id="TabellaQ1" scrollTable groupSize="3" qcfactor="0" init="1" stop="3" type="double">
+				<div class="card-body scrollable-head">
+					<div class="card card-info formula-context" ref="head"></div>
+				</div>
+				<div class="card-body scrollable">
+					<div class="card card-info formula-context" ref="body"></div>
+				</div>
+			</div>
+        </div>
+
+
+        <!-- Q2 -->
+        <div class="card-title" ref="Calcolati">
+            <a href="#btn" data-toggle="collapse" data-target="#Quarter2" aria-expanded="false">
+                <i class="fa fa-times-circle ico-error"></i>
+                <i class="fa fa-exclamation-circle ico-warning"></i>
+                <span class="text">
+                    <i class="fa fa-cogs margin-r-5"></i>
+                    Secondo trimestre (Q2)
+                </span>
+                <span class="ico">
+                    <i class="fa fa-chevron-right ico-close"></i>
+                    <i class="fa fa-chevron-down ico-open"></i>
+                </span>
+            </a>
+        </div>
+        <div id="Quarter2" class="collapse box_Lev_1 calcolatiCDG">
+			<!--
+            <div class="card-body scrollable">
+                <div class="card card-info input-context">
+                    <h4 class="subsection">Tabella dei valori</h4>
+                    <div id="TabellaQ2" scrollTable groupSize="3" qcfactor="0" init="4" stop="6" type="double">
+                        placeholder
+                    </div>
+                </div>
+            </div>
+			-->
+			<div id="TabellaQ2" scrollTable groupSize="3" qcfactor="0" init="4" stop="6" type="double">
+				<div class="card-body scrollable-head">
+					<div class="card card-info formula-context" ref="head"></div>
+				</div>
+				<div class="card-body scrollable">
+					<div class="card card-info formula-context" ref="body"></div>
+				</div>
+			</div>
+        </div>
+
+
+        <!-- Q3 -->
+        <div class="card-title" ref="Calcolati">
+            <a href="#btn" data-toggle="collapse" data-target="#Quarter3" aria-expanded="false">
+                <i class="fa fa-times-circle ico-error"></i>
+                <i class="fa fa-exclamation-circle ico-warning"></i>
+                <span class="text">
+                    <i class="fa fa-cogs margin-r-5"></i>
+                    Terzo trimestre (Q3)
+                </span>
+                <span class="ico">
+                    <i class="fa fa-chevron-right ico-close"></i>
+                    <i class="fa fa-chevron-down ico-open"></i>
+                </span>
+            </a>
+        </div>
+        <div id="Quarter3" class="collapse box_Lev_1 calcolatiCDG">
+			<!--
+            <div class="card-body scrollable">
+                <div class="card card-info input-context">
+                    <h4 class="subsection">Tabella dei valori</h4>
+                    <div id="TabellaQ3" scrollTable groupSize="3" qcfactor="0" init="7" stop="9" type="double">
+                        placeholder
+                    </div>
+                </div>
+            </div>
+			-->
+			<div id="TabellaQ3" scrollTable groupSize="3" qcfactor="0" init="7" stop="9" type="double">
+				<div class="card-body scrollable-head">
+					<div class="card card-info formula-context" ref="head"></div>
+				</div>
+				<div class="card-body scrollable">
+					<div class="card card-info formula-context" ref="body"></div>
+				</div>
+			</div>
+        </div>
+
+
+        <!-- Q4 -->
+        <div class="card-title" ref="Calcolati">
+            <a href="#btn" data-toggle="collapse" data-target="#Quarter4" aria-expanded="false">
+                <i class="fa fa-times-circle ico-error"></i>
+                <i class="fa fa-exclamation-circle ico-warning"></i>
+                <span class="text">
+                    <i class="fa fa-cogs margin-r-5"></i>
+                    Quarto trimestre (Q4)
+                </span>
+                <span class="ico">
+                    <i class="fa fa-chevron-right ico-close"></i>
+                    <i class="fa fa-chevron-down ico-open"></i>
+                </span>
+            </a>
+        </div>
+        <div id="Quarter4" class="collapse box_Lev_1 calcolatiCDG">
+			<!--
+            <div class="card-body scrollable">
+                <div class="card card-info input-context">
+                    <h4 class="subsection">Tabella dei valori</h4>
+                    <div id="TabellaQ4" scrollTable groupSize="3" qcfactor="0" init="10" stop="12" type="double">
+                        placeholder
+                    </div>
+                </div>
+            </div>
+			-->
+			<div id="TabellaQ4" scrollTable groupSize="3" qcfactor="0" init="10" stop="12" type="double">
+				<div class="card-body scrollable-head">
+					<div class="card card-info formula-context" ref="head"></div>
+				</div>
+				<div class="card-body scrollable">
+					<div class="card card-info formula-context" ref="body"></div>
+				</div>
+			</div>
+        </div>
+
+
+    </div>
+
+
+
+    <!-- *** CONSOLE *** -->
+    <widget_btnConsole_CDG />
+
+</div>

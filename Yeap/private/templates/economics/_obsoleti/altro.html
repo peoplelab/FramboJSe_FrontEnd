@@ -1,0 +1,158 @@
+﻿<reserved_header_section 
+	templateID="760"
+	templateFile="altro.html"
+	templateDescription="HTML content template (Economics)">
+</reserved_header_section>
+
+<h5 class="pageTitle">Economics</h5>
+<h2 class="pageTitle">
+	Altro
+	<a class="infoLnk" href="#info" data-toggle="collapse" data-target="#info" aria-expanded="false">
+		<i class="fa fa-info-circle"></i>
+	</a>
+</h2>
+
+<div id="info" class="collapse row margin-h-50 margin-b-30">
+	<div class="col-12">
+		<div class="alertBox info">
+			<i class="floatLeft fa fa-info-circle"></i>
+			<div class="margin-l-60 margin-t-15">
+				Note e istruzioni per <b>Questa pagina</b>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="container-fluid">
+
+	<!-- *** SEZIONE "NASCOSTI" *** -->
+	<div class="card card-info hidden-context">
+		<div class="card-title" ref="Nascosti">
+			<a href="#btn" data-toggle="collapse" data-target="#Nascosti" aria-expanded="false">
+				<i class="fa fa-times-circle ico-error"></i>
+				<i class="fa fa-exclamation-circle ico-warning"></i>
+				<span class="text">
+					<i class="fa fa-puzzle-piece margin-r-5"></i>
+					Valori nascosti
+				</span>
+				<span class="ico">
+					<i class="fa fa-chevron-right ico-close"></i>
+					<i class="fa fa-chevron-down ico-open"></i>
+				</span>
+			</a>
+		</div>
+		<div id="Nascosti" class="collapse box_Lev_1">
+			<div class="card-body">
+
+			</div>
+		</div>
+	</div>
+	
+
+	<!-- *** SEZIONE INPUT *** -->
+	<div class="card card-info input-context">
+		<div class="card-title" ref="Inseriti">
+			<a href="#btn" data-toggle="collapse" data-target="#Inseriti" aria-expanded="true">
+				<i class="fa fa-times-circle ico-error"></i>
+				<i class="fa fa-exclamation-circle ico-warning"></i>
+				<span class="text">
+					<i class="fa fa-pencil-alt margin-r-5"></i>
+					Dati da inserire
+				</span>
+				<span class="ico">
+					<i class="fa fa-chevron-right ico-close"></i>
+					<i class="fa fa-chevron-down ico-open"></i>
+				</span>
+			</a>
+		</div>
+		<div id="Inseriti" class="collapse box_Lev_1 show">
+			<div class="card-body">
+	
+				<widget_drawerTitle data-pars="title:='AC_Crediti_title' || mode:= 'edit' || ref:='Inseriti_1' || fillerBtn:='true'" />
+				<div id="Inseriti_1" class="collapse clearfix margin-v-10 box_Lev_2">
+					<div dsheader></div>
+					<div class="row" dstable
+						data-method="2"
+						data-name="AC_CreditiSoci"
+						data-type="input"
+					></div>
+					<div class="row" dstable
+						data-method="2"
+						data-name="AC_CreditiAltri"
+						data-type="input"
+					></div>
+					<div class="row" dstable
+						data-method="2"
+						data-name="AC_DebitiAltri"
+						data-type="input"
+					></div>
+
+					<h4 class="subsection">Debiti tributari anni precedenti</h4>
+					<div class="row" dstable
+						data-method="2"
+						data-name="AC_DebitiBreve"
+						data-type="input"
+					></div>
+					<div class="row" dstable
+						data-method="2"
+						data-name="AC_DebitiMedio"
+						data-type="input"
+					></div>
+
+					<h4 class="subsection">Utili distribuiti</h4>
+					<div class="row" dstable
+						data-method="2"
+						data-name="UtiliDistribuiti"
+						data-type="input"
+					></div>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+	<!-- *** SEZIONE CALCOLATI *** -->
+	<div class="card card-info formula-context">
+		<div class="card-title" ref="Calcolati">
+			<a href="#btn" data-toggle="collapse" data-target="#Calcolati" aria-expanded="false">
+				<i class="fa fa-times-circle ico-error"></i>
+				<i class="fa fa-exclamation-circle ico-warning"></i>
+				<span class="text">
+					<i class="fa fa-cogs margin-r-5"></i>
+					Valori calcolati
+				</span>
+				<span class="ico">
+					<i class="fa fa-chevron-right ico-close"></i>
+					<i class="fa fa-chevron-down ico-open"></i>
+				</span>
+			</a>
+		</div>
+		<div id="Calcolati" class="collapse box_Lev_1">
+			<div class="card-body">
+
+				<widget_drawerTitle data-pars="title:='AC_Crediti_title' || mode:= 'calc' || ref:='Formule_1' || fillerBtn:='true'" />
+				<div id="Formule_1" class="collapse clearfix margin-v-10 box_Lev_2">
+					<div dsheader></div>
+					<div class="row" dstable
+						data-name="TotaleCrediti"
+						data-type="formula"
+						data-formula="[AC_CreditiSoci] + [AC_CreditiAltri] + [AC_DebitiAltri]"
+					></div>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+	<!-- *** CONSOLE *** -->
+	<div class="margin-t-40 padding-b-10 textRight">
+		<a href="#save" id="btn-save" class="padding-h-30 btn btn-action-light"><i class="far fa-save margin-r-5"></i> Salva e continua</a>
+		<a href="#compile" id="btn-compile" class="padding-h-30 btn btn-action-light"><i class="fa fa-cubes margin-r-5"></i> Compila</a>
+	</div>
+
+</div>

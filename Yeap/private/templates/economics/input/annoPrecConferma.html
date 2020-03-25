@@ -1,0 +1,245 @@
+﻿<reserved_header_section
+	templateID="768"
+	templateFile="annoPrecConferma.html"
+	templateDescription="HTML content template (Economics)"
+></reserved_header_section>
+
+
+<!-- *** HEADER *** -->
+<widget_pageHeader />
+
+<div class="container-fluid pageBody">
+
+	<!-- *** SEZIONE QUADRATURA *** -->
+	<div class="card card-info formula-context">
+
+		<!-- ** Riquadro Valutazione ** -->
+		<div class="margin-t-30 notifica border">
+
+			<h3 class="margin-b-15">
+				Valutazione quadratura Stato Patrimoniale
+			</h3>
+
+			<div class="row">
+				<div class="col-4 singleCol2rows">
+
+					<div class="row" dstable
+						data-method="3"
+						data-years="1"
+						data-name="AP_PC_SbilancioEffettivoPerc_Anno1"
+						data-child="AP_PC_SbilancioEffettivoPerc_Anno1"
+						data-parent="Esito"
+						data-total="hide"
+					></div>
+
+				</div>
+				<div class="col-4 singleCol2rows">
+
+					<div class="row " dstable
+						data-method="33"
+						data-years="1"
+						data-name="AP_PC_SbilancioRiferimentoWrnPerc"
+						data-child="AP_PC_SbilancioRiferimentoWrnPerc"
+						data-parent="Esito"
+						data-total="hide"
+					></div>
+
+				</div>
+				<div class="col-4 singleCol2rows">
+
+					<div class="row " dstable
+						data-method="33"
+						data-years="1"
+						data-name="AP_PC_SbilancioRiferimentoErrPerc"
+						data-child="AP_PC_SbilancioRiferimentoErrPerc"
+						data-parent="Esito"
+						data-total="hide"
+					></div>
+
+				</div>
+				<div class="row hide" dstable
+					data-type="input"
+					data-method="32"
+					data-years="1"
+					data-name="AP_PC_Ok"
+					data-child="AP_PC_Ok"
+					data-parent="Esito"
+					data-total="hide"
+				></div>
+			</div>
+		</div>
+
+
+		<!-- ** Riquadro conferme ** -->
+		<div class="margin-t-30 notifica border">
+
+			<div class="note">
+				<h3 class="margin-b-15">
+					Esito conferma dati Esercizio Precedente
+				</h3>
+
+				<div class="row">
+
+					<!-- Status_BP <= 4 -->
+					<div class="col-12" id="compileWarningConferma">
+						<div class="annoPrec apWarning">
+							<i class="floatLeft fa fa-exclamation-circle"></i>
+							<div class="margin-l-60 margin-t-5 orange">
+								<p>
+									<span class="bold">
+										Attenzione!<br>
+										Non è possibile eseguire la Conferma Globale del Business Plan perché non sono stati confermati i dati introdotti
+										(vedi pag. "Inserimento dati") o non sono stati consolidati i prospetti di riepilogo (vedi pag. "Prospetti").
+									</span><br />
+									<br />
+									Eseguire le operazioni indicate prima di ritornare a "Esito e Conferma".
+								</p>
+							</div>
+						</div>
+					</div>
+
+
+					<!-- Status_BP >= 7 -->
+					<div class="col-12" id="compileWarningConferma2">
+						<div class="annoPrec apWarning">
+							<i class="floatLeft fa fa-exclamation-circle"></i>
+							<div class="margin-l-60 margin-t-5 orange">
+								<p>
+									<span class="bold">
+										Attenzione!<br>
+										La Conferma Globale del Business Plan è già stata eseguita.
+									</span><br />
+									<br />
+									Non occorre rioperare una nuova conferma fino a quando non verrà modificato il contenuto dei Dati Previsonali o dell'Esercizio Precedente.
+									Nel caso, sarà necessario rieseguire tutte le operazioni di Conferma e Consolidamento prima della nuova Conferma Globale.
+								</p>
+							</div>
+						</div>
+					</div>
+
+
+					<!-- Status_BP 41 -->
+					<div class="col-12 hide" id="compile41">
+
+						<div class="row">
+							<!-- Messaggi -->
+							<div class="col-9" id="compilaTesto">
+
+								<!-- 1: Ok -->
+								<div id="compileOk" class="annoPrec apOk">
+									<i class="floatLeft fa fa-check-circle"></i>
+									<div class="margin-l-60 margin-t-5">
+										<p>
+											<span class="bold">
+											Risultato elaborazione dati positiva rispetto ai valori di riferimento!<br>
+											DATI CERTIFICATI
+											</span><br>
+											È possibile procedere correttamente con la Conferma Globale del Business Plan.
+										</p>
+									</div>
+								</div>
+
+
+								<!-- 1: Ok -->
+								<div id="compileQuasiOk" class="annoPrec apOk">
+									<i class="floatLeft fa fa-check-circle"></i>
+									<div class="margin-l-60 margin-t-5">
+										<p>
+											<span class="bold">
+											Risultato elaborazione dati entro i valori di riferimento (al di sotto del valore soglia per stato allerta)!<br>
+											DATI CERTIFICATI
+											</span><br>
+											<br>
+											I dati inseriti relativi all'esercizio precedente non quadrano, lo sbilancio è inferiore al 3% della liquidità del primo anno del piano (al netto della gestione straordinaria).<br>
+											È possibile compensare lo sbilancio con liquidità nel primo anno; per procedere con la Conferma Globale del Business Plan attivare il pulsante riportato in seguito e confermare.
+										</p>
+										<div class="checkBtn">
+											<snp_label for="abilitaCompila" data-pars="text:='Forza abilitazione alla compilazione del Business Plan (sono consapevole delle implicazioni):'" />
+											<widget_switcher data-pars="value:='0' || key:='abilitaCompilaOk'" class="medium d-inline-block margin-l-5">
+										</div>
+									</div>
+								</div>
+
+
+								<!-- 2: Warning -->
+								<div id="compileWarning" class="annoPrec apWarning">
+									<i class="floatLeft fa fa-exclamation-circle"></i>
+									<div class="margin-l-60 margin-t-5 orange">
+										<p>
+											<span class="bold">
+												Attenzione!<br/>
+												Risultato elaborazione dati non rientra nei valori di riferimento (al di sopra del valore soglia per stato allerta).<br/>
+												DATI FORZATI
+											</span><br />
+											<br />
+											I dati inseriti relativi all'esercizio precedente non quadrano, lo sbilancio è superiore al 3% della liquidità del primo anno del piano (al netto della gestione straordinaria).<br/>
+											È possibile comunque compensare lo sbilancio con liquidità nel primo anno; per procedere con la Conferma Globale del Business Plan attivare il pulsante riportato in seguito e confermare.
+										</p>
+										<div class="checkBtn">
+											<snp_label for="abilitaCompila" data-pars="text:='Forza abilitazione alla compilazione del Business Plan (sono consapevole delle implicazioni):'" />
+											<widget_switcher data-pars="value:='0' || key:='abilitaCompilaWrn'" class="medium d-inline-block margin-l-5">
+										</div>
+									</div>
+								</div>
+
+								<!-- 3: Error -->
+								<div id="compileError" class="annoPrec apError">
+									<i class="floatLeft fa fa-times-circle"></i>
+									<div class="margin-l-60 margin-t-5 red">
+										<p>
+											<span class="bold">
+												Attenzione!<br/>
+												Risultato elaborazione dati si posiziona al di fuori dei valori di riferimento in modo significativo (al di sopra del valore soglia per stato errore).<br/>
+												DATI NON CERTIFICATI
+											</span><br />
+											<br />
+											I dati inseriti relativi all'esercizio precedente non quadrano, lo sbilancio è superiore al 15% della liquidità del primo anno del piano (al netto della gestione straordinaria).<br/>
+											È possibile in ogni caso compensare lo sbilancio con liquidità nel primo anno; per procedere con la Conferma Globale del Business Plan attivare il pulsante riportato in seguito e confermare.                                        </p>
+										<div class="checkBtn">
+											<snp_label for="abilitaCompila" data-pars="text:='Forza abilitazione alla compilazione del Business Plan (sono consapevole delle implicazioni):'" />
+											<widget_switcher data-pars="value:='0' || key:='abilitaCompilaErr'" class="medium d-inline-block margin-l-5">
+										</div>
+									</div>
+								</div>
+
+								<!-- 4: Errore Quadratura -->
+								<div id="quadraturaError" class="annoPrec apError">
+									<i class="floatLeft fa fa-times-circle"></i>
+									<div class="margin-l-60 margin-t-5 red">
+										<p>
+											<span class="bold">
+												Attenzione!
+												È stata registrata un'anomalia bloccante durante l'elaborazione dei dati!<br />
+											</span><br />
+											<br />
+											Si consiglia di controllare o reinserire i dati (eventualmente correggendoli), e quindi di riprocedere con l'elaborazione.<br />
+											Se il problema persiste, <b>contattare l'Amministratore di Sistema per individuare e risolvere l'incongruenza dei dati introdotti</b>.
+										</p>
+									</div>
+								</div>
+
+							</div>
+
+							<!-- Pulsante compila -->
+							<div class="col-3 compila padding-h-20" id="compilaBtn">
+								<a class="padding-h-40 btn btn-action-light disabled" href="#c" id="btn-JustConfirm">
+									<i class="fa fa-cubes margin-r-5"></i>Conferma Globale
+								</a>
+								<div class="fa-info">
+									<p class="bold margin-t-5" style="color: #5b89a7;">Conferma tutto il Business Plan</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+
+		<!-- *** CONSOLE *** -->
+		<widget_btnConsole />
+
+	</div>
+
+</div>

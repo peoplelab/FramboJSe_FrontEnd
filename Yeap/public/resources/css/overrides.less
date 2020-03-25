@@ -1,0 +1,64 @@
+﻿// -----------------------------------------------------------------------
+// NAME: overrides.less
+//
+// Definizione degli overrides degli stili di default di Bootstrap.
+// -----------------------------------------------------------------------
+
+@import "./costanti.less";
+
+@defaultFontSize: 14px;
+
+body {
+	color: #333;
+	font-family: Lato, Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: @defaultFontSize;
+}
+
+.breadcrumb {
+	border-radius: 0;
+}
+
+.btn {
+	border-radius: 0;
+	font-size    : @defaultFontSize;
+	&:focus {
+		-webkit-box-shadow: none;
+		-moz-box-shadow   : none;
+		box-shadow        : none;
+	}
+}
+a, a:hover {
+	text-decoration: none;
+
+	// Evidenzia i tag "anchor" non formati correttamente
+	&:not([href]):not([tabindex]):not([data-toggle]) {
+		background: linear-gradient(to bottom, @grayBg_tone1, @grayBg_tone5);
+		color     : inherit;
+		cursor    : help;
+	}
+
+}
+
+// Controlli: input ecc.
+.form-control {
+	font-size    : @defaultFontSize;
+	line-height  : @defaultFontSize + 3;
+	padding      : 5px 10px !important;
+	border-radius:0;
+	border-color : lighten(@mainColor1, 45%);
+
+	&:focus {
+		border-color: @mainColor2;
+		outline     : 0;
+		-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(204,204,204,.7);
+		box-shadow        : inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(204,204,204,.7);
+	}
+	select& {
+		height: calc(@defaultFontSize * 2 + 1) !important;
+		padding    : 3px 10px;
+		line-height: @defaultFontSize;
+	}
+}
+.input-group-addon {
+	border-radius:0;
+}

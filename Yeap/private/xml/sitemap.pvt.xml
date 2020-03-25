@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<sites>
+	<reserved_header_section
+		templateID="2001"
+		templateFile="Sitemap.xml"
+		templateDescription="Xml sitemap private configuration">
+	</reserved_header_section>
+
+	<!--
+	Alberatura del sito
+	- Nodo radice => <site id="<nome sito>" >
+	- Nodo Home => <page id="home" url="...." text="Home Page">
+	- Altri nodi => tutti figli di "home" secondo necessità
+
+
+	Chiavi Dictionary:
+
+	{{conf_edit_code}}   |   codice elemento lookup (generico)
+	{{subject_id}}       |   codice soggetto riferimento
+	{{subject_name}}     |   nome soggetto riferimento
+	{{filter_month}}     |   mese riferimento (timesheet)
+	{{filter_year}}      |   anno riferimento (timesheet)
+	{{label_x1}}         |   etichetta X1 (timesheet)
+	{{label_x2}}         |   etichetta X2 (timesheet)
+	{{g1_text}}          |   etichetta gruppo1 (risorse umane)
+	{{g2_text}}          |   etichetta gruppo2 (risorse umane)
+	{{g3_text}}          |   etichetta gruppo3 (risorse umane)
+	{{g4_text}}          |   etichetta gruppo4 (risorse umane)
+	{{g5_text}}          |   etichetta gruppo5 (risorse umane)
+	{{g6_text}}          |   etichetta gruppo6 (risorse umane)
+	{{g7_text}}          |   etichetta gruppo7 (risorse umane)
+	{{g8_text}}          |   etichetta gruppo8 (risorse umane)
+	{{g9_text}}          |   etichetta gruppo9 (risorse umane)
+	{{g10_text}}         |   etichetta gruppo10 (risorse umane)
+
+	-->
+
+
+	<site id="pmcloud">
+		<page id="home" url="/home" text="Home Page">
+
+			<!-- ===== AZIENDE =========================================== -->
+			<page id="ru_conf_aziende" url="/configuration/aziende" text="Configurazione - Aziende">
+				<page id="ru_conf_aziende_edit" url="/configuration/azienda/{{conf_edit_code}}" text="Modifica"></page>
+			</page>
+
+			<!-- ===== HUMAN RESOURCES =================================== -->
+			<page id="hr_elenco_soggetti" url="/hr/elenco-soggetti" text="Elenco soggetti in Azienda (Attivi)">
+			</page>
+
+			<page id="elenco_soggetti" url="/ElencoSoggetti/ElencoSoggetti.aspx" text="Elenco Soggetti in Azienda (Attivi)">
+				<page id ="dettaglio_soggetto" url="/anagrafica/soggetto.aspx?ID={{subject_id}}" text="{{subject_name}}"></page>
+			</page>
+			<page id="elenco_soggetti_passati" url="/ElencoSoggetti/ElencoSoggettiPassati.aspx" text="Elenco Soggetti NON in Azienda (Cessati)">
+				<page id ="dettaglio_soggetto" url="/anagrafica/soggetto.aspx?ID={{subject_id}}" text="{{subject_name}}"></page>
+			</page>
+			<page id="elenco_soggetti_futuri" url="/ElencoSoggetti/ElencoSoggettiFuturi.aspx" text="Elenco Soggetti NON in Azienda (Futuri)">
+				<page id ="dettaglio_soggetto" url="/anagrafica/soggetto.aspx?ID={{subject_id}}" text="{{subject_name}}"></page>
+			</page>
+				<page id="elenco_soggetti_tutti" url="/ElencoSoggetti/ElencoSoggettiTutti.aspx" text="Elenco Soggetti Completo (Attivi, Cessati, Futuri)">
+			<page id ="dettaglio_soggetto" url="/anagrafica/soggetto.aspx?ID={{subject_id}}" text="{{subject_name}}"></page>
+			</page>
+			<page id="elenco_soggetti_archivio" url="/ElencoSoggetti/Archivio.aspx" text="Archivio">
+				<page id ="dettaglio_soggetto" url="/anagrafica/soggetto.aspx?ID={{subject_id}}" text="{{subject_name}}"></page>
+			</page>
+
+			<!-- ===== SCADENZIARIO ====================================== -->
+			<page id="sc_elenco_scadenze" url="/scadenziario/gestione-scadenze" text="Gestione scadenze">
+				<page id="sc_scadenza_cre" url="/scadenziario/scadenza" text="Crea nuova scadenza"></page>
+				<page id="sc_scadenza_upd" url="/scadenziario/scadenza/{{conf_edit_code}}" text="Modifica scadenza"></page>
+				<page id="sc_scadenza_exe" url="/scadenziario/esegui/{{conf_edit_code}}" text="Esegui scadenza"></page>
+			</page>
+			<page id="elencoscadenze" url="/Scadenziario/ElencoScadenze_Manutenzione.aspx" text="Scadenziario - Elenco Scadenze Manutenzione">
+				<page id="scadenza_gestione" url="/Scadenziario/GestioneScadenza.aspx?COD={{deadline_code}}" text="Gestione Scadenza"></page>
+				<page id="scadenza_esecuzione" url="/Scadenziario/EsecuzioneScadenza.aspx?COD={{deadline_code}}&amp;F={{f_code}}" text="Esecuzione Scadenza"></page>
+			</page>
+
+			<!-- ====== TIMESHEET ======================================== -->
+			<page id="ts_elenco_soggetti" url="/timesheet/view" text="Elenco Timesheet">
+				<page id="ts_dettaglio" url="/timesheet/view/{{subject_id}}" text="Timesheet di {{subject_name}}">
+					<page id="ts_dettaglio_edit" url="/timesheet/edit/{{subject_id}}" text="Modifica"></page>
+					<page id="ts_malattia" url="/timesheet/malattie/{{subject_id}}" text="Gestione giornate di malattia">
+						<page id="ts_malattia_edit" url="/timesheet/malattie_edit/{{subject_id}}" text="Modifica"></page>
+					</page>
+				</page>
+			</page>
+
+			<!-- ====== SETUP ============================================ -->
+			<!-- ** Human Resources ** -->
+				<page id="ru_conf_contratto" url="/configuration/contratti-lavoro" text="Configurazione - Contratto Lavoro">
+					<page id="ru_conf_contratto_edit" url="/configuration/contratti-lavoro/{{conf_edit_code}}" text="Modifica"></page>
+				</page>
+				<page id="ru_conf_livello" url="/configuration/livelli-contratto" text="Configurazione - Contratto Livello">
+					<page id="ru_conf_livello_edit" url="/configuration/livelli-contratto/{{conf_edit_code}}" text="Modifica"></page>
+				</page>
+				<page id="ru_conf_qualifica" url="/configuration/qualifiche-contratto" text="Configurazione - Contratto Qualifica">
+					<page id="ru_conf_qualifica_edit" url="/configuration/qualifiche-contratto/{{conf_edit_code}}" text="Modifica"></page>
+				</page>
+				<page id="ru_conf_funzione" url="/configuration/funzioni" text="Configurazione - Funzione">
+					<page id="ru_conf_funzione_edit" url="/configuration/funzioni/{{conf_edit_code}}" text="Modifica"></page>
+				</page>
+				<page id="ru_conf_societaesterna" url="/configuration/societa-esterne" text="Configurazione - Societa Esterna">
+					<page id="ru_conf_societaesterna_edit" url="/configuration/societa-esterne/{{conf_edit_code}}" text="Modifica"></page>
+				</page>
+				<page id="ru_conf_azienda" url="/configuration/azienda" text="Configurazione - Azienda">
+					<page id="ru_conf_azienda_edit" url="/configuration/azienda-edit" text="Modifica"></page>
+				</page>
+				<page id="ru_conf_ruolo" url="/configuration/ruoli" text="Configurazione - Ruolo">
+					<page id="ru_conf_ruolo_edit" url="/configuration/ruoli/{{conf_edit_code}}" text="Modifica"></page>
+				</page>
+				<page id="ru_conf_tipocontratto" url="/configuration/tipi-contratto" text="Configurazione - Tipo Contratto">
+					<page id="ru_conf_tipocontratto_edit" url="/configuration/tipi-contratto/{{conf_edit_code}}" text="Modifica"></page>
+				</page>
+			<!-- ** Raggruppamenti ** -->
+				<page id="ru_conf_etichette" url="/configuration/etichette-gruppi" text="Configurazione - Etichette">
+					<page id="ru_conf_etichette_edit" url="/configuration/etichette-gruppi-edit" text="Modifica"></page>
+				</page>
+				<page id="ru_conf_gruppo1" url="/configuration/gruppo01" text="Configurazione - {{g1_text}}">
+					<page id="ru_conf_gruppo1_edit" url="/configuration/gruppo01/{{conf_edit_code}}" text="Modifica"></page>
+				</page>
+				<page id="ru_conf_gruppo2" url="/configuration/gruppo02" text="Configurazione - {{g2_text}}">
+					<page id="ru_conf_gruppo2_edit" url="/configuration/gruppo02/{{conf_edit_code}}" text="Modifica"></page>
+				</page>
+				<page id="ru_conf_gruppo3" url="/configuration/gruppo03" text="Configurazione - {{g3_text}}">
+					<page id="ru_conf_gruppo3_edit" url="/configuration/gruppo03/{{conf_edit_code}}" text="Modifica"></page>
+				</page>
+				<page id="ru_conf_gruppo4" url="/configuration/gruppo04" text="Configurazione - {{g4_text}}">
+					<page id="ru_conf_gruppo4_edit" url="/configuration/gruppo04/{{conf_edit_code}}" text="Modifica"></page>
+				</page>
+				<page id="ru_conf_gruppo5" url="/configuration/gruppo05" text="Configurazione - {{g5_text}}">
+					<page id="ru_conf_gruppo5_edit" url="/configuration/gruppo05/{{conf_edit_code}}" text="Modifica"></page>
+				</page>
+				<page id="ru_conf_gruppo6" url="/configuration/gruppo06" text="Configurazione - {{g6_text}}">
+					<page id="ru_conf_gruppo6_edit" url="/configuration/gruppo06/{{conf_edit_code}}" text="Modifica"></page>
+				</page>
+				<page id="ru_conf_gruppo7" url="/configuration/gruppo07" text="Configurazione - {{g7_text}}">
+					<page id="ru_conf_gruppo7_edit" url="/configuration/gruppo07/{{conf_edit_code}}" text="Modifica"></page>
+				</page>
+				<page id="ru_conf_gruppo8" url="/configuration/gruppo08" text="Configurazione - {{g8_text}}">
+					<page id="ru_conf_gruppo8_edit" url="/configuration/gruppo08/{{conf_edit_code}}" text="Modifica"></page>
+				</page>
+				<page id="ru_conf_gruppo9" url="/configuration/gruppo09" text="Configurazione - {{g9_text}}">
+					<page id="ru_conf_gruppo9_edit" url="/configuration/gruppo09/{{conf_edit_code}}" text="Modifica"></page>
+				</page>
+				<page id="ru_conf_gruppo10" url="/configuration/gruppo10" text="Configurazione - {{g10_text}}">
+					<page id="ru_conf_gruppo10_edit" url="/configuration/gruppo10/{{conf_edit_code}}" text="Modifica"></page>
+				</page>
+			<!-- ** Documenti ** -->
+				<page id="doc_conf_famiglie" url="/configuration/famiglie" text="Documenti - Configurazione Famiglie">
+					<page id="doc_conf_famiglie_edit" url="/configuration/famiglie/{{conf_edit_code}}" text="Modifica"></page>
+				</page>
+				<page id="doc_conf_tipidoc" url="/configuration/tipi-doc" text="Documenti - Configurazione Tipi Documento">
+					<page id="doc_conf_tipidoc_edit" url="/configuration/tipi-doc/{{conf_edit_code}}" text="Modifica"></page>
+				</page>
+			<!-- ** Scadenziario ** -->
+				<page id="sc_conf_processi" url="/configuration/processi" text="Scadenziario - Configurazione Processi">
+					<page id="sc_conf_processi_edit" url="/configuration/processi/{{conf_edit_code}}" text="Modifica"></page>
+				</page>
+				<page id="sc_conf_situazioniscatto" url="/configuration/situazioni-scatto" text="Scadenziario - Configurazione Situazioni Scatto">
+					<page id="sc_conf_situazioniscatto_edit" url="/configuration/situazioni-scatto/{{conf_edit_code}}" text="Modifica"></page>
+				</page>
+			<!-- ** Timesheet ** -->
+				<page id="ts_conf_profiloorario" url="/configuration/profilo-orario" text="Timesheet - Configurazione Profilo Orario">
+					<page id="ts_conf_profiloorario_edit" url="/configuration/profilo-orario/{{conf_edit_code}}" text="Modifica"></page>
+				</page>
+				<page id="ts_conf_festivita" url="/configuration/festivita" text="Timesheet - Configurazione Festività">
+					<page id="ts_conf_festivita_edit" url="/configuration/festivita/{{conf_edit_code}}" text="Modifica"></page>
+				</page>
+				<page id="ts_conf_causali" url="/configuration/causali" text="Timesheet - Configurazione Causali Presenza/Assenza">
+					<page id="ts_conf_causali_edit" url="/configuration/causali/{{conf_edit_code}}" text="Modifica"></page>
+				</page>
+				<page id="ts_conf_ass" url="/configuration/associazioni/{{ts_ass_uid}}" text="Timesheet - Configurazione Associazioni Soggetti-Attributi">
+					<page id="ts_conf_ass_edit" url="/configuration/associazioni/{{ts_ass_uid}}/{{ts_ass_code}}" text="Modifica Associazioni di {{ts_ass_uname}}"></page>
+				</page>
+				<page id="ts_conf_nomiattivita" url="/configuration/nomi-attivita" text="Timesheet - Configurazione Nomi Attività">
+					<page id="ts_conf_nomiattivita_edit" url="/configuration/nomi-attivita-edit" text="Modifica"></page>
+				</page>
+				<page id="ts_conf_x1" url="/configuration/x1" text="Timesheet - Configurazione {{label_x1}}">
+					<page id="ts_conf_x1_edit" url="/configuration/x1/{{conf_edit_code}}" text="Modifica"></page>
+				</page>
+				<page id="ts_conf_x2" url="/configuration/x2" text="Timesheet - Configurazione {{label_x2}}">
+					<page id="ts_conf_x2_edit" url="/configuration/x2/{{conf_edit_code}}" text="Modifica"></page>
+				</page>
+
+		</page>
+	</site>
+</sites>

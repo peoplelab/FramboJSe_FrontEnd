@@ -1,0 +1,343 @@
+[2019-09-26 14:18:24] REQUEST POST - https://localhost:8082/public/aspx/Home.aspx
+[2019-09-26 14:18:24] ---- FROM  ::1 (WinNT)
+[2019-09-26 14:18:24] ---- BROWSER:  Chrome 77.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36)
+[2019-09-26 14:18:24] ---- CONTENT: Token%3D61111131252223224013000011333653%26TokenApiRest%3DeyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvd3d3cy5kZXYteWVhcC5pdCIsImlhdCI6MTU0MjI5NDMyMSwibmJmIjoxNTQyMjk0MzIxLCJleHAiOjE1NDI4OTkxMjEsImRhdGEiOnsidXNlciI6eyJpZCI6IjQ0In19fQ.RCP5OeoGASxAyBw1MbMD4BFJAcDM5JIXqYXKBALZcJI%26Logo%3Dhttps%3A%2F%2Flocalhost%3A8082%2Fscratch%2Fpl_logo.png%26Title%3DBusiness+Plan+Test+nr.+2=
+[2019-09-26 14:18:30] 302 - Found - text/html
+[2019-09-26 14:18:30] REQUEST GET - https://localhost:8082/home/welcome
+[2019-09-26 14:18:30] ---- FROM  ::1 (WinNT)
+[2019-09-26 14:18:30] ---- BROWSER:  Chrome 77.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36)
+[2019-09-26 14:18:31] 200 - OK - text/html
+[2019-09-26 14:18:32] REQUEST POST - https://localhost:8082/public/ws/General.asmx/Set
+[2019-09-26 14:18:32] ---- FROM  ::1 (WinNT)
+[2019-09-26 14:18:32] ---- BROWSER:  Chrome 77.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36)
+[2019-09-26 14:18:32] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190926141832183'><General><Token>61111131252223224013000011333653</Token></General><Data><Nome>Business Plan Test nr. 2</Nome><Logo>https%3A%2F%2Flocalhost%3A8082%2Fscratch%2Fpl_logo.png</Logo></Data></Request>"}
+[2019-09-26 14:18:32] 200 - OK - application/json
+[2019-09-26 14:18:32] REQUEST POST - https://localhost:8082/public/ws/Config.asmx/Economics_Get
+[2019-09-26 14:18:32] ---- FROM  ::1 (WinNT)
+[2019-09-26 14:18:32] ---- BROWSER:  Chrome 77.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36)
+[2019-09-26 14:18:32] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190926141832499'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-26 14:18:32] 200 - OK - application/json
+[2019-09-26 14:18:32] REQUEST POST - https://localhost:8082/public/ws/Config.asmx/All_Get
+[2019-09-26 14:18:32] ---- FROM  ::1 (WinNT)
+[2019-09-26 14:18:32] ---- BROWSER:  Chrome 77.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36)
+[2019-09-26 14:18:32] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190926141832661'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-26 14:18:32] REQUEST POST - https://localhost:8082/public/ws/Economics.asmx/messaggi_summary
+[2019-09-26 14:18:32] ---- FROM  ::1 (WinNT)
+[2019-09-26 14:18:32] ---- BROWSER:  Chrome 77.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36)
+[2019-09-26 14:18:32] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190926141832693'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-26 14:18:32] REQUEST POST - https://localhost:8082/public/ws/Config.asmx/All_Get
+[2019-09-26 14:18:32] ---- FROM  ::1 (WinNT)
+[2019-09-26 14:18:32] ---- BROWSER:  Chrome 77.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36)
+[2019-09-26 14:18:32] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190926141832819'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-26 14:18:32] 200 - OK - application/json
+[2019-09-26 14:18:33] REQUEST POST - https://localhost:8082/public/ws/Config.asmx/All_Get
+[2019-09-26 14:18:33] ---- FROM  ::1 (WinNT)
+[2019-09-26 14:18:33] ---- BROWSER:  Chrome 77.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36)
+[2019-09-26 14:18:33] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='201909261418338'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-26 14:18:33] 200 - OK - application/json
+[2019-09-26 14:18:33] 200 - OK - application/json
+[2019-09-26 14:18:33] 200 - OK - application/json
+[2019-09-26 14:18:47] REQUEST GET - https://localhost:8082/controllo/distribuzione-mensile
+[2019-09-26 14:18:47] ---- FROM  ::1 (WinNT)
+[2019-09-26 14:18:47] ---- BROWSER:  Chrome 77.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36)
+[2019-09-26 14:18:47] 200 - OK - text/html
+[2019-09-26 14:18:47] REQUEST POST - https://localhost:8082/public/ws/CDG.asmx/Weights_Get
+[2019-09-26 14:18:47] ---- FROM  ::1 (WinNT)
+[2019-09-26 14:18:47] ---- BROWSER:  Chrome 77.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36)
+[2019-09-26 14:18:47] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190926141847897'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-26 14:18:48] 200 - OK - application/json
+[2019-09-26 14:18:48] REQUEST GET - https://localhost:8082/public/ws/Resources.ashx/xml-economics/61111131252223224013000011333653
+[2019-09-26 14:18:48] ---- FROM  ::1 (WinNT)
+[2019-09-26 14:18:48] ---- BROWSER:  Chrome 77.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36)
+[2019-09-26 14:18:48] REQUEST POST - https://localhost:8082/public/ws/Config.asmx/All_Get
+[2019-09-26 14:18:48] ---- FROM  ::1 (WinNT)
+[2019-09-26 14:18:48] ---- BROWSER:  Chrome 77.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36)
+[2019-09-26 14:18:48] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190926141848250'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-26 14:18:48] 200 - OK - application/json
+[2019-09-26 14:18:48] REQUEST POST - https://localhost:8082/public/ws/Economics.asmx/messaggi_summary
+[2019-09-26 14:18:48] ---- FROM  ::1 (WinNT)
+[2019-09-26 14:18:48] ---- BROWSER:  Chrome 77.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36)
+[2019-09-26 14:18:48] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190926141848272'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-26 14:18:48] 200 - OK - text/xml
+[2019-09-26 14:18:48] 200 - OK - application/json
+[2019-09-26 14:18:48] REQUEST POST - https://localhost:8082/public/ws/Config.asmx/All_Get
+[2019-09-26 14:18:48] ---- FROM  ::1 (WinNT)
+[2019-09-26 14:18:48] ---- BROWSER:  Chrome 77.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36)
+[2019-09-26 14:18:48] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190926141848384'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-26 14:18:48] 200 - OK - application/json
+[2019-09-26 14:18:48] REQUEST POST - https://localhost:8082/public/ws/CDG.asmx/BPData
+[2019-09-26 14:18:48] ---- FROM  ::1 (WinNT)
+[2019-09-26 14:18:48] ---- BROWSER:  Chrome 77.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36)
+[2019-09-26 14:18:48] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190926141848744'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-26 14:18:48] REQUEST POST - https://localhost:8082/public/ws/Config.asmx/All_Get
+[2019-09-26 14:18:48] ---- FROM  ::1 (WinNT)
+[2019-09-26 14:18:48] ---- BROWSER:  Chrome 77.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36)
+[2019-09-26 14:18:48] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190926141848835'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-26 14:18:48] 200 - OK - application/json
+[2019-09-26 14:18:49] 200 - OK - application/json
+[2019-09-26 14:18:55] REQUEST GET - https://localhost:8082/controllo/importa-consuntivo
+[2019-09-26 14:18:55] ---- FROM  ::1 (WinNT)
+[2019-09-26 14:18:55] ---- BROWSER:  Chrome 77.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36)
+[2019-09-26 14:18:55] 200 - OK - text/html
+[2019-09-26 14:18:56] REQUEST POST - https://localhost:8082/public/ws/CDG.asmx/Get
+[2019-09-26 14:18:56] ---- FROM  ::1 (WinNT)
+[2019-09-26 14:18:56] ---- BROWSER:  Chrome 77.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36)
+[2019-09-26 14:18:56] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='2019092614185638'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-26 14:18:56] 200 - OK - application/json
+[2019-09-26 14:18:56] REQUEST GET - https://localhost:8082/public/ws/Resources.ashx/xml-economics/61111131252223224013000011333653
+[2019-09-26 14:18:56] ---- FROM  ::1 (WinNT)
+[2019-09-26 14:18:56] ---- BROWSER:  Chrome 77.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36)
+[2019-09-26 14:18:56] 200 - OK - text/xml
+[2019-09-26 14:18:56] REQUEST POST - https://localhost:8082/public/ws/Economics.asmx/messaggi_summary
+[2019-09-26 14:18:56] ---- FROM  ::1 (WinNT)
+[2019-09-26 14:18:56] ---- BROWSER:  Chrome 77.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36)
+[2019-09-26 14:18:56] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190926141856334'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-26 14:18:56] REQUEST POST - https://localhost:8082/public/ws/Config.asmx/All_Get
+[2019-09-26 14:18:56] ---- FROM  ::1 (WinNT)
+[2019-09-26 14:18:56] ---- BROWSER:  Chrome 77.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36)
+[2019-09-26 14:18:56] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190926141856383'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-26 14:18:56] 200 - OK - application/json
+[2019-09-26 14:18:56] 200 - OK - application/json
+[2019-09-26 14:18:56] REQUEST POST - https://localhost:8082/public/ws/Config.asmx/All_Get
+[2019-09-26 14:18:56] ---- FROM  ::1 (WinNT)
+[2019-09-26 14:18:56] ---- BROWSER:  Chrome 77.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36)
+[2019-09-26 14:18:56] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190926141856498'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-26 14:18:56] REQUEST POST - https://localhost:8082/public/ws/Config.asmx/All_Get
+[2019-09-26 14:18:56] ---- FROM  ::1 (WinNT)
+[2019-09-26 14:18:56] ---- BROWSER:  Chrome 77.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36)
+[2019-09-26 14:18:56] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190926141856503'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-26 14:18:56] 200 - OK - application/json
+[2019-09-26 14:18:56] 200 - OK - application/json
+[2019-09-26 14:19:02] REQUEST GET - https://localhost:8082/controllo/crea
+[2019-09-26 14:19:02] ---- FROM  ::1 (WinNT)
+[2019-09-26 14:19:02] ---- BROWSER:  Chrome 77.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36)
+[2019-09-26 14:19:02] 200 - OK - text/html
+[2019-09-26 14:19:03] REQUEST POST - https://localhost:8082/public/ws/CDG.asmx/Get
+[2019-09-26 14:19:03] ---- FROM  ::1 (WinNT)
+[2019-09-26 14:19:03] ---- BROWSER:  Chrome 77.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36)
+[2019-09-26 14:19:03] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190926141903301'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-26 14:19:03] 200 - OK - application/json
+[2019-09-26 14:19:03] REQUEST POST - https://localhost:8082/public/ws/Config.asmx/All_Get
+[2019-09-26 14:19:03] ---- FROM  ::1 (WinNT)
+[2019-09-26 14:19:03] ---- BROWSER:  Chrome 77.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36)
+[2019-09-26 14:19:03] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190926141903503'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-26 14:19:03] 200 - OK - application/json
+[2019-09-26 14:19:03] REQUEST POST - https://localhost:8082/public/ws/Economics.asmx/messaggi_summary
+[2019-09-26 14:19:03] ---- FROM  ::1 (WinNT)
+[2019-09-26 14:19:03] ---- BROWSER:  Chrome 77.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36)
+[2019-09-26 14:19:03] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190926141903539'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-26 14:19:03] 200 - OK - application/json
+[2019-09-26 14:19:03] REQUEST POST - https://localhost:8082/public/ws/Config.asmx/All_Get
+[2019-09-26 14:19:03] ---- FROM  ::1 (WinNT)
+[2019-09-26 14:19:03] ---- BROWSER:  Chrome 77.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36)
+[2019-09-26 14:19:03] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190926141903593'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-26 14:19:03] 200 - OK - application/json
+[2019-09-26 14:19:03] REQUEST POST - https://localhost:8082/public/ws/Config.asmx/All_Get
+[2019-09-26 14:19:03] ---- FROM  ::1 (WinNT)
+[2019-09-26 14:19:03] ---- BROWSER:  Chrome 77.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36)
+[2019-09-26 14:19:03] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190926141903717'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-26 14:19:03] 200 - OK - application/json
+[2019-09-26 14:19:11] REQUEST GET - https://localhost:8082/controllo/distribuzione-mensile
+[2019-09-26 14:19:11] ---- FROM  ::1 (WinNT)
+[2019-09-26 14:19:11] ---- BROWSER:  Chrome 77.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36)
+[2019-09-26 14:19:11] 200 - OK - text/html
+[2019-09-26 14:19:11] REQUEST POST - https://localhost:8082/public/ws/CDG.asmx/Weights_Get
+[2019-09-26 14:19:11] ---- FROM  ::1 (WinNT)
+[2019-09-26 14:19:11] ---- BROWSER:  Chrome 77.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36)
+[2019-09-26 14:19:11] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190926141911603'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-26 14:19:11] 200 - OK - application/json
+[2019-09-26 14:19:11] REQUEST GET - https://localhost:8082/public/ws/Resources.ashx/xml-economics/61111131252223224013000011333653
+[2019-09-26 14:19:11] ---- FROM  ::1 (WinNT)
+[2019-09-26 14:19:11] ---- BROWSER:  Chrome 77.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36)
+[2019-09-26 14:19:11] REQUEST POST - https://localhost:8082/public/ws/Config.asmx/All_Get
+[2019-09-26 14:19:11] ---- FROM  ::1 (WinNT)
+[2019-09-26 14:19:11] ---- BROWSER:  Chrome 77.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36)
+[2019-09-26 14:19:11] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190926141911825'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-26 14:19:11] REQUEST POST - https://localhost:8082/public/ws/Economics.asmx/messaggi_summary
+[2019-09-26 14:19:11] ---- FROM  ::1 (WinNT)
+[2019-09-26 14:19:11] ---- BROWSER:  Chrome 77.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36)
+[2019-09-26 14:19:11] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190926141911854'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-26 14:19:11] 200 - OK - text/xml
+[2019-09-26 14:19:11] 200 - OK - application/json
+[2019-09-26 14:19:12] 200 - OK - application/json
+[2019-09-26 14:19:12] REQUEST POST - https://localhost:8082/public/ws/CDG.asmx/BPData
+[2019-09-26 14:19:12] ---- FROM  ::1 (WinNT)
+[2019-09-26 14:19:12] ---- BROWSER:  Chrome 77.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36)
+[2019-09-26 14:19:12] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190926141912211'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-26 14:19:12] REQUEST POST - https://localhost:8082/public/ws/Config.asmx/All_Get
+[2019-09-26 14:19:12] ---- FROM  ::1 (WinNT)
+[2019-09-26 14:19:12] ---- BROWSER:  Chrome 77.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36)
+[2019-09-26 14:19:12] REQUEST POST - https://localhost:8082/public/ws/Config.asmx/All_Get
+[2019-09-26 14:19:12] ---- FROM  ::1 (WinNT)
+[2019-09-26 14:19:12] ---- BROWSER:  Chrome 77.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36)
+[2019-09-26 14:19:12] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190926141912229'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-26 14:19:12] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190926141912268'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-26 14:19:12] 200 - OK - application/json
+[2019-09-26 14:19:12] 200 - OK - application/json
+[2019-09-26 14:19:12] 200 - OK - application/json
+[2019-09-26 14:19:20] REQUEST GET - https://localhost:8082/controllo/importa-consuntivo
+[2019-09-26 14:19:20] ---- FROM  ::1 (WinNT)
+[2019-09-26 14:19:20] ---- BROWSER:  Chrome 77.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36)
+[2019-09-26 14:19:20] 200 - OK - text/html
+[2019-09-26 14:19:21] REQUEST POST - https://localhost:8082/public/ws/CDG.asmx/Get
+[2019-09-26 14:19:21] ---- FROM  ::1 (WinNT)
+[2019-09-26 14:19:21] ---- BROWSER:  Chrome 77.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36)
+[2019-09-26 14:19:21] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='2019092614192185'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-26 14:19:21] 200 - OK - application/json
+[2019-09-26 14:19:21] REQUEST GET - https://localhost:8082/public/ws/Resources.ashx/xml-economics/61111131252223224013000011333653
+[2019-09-26 14:19:21] ---- FROM  ::1 (WinNT)
+[2019-09-26 14:19:21] ---- BROWSER:  Chrome 77.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36)
+[2019-09-26 14:19:21] REQUEST POST - https://localhost:8082/public/ws/Config.asmx/All_Get
+[2019-09-26 14:19:21] ---- FROM  ::1 (WinNT)
+[2019-09-26 14:19:21] REQUEST POST - https://localhost:8082/public/ws/Economics.asmx/messaggi_summary
+[2019-09-26 14:19:21] ---- FROM  ::1 (WinNT)
+[2019-09-26 14:19:21] ---- BROWSER:  Chrome 77.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36)
+[2019-09-26 14:19:21] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190926141921291'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-26 14:19:21] ---- BROWSER:  Chrome 77.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36)
+[2019-09-26 14:19:21] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190926141921269'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-26 14:19:21] 200 - OK - application/json
+[2019-09-26 14:19:21] 200 - OK - text/xml
+[2019-09-26 14:19:21] 200 - OK - application/json
+[2019-09-26 14:19:21] REQUEST POST - https://localhost:8082/public/ws/Config.asmx/All_Get
+[2019-09-26 14:19:21] ---- FROM  ::1 (WinNT)
+[2019-09-26 14:19:21] ---- BROWSER:  Chrome 77.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36)
+[2019-09-26 14:19:21] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190926141921420'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-26 14:19:21] 200 - OK - application/json
+[2019-09-26 14:19:21] REQUEST POST - https://localhost:8082/public/ws/Config.asmx/All_Get
+[2019-09-26 14:19:21] ---- FROM  ::1 (WinNT)
+[2019-09-26 14:19:21] ---- BROWSER:  Chrome 77.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36)
+[2019-09-26 14:19:21] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190926141921492'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-26 14:19:21] 200 - OK - application/json
+[2019-09-26 14:19:24] REQUEST GET - https://localhost:8082/controllo/analisi-indici
+[2019-09-26 14:19:24] ---- FROM  ::1 (WinNT)
+[2019-09-26 14:19:24] ---- BROWSER:  Chrome 77.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36)
+[2019-09-26 14:19:24] 200 - OK - text/html
+[2019-09-26 14:19:25] REQUEST POST - https://localhost:8082/public/ws/CDG.asmx/Get
+[2019-09-26 14:19:25] ---- FROM  ::1 (WinNT)
+[2019-09-26 14:19:25] ---- BROWSER:  Chrome 77.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36)
+[2019-09-26 14:19:25] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190926141925103'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-26 14:19:25] 200 - OK - application/json
+[2019-09-26 14:19:25] REQUEST POST - https://localhost:8082/public/ws/Config.asmx/All_Get
+[2019-09-26 14:19:25] ---- FROM  ::1 (WinNT)
+[2019-09-26 14:19:25] ---- BROWSER:  Chrome 77.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36)
+[2019-09-26 14:19:25] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190926141925283'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-26 14:19:25] 200 - OK - application/json
+[2019-09-26 14:19:25] REQUEST POST - https://localhost:8082/public/ws/Economics.asmx/messaggi_summary
+[2019-09-26 14:19:25] ---- FROM  ::1 (WinNT)
+[2019-09-26 14:19:25] ---- BROWSER:  Chrome 77.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36)
+[2019-09-26 14:19:25] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190926141925312'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-26 14:19:25] REQUEST GET - https://localhost:8082/public/ws/Resources.ashx/xml-economics/61111131252223224013000011333653
+[2019-09-26 14:19:25] ---- FROM  ::1 (WinNT)
+[2019-09-26 14:19:25] ---- BROWSER:  Chrome 77.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36)
+[2019-09-26 14:19:25] 200 - OK - application/json
+[2019-09-26 14:19:25] 200 - OK - text/xml
+[2019-09-26 14:19:25] REQUEST POST - https://localhost:8082/public/ws/Config.asmx/All_Get
+[2019-09-26 14:19:25] ---- FROM  ::1 (WinNT)
+[2019-09-26 14:19:25] ---- BROWSER:  Chrome 77.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36)
+[2019-09-26 14:19:25] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190926141925462'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-26 14:19:25] 200 - OK - application/json
+[2019-09-26 14:19:25] REQUEST POST - https://localhost:8082/public/ws/Config.asmx/All_Get
+[2019-09-26 14:19:25] ---- FROM  ::1 (WinNT)
+[2019-09-26 14:19:25] ---- BROWSER:  Chrome 77.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36)
+[2019-09-26 14:19:25] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190926141925540'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-26 14:19:25] 200 - OK - application/json
+[2019-09-26 14:19:28] REQUEST GET - https://localhost:8082/controllo/scostamenti
+[2019-09-26 14:19:28] ---- FROM  ::1 (WinNT)
+[2019-09-26 14:19:28] ---- BROWSER:  Chrome 77.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36)
+[2019-09-26 14:19:29] 200 - OK - text/html
+[2019-09-26 14:19:29] REQUEST POST - https://localhost:8082/public/ws/CDG.asmx/Get
+[2019-09-26 14:19:29] ---- FROM  ::1 (WinNT)
+[2019-09-26 14:19:29] ---- BROWSER:  Chrome 77.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36)
+[2019-09-26 14:19:29] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190926141929439'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-26 14:19:29] 200 - OK - application/json
+[2019-09-26 14:19:29] REQUEST GET - https://localhost:8082/public/ws/Resources.ashx/xml-economics/61111131252223224013000011333653
+[2019-09-26 14:19:29] ---- FROM  ::1 (WinNT)
+[2019-09-26 14:19:29] ---- BROWSER:  Chrome 77.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36)
+[2019-09-26 14:19:29] REQUEST POST - https://localhost:8082/public/ws/Config.asmx/All_Get
+[2019-09-26 14:19:29] ---- FROM  ::1 (WinNT)
+[2019-09-26 14:19:29] ---- BROWSER:  Chrome 77.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36)
+[2019-09-26 14:19:29] REQUEST POST - https://localhost:8082/public/ws/Economics.asmx/messaggi_summary
+[2019-09-26 14:19:29] ---- FROM  ::1 (WinNT)
+[2019-09-26 14:19:29] 200 - OK - text/xml
+[2019-09-26 14:19:29] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190926141929621'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-26 14:19:29] ---- BROWSER:  Chrome 77.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36)
+[2019-09-26 14:19:29] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190926141929648'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-26 14:19:29] 200 - OK - application/json
+[2019-09-26 14:19:29] 200 - OK - application/json
+[2019-09-26 14:19:29] REQUEST POST - https://localhost:8082/public/ws/Config.asmx/All_Get
+[2019-09-26 14:19:29] REQUEST POST - https://localhost:8082/public/ws/Config.asmx/All_Get
+[2019-09-26 14:19:29] ---- FROM  ::1 (WinNT)
+[2019-09-26 14:19:29] ---- BROWSER:  Chrome 77.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36)
+[2019-09-26 14:19:29] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190926141929844'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-26 14:19:29] ---- FROM  ::1 (WinNT)
+[2019-09-26 14:19:29] ---- BROWSER:  Chrome 77.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36)
+[2019-09-26 14:19:29] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190926141929836'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-26 14:19:29] 200 - OK - application/json
+[2019-09-26 14:19:29] 200 - OK - application/json
+[2019-09-26 14:21:36] REQUEST GET - https://localhost:8082/controllo/crea
+[2019-09-26 14:21:36] ---- FROM  ::1 (WinNT)
+[2019-09-26 14:21:36] ---- BROWSER:  Chrome 77.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36)
+[2019-09-26 14:21:36] 200 - OK - text/html
+[2019-09-26 14:21:36] REQUEST POST - https://localhost:8082/public/ws/CDG.asmx/Get
+[2019-09-26 14:21:36] ---- FROM  ::1 (WinNT)
+[2019-09-26 14:21:36] ---- BROWSER:  Chrome 77.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36)
+[2019-09-26 14:21:36] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190926142136919'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-26 14:21:37] 200 - OK - application/json
+[2019-09-26 14:21:37] REQUEST POST - https://localhost:8082/public/ws/Config.asmx/All_Get
+[2019-09-26 14:21:37] ---- FROM  ::1 (WinNT)
+[2019-09-26 14:21:37] ---- BROWSER:  Chrome 77.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36)
+[2019-09-26 14:21:37] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='2019092614213779'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-26 14:21:37] 200 - OK - application/json
+[2019-09-26 14:21:37] REQUEST POST - https://localhost:8082/public/ws/Economics.asmx/messaggi_summary
+[2019-09-26 14:21:37] ---- FROM  ::1 (WinNT)
+[2019-09-26 14:21:37] ---- BROWSER:  Chrome 77.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36)
+[2019-09-26 14:21:37] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190926142137106'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-26 14:21:37] 200 - OK - application/json
+[2019-09-26 14:21:37] REQUEST POST - https://localhost:8082/public/ws/Config.asmx/All_Get
+[2019-09-26 14:21:37] ---- FROM  ::1 (WinNT)
+[2019-09-26 14:21:37] ---- BROWSER:  Chrome 77.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36)
+[2019-09-26 14:21:37] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190926142137222'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-26 14:21:37] REQUEST POST - https://localhost:8082/public/ws/Config.asmx/All_Get
+[2019-09-26 14:21:37] ---- FROM  ::1 (WinNT)
+[2019-09-26 14:21:37] ---- BROWSER:  Chrome 77.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36)
+[2019-09-26 14:21:37] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190926142137233'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-26 14:21:37] 200 - OK - application/json
+[2019-09-26 14:21:37] 200 - OK - application/json
+[2019-09-26 14:21:40] REQUEST GET - https://localhost:8082/controllo/distribuzione-mensile
+[2019-09-26 14:21:40] ---- FROM  ::1 (WinNT)
+[2019-09-26 14:21:40] ---- BROWSER:  Chrome 77.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36)
+[2019-09-26 14:21:40] 200 - OK - text/html
+[2019-09-26 14:21:40] REQUEST POST - https://localhost:8082/public/ws/CDG.asmx/Weights_Get
+[2019-09-26 14:21:40] ---- FROM  ::1 (WinNT)
+[2019-09-26 14:21:40] ---- BROWSER:  Chrome 77.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36)
+[2019-09-26 14:21:40] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190926142140568'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-26 14:21:40] 200 - OK - application/json
+[2019-09-26 14:21:40] REQUEST GET - https://localhost:8082/public/ws/Resources.ashx/xml-economics/61111131252223224013000011333653
+[2019-09-26 14:21:40] ---- FROM  ::1 (WinNT)
+[2019-09-26 14:21:40] ---- BROWSER:  Chrome 77.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36)
+[2019-09-26 14:21:40] 200 - OK - text/xml
+[2019-09-26 14:21:40] REQUEST POST - https://localhost:8082/public/ws/Config.asmx/All_Get
+[2019-09-26 14:21:40] ---- FROM  ::1 (WinNT)
+[2019-09-26 14:21:40] ---- BROWSER:  Chrome 77.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36)
+[2019-09-26 14:21:40] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190926142140838'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-26 14:21:40] REQUEST POST - https://localhost:8082/public/ws/Economics.asmx/messaggi_summary
+[2019-09-26 14:21:40] ---- FROM  ::1 (WinNT)
+[2019-09-26 14:21:40] ---- BROWSER:  Chrome 77.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36)
+[2019-09-26 14:21:40] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190926142140804'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-26 14:21:40] 200 - OK - application/json
+[2019-09-26 14:21:40] 200 - OK - application/json
+[2019-09-26 14:21:41] REQUEST POST - https://localhost:8082/public/ws/CDG.asmx/BPData
+[2019-09-26 14:21:41] ---- FROM  ::1 (WinNT)
+[2019-09-26 14:21:41] ---- BROWSER:  Chrome 77.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36)
+[2019-09-26 14:21:41] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190926142141249'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-26 14:21:41] REQUEST POST - https://localhost:8082/public/ws/Config.asmx/All_Get
+[2019-09-26 14:21:41] ---- FROM  ::1 (WinNT)
+[2019-09-26 14:21:41] ---- BROWSER:  Chrome 77.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36)
+[2019-09-26 14:21:41] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190926142141363'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-26 14:21:41] REQUEST POST - https://localhost:8082/public/ws/Config.asmx/All_Get
+[2019-09-26 14:21:41] ---- FROM  ::1 (WinNT)
+[2019-09-26 14:21:41] ---- BROWSER:  Chrome 77.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36)
+[2019-09-26 14:21:41] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190926142141456'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-26 14:21:41] 200 - OK - application/json
+[2019-09-26 14:21:41] 200 - OK - application/json
+[2019-09-26 14:21:41] 200 - OK - application/json

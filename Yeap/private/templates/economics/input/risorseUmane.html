@@ -1,0 +1,200 @@
+﻿<reserved_header_section
+	templateID="756"
+	templateFile="risorseUmane.html"
+	templateDescription="HTML content template (Economics)"
+></reserved_header_section>
+
+<!-- *** HEADER *** -->
+<widget_pageHeader />
+
+<div class="container-fluid pageBody">
+
+	<!-- *** SEZIONE "NASCOSTI" *** -->
+	<div class="card card-info hidden-context">
+		<div class="card-title" ref="Nascosti">
+			<a href="#btn" data-toggle="collapse" data-target="#Nascosti" aria-expanded="false">
+				<i class="fa fa-times-circle ico-error"></i>
+				<i class="fa fa-exclamation-circle ico-warning"></i>
+				<span class="text">
+					<i class="fa fa-puzzle-piece margin-r-5"></i>
+					Valori nascosti
+				</span>
+				<span class="ico">
+					<i class="fa fa-chevron-right ico-close"></i>
+					<i class="fa fa-chevron-down ico-open"></i>
+				</span>
+			</a>
+		</div>
+		<div id="Nascosti" class="collapse box_Lev_1">
+			<div class="card-body">
+
+			</div>
+		</div>
+	</div>
+
+
+	<!-- *** SEZIONE INPUT *** -->
+	<div class="card card-info input-context">
+		<div class="card-title" ref="Inseriti">
+			<a href="#btn" data-toggle="collapse" data-target="#Inseriti" aria-expanded="true">
+				<i class="fa fa-times-circle ico-error"></i>
+				<i class="fa fa-exclamation-circle ico-warning"></i>
+				<span class="text">
+					<i class="fa fa-pencil-alt margin-r-5"></i>
+					Dati da inserire
+				</span>
+				<span class="ico">
+					<i class="fa fa-chevron-right ico-close"></i>
+					<i class="fa fa-chevron-down ico-open"></i>
+				</span>
+			</a>
+		</div>
+		<div id="Inseriti" class="collapse box_Lev_1 show">
+			<div class="card-body">
+
+				<widget_drawerTitle data-pars="title:='CLevel_title' || mode:= 'edit' || ref:='Inseriti_1' || fillerBtn:='true'" />
+				<div id="Inseriti_1" class="collapse clearfix margin-v-10 box_Lev_2">
+					<div dsheader></div>
+					<div class="row" dstable
+						data-method="3"
+						data-name="CLevel_Costo"
+						data-child="Costo"
+						data-parent="CLevel"
+						data-type="input"
+					></div>
+					<div class="row" dstable
+						data-method="3"
+						data-name="CLevel_Risorse"
+						data-child="Risorse"
+						data-parent="CLevel"
+						data-type="input"
+					></div>
+				</div>
+
+				<widget_drawerTitle data-pars="title:='Manager_title' || mode:= 'edit' || ref:='Inseriti_2' || fillerBtn:='true'" />
+				<div id="Inseriti_2" class="collapse clearfix margin-v-10 box_Lev_2">
+					<div dsheader></div>
+					<div class="row" dstable
+						data-method="3"
+						data-name="Manager_Costo"
+						data-child="Costo"
+						data-parent="Manager"
+						data-type="input"
+					></div>
+					<div class="row" dstable
+						data-method="3"
+						data-name="Manager_Risorse"
+						data-child="Risorse"
+						data-parent="Manager"
+						data-type="input"
+					></div>
+				</div>
+
+				<widget_drawerTitle data-pars="title:='Marketing_title' || mode:= 'edit' || ref:='Inseriti_3' || fillerBtn:='true'" />
+				<div id="Inseriti_3" class="collapse clearfix margin-v-10 box_Lev_2">
+					<div dsheader></div>
+					<div class="row" dstable
+						data-method="3"
+						data-name="Marketing_Costo"
+						data-child="Costo"
+						data-parent="Marketing"
+						data-type="input"
+					></div>
+					<div class="row" dstable
+						data-method="3"
+						data-name="Marketing_Risorse"
+						data-child="Risorse"
+						data-parent="Marketing"
+						data-type="input"
+					></div>
+				</div>
+
+				<widget_drawerTitle data-pars="title:='PM_IT_title' || mode:= 'edit' || ref:='Inseriti_4' || fillerBtn:='true'" />
+				<div id="Inseriti_4" class="collapse clearfix margin-v-10 box_Lev_2">
+					<div dsheader></div>
+					<div class="row" dstable
+						data-method="3"
+						data-name="PM_IT_Costo"
+						data-child="Costo"
+						data-parent="PM_IT"
+						data-type="input"
+					></div>
+					<div class="row" dstable
+						data-method="3"
+						data-name="PM_IT_Risorse"
+						data-child="Risorse"
+						data-parent="PM_IT"
+						data-type="input"
+					></div>
+				</div>
+
+				<widget_drawerTitle data-pars="title:='Adm_title' || mode:= 'edit' || ref:='Inseriti_5' || fillerBtn:='true'" />
+				<div id="Inseriti_5" class="collapse clearfix margin-v-10 box_Lev_2">
+					<div dsheader></div>
+					<div class="row" dstable
+						data-method="3"
+						data-name="Adm_Costo"
+						data-child="Costo"
+						data-parent="Adm"
+						data-type="input"
+					></div>
+					<div class="row" dstable
+						data-method="3"
+						data-name="Adm_Risorse"
+						data-child="Risorse"
+						data-parent="Adm"
+						data-type="input"
+					></div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+	<!-- *** SEZIONE CALCOLATI *** -->
+	<div class="card card-info formula-context">
+		<div class="card-title" ref="Calcolati">
+			<a href="#btn" data-toggle="collapse" data-target="#Calcolati" aria-expanded="false">
+				<i class="fa fa-times-circle ico-error"></i>
+				<i class="fa fa-exclamation-circle ico-warning"></i>
+				<span class="text">
+					<i class="fa fa-cogs margin-r-5"></i>
+					Valori calcolati
+				</span>
+				<span class="ico">
+					<i class="fa fa-chevron-right ico-close"></i>
+					<i class="fa fa-chevron-down ico-open"></i>
+				</span>
+			</a>
+		</div>
+		<div id="Calcolati" class="collapse box_Lev_1">
+			<div class="card-body">
+
+				<div dsheader></div>
+				<h4 class="subsection margin-t-0">
+					<snp_XML_label_economics data-pars="value:='Totali_title'" class="title" />
+				</h4>
+				<div id="Formule_1" class="xcollapse clearfix margin-v-10 box_Lev_2">
+					<div class="row" dstable
+						data-name="TotRisorse"
+						data-type="formula"
+						data-formula="[CLevel_Risorse] + [Manager_Risorse] + [Marketing_Risorse] + [PM_IT_Risorse] + [Adm_Risorse]"
+					></div>
+					<div class="row" dstable
+						data-method="7"
+						data-name="CostoTotaleAnnuale"
+						data-type="formula"
+						data-formula="[CLevel_Costo] * [CLevel_Risorse] + [Manager_Costo] * [Manager_Risorse] + [Marketing_Costo] * [Marketing_Risorse] + [PM_IT_Costo] * [PM_IT_Risorse] + [Adm_Costo] * [Adm_Risorse]"
+						data-total="rows"
+					></div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- *** CONSOLE *** -->
+	<widget_btnConsole />
+
+</div>

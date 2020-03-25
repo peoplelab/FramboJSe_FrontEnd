@@ -1,0 +1,96 @@
+﻿<reserved_header_section
+	templateID="504"
+	templateFile="settings.html"
+	templateDescription="HTML content template (settings)"
+></reserved_header_section>
+
+<!-- *** HEADER *** -->
+<widget_pageHeader />
+
+<div class="container-fluid pageBody">
+
+	<div class="row justify-content-center margin-v-30">
+		<div class="col-12 col-md-10 col-lg-6 padding-b-30">
+
+			<!-- 1: Sezione "Azienda" -->
+			<div class="itemContainer">
+				<snp_label for="CodiceTipologia" data-pars="text:='Tipologia azienda:'" class="XML_label" mandatory />
+				<snp_dd_tipologieAzienda data-pars="value:='{{CodiceTipologia}}' || emptyLabel:='(Selezionare una tipologia) || emptyValue:= '0'" />
+			</div>
+
+			<div class="itemContainer">
+				<snp_label for="Settore" data-pars="text:='Settore'" class="XML_label" />
+				<snp_dd_settoriAzienda data-code="{{CodiceTipologia}}" data-pars="value:='{{CodiceSettore}}' || emptyLabel:='(Selezionare un settore)' || emptyValue:= '0'" />
+			</div>
+
+			<div class="itemContainer">
+				<snp_label for="Denominazione" data-pars="text:='Denominazione'" class="XML_label" mandatory />
+				<snp_input_text data-pars="value:='{{Denominazione}}'" placeholder="Inserire la denominazione" />
+			</div>
+
+			<hr class="margin-t-20 margin-h--30">
+
+
+			<!-- 2: Sezione "P. IVA" -->
+			<div class="itemContainer">
+				<snp_label for="CF_Piva" data-pars="text:='Partita IVA'" class="XML_label" mandatory />
+				<snp_input_text data-pars="value:='{{CF_Piva}}'" placeholder="Inserire il codice fiscale/P.IVA" />
+			</div>
+			<div class="card card-info margin-t-10 margin-b-5">
+				<div class="card-title-settings">
+					<a class="btn btn-default btn-action-light piva-question" href="#btn" data-toggle="collapse" data-target="#NoPIVA" aria-expanded="false">
+						No Partita IVA?
+						<span class="ico">
+							<i class="fa fa-chevron-right ico-close"></i>
+							<i class="fa fa-chevron-down ico-open"></i>
+						</span>
+					</a>
+				</div>
+				<div id="NoPIVA" class="collapse">
+					<div class="card-body">
+						<p id="NoPIVA">Se non hai una partita IVA puoi cliccare qui per inserire il codice generato automaticamente.</p>
+						<div class="col-12 col-md-12 col-lg-12 textRight margin-t-10">
+							<a href="#getCode" id="btn-generate" class="btn btn-action-light"><i class="fa fa-plus margin-r-5"></i> Genera</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<hr class="margin-v-20 margin-h--30">
+
+
+			<!-- 3: Sezione "Anagrafica" -->
+			<div class="itemContainer">
+				<snp_label for="Indirizzo" data-pars="text:='Indirizzo'" class="XML_label" />
+				<snp_input_text data-pars="value:='{{Indirizzo}}'" placeholder="Inserire l'indirizzo" />
+			</div>
+
+			<div class="itemContainer">
+				<snp_label for="Comune" data-pars="text:='Comune'" class="XML_label" />
+				<snp_input_text data-pars="value:='{{Comune}}'" placeholder="Inserire il Comune" />
+			</div>
+
+			<div class="itemContainer">
+				<snp_label for="Cap" data-pars="text:='Cap'" class="XML_label" />
+				<snp_input_text data-pars="value:='{{Cap}}'" placeholder="Inserire il Cap" maxlength="5" />
+			</div>
+
+			<div class="itemContainer">
+				<snp_label for="Provincia" data-pars="text:='Provincia'" class="XML_label" />
+				<snp_input_text data-pars="value:='{{Provincia}}'" placeholder="Inserire la provincia di residenza" />
+			</div>
+
+
+			<!-- 4: Sezione Campi nascosti -->
+			<snp_input_hidden data-pars="value:='{{Nome}}'" />
+			<snp_input_hidden data-pars="value:='{{CodiceValuta}}'" />
+			<snp_input_hidden data-pars="value:='{{Logo}}'" />
+
+		</div>
+
+	</div>
+
+	<!-- *** CONSOLE *** -->
+	<widget_btnConsole />
+
+</div>

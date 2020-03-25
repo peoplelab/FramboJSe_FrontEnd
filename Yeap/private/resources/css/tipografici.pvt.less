@@ -1,0 +1,148 @@
+﻿// -----------------------------------------------------------------------
+// NAME: tipografici.pvt.less
+//
+// Definizione degli elementi tipografici base dell'applicazione
+// -----------------------------------------------------------------------
+
+@import "./costanti.pvt.less";
+
+
+// ===================================================
+//  Reimpostazione degli stili tipografici di default
+// ---------------------------------------------------
+	// Margin e padding
+	hr, p, ul, li, 
+	h1, h2, h3, h4, h5 {
+		margin : 0px;
+		padding: 0px;
+	}
+
+
+
+// ====================================
+//  Visibilità, allineamenti, floating
+// ------------------------------------
+
+	// Visibilità
+	// (Nota: esistono classi equivalenti in Bootstrap, es. "d-none")
+	.hide, .hidden {		
+		display: none;
+	}
+
+	// Allineamenti 
+	.text-left, .textLeft, .text-align-left       {text-align: left;}
+	.text-right, .textRight, .text-align-right    {text-align: right;}
+	.text-center, .textCenter, .text-align-center {text-align: center;}
+
+	// Elementi float:
+	.floatLeft, .float-left   {float: left;}
+	.floatRight, .float-right {float: right;}
+
+
+// ===============================================
+//  MIXIN: generazione automatica stili calcolati
+// -----------------------------------------------
+
+// GENERATE-TYPOGRAPHICS : generazione classi "padding", "margin"
+// Macro:
+	.generate-typographics(@attr, @from, @to, @step) when (@from =< @to) {
+
+		// Legenda composizione stili:
+		//	attr := margin, padding
+		//	side := l: left, r: right, t: top), b: bottom, h: horizontal, v: vertical, a: all sides
+		//	from := valore (pixel)
+		.@{attr}-t-@{from} {@{attr}-top   : ~"@{from}px" !important;}
+		.@{attr}-r-@{from} {@{attr}-right : ~"@{from}px" !important;}
+		.@{attr}-b-@{from} {@{attr}-bottom: ~"@{from}px" !important;}
+		.@{attr}-l-@{from} {@{attr}-left  : ~"@{from}px" !important;}
+		.@{attr}-v-@{from} {@{attr}-top   : ~"@{from}px" !important; @{attr}-bottom: ~"@{from}px" !important;}
+		.@{attr}-h-@{from} {@{attr}-left  : ~"@{from}px" !important; @{attr}-right : ~"@{from}px" !important;}
+		.@{attr}-a-@{from} {@{attr}       : ~"@{from}px" !important;}
+		.generate-typographics(@attr, (@from + @step), @to, @step);
+
+	}
+// Esecuzione:
+	@gtStart: -50;													// Valore iniziale (può essere negativo)
+	@gtEnd  : 100;													// Valore finale
+	@gtStep :   5;													// Incremento valori
+	.generate-typographics(padding, @gtStart, @gtEnd, @gtStep);		// Generazione stili "padding"
+	.generate-typographics(margin , @gtStart, @gtEnd, @gtStep);		// Generazione stili "margin"
+
+
+
+// SET-FONTSIZE-PCT : generazione classi "font-size" in percentuale
+// Macro:
+	.set-fontSize-pct(@pct, @topLimit, @step) when (@pct =< @topLimit) {
+		.font-pct-@{pct} {font-size: ~"@{pct}%";}
+		.set-fontSize-pct((@pct + @step), @topLimit, @step)
+	}
+	// Esecuzione:
+	@fsStart:  50;													// Valore iniziale
+	@fsEnd  : 200;													// Valore finale
+	@fsStep :  10;													// Incremento valori
+	.set-fontSize-pct(@fsStart, @fsEnd, @fsStep);					// Generazione stili "font-size"
+
+
+
+// SET-WIDTH-PCT : generazione classi "width" in percentuale
+// Macro:
+	.set-width-pct(@pct, @topLimit, @step) when (@pct =< @topLimit) {
+		.width-@{pct}	{width: ~"@{pct}%";}
+		.col-pct-@{pct} {width: ~"@{pct}%";}						// Usato attualmente solo per le colonne tabelle
+		.set-width-pct((@pct + @step), @topLimit, @step)
+	}
+	// Esecuzione:
+	@swStart:   5;													// Valore iniziale
+	@swEnd  : 100;													// Valore finale
+	@swStep :   1;													// Incremento valori
+	.set-width-pct(@swStart, @swEnd, @swStep);						// Generazione stili "font-size"
+
+
+
+// Card info (collapsible)
+.card.card-info {
+		
+	.card-title-settings {
+
+		a {
+			.ico {
+				float: right;
+                margin-left: 10px;
+			}
+			&[aria-expanded=true]  .ico-open  { display: inline-block;}
+			&[aria-expanded=true]  .ico-close { display: none;}
+			&[aria-expanded=false] .ico-open  { display: none;}
+			&[aria-expanded=false] .ico-close { display: inline-block;}
+		}
+	}
+    
+	.card-body {
+		padding: 10px 20px;
+		border : 1px solid #ccc;
+	}
+
+	.card.best ul, .card.worst ul {
+		span {
+			float: right;
+		}
+		&.old label{
+			color: #999;
+		}
+	}
+
+//	.locked {
+//		font-style: italic;
+//		&.card-title-economics {background: desaturate(@yeapBlue2, 20%);}
+//		&.collapse {background: #f4f4f4;}
+//
+//	}
+}
+
+#NoPIVA {
+    position: relative;
+    top: -1px;
+}
+
+.piva-question{
+    display: inline-flex;
+}

@@ -1,0 +1,47 @@
+[2020-02-10 15:13:14] REQUEST GET - https://localhost:8082/economics/messaggi
+[2020-02-10 15:13:14] ---- FROM  ::1 (WinNT)
+[2020-02-10 15:13:14] ---- BROWSER:  Firefox 72.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:72.0) Gecko/20100101 Firefox/72.0)
+[2020-02-10 15:13:14] 302 - Found - text/html
+[2020-02-10 15:13:14] REQUEST GET - https://localhost:8082/public/aspx/Home.aspx?ReturnUrl=%2feconomics%2fmessaggi
+[2020-02-10 15:13:14] ---- FROM  ::1 (WinNT)
+[2020-02-10 15:13:14] ---- BROWSER:  Firefox 72.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:72.0) Gecko/20100101 Firefox/72.0)
+[2020-02-10 15:13:15] 200 - OK - text/html
+[2020-02-10 15:13:55] REQUEST POST - https://localhost:8082/public/aspx/Home.aspx
+[2020-02-10 15:13:55] ---- FROM  ::1 (WinNT)
+[2020-02-10 15:13:55] ---- BROWSER:  Firefox 72.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:72.0) Gecko/20100101 Firefox/72.0)
+[2020-02-10 15:13:55] ---- CONTENT: Token%3D11111121252221224308000011333382%26TokenApiRest%3DeyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvd3d3cy5kZXYteWVhcC5pdCIsImlhdCI6MTU0MjI5NDMyMSwibmJmIjoxNTQyMjk0MzIxLCJleHAiOjE1NDI4OTkxMjEsImRhdGEiOnsidXNlciI6eyJpZCI6IjQ0In19fQ.RCP5OeoGASxAyBw1MbMD4BFJAcDM5JIXqYXKBALZcJI%26Logo%3Dhttps%3A%2F%2Flocalhost%3A8082%2Fscratch%2Fpl_logo.png%26Title%3DDitta%2520Rossi%2520%2526%2520Verdi%26isODC%3D1%26ruolo%3D0%26trial_expired%3Dfalse=
+[2020-02-10 15:13:55] 302 - Found - text/html
+[2020-02-10 15:13:55] REQUEST GET - https://localhost:8082/home/welcome
+[2020-02-10 15:13:55] ---- FROM  ::1 (WinNT)
+[2020-02-10 15:13:55] ---- BROWSER:  Firefox 72.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:72.0) Gecko/20100101 Firefox/72.0)
+[2020-02-10 15:14:01] 200 - OK - text/html
+[2020-02-10 15:14:02] REQUEST POST - https://localhost:8082/public/ws/General.asmx/Set
+[2020-02-10 15:14:02] ---- FROM  ::1 (WinNT)
+[2020-02-10 15:14:02] ---- BROWSER:  Firefox 72.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:72.0) Gecko/20100101 Firefox/72.0)
+[2020-02-10 15:14:02] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20200210151402515'><General><Token>11111121252221224308000011333382</Token></General><Data><Nome>Ditta%20Rossi%20%26%20Verdi</Nome><Logo>https%3A%2F%2Flocalhost%3A8082%2Fscratch%2Fpl_logo.png</Logo></Data></Request>"}
+[2020-02-10 15:14:02] 200 - OK - application/json
+[2020-02-10 15:14:02] REQUEST POST - https://localhost:8082/public/ws/Config.asmx/Economics_Get
+[2020-02-10 15:14:02] ---- FROM  ::1 (WinNT)
+[2020-02-10 15:14:02] ---- BROWSER:  Firefox 72.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:72.0) Gecko/20100101 Firefox/72.0)
+[2020-02-10 15:14:02] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20200210151402762'><General><Token>11111121252221224308000011333382</Token></General><Data></Data></Request>"}
+[2020-02-10 15:14:02] 200 - OK - application/json
+[2020-02-10 15:14:03] REQUEST POST - https://localhost:8082/public/ws/Config.asmx/All_Get
+[2020-02-10 15:14:03] ---- FROM  ::1 (WinNT)
+[2020-02-10 15:14:03] ---- BROWSER:  Firefox 72.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:72.0) Gecko/20100101 Firefox/72.0)
+[2020-02-10 15:14:03] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20200210151403250'><General><Token>11111121252221224308000011333382</Token></General><Data></Data></Request>"}
+[2020-02-10 15:14:03] REQUEST POST - https://localhost:8082/public/ws/Economics.asmx/messaggi_summary
+[2020-02-10 15:14:03] ---- FROM  ::1 (WinNT)
+[2020-02-10 15:14:03] ---- BROWSER:  Firefox 72.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:72.0) Gecko/20100101 Firefox/72.0)
+[2020-02-10 15:14:03] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20200210151403277'><General><Token>11111121252221224308000011333382</Token></General><Data></Data></Request>"}
+[2020-02-10 15:14:03] 200 - OK - application/json
+[2020-02-10 15:14:03] 200 - OK - application/json
+[2020-02-10 15:14:03] REQUEST POST - https://localhost:8082/public/ws/Config.asmx/All_Get
+[2020-02-10 15:14:03] ---- FROM  ::1 (WinNT)
+[2020-02-10 15:14:03] ---- BROWSER:  Firefox 72.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:72.0) Gecko/20100101 Firefox/72.0)
+[2020-02-10 15:14:03] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20200210151403473'><General><Token>11111121252221224308000011333382</Token></General><Data></Data></Request>"}
+[2020-02-10 15:14:03] 200 - OK - application/json
+[2020-02-10 15:14:04] REQUEST POST - https://localhost:8082/public/ws/Config.asmx/All_Get
+[2020-02-10 15:14:04] ---- FROM  ::1 (WinNT)
+[2020-02-10 15:14:04] ---- BROWSER:  Firefox 72.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:72.0) Gecko/20100101 Firefox/72.0)
+[2020-02-10 15:14:04] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20200210151404181'><General><Token>11111121252221224308000011333382</Token></General><Data></Data></Request>"}
+[2020-02-10 15:14:04] 200 - OK - application/json

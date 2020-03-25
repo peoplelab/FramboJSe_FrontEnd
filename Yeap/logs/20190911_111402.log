@@ -1,0 +1,707 @@
+[2019-09-11 11:14:02] REQUEST POST - https://localhost:8082/public/aspx/Home.aspx
+[2019-09-11 11:14:02] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:14:02] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:14:02] ---- CONTENT: Token%3D61111131252223224013000011333653%26TokenApiRest%3DeyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvd3d3cy5kZXYteWVhcC5pdCIsImlhdCI6MTU0MjI5NDMyMSwibmJmIjoxNTQyMjk0MzIxLCJleHAiOjE1NDI4OTkxMjEsImRhdGEiOnsidXNlciI6eyJpZCI6IjQ0In19fQ.RCP5OeoGASxAyBw1MbMD4BFJAcDM5JIXqYXKBALZcJI%26Logo%3Dhttps%3A%2F%2Flocalhost%3A8082%2Fscratch%2Fpl_logo.png%26Title%3DBusiness+Plan+Test+nr.+2=
+[2019-09-11 11:14:07] 302 - Found - text/html
+[2019-09-11 11:14:07] REQUEST GET - https://localhost:8082/home/welcome
+[2019-09-11 11:14:07] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:14:07] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:14:08] 200 - OK - text/html
+[2019-09-11 11:14:09] REQUEST POST - https://localhost:8082/public/ws/General.asmx/Set
+[2019-09-11 11:14:09] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:14:09] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:14:09] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190911111409170'><General><Token>61111131252223224013000011333653</Token></General><Data><Nome>Business Plan Test nr. 2</Nome><Logo>https%3A%2F%2Flocalhost%3A8082%2Fscratch%2Fpl_logo.png</Logo></Data></Request>"}
+[2019-09-11 11:14:09] 200 - OK - application/json
+[2019-09-11 11:14:09] REQUEST POST - https://localhost:8082/public/ws/Config.asmx/Economics_Get
+[2019-09-11 11:14:09] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:14:09] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:14:09] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190911111409366'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-11 11:14:09] 200 - OK - application/json
+[2019-09-11 11:14:09] REQUEST POST - https://localhost:8082/public/ws/Economics.asmx/messaggi_summary
+[2019-09-11 11:14:09] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:14:09] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:14:09] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190911111409608'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-11 11:14:09] 200 - OK - application/json
+[2019-09-11 11:14:09] REQUEST POST - https://localhost:8082/public/ws/Config.asmx/All_Get
+[2019-09-11 11:14:09] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:14:09] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:14:09] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190911111409728'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-11 11:14:09] REQUEST POST - https://localhost:8082/public/ws/Config.asmx/All_Get
+[2019-09-11 11:14:09] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:14:09] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:14:09] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190911111409755'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-11 11:14:09] REQUEST POST - https://localhost:8082/public/ws/Config.asmx/All_Get
+[2019-09-11 11:14:09] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:14:09] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:14:09] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190911111409839'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-11 11:14:09] 200 - OK - application/json
+[2019-09-11 11:14:09] 200 - OK - application/json
+[2019-09-11 11:14:09] 200 - OK - application/json
+[2019-09-11 11:14:13] REQUEST GET - https://localhost:8082/settings/settings
+[2019-09-11 11:14:13] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:14:13] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:14:13] 200 - OK - text/html
+[2019-09-11 11:14:13] REQUEST POST - https://localhost:8082/public/ws/General.asmx/Set
+[2019-09-11 11:14:13] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:14:13] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:14:13] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190911111413895'><General><Token>61111131252223224013000011333653</Token></General><Data><Nome></Nome><Logo>https%3A%2F%2Flocalhost%3A8082%2Fscratch%2Fpl_logo.png</Logo></Data></Request>"}
+[2019-09-11 11:14:13] 200 - OK - application/json
+[2019-09-11 11:14:13] REQUEST POST - https://localhost:8082/public/ws/Config.asmx/General_Get
+[2019-09-11 11:14:13] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:14:13] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:14:13] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190911111413916'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-11 11:14:13] 200 - OK - application/json
+[2019-09-11 11:14:14] REQUEST POST - https://localhost:8082/public/ws/Config.asmx/All_Get
+[2019-09-11 11:14:14] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:14:14] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:14:14] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='2019091111141448'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-11 11:14:14] 200 - OK - application/json
+[2019-09-11 11:14:14] REQUEST POST - https://localhost:8082/public/ws/Economics.asmx/messaggi_summary
+[2019-09-11 11:14:14] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:14:14] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:14:14] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='2019091111141480'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-11 11:14:14] 200 - OK - application/json
+[2019-09-11 11:14:14] REQUEST POST - https://localhost:8082/public/ws/Config.asmx/All_Get
+[2019-09-11 11:14:14] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:14:14] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:14:14] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190911111414163'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-11 11:14:14] 200 - OK - application/json
+[2019-09-11 11:14:14] REQUEST POST - https://localhost:8082/public/ws/Config.asmx/All_Get
+[2019-09-11 11:14:14] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:14:14] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:14:14] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190911111414283'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-11 11:14:14] 200 - OK - application/json
+[2019-09-11 11:14:14] REQUEST GET - https://localhost:8082/public/ws/Resources.ashx/xml-general
+[2019-09-11 11:14:14] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:14:14] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:14:14] REQUEST GET - https://localhost:8082/public/ws/Resources.ashx/xml-general
+[2019-09-11 11:14:14] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:14:14] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:14:14] 200 - OK - text/xml
+[2019-09-11 11:14:14] 200 - OK - text/xml
+[2019-09-11 11:14:57] REQUEST GET - https://localhost:8082/settings/settings
+[2019-09-11 11:14:57] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:14:57] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:14:57] 200 - OK - text/html
+[2019-09-11 11:14:58] REQUEST POST - https://localhost:8082/public/ws/General.asmx/Set
+[2019-09-11 11:14:58] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:14:58] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:14:58] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190911111458251'><General><Token>61111131252223224013000011333653</Token></General><Data><Nome></Nome><Logo>https%3A%2F%2Flocalhost%3A8082%2Fscratch%2Fpl_logo.png</Logo></Data></Request>"}
+[2019-09-11 11:14:58] 200 - OK - application/json
+[2019-09-11 11:14:58] REQUEST POST - https://localhost:8082/public/ws/Config.asmx/General_Get
+[2019-09-11 11:14:58] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:14:58] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:14:58] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190911111458283'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-11 11:14:58] 200 - OK - application/json
+[2019-09-11 11:14:58] REQUEST POST - https://localhost:8082/public/ws/Config.asmx/All_Get
+[2019-09-11 11:14:58] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:14:58] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:14:58] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190911111458355'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-11 11:14:58] 200 - OK - application/json
+[2019-09-11 11:14:58] REQUEST POST - https://localhost:8082/public/ws/Economics.asmx/messaggi_summary
+[2019-09-11 11:14:58] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:14:58] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:14:58] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190911111458424'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-11 11:14:58] 200 - OK - application/json
+[2019-09-11 11:14:58] REQUEST POST - https://localhost:8082/public/ws/Config.asmx/All_Get
+[2019-09-11 11:14:58] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:14:58] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:14:58] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190911111458521'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-11 11:14:58] 200 - OK - application/json
+[2019-09-11 11:14:58] REQUEST POST - https://localhost:8082/public/ws/Config.asmx/All_Get
+[2019-09-11 11:14:58] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:14:58] REQUEST GET - https://localhost:8082/public/ws/Resources.ashx/xml-general
+[2019-09-11 11:14:58] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:14:58] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:14:58] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:14:58] REQUEST GET - https://localhost:8082/public/ws/Resources.ashx/xml-general
+[2019-09-11 11:14:58] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:14:58] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:14:58] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190911111458659'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-11 11:14:58] 200 - OK - text/xml
+[2019-09-11 11:14:58] 200 - OK - text/xml
+[2019-09-11 11:14:58] 200 - OK - application/json
+[2019-09-11 11:15:40] REQUEST POST - https://localhost:8082/public/aspx/Home.aspx
+[2019-09-11 11:15:40] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:15:40] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:15:40] ---- CONTENT: Token%3D61111131252223224013000011333653%26TokenApiRest%3DeyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvd3d3cy5kZXYteWVhcC5pdCIsImlhdCI6MTU0MjI5NDMyMSwibmJmIjoxNTQyMjk0MzIxLCJleHAiOjE1NDI4OTkxMjEsImRhdGEiOnsidXNlciI6eyJpZCI6IjQ0In19fQ.RCP5OeoGASxAyBw1MbMD4BFJAcDM5JIXqYXKBALZcJI%26Logo%3Dhttps%3A%2F%2Flocalhost%3A8082%2Fscratch%2Fpl_logo.png%26Title%3DBusiness+Plan+Test+nr.+2=
+[2019-09-11 11:15:40] 302 - Found - text/html
+[2019-09-11 11:15:40] REQUEST GET - https://localhost:8082/home/welcome
+[2019-09-11 11:15:40] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:15:40] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:15:40] 200 - OK - text/html
+[2019-09-11 11:15:41] REQUEST POST - https://localhost:8082/public/ws/General.asmx/Set
+[2019-09-11 11:15:41] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:15:41] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:15:41] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190911111541201'><General><Token>61111131252223224013000011333653</Token></General><Data><Nome>Business Plan Test nr. 2</Nome><Logo>https%3A%2F%2Flocalhost%3A8082%2Fscratch%2Fpl_logo.png</Logo></Data></Request>"}
+[2019-09-11 11:15:41] 200 - OK - application/json
+[2019-09-11 11:15:41] REQUEST POST - https://localhost:8082/public/ws/Config.asmx/Economics_Get
+[2019-09-11 11:15:41] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:15:41] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:15:41] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190911111541231'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-11 11:15:41] 200 - OK - application/json
+[2019-09-11 11:15:41] REQUEST POST - https://localhost:8082/public/ws/Config.asmx/All_Get
+[2019-09-11 11:15:41] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:15:41] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:15:41] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190911111541345'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-11 11:15:41] 200 - OK - application/json
+[2019-09-11 11:15:41] REQUEST POST - https://localhost:8082/public/ws/Economics.asmx/messaggi_summary
+[2019-09-11 11:15:41] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:15:41] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:15:41] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190911111541391'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-11 11:15:41] 200 - OK - application/json
+[2019-09-11 11:15:41] REQUEST POST - https://localhost:8082/public/ws/Config.asmx/All_Get
+[2019-09-11 11:15:41] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:15:41] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:15:41] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190911111541491'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-11 11:15:41] 200 - OK - application/json
+[2019-09-11 11:15:41] REQUEST POST - https://localhost:8082/public/ws/Config.asmx/All_Get
+[2019-09-11 11:15:41] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:15:41] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:15:41] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190911111541558'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-11 11:15:41] 200 - OK - application/json
+[2019-09-11 11:15:43] REQUEST GET - https://localhost:8082/settings/settings
+[2019-09-11 11:15:43] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:15:43] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:15:43] 200 - OK - text/html
+[2019-09-11 11:15:43] REQUEST POST - https://localhost:8082/public/ws/General.asmx/Set
+[2019-09-11 11:15:43] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:15:43] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:15:43] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190911111543905'><General><Token>61111131252223224013000011333653</Token></General><Data><Nome></Nome><Logo>https%3A%2F%2Flocalhost%3A8082%2Fscratch%2Fpl_logo.png</Logo></Data></Request>"}
+[2019-09-11 11:15:43] 200 - OK - application/json
+[2019-09-11 11:15:43] REQUEST POST - https://localhost:8082/public/ws/Config.asmx/General_Get
+[2019-09-11 11:15:43] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:15:43] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:15:43] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190911111543926'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-11 11:15:43] 200 - OK - application/json
+[2019-09-11 11:15:43] REQUEST POST - https://localhost:8082/public/ws/Config.asmx/All_Get
+[2019-09-11 11:15:43] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:15:43] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:15:43] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190911111543972'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-11 11:15:44] 200 - OK - application/json
+[2019-09-11 11:15:44] REQUEST POST - https://localhost:8082/public/ws/Economics.asmx/messaggi_summary
+[2019-09-11 11:15:44] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:15:44] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:15:44] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='2019091111154418'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-11 11:15:44] 200 - OK - application/json
+[2019-09-11 11:15:44] REQUEST POST - https://localhost:8082/public/ws/Config.asmx/All_Get
+[2019-09-11 11:15:44] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:15:44] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:15:44] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190911111544135'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-11 11:15:44] 200 - OK - application/json
+[2019-09-11 11:15:44] REQUEST POST - https://localhost:8082/public/ws/Config.asmx/All_Get
+[2019-09-11 11:15:44] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:15:44] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:15:44] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190911111544291'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-11 11:15:44] REQUEST GET - https://localhost:8082/public/ws/Resources.ashx/xml-general
+[2019-09-11 11:15:44] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:15:44] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:15:44] REQUEST GET - https://localhost:8082/public/ws/Resources.ashx/xml-general
+[2019-09-11 11:15:44] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:15:44] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:15:44] 200 - OK - text/xml
+[2019-09-11 11:15:44] 200 - OK - text/xml
+[2019-09-11 11:15:44] 200 - OK - application/json
+[2019-09-11 11:16:08] REQUEST GET - https://localhost:8082/qa/qualitativa
+[2019-09-11 11:16:08] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:16:08] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:16:08] 200 - OK - text/html
+[2019-09-11 11:16:08] REQUEST POST - https://localhost:8082/public/ws/QAnalysis.asmx/Get
+[2019-09-11 11:16:08] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:16:08] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:16:08] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190911111608639'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-11 11:16:08] 200 - OK - application/json
+[2019-09-11 11:16:08] REQUEST POST - https://localhost:8082/public/ws/Config.asmx/All_Get
+[2019-09-11 11:16:08] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:16:08] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:16:08] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190911111608759'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-11 11:16:08] 200 - OK - application/json
+[2019-09-11 11:16:08] REQUEST POST - https://localhost:8082/public/ws/Economics.asmx/messaggi_summary
+[2019-09-11 11:16:08] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:16:08] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:16:08] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190911111608798'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-11 11:16:08] 200 - OK - application/json
+[2019-09-11 11:16:08] REQUEST POST - https://localhost:8082/public/ws/Config.asmx/All_Get
+[2019-09-11 11:16:08] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:16:08] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:16:08] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190911111608899'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-11 11:16:08] 200 - OK - application/json
+[2019-09-11 11:16:09] REQUEST POST - https://localhost:8082/public/ws/Config.asmx/All_Get
+[2019-09-11 11:16:09] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:16:09] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:16:09] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='2019091111160921'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-11 11:16:09] 200 - OK - application/json
+[2019-09-11 11:16:09] REQUEST GET - https://localhost:8082/public/ws/Resources.ashx/xml-qa
+[2019-09-11 11:16:09] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:16:09] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:16:09] REQUEST GET - https://localhost:8082/public/ws/Resources.ashx/xml-qa
+[2019-09-11 11:16:09] REQUEST GET - https://localhost:8082/public/ws/Resources.ashx/xml-qa
+[2019-09-11 11:16:09] REQUEST GET - https://localhost:8082/public/ws/Resources.ashx/xml-qa
+[2019-09-11 11:16:09] REQUEST GET - https://localhost:8082/public/ws/Resources.ashx/xml-qa
+[2019-09-11 11:16:09] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:16:09] REQUEST GET - https://localhost:8082/public/ws/Resources.ashx/xml-qa
+[2019-09-11 11:16:09] REQUEST GET - https://localhost:8082/public/ws/Resources.ashx/xml-qa
+[2019-09-11 11:16:09] REQUEST GET - https://localhost:8082/public/ws/Resources.ashx/xml-qa
+[2019-09-11 11:16:09] REQUEST GET - https://localhost:8082/public/ws/Resources.ashx/xml-qa
+[2019-09-11 11:16:09] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:16:09] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:16:09] 200 - OK - text/xml
+[2019-09-11 11:16:09] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:16:09] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:16:09] REQUEST GET - https://localhost:8082/public/ws/Resources.ashx/xml-qa
+[2019-09-11 11:16:09] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:16:09] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:16:09] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:16:09] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:16:09] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:16:09] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:16:09] 200 - OK - text/xml
+[2019-09-11 11:16:09] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:16:09] REQUEST GET - https://localhost:8082/public/ws/Resources.ashx/xml-qa
+[2019-09-11 11:16:09] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:16:09] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:16:09] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:16:09] 200 - OK - text/xml
+[2019-09-11 11:16:09] 200 - OK - text/xml
+[2019-09-11 11:16:09] 200 - OK - text/xml
+[2019-09-11 11:16:09] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:16:09] REQUEST GET - https://localhost:8082/public/ws/Resources.ashx/xml-qa
+[2019-09-11 11:16:09] 200 - OK - text/xml
+[2019-09-11 11:16:09] 200 - OK - text/xml
+[2019-09-11 11:16:09] 200 - OK - text/xml
+[2019-09-11 11:16:09] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:16:09] REQUEST GET - https://localhost:8082/public/ws/Resources.ashx/xml-qa
+[2019-09-11 11:16:09] REQUEST GET - https://localhost:8082/public/ws/Resources.ashx/xml-qa
+[2019-09-11 11:16:09] REQUEST GET - https://localhost:8082/public/ws/Resources.ashx/xml-qa
+[2019-09-11 11:16:09] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:16:09] REQUEST GET - https://localhost:8082/public/ws/Resources.ashx/xml-qa
+[2019-09-11 11:16:09] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:16:09] REQUEST GET - https://localhost:8082/public/ws/Resources.ashx/xml-qa
+[2019-09-11 11:16:09] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:16:09] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:16:09] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:16:09] REQUEST GET - https://localhost:8082/public/ws/Resources.ashx/xml-qa
+[2019-09-11 11:16:09] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:16:09] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:16:09] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:16:09] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:16:09] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:16:09] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:16:09] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:16:09] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:16:09] 200 - OK - text/xml
+[2019-09-11 11:16:09] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:16:09] 200 - OK - text/xml
+[2019-09-11 11:16:09] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:16:09] 200 - OK - text/xml
+[2019-09-11 11:16:09] 200 - OK - text/xml
+[2019-09-11 11:16:09] 200 - OK - text/xml
+[2019-09-11 11:16:09] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:16:09] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:16:09] 200 - OK - text/xml
+[2019-09-11 11:16:09] REQUEST GET - https://localhost:8082/public/ws/Resources.ashx/xml-qa
+[2019-09-11 11:16:09] 200 - OK - text/xml
+[2019-09-11 11:16:09] REQUEST GET - https://localhost:8082/public/ws/Resources.ashx/xml-qa
+[2019-09-11 11:16:09] REQUEST GET - https://localhost:8082/public/ws/Resources.ashx/xml-qa
+[2019-09-11 11:16:09] REQUEST GET - https://localhost:8082/public/ws/Resources.ashx/xml-qa
+[2019-09-11 11:16:09] REQUEST GET - https://localhost:8082/public/ws/Resources.ashx/xml-qa
+[2019-09-11 11:16:09] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:16:09] REQUEST GET - https://localhost:8082/public/ws/Resources.ashx/xml-qa
+[2019-09-11 11:16:09] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:16:09] REQUEST GET - https://localhost:8082/public/ws/Resources.ashx/xml-qa
+[2019-09-11 11:16:09] 200 - OK - text/xml
+[2019-09-11 11:16:09] 200 - OK - text/xml
+[2019-09-11 11:16:09] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:16:09] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:16:09] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:16:09] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:16:09] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:16:09] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:16:09] REQUEST GET - https://localhost:8082/public/ws/Resources.ashx/xml-qa
+[2019-09-11 11:16:09] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:16:09] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:16:09] 200 - OK - text/xml
+[2019-09-11 11:16:09] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:16:09] REQUEST GET - https://localhost:8082/public/ws/Resources.ashx/xml-qa
+[2019-09-11 11:16:09] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:16:09] 200 - OK - text/xml
+[2019-09-11 11:16:09] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:16:09] 200 - OK - text/xml
+[2019-09-11 11:16:09] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:16:09] REQUEST GET - https://localhost:8082/public/ws/Resources.ashx/xml-qa
+[2019-09-11 11:16:09] 200 - OK - text/xml
+[2019-09-11 11:16:09] 200 - OK - text/xml
+[2019-09-11 11:16:09] 200 - OK - text/xml
+[2019-09-11 11:16:09] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:16:09] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:16:09] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:16:09] REQUEST GET - https://localhost:8082/public/ws/Resources.ashx/xml-qa
+[2019-09-11 11:16:09] REQUEST GET - https://localhost:8082/public/ws/Resources.ashx/xml-qa
+[2019-09-11 11:16:09] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:16:09] REQUEST GET - https://localhost:8082/public/ws/Resources.ashx/xml-qa
+[2019-09-11 11:16:09] REQUEST GET - https://localhost:8082/public/ws/Resources.ashx/xml-qa
+[2019-09-11 11:16:09] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:16:09] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:16:09] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:16:09] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:16:09] REQUEST GET - https://localhost:8082/public/ws/Resources.ashx/xml-qa
+[2019-09-11 11:16:09] 200 - OK - text/xml
+[2019-09-11 11:16:09] 200 - OK - text/xml
+[2019-09-11 11:16:09] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:16:09] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:16:09] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:16:09] 200 - OK - text/xml
+[2019-09-11 11:16:09] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:16:09] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:16:09] REQUEST GET - https://localhost:8082/public/ws/Resources.ashx/xml-qa
+[2019-09-11 11:16:09] 200 - OK - text/xml
+[2019-09-11 11:16:09] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:16:09] REQUEST GET - https://localhost:8082/public/ws/Resources.ashx/xml-qa
+[2019-09-11 11:16:09] 200 - OK - text/xml
+[2019-09-11 11:16:09] 200 - OK - text/xml
+[2019-09-11 11:16:09] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:16:09] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:16:09] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:16:09] 200 - OK - text/xml
+[2019-09-11 11:16:09] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:16:09] 200 - OK - text/xml
+[2019-09-11 11:16:09] 200 - OK - text/xml
+[2019-09-11 11:16:09] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:16:09] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:16:09] 200 - OK - text/xml
+[2019-09-11 11:16:09] 200 - OK - text/xml
+[2019-09-11 11:16:09] 200 - OK - text/xml
+[2019-09-11 11:16:49] REQUEST POST - https://localhost:8082/public/aspx/Home.aspx
+[2019-09-11 11:16:49] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:16:49] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:16:49] ---- CONTENT: Token%3D61111131252223224013000011333653%26TokenApiRest%3DeyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvd3d3cy5kZXYteWVhcC5pdCIsImlhdCI6MTU0MjI5NDMyMSwibmJmIjoxNTQyMjk0MzIxLCJleHAiOjE1NDI4OTkxMjEsImRhdGEiOnsidXNlciI6eyJpZCI6IjQ0In19fQ.RCP5OeoGASxAyBw1MbMD4BFJAcDM5JIXqYXKBALZcJI%26Logo%3Dhttps%3A%2F%2Flocalhost%3A8082%2Fscratch%2Fpl_logo.png%26Title%3DBusiness+Plan+Test+nr.+2=
+[2019-09-11 11:16:49] 302 - Found - text/html
+[2019-09-11 11:16:49] REQUEST GET - https://localhost:8082/home/welcome
+[2019-09-11 11:16:49] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:16:49] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:16:49] 200 - OK - text/html
+[2019-09-11 11:16:51] REQUEST POST - https://localhost:8082/public/ws/General.asmx/Set
+[2019-09-11 11:16:51] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:16:51] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:16:51] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='2019091111165148'><General><Token>61111131252223224013000011333653</Token></General><Data><Nome>Business Plan Test nr. 2</Nome><Logo>https%3A%2F%2Flocalhost%3A8082%2Fscratch%2Fpl_logo.png</Logo></Data></Request>"}
+[2019-09-11 11:16:51] 200 - OK - application/json
+[2019-09-11 11:16:51] REQUEST POST - https://localhost:8082/public/ws/Config.asmx/Economics_Get
+[2019-09-11 11:16:51] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:16:51] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:16:51] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='2019091111165183'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-11 11:16:51] 200 - OK - application/json
+[2019-09-11 11:16:51] REQUEST POST - https://localhost:8082/public/ws/Config.asmx/All_Get
+[2019-09-11 11:16:51] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:16:51] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:16:51] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190911111651183'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-11 11:16:51] 200 - OK - application/json
+[2019-09-11 11:16:51] REQUEST POST - https://localhost:8082/public/ws/Economics.asmx/messaggi_summary
+[2019-09-11 11:16:51] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:16:51] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:16:51] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190911111651220'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-11 11:16:51] 200 - OK - application/json
+[2019-09-11 11:16:51] REQUEST POST - https://localhost:8082/public/ws/Config.asmx/All_Get
+[2019-09-11 11:16:51] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:16:51] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:16:51] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190911111651271'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-11 11:16:51] 200 - OK - application/json
+[2019-09-11 11:16:51] REQUEST POST - https://localhost:8082/public/ws/Config.asmx/All_Get
+[2019-09-11 11:16:51] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:16:51] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:16:51] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190911111651495'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-11 11:16:51] 200 - OK - application/json
+[2019-09-11 11:16:52] REQUEST GET - https://localhost:8082/settings/settings
+[2019-09-11 11:16:52] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:16:52] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:16:52] 200 - OK - text/html
+[2019-09-11 11:16:53] REQUEST POST - https://localhost:8082/public/ws/General.asmx/Set
+[2019-09-11 11:16:53] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:16:53] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:16:53] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190911111653334'><General><Token>61111131252223224013000011333653</Token></General><Data><Nome></Nome><Logo>https%3A%2F%2Flocalhost%3A8082%2Fscratch%2Fpl_logo.png</Logo></Data></Request>"}
+[2019-09-11 11:16:53] 200 - OK - application/json
+[2019-09-11 11:16:53] REQUEST POST - https://localhost:8082/public/ws/Config.asmx/General_Get
+[2019-09-11 11:16:53] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:16:53] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:16:53] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190911111653364'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-11 11:16:53] 200 - OK - application/json
+[2019-09-11 11:16:53] REQUEST POST - https://localhost:8082/public/ws/Config.asmx/All_Get
+[2019-09-11 11:16:53] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:16:53] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:16:53] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190911111653432'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-11 11:16:53] 200 - OK - application/json
+[2019-09-11 11:16:53] REQUEST POST - https://localhost:8082/public/ws/Economics.asmx/messaggi_summary
+[2019-09-11 11:16:53] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:16:53] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:16:53] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190911111653479'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-11 11:16:53] 200 - OK - application/json
+[2019-09-11 11:16:53] REQUEST POST - https://localhost:8082/public/ws/Config.asmx/All_Get
+[2019-09-11 11:16:53] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:16:53] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:16:53] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190911111653562'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-11 11:16:53] 200 - OK - application/json
+[2019-09-11 11:16:53] REQUEST POST - https://localhost:8082/public/ws/Config.asmx/All_Get
+[2019-09-11 11:16:53] REQUEST GET - https://localhost:8082/public/ws/Resources.ashx/xml-general
+[2019-09-11 11:16:53] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:16:53] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:16:53] REQUEST GET - https://localhost:8082/public/ws/Resources.ashx/xml-general
+[2019-09-11 11:16:53] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:16:53] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:16:53] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:16:53] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:16:53] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190911111653732'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-11 11:16:53] 200 - OK - text/xml
+[2019-09-11 11:16:53] 200 - OK - text/xml
+[2019-09-11 11:16:53] 200 - OK - application/json
+[2019-09-11 11:17:37] REQUEST GET - https://localhost:8082/settings/settings
+[2019-09-11 11:17:37] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:17:37] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:17:37] 200 - OK - text/html
+[2019-09-11 11:17:38] REQUEST POST - https://localhost:8082/public/ws/General.asmx/Set
+[2019-09-11 11:17:38] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:17:38] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:17:38] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='2019091111173827'><General><Token>61111131252223224013000011333653</Token></General><Data><Nome></Nome><Logo>https%3A%2F%2Flocalhost%3A8082%2Fscratch%2Fpl_logo.png</Logo></Data></Request>"}
+[2019-09-11 11:17:38] 200 - OK - application/json
+[2019-09-11 11:17:38] REQUEST POST - https://localhost:8082/public/ws/Config.asmx/General_Get
+[2019-09-11 11:17:38] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:17:38] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:17:38] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='2019091111173846'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-11 11:17:38] 200 - OK - application/json
+[2019-09-11 11:17:38] REQUEST POST - https://localhost:8082/public/ws/Config.asmx/All_Get
+[2019-09-11 11:17:38] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:17:38] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:17:38] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190911111738119'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-11 11:17:38] 200 - OK - application/json
+[2019-09-11 11:17:38] REQUEST POST - https://localhost:8082/public/ws/Economics.asmx/messaggi_summary
+[2019-09-11 11:17:38] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:17:38] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:17:38] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190911111738178'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-11 11:17:38] 200 - OK - application/json
+[2019-09-11 11:17:38] REQUEST POST - https://localhost:8082/public/ws/Config.asmx/All_Get
+[2019-09-11 11:17:38] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:17:38] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:17:38] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190911111738263'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-11 11:17:38] 200 - OK - application/json
+[2019-09-11 11:17:38] REQUEST POST - https://localhost:8082/public/ws/Config.asmx/All_Get
+[2019-09-11 11:17:38] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:17:38] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:17:38] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190911111738368'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-11 11:17:38] 200 - OK - application/json
+[2019-09-11 11:17:38] REQUEST GET - https://localhost:8082/public/ws/Resources.ashx/xml-general
+[2019-09-11 11:17:38] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:17:38] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:17:38] REQUEST GET - https://localhost:8082/public/ws/Resources.ashx/xml-general
+[2019-09-11 11:17:38] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:17:38] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:17:38] 200 - OK - text/xml
+[2019-09-11 11:17:38] 200 - OK - text/xml
+[2019-09-11 11:17:55] REQUEST GET - https://localhost:8082/qa/qualitativa
+[2019-09-11 11:17:55] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:17:55] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:17:55] 200 - OK - text/html
+[2019-09-11 11:17:56] REQUEST POST - https://localhost:8082/public/ws/QAnalysis.asmx/Get
+[2019-09-11 11:17:56] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:17:56] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:17:56] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190911111756726'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-11 11:17:56] 200 - OK - application/json
+[2019-09-11 11:17:56] REQUEST POST - https://localhost:8082/public/ws/Config.asmx/All_Get
+[2019-09-11 11:17:56] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:17:56] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:17:56] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190911111756790'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-11 11:17:56] 200 - OK - application/json
+[2019-09-11 11:17:56] REQUEST POST - https://localhost:8082/public/ws/Economics.asmx/messaggi_summary
+[2019-09-11 11:17:56] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:17:56] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:17:56] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190911111756823'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-11 11:17:56] 200 - OK - application/json
+[2019-09-11 11:17:56] REQUEST POST - https://localhost:8082/public/ws/Config.asmx/All_Get
+[2019-09-11 11:17:56] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:17:56] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:17:56] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190911111756921'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-11 11:17:56] 200 - OK - application/json
+[2019-09-11 11:17:57] REQUEST POST - https://localhost:8082/public/ws/Config.asmx/All_Get
+[2019-09-11 11:17:57] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:17:57] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:17:57] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='2019091111175737'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-11 11:17:57] 200 - OK - application/json
+[2019-09-11 11:17:57] REQUEST GET - https://localhost:8082/public/ws/Resources.ashx/xml-qa
+[2019-09-11 11:17:57] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:17:57] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:17:57] REQUEST GET - https://localhost:8082/public/ws/Resources.ashx/xml-qa
+[2019-09-11 11:17:57] REQUEST GET - https://localhost:8082/public/ws/Resources.ashx/xml-qa
+[2019-09-11 11:17:57] REQUEST GET - https://localhost:8082/public/ws/Resources.ashx/xml-qa
+[2019-09-11 11:17:57] REQUEST GET - https://localhost:8082/public/ws/Resources.ashx/xml-qa
+[2019-09-11 11:17:57] REQUEST GET - https://localhost:8082/public/ws/Resources.ashx/xml-qa
+[2019-09-11 11:17:57] 200 - OK - text/xml
+[2019-09-11 11:17:57] REQUEST GET - https://localhost:8082/public/ws/Resources.ashx/xml-qa
+[2019-09-11 11:17:57] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:17:57] REQUEST GET - https://localhost:8082/public/ws/Resources.ashx/xml-qa
+[2019-09-11 11:17:57] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:17:57] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:17:57] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:17:57] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:17:57] REQUEST GET - https://localhost:8082/public/ws/Resources.ashx/xml-qa
+[2019-09-11 11:17:57] REQUEST GET - https://localhost:8082/public/ws/Resources.ashx/xml-qa
+[2019-09-11 11:17:57] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:17:57] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:17:57] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:17:57] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:17:57] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:17:57] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:17:57] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:17:57] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:17:57] 200 - OK - text/xml
+[2019-09-11 11:17:57] 200 - OK - text/xml
+[2019-09-11 11:17:57] 200 - OK - text/xml
+[2019-09-11 11:17:57] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:17:57] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:17:57] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:17:57] 200 - OK - text/xml
+[2019-09-11 11:17:57] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:17:57] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:17:57] REQUEST GET - https://localhost:8082/public/ws/Resources.ashx/xml-qa
+[2019-09-11 11:17:57] REQUEST GET - https://localhost:8082/public/ws/Resources.ashx/xml-qa
+[2019-09-11 11:17:57] 200 - OK - text/xml
+[2019-09-11 11:17:57] REQUEST GET - https://localhost:8082/public/ws/Resources.ashx/xml-qa
+[2019-09-11 11:17:57] 200 - OK - text/xml
+[2019-09-11 11:17:57] 200 - OK - text/xml
+[2019-09-11 11:17:57] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:17:57] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:17:57] 200 - OK - text/xml
+[2019-09-11 11:17:57] REQUEST GET - https://localhost:8082/public/ws/Resources.ashx/xml-qa
+[2019-09-11 11:17:57] REQUEST GET - https://localhost:8082/public/ws/Resources.ashx/xml-qa
+[2019-09-11 11:17:57] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:17:57] REQUEST GET - https://localhost:8082/public/ws/Resources.ashx/xml-qa
+[2019-09-11 11:17:57] REQUEST GET - https://localhost:8082/public/ws/Resources.ashx/xml-qa
+[2019-09-11 11:17:57] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:17:57] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:17:57] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:17:57] 200 - OK - text/xml
+[2019-09-11 11:17:57] REQUEST GET - https://localhost:8082/public/ws/Resources.ashx/xml-qa
+[2019-09-11 11:17:57] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:17:57] REQUEST GET - https://localhost:8082/public/ws/Resources.ashx/xml-qa
+[2019-09-11 11:17:57] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:17:57] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:17:57] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:17:57] 200 - OK - text/xml
+[2019-09-11 11:17:57] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:17:57] REQUEST GET - https://localhost:8082/public/ws/Resources.ashx/xml-qa
+[2019-09-11 11:17:57] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:17:57] 200 - OK - text/xml
+[2019-09-11 11:17:57] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:17:57] 200 - OK - text/xml
+[2019-09-11 11:17:57] 200 - OK - text/xml
+[2019-09-11 11:17:57] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:17:57] REQUEST GET - https://localhost:8082/public/ws/Resources.ashx/xml-qa
+[2019-09-11 11:17:57] 200 - OK - text/xml
+[2019-09-11 11:17:57] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:17:57] 200 - OK - text/xml
+[2019-09-11 11:17:57] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:17:57] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:17:57] REQUEST GET - https://localhost:8082/public/ws/Resources.ashx/xml-qa
+[2019-09-11 11:17:57] REQUEST GET - https://localhost:8082/public/ws/Resources.ashx/xml-qa
+[2019-09-11 11:17:57] REQUEST GET - https://localhost:8082/public/ws/Resources.ashx/xml-qa
+[2019-09-11 11:17:57] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:17:57] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:17:57] 200 - OK - text/xml
+[2019-09-11 11:17:57] REQUEST GET - https://localhost:8082/public/ws/Resources.ashx/xml-qa
+[2019-09-11 11:17:57] REQUEST GET - https://localhost:8082/public/ws/Resources.ashx/xml-qa
+[2019-09-11 11:17:57] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:17:57] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:17:57] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:17:57] 200 - OK - text/xml
+[2019-09-11 11:17:57] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:17:57] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:17:57] 200 - OK - text/xml
+[2019-09-11 11:17:57] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:17:57] REQUEST GET - https://localhost:8082/public/ws/Resources.ashx/xml-qa
+[2019-09-11 11:17:57] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:17:57] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:17:57] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:17:57] REQUEST GET - https://localhost:8082/public/ws/Resources.ashx/xml-qa
+[2019-09-11 11:17:57] 200 - OK - text/xml
+[2019-09-11 11:17:57] 200 - OK - text/xml
+[2019-09-11 11:17:57] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:17:57] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:17:57] 200 - OK - text/xml
+[2019-09-11 11:17:57] 200 - OK - text/xml
+[2019-09-11 11:17:57] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:17:57] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:17:57] REQUEST GET - https://localhost:8082/public/ws/Resources.ashx/xml-qa
+[2019-09-11 11:17:57] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:17:57] REQUEST GET - https://localhost:8082/public/ws/Resources.ashx/xml-qa
+[2019-09-11 11:17:57] REQUEST GET - https://localhost:8082/public/ws/Resources.ashx/xml-qa
+[2019-09-11 11:17:57] 200 - OK - text/xml
+[2019-09-11 11:17:57] REQUEST GET - https://localhost:8082/public/ws/Resources.ashx/xml-qa
+[2019-09-11 11:17:57] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:17:57] REQUEST GET - https://localhost:8082/public/ws/Resources.ashx/xml-qa
+[2019-09-11 11:17:57] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:17:57] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:17:57] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:17:57] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:17:57] REQUEST GET - https://localhost:8082/public/ws/Resources.ashx/xml-qa
+[2019-09-11 11:17:57] 200 - OK - text/xml
+[2019-09-11 11:17:57] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:17:57] 200 - OK - text/xml
+[2019-09-11 11:17:57] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:17:57] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:17:57] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:17:57] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:17:57] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:17:57] REQUEST GET - https://localhost:8082/public/ws/Resources.ashx/xml-qa
+[2019-09-11 11:17:57] 200 - OK - text/xml
+[2019-09-11 11:17:57] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:17:57] 200 - OK - text/xml
+[2019-09-11 11:17:57] 200 - OK - text/xml
+[2019-09-11 11:17:57] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:17:57] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:17:57] 200 - OK - text/xml
+[2019-09-11 11:17:57] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:17:57] 200 - OK - text/xml
+[2019-09-11 11:17:57] 200 - OK - text/xml
+[2019-09-11 11:17:57] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:17:57] 200 - OK - text/xml
+[2019-09-11 11:17:57] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:17:58] 200 - OK - text/xml
+[2019-09-11 11:17:58] 200 - OK - text/xml
+[2019-09-11 11:18:09] REQUEST GET - https://localhost:8082/settings/settings
+[2019-09-11 11:18:09] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:18:09] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:18:09] 200 - OK - text/html
+[2019-09-11 11:18:10] REQUEST POST - https://localhost:8082/public/ws/General.asmx/Set
+[2019-09-11 11:18:10] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:18:10] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:18:10] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190911111810333'><General><Token>61111131252223224013000011333653</Token></General><Data><Nome></Nome><Logo>https%3A%2F%2Flocalhost%3A8082%2Fscratch%2Fpl_logo.png</Logo></Data></Request>"}
+[2019-09-11 11:18:10] 200 - OK - application/json
+[2019-09-11 11:18:10] REQUEST POST - https://localhost:8082/public/ws/Config.asmx/General_Get
+[2019-09-11 11:18:10] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:18:10] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:18:10] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190911111810362'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-11 11:18:10] 200 - OK - application/json
+[2019-09-11 11:18:10] REQUEST POST - https://localhost:8082/public/ws/Config.asmx/All_Get
+[2019-09-11 11:18:10] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:18:10] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:18:10] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190911111810422'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-11 11:18:10] 200 - OK - application/json
+[2019-09-11 11:18:10] REQUEST POST - https://localhost:8082/public/ws/Economics.asmx/messaggi_summary
+[2019-09-11 11:18:10] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:18:10] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:18:10] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190911111810460'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-11 11:18:10] 200 - OK - application/json
+[2019-09-11 11:18:10] REQUEST POST - https://localhost:8082/public/ws/Config.asmx/All_Get
+[2019-09-11 11:18:10] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:18:10] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:18:10] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190911111810525'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-11 11:18:10] 200 - OK - application/json
+[2019-09-11 11:18:10] REQUEST POST - https://localhost:8082/public/ws/Config.asmx/All_Get
+[2019-09-11 11:18:10] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:18:10] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:18:10] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190911111810696'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-09-11 11:18:10] 200 - OK - application/json
+[2019-09-11 11:18:10] REQUEST GET - https://localhost:8082/public/ws/Resources.ashx/xml-general
+[2019-09-11 11:18:10] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:18:10] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:18:10] REQUEST GET - https://localhost:8082/public/ws/Resources.ashx/xml-general
+[2019-09-11 11:18:10] ---- FROM  ::1 (WinNT)
+[2019-09-11 11:18:10] ---- BROWSER:  Firefox 69.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0)
+[2019-09-11 11:18:10] 200 - OK - text/xml
+[2019-09-11 11:18:10] 200 - OK - text/xml

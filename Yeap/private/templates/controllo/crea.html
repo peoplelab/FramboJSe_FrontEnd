@@ -1,0 +1,64 @@
+﻿<reserved_header_section templateID="801"
+                         templateFile="welcome.html"
+                         templateDescription="HTML content template (welcome)">
+</reserved_header_section>
+
+
+<!-- *** HEADER *** -->
+<widget_pageHeader />
+
+<div class="container-fluid pageBody">
+
+
+    <!-- 1: Parametri Business plan -->
+    <div id="tab-settings" class="tabContent">
+        <div class="row justify-content-center margin-v-30">
+            <div class="col-12 col-md-10 col-lg-6 padding-b-30">
+
+                <h4 class="margin-b30">Parametri del Controllo di Gestione</h4>
+
+				<!-- Anno associato -->
+                <snp_label for="Anno" data-pars="text:='Anno associato al Controllo di Gestione'" class="margin-t-20 margin-b-5" mandatory />
+                <snp_dd_custom ref="Anno"
+                    data-options="{'(Selezionare una durata)': 0, 'Un anno': 1000, 'Due anni': 2000, 'Tre anni': 3000, 'Quattro anni': 4000, 'Cinque anni': 5000}"
+                    default="{{Anno}}"
+                    data-pars="value:='{{Anno}}' || emptyItem:='none'" />
+                <label for="Anno" class="error">L'anno del Controllo di Gestione non è valido</label>
+
+
+				<!-- Tipologia import -->
+                <snp_label for="TipoImport" data-pars="text:='Tipologia dati importati'" class="margin-t-30 margin-b-5" mandatory />
+                <div>
+                    <input type="radio" id="tImp1" name="TipoImport" class="margin-r-5 align-self-center" value="1" />
+                    <span class="radioText margin-r-50">Dati consuntivi per singolo  mese</span>
+                    <input type="radio" id="tImp2" name="TipoImport" class="margin-r-5 align-self-center" value="2" />
+                    <span class="radioText">Dati consuntivi per periodo</span>
+                    <input type="hidden" class="form-control input_hidden cleanInput" value="{{TipoImport}}" ov="{{TipoImport}}" id="TipoImport" key="TipoImport">
+                </div>
+                <label for="TipoImport" class="error">Seleziona una tipologia dati</label>
+
+
+				<!-- Tipo gestionale da importare -->
+                <snp_label for="TipoGestionale" data-pars="text:='Tipo Gestionale dei dati esportati'" class="margin-t-30 margin-b-5" mandatory />
+                <snp_dd_custom data-options="{'(Selezionare un tipo)': 0, 'Standard - File .XLS(X)': 1, 'Altro - File .CSV': 2}"
+                    default="{{TipoGestionale}}"
+                    data-pars="value:='{{TipoGestionale}}' || emptyItem:='none'" />
+                <label for="TipoGestionale" class="error">Il tipo gestionale non è valido</label>
+
+
+				<!-- Dimensione raggruppamento -->
+                <snp_label for="Raggruppamento" data-pars="text:='Periodo da visualizzare (nr. di .mesi per consuntivo)'" class="margin-t-20 margin-b-5" mandatory />
+                <snp_dd_custom data-options="{'(Selezionare una dimensione)': 0, '&nbsp; 3 mesi':  3, '&nbsp; 4 mesi':  4, '&nbsp; 6 mesi':  6, '12 mesi': 12}"
+                    default="{{Raggruppamento}}"
+                    data-pars="value:='{{Raggruppamento}}' || emptyItem:='none'" />
+                <label for="Raggruppamento" class="error">Il numero di mesi selezionato non è valido</label>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- *** CONSOLE *** -->
+    <widget_btnConsole_CDG />
+
+</div>

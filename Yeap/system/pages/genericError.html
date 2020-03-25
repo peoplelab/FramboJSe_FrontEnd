@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>GENERIC ERROR</title>
+    <script type="text/javascript" src="/System/3rd-parties/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="/System/3rd-parties/jscookie/js.cookie.js"></script>
+    <script type="text/javascript">
+        var cookie_name = 'pm-error';
+        var cookie_error_keycode = 'Error-code';
+        var cookie_error_keymsg  = 'Error-msg';
+        var cookie_error_fname   = 'Function';
+		var text = '';
+		
+        $(document).ready(function () {
+            var cookie = $.parseJSON(Cookies.get(cookie_name));
+			text += '<p>' + decodeURIComponent(cookie[cookie_error_keymsg]) + '</p>';
+			text += '<p>Source: <span style="color: #369">' + cookie[cookie_error_fname] + '</span></p>';
+            $('#message').html(text);
+            Cookies.remove(cookie_name);
+        });
+    </script>
+</head>
+<body>
+    <h2>404 Not Found</h2>
+    <div id="message"></div>
+</body>
+</html>

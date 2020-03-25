@@ -1,0 +1,721 @@
+﻿// -----------------------------------------------------------------------
+// NAME: costanti.less
+//
+// Definizione delle costanti di stile dell'applicazione
+// Il file viene incluso in ogni file .LESS
+// -----------------------------------------------------------------------
+
+@import "./costanti.pvt.less";
+
+
+// =======================================================
+//  Impostazione delle variabili e degli stili di default
+// -------------------------------------------------------
+
+
+.clear {clear: both}
+.clearRight {clear: right}
+
+
+	// Stili base pagine
+	.pageTitle {
+
+		h5& {
+			color : @greyMenu_60;
+			margin: 0 50px;
+		}
+		h2& {
+			padding: 0 20px 5px;
+			margin : 0 30px 30px;
+			color  : @blueMenu_100;
+			border-bottom: 1px solid @greyMenu_50;
+
+			.infoLnk {
+				color     : @blueMenu_100;
+				float     : right;
+				font-size : 70%;
+				margin-top: 10px;
+			}
+		}
+	}
+	#scrollTitle {
+		position: fixed;
+		top: 31px;
+		z-index: 200;
+		background: @greyGrid_80;
+		color: @greyGrid_30;
+		font-size: 14px;
+		width: 100%;
+		margin: 0 -15px;
+		padding: 3px 30px;
+		display: none;
+		border-bottom: solid 2px @greyMenu_00;
+		span {
+			color: @greyGrid_00;
+			font-size: 20px;
+		}
+	}
+	.pageBody {
+		margin-top: 70px;
+	}
+
+	// Definizioni menu principale
+	#leftMenu {
+		@height: 50px;
+		@menuHeight: 50%;
+
+		position: fixed;
+		top: 32px;
+		overflow: hidden;
+		width: 220px;
+			::-webkit-scrollbar {
+				width: 0px;  /* remove scrollbar space */
+				background: transparent;  /* optional: just make scrollbar invisible */
+			}
+
+		#mainLogo img {
+			max-width: 220px;
+			max-height: 100px;
+		}
+
+		.menuPanel {
+			height: 500px;
+			overflow-y: scroll;
+			overflow-x: hidden;
+			border-bottom: solid 3px @greyMenu_10;
+		}
+		
+		li {
+			position     : relative;
+			min-height   : @height;
+			margin       : 0;
+			border-bottom: 1px #fff solid;
+			width: 220px;
+			position: relative;
+
+			a {
+				display   : block;
+				height    : @height;
+				text-align: left;
+				color     : #fff;
+				
+				.menuTxt {
+					display  : inline-block;
+					padding: 15px 0 0 0;
+					text-transform: uppercase;
+					width: 175px;
+
+					.infoMenu svg {
+						font-size: 16px;
+						margin   : -3px 3px 0;
+						float: right;
+					}
+				}
+				.chevrons {
+					float: right;
+					margin: 10px 0 0;
+					width: 18px;
+					text-align: right;
+				}
+				&[aria-expanded=false] {
+					.fa-chevron-down  { display: none; }
+				}
+				&[aria-expanded=true] {
+					.fa-chevron-right { display: none; }
+				}
+				.angles {
+					float: right;
+					xxmargin: 10px 0 0;
+					position: absolute
+				}
+				.menuNum {
+					display   : inline-block;
+					margin    : 0 5px 0 10px;
+					min-width : 25px;
+					text-align: right;
+				}
+
+				span.marker {
+					position: absolute;
+					z-index: 100;
+					border: solid 10px transparent;
+					top: 2px;
+					left: 2px;
+					display: none;
+				}
+				&.hasErr span.marker {
+					display: block;
+					border-top-color : #f55;
+					border-left-color: #f55;
+				}
+				&.hasWarning span.marker {
+					display: block;
+					border-top-color : #fc6;
+					border-left-color: #fc6;
+				}
+			} 
+
+				.infoPopup {
+					color: @greyGrid_40;
+					z-index:100;
+					position: absolute;
+					right: 30px;
+					top: 15px;
+				}
+
+			&.lev1 > a {
+
+				font-size : 15px;
+				line-height: 10px;
+				background: @greyMenu_100;
+
+				&:hover {
+					background: @greyMenu_80;
+				}
+				&.disabled {
+					color : #999;
+					background: @greyMenu_90;
+					cursor: default;
+				}
+				&.active {
+					background: @greyGrid_70;
+				}
+
+			}
+
+			&#esciWrap {
+				min-height: 1px;
+			}
+			#esci {
+				background: mix(@greyMenu_100, @blueMenu_60);
+				position  : fixed;
+				bottom    : 1px;
+				left      : 0px;
+				width     : 220px;
+			}
+
+			#economicsMenu a {
+				&:not(.disabled) {
+					background: @blueMenu_100;
+					&:hover {
+						background: @blueMenu_80;
+					}
+					&.active {
+						background: @blueMenu_50;
+					}
+				}
+				&.disabled {
+					color     : @greyMenu_60;
+					background: @greyGrid_50;
+					cursor    : no-drop;
+				}
+				&[role=button] {
+					background: @greyGrid_90;
+					padding: 0 !important;
+					&:hover {
+						background: @greyGrid_70;
+					}
+					&.active {
+						background: @blueMenu_50;
+					}
+				}
+			}
+
+		//	#economicsMenu .lev3 a {
+		//		&:not(.disabled) {
+		//			background: @blueMenu_50;
+		//			&:hover {
+		//				background: @blueMenu_60;
+		//			}
+		//			&.active {
+		//				background: @blueMenu_30;
+		//			}
+		//		}
+		//		&.disabled {
+		//			color     : @greyMenu_60;
+		//			background: @greyGrid_50;
+		//			cursor    : no-drop;
+		//		}
+		//	}
+
+			#economicsMenu .lev3 a {
+				color: @greyMenu_100;
+				&:not(.disabled) {
+					background: @blueGrid_60;
+					&:hover {
+						background: @blueGrid_80;
+					}
+					&.active {
+						background: @blueGrid_40;
+					}
+				}
+				&.disabled {
+					color     : @greyMenu_60;
+					background: @greyGrid_50;
+					cursor    : no-drop;
+				}
+				.menuNum {
+					display   : inline-block;
+					margin    : 0 5px 0 20px;
+					min-width : 25px;
+					text-align: right;
+				}
+				.menuTxt {
+				//	display  : inline-block;
+				//	padding: 15px 0 0 0;
+				//	text-transform: uppercase;
+					width: 165px;
+				}
+			}
+
+			#calcolatiMenu a {
+				color     : @greyMenu_100;
+				background: @greyGrid_40;
+				&:hover {
+					background: @greyGrid_30;
+				}
+				&.active {
+					background: @blueGrid_40;
+					color     : @greyGrid_80;
+				}
+				&.disabled {
+					color     : @greyMenu_40;
+					background: @greyGrid_30;
+					cursor    : no-drop;
+				}
+			}
+
+			#reportMenu a {
+				color     : @greyMenu_100;
+				background: @greyMenu_20;
+				&:hover {
+					background: @greyMenu_30;
+				}
+				&.active {
+					color     : @greyMenu_80;
+					background: @greyGrid_50;
+				}
+				&.disabled {
+					color     : @greyMenu_40;
+					background: @greyGrid_30;
+					cursor    : no-drop;
+				}
+			}
+
+		}
+
+		&.reduced {
+			width: 1px;
+			text-indent: -5000px;
+
+			a:hover {
+				text-indent: 0;
+				position: absolute;
+			}
+		}
+	}
+	
+
+
+// ===================================
+//  Alert box ed elementi informativi
+// -----------------------------------
+	
+	// ** Message container **
+	.alertBox.info {
+
+		background: @blueGrid_20;
+		border    : solid 2px @blueMenu_50;
+		color     : @blueMenu_100;
+		min-height: 75px;
+
+		.svg-inline--fa {
+			font-size: 50px;
+			color: @blueMenu_80;
+		}
+		
+	}
+
+	.alertBox.error {
+
+		background: #fde;	//@blueGrid_20;
+		border    : solid 2px #c66; //@blueMenu_50;
+		color     : #c00; //@blueMenu_100;
+		min-height: 75px;
+		min-width: 75%;
+
+		.svg-inline--fa {
+			font-size: 50px;
+			color: #c00;	//@blueMenu_80;
+		}
+		
+	}
+
+
+.error{
+	.form-control&{
+		border: 2px solid #c00 !important;
+		background: #fcc !important;
+		color: #c00 !important;
+	}
+}
+.changed, .warning{
+	.form-control&{
+		border: 2px solid #f90;
+		background: #fed;
+	}
+}
+//.changed {
+//	.form-control&{
+//		border: 2px solid @blueMenu_50; 
+//		background: @blueMenu_10;
+//	}
+//}
+
+
+// ===========================
+//	Stili custom delle pagine
+// ---------------------------
+
+// ** Analisi qualitativa **
+#tab-moduloDati {
+
+	.XML_label{
+		color: @blueMenu_100;
+		border-bottom: 1px solid @blueMenu_20;
+		display: block;
+		&:not(:first-child) {
+			margin-top: 30px;
+		}
+		margin-left  : -10px;
+		padding-left :  10px;
+		margin-right : -10px;
+		padding-right:  10px;
+	}
+
+	.collegata {
+		//color: @blueMenu_100;
+		color: @blueMenu_70;
+		padding: 0;
+		text-align: center;
+		font-size: 18px;
+	}
+	p {
+		color: @blueMenu_70;
+		margin: 15px 0 5px;
+	}
+}
+#tab-valutazione {
+	.card-body{
+		border-color: @blueMenu_70;
+		&.changed {
+			border-color: @greyMenu_20;
+			background  : @greyMenu_10;
+			.finalscore {
+				color: #ccc;
+			}
+		}
+	}
+}
+
+.card-errori {
+	background: #c33 !important;
+}
+
+.card-warning {
+	background: #fc6 !important;
+}
+table.messages {
+	width: 100%;
+
+	tr:nth-of-type(odd){
+		background: @blueGrid_05;
+	}
+	th, td {
+	}
+	th {
+		padding: 10px 5px;
+		color     : @blueMenu_90;
+		background: @blueGrid_20;
+		outline: none;
+		&:focus {
+			background: @blueGrid_30; 
+			background: @blueGrid_30; 
+		}
+	}
+	td {
+		padding: 10px 5px 0;
+		vertical-align: top;
+		border-bottom: 1px solid @greyGrid_10;
+		color: @greyGrid_80;
+		&.count {
+			color: @blueGrid_60;
+		}
+	}
+	label {
+		width: auto;
+	}
+	a {
+		width: auto;
+		color: @blueMenu_100;
+		&:hover {
+			color: @blueMenu_50;
+		}
+	}
+}
+
+// =========================
+//  Stili per "btn console" 
+// -------------------------
+.btnConsole {
+
+	margin    : 40px 0 10px;
+	padding   : 10px;
+	text-align: right;
+	background: @greyGrid_10;
+	border: solid 1px @greyGrid_30;
+	text-align: right;
+	min-height: 56px; 
+
+	a.btn.disabled {
+		opacity: 1;
+		color: @greyGrid_30;
+		background: @greyGrid_60 !important;
+	}
+	.ico-notifiche {
+		width: 10px;
+		height: 10px;
+		display: inline-block;
+		border-radius: 50%;
+		margin: 0 0 0 10px;
+
+		&.on {
+			//border: solid 1px #fff;
+			background: #fff;
+		}
+		&.off {
+			//border: solid 1px #333;
+			background: #999;
+		}
+	}
+
+}
+#statusInfo {
+
+	padding: 3px 10px 0;
+	color: @greyGrid_70 !important;
+
+	.status {
+		color: @blueMenu_80;
+		font-size: 20px;
+		padding: 0 0 0 5px;
+		font-variant: small-caps;
+	}
+}
+
+
+
+// =========
+//  WIDGETS
+// 1: Checkbox grafica (<widget_switcher>)
+	// Variabili:
+	@slt_background     : #e8e8e8;
+	@slt_labelTrue      : 'Sì';
+	@slt_labelFalse     : 'No';
+	@slt_labelColor     : @blueMenu_100;
+	@slt_labelTrueColor1: @blueMenu_100;
+	@slt_labelTrueColor2: @greyMenu_100;
+	@slt_labelWidth     : 35px;
+	@slt_labelHeight    : 20px;
+	.slideThree {
+		background   : @slt_background;
+		position     : relative;
+		border-radius: 50px;
+		box-shadow   : inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,0.2);
+		
+		&:after {
+			content    : @slt_labelFalse;
+			color      : #999;
+			position   : absolute;
+			right      : 10px;
+			font-weight: bold;
+		}
+
+		&:before {
+			content    : @slt_labelTrue;
+			color      : @slt_labelTrueColor1;
+			position   : absolute;
+			left       : 10px;
+			font-weight: bold;
+		}
+
+		label {
+			color        : @slt_labelColor;
+			display      : block;
+			cursor       : pointer;
+			position     : absolute;
+			top          : 3px;
+			left         : 3px;
+			z-index      : 1;
+			background   : #eee;
+			border-radius: 50px;
+			transition   : all 0.2s ease;
+			box-shadow   : 0px 2px 5px 0px rgba(0,0,0,0.3);
+		}
+
+		input[type=checkbox] {
+			visibility: hidden;
+			&:checked + label {
+				background-color: @slt_labelColor;
+			}
+		}
+	}
+// Mixin: SLIDETHREE-SETSIZE - Costruttore classi slider per dimensione
+	// Macro:
+		.slideThree-setsize(@sltClasse, @sltWidth, @sltHeight) {
+			@extraWidth: 10px;
+			@lineHeight: (5 + @sltHeight * 1.2);
+
+			.slideThree.@{sltClasse} {
+
+				width : (@sltWidth  * 2) + @extraWidth;
+				height: (@sltHeight + 6);
+		
+				label {
+					width : @sltWidth;
+					height: @sltHeight;
+				}
+				&:after, &:before {
+					font: 12px/@lineHeight Arial, sans-serif;
+				}
+				input:checked + label {
+					left: @sltWidth + @extraWidth - 3px;	// Cambia "left" e non usa "right" per l'animazione
+				}
+
+			}
+		}
+	// Esecuzione:
+		.slideThree-setsize (small,  30px, 13px);
+		.slideThree-setsize (medium, 35px, 20px);
+
+
+// 1: Slider UI (<widget_slider>)
+.slider {
+
+	.sliderLabel {
+		margin: 5px 0 0;
+		text-align: center;
+		font-size: 12px;
+		.value {
+			font-size: 14px;
+			color: darken(@mainColor2, 10);
+			font-weight: bold
+		}
+		.unit {
+			font-size: 14px;
+			//color: @mainColor2;
+		}
+	}
+
+	.ui-slider-handle {
+		&.ui-state-active {
+			//outline: red solid 22px !important;
+			outline: none !important; //darken(@mainColor2, 10) auto 5px !important; 
+		}
+		&.ui-state-focus { 
+			background: @mainColor2;
+			color: red;
+			border-color: darken(@mainColor2, 10);
+			//outline: none;
+			outline: darken(@mainColor2, 10) auto 5px !important; 
+		}
+	}
+}
+
+
+.notifica {
+	
+	position: relative;
+	margin: 30px 0 0;
+
+	&.border {
+	padding: 20px 30px;
+		border: solid 1px @greyMenu_20;
+	}
+	h5 {
+		color: @blueGrid_100;
+		margin: 0 0 10px;
+	}
+	p {
+		//color: #999; //@greyMenu_100;
+		text-align: justified;
+		margin: 0 0 15px;
+		span {
+			color: @blueGrid_80;
+		}
+	}
+	.checkBtn {
+		text-align: right;
+	}
+
+	.df-label {
+		color: @blueMenu_60;
+	}
+	#btnLeanus.disabled {
+		background: @greyGrid_60;
+	}
+
+	.leanusMsg {
+		text-align: center;
+		background: @greyGrid_20;
+		padding: 10px;
+		border: solid 2px @greyGrid_50;
+		color: @greyGrid_100;
+	}
+
+	.leanusError {
+		text-align: center;
+		background: #fcc;
+		padding: 10px;
+		border: solid 2px #f66;
+		display: none;
+		span {
+			color: #c66;
+		}
+	}
+
+	.leanusOk {
+		text-align: center;
+		background: @blueMenu_20;
+		padding: 10px;
+		border: solid 2px @blueMenu_50;
+		display: none;
+		color: @blueMenu_100;
+	}
+
+	.leanusTimeOut {
+		text-align: center;
+		background: @greyGrid_20;
+		padding: 10px;
+		border: solid 2px @greyMenu_50;
+		display: none;
+		color: @greyMenu_100;
+		a {
+			color: @blueMenu_70;
+		}
+		span {
+			border: solid 1px @greyMenu_50;
+			background: @greyMenu_40;
+			color: @greyMenu_70;
+		}
+	}
+
+	#layerBlocca {
+		position: absolute;
+		background: @greyMenu_50;
+		opacity: .2;
+		z-index: 100;
+		display: none;
+	}
+
+}

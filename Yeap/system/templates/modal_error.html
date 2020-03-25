@@ -1,0 +1,39 @@
+﻿<reserved_header_section
+	templateID="1002" 
+	templateFile="modal_error.html" 
+	templateDescription="template for 'Error' modal window">
+</reserved_header_section>
+
+<div id="modal" class="modal fade" data-backdrop="static" data-keyboard="false">
+	<div class="modal-dialog modal-md">
+		<div class="modal-content modal-ko">
+
+			<div class="modal-header">
+				<h1 class="modal-title">Operazione errata</h1>
+				<button type="button" class="closeBox" data-dismiss="modal" aria-label="Close">
+					<i class="far fa-times-circle" aria-hidden="true"></i>
+				</button>
+			</div>
+
+			<div class="modal-body">
+				<div class="row">
+					<div class="col-md-3 icon">
+						<i class="fa fa-times-circle"></i>
+					</div>
+					<div class="col-md-9">
+						<h2>Attenzione!<br>Si è verificato un errore</h2>
+						<h3 id="message"></h3>
+						<h3 class="errorCode">(Codice Errore: <span id="error_code"></span>)</h3>
+					</div>
+				</div>
+			</div>
+
+			<div class="modal-footer">
+				<button type="button" class="btn btn-danger closeBox" data-dismiss="modal">
+					Chiudi
+				</button>
+			</div>
+
+		</div>
+	</div>
+ </div>

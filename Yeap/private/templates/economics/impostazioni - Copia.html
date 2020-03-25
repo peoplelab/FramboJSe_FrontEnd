@@ -1,0 +1,215 @@
+﻿<reserved_header_section templateID="751"
+							templateFile="impostazioni.html"
+							templateDescription="HTML content template (Economics)">
+</reserved_header_section>
+
+<h5 class="pageTitle">Piano Economico Finanziario</h5>
+<h2 id="mainTitle" class="pageTitle">
+	Impostazioni
+	<a class="infoLnk" href="#info" data-toggle="collapse" data-target="#info" aria-expanded="false">
+		<i class="fa fa-info-circle"></i>
+	</a>
+</h2>
+<h2 id="scrollTitle">
+	Piano Economico Finanziario - <span>Impostazioni</span>
+</h2>
+
+<div id="info" class="collapse row margin-h-50 margin-b-30">
+	<div class="col-12">
+		<div class="alertBox info">
+			<i class="floatLeft fa fa-info-circle"></i>
+			<div class="margin-l-60 margin-t-15">
+
+				<p class=margin-b-20">
+					Questa sezione guida alla definizione della parte finanziaria del business plan, è organizzato nelle seguenti sezioni:
+				</p>
+
+				<ul class="margin-t-10 margin-b-30 margin-l-50">
+
+					<li style="list-style:disc">IMPOSTAZIONI: si inseriscono la durata del piano, l’anno di inizio, le etichette dei prodotti  (max 5) e i termini di pagamento e incasso</li>
+					<li style="list-style:disc">IVA: iva è forzata al 22% ma può essere modificata per tutte le relative voci</li>
+					<li style="list-style:disc">RICAVI: quantità vendute annuali per prodotto e relativo prezzo medio netto</li>
+					<li style="list-style:disc">ACQUISTI E MAGAZZINO: costi netti dei prodotti e giorni magazzino dei singoli prodotti</li>
+					<li style="list-style:disc">COSTI VARIABILI: costi annuali netti variabili di produzione e commerciali</li>
+					<li style="list-style:disc">COSTI INTERNI: costi annuali netti marketing, comunicazione, struttura, infrastrutture tecniche, amministrativi, altro</li>
+					<li style="list-style:disc">RISORSE UMANE: costo azienda annuale e numero risorse per profilo</li>
+					<li style="list-style:disc">INVESTIMENTI: materiali, immateriali e finanziari</li>
+					<li style="list-style:disc">AUMENTI DI CAPITALE: capitale sociale, riserve/altro</li>
+					<li style="list-style:disc">FINANZIAMENTI: debiti vs banche o debiti onerosi vs altri creditori</li>
+
+				</ul>
+				<p class="margin-b-20">
+					È importante <b>salvare sempre dopo aver inserito i dati in ogni singola pagina</b> con l’apposito bottone e verificare che non ci siano messaggi di errore o
+					anomalie di registrazione.<br>
+					In ogni sezione nel momento in cui vengono inseriti i dati, nella parte inferiore della pagina vengono presentati gli effetti (risultati) di quelle variabili.<br>
+					Per ottenere successivamente i prospetti economico finanziari finali (<b>Prospetti</b>) è necessario dopo aver inserito e salvato tuti i  dati attivare il tasto <b>Compila</b>.<br>
+					Eventuali errori di compilazione (dati mancanti, waring, ecc.) vengono identificati tramite marker rossi o gialli (voci di menu) o colorando analogamente i campi
+					corrispondenti; la compilazione andrà a buon fine solo dopo aver risolto tutti gli errori bloccanti (marker rossi).</br>
+					Infine, per ricevere l'analisi di affidabilità (Leanus Score) e l'analisi per indici è necessario accedere alla sezione <b>Valutazione</b>, verificare che non ci siano
+					errori bloccanti, confermare la presa visione degli eventuali avvisi e inviare la richiesta.
+
+				</p>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="container-fluid pageBody">
+
+	<!-- Menu tab -->
+	<div class="row margin-h-60 margin-b-30" id="tabMenu" status="load">
+		<div class="col-12">
+			<a href="#tab-settings" class="btn btn-default btn-action-light">Periodo del Business plan</a>
+			<a href="#tab-prodotti" class="btn btn-default">Etichette prodotti</a>
+			<a href="#tab-mensili" class="btn btn-default">Tempi incasso/pagamento</a>
+			<a href="#tab-perc-tfr" class="btn btn-default">% TFR</a>
+			<a href="#tab-iva-default" class="btn btn-default">IVA default</a>
+		</div>
+	</div>
+
+	<div class="tab-content" id="tabContent">
+
+		<!-- 1: Parametri Business plan -->
+		<div id="tab-settings" class="tabContent">
+			<div class="row justify-content-center margin-v-30">
+				<div class="col-12 col-md-10 col-lg-6 padding-b-30">
+
+					<h4 class="margin-b30">Parametri fondamentali del Business Plan</h4>
+
+					<snp_label for="NumAnni" data-pars="text:='Durata del Business Plan'" class="margin-t-20 margin-b-5" mandatory />
+					<snp_dd_custom 
+						data-options="{'(Selezionare una durata)': 0, 'Un anno': 1000, 'Due anni': 2000, 'Tre anni': 3000, 'Quattro anni': 4000, 'Cinque anni': 5000}" 
+						default="{{NumAnni}}" data-pars="value:='{{NumAnni}}' || emptyItem:='none'" 
+					/>
+
+					<snp_label for="AnnoInizio" data-pars="text:='Anno di inizio'" class="margin-t-20 margin-b-5" mandatory />
+					<widget_input_scaled data-pars="value:='{{AnnoInizio}}' || scale:=1000" placeholder="Inserire l'anno di inizio'" />
+
+				</div>
+			</div>
+		</div>
+
+		<!-- 2: Etichette prodotti -->
+		<div id="tab-prodotti" class="tabContent hide">
+			<div class="row justify-content-around margin-v-30">
+                
+				<div class="col-12 col-md-10 col-lg-6 padding-b-30">
+
+					<div class="nProdotti">
+						<h4 class="margin-b30">Numero Prodotti</h4>
+						<div class="itemContainer margin-t-20 d-flex">
+							<snp_label for="N_Prodotti" data-pars="text:='Numero prodotti gestiti:'" class="XML_label margin-t-5 align-self-center" mandatory />
+							<snp_dd_custom 
+								data-options="{'0': 0, '1': 1000, '2': 2000, '3': 3000, '4': 4000, '5': 5000}"
+								default="{{N_Prodotti}}"
+								data-pars="value:='{{N_Prodotti}}' || emptyItem:='none'" 
+							/>
+						</div>
+					</div>
+
+
+					<h4 class="margin-b-20 margin-t-40">Etichette</h4>
+
+					<div class="itemContainer">
+						<snp_label for="P1" data-pars="text:='Nome/Linea prodotto 1'" class="XML_label" />
+						<snp_input_text data-pars="value:='{{P1}}'" placeholder="Custom1" />
+					</div>
+
+					<div class="itemContainer">
+						<snp_label for="P2" data-pars="text:='Nome/Linea prodotto 2'" class="XML_label" />
+						<snp_input_text data-pars="value:='{{P2}}'" placeholder="Custom2" />
+					</div>
+
+					<div class="itemContainer">
+						<snp_label for="P3" data-pars="text:='Nome/Linea prodotto 3'" class="XML_label" />
+						<snp_input_text data-pars="value:='{{P3}}'" placeholder="Custom3" />
+					</div>
+
+					<div class="itemContainer">
+						<snp_label for="P4" data-pars="text:='Nome/Linea prodotto 4'" class="XML_label" />
+						<snp_input_text data-pars="value:='{{P4}}'" placeholder="Custom4" />
+					</div>
+
+					<div class="itemContainer">
+						<snp_label for="P5" data-pars="text:='Nome/Linea prodotto 5'" class="XML_label" />
+						<snp_input_text data-pars="value:='{{P5}}'" placeholder="Custom5" />
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<!-- 3: Valori mensili -->
+		<div id="tab-mensili" class="tabContent hide">
+			<div class="row justify-content-center margin-v-30">
+				<div class="col-12 col-md-10 col-lg-6 padding-b-30">
+
+					<h4 class="margin-b30">Valori fissi giornalieri</h4>
+
+					<snp_label for="GiorniIncassoClienti" data-pars="text:='Giorni incasso clienti'" class="margin-t-20 margin-b-5" mandatory />
+					<widget_input_scaled data-pars="value:='{{GiorniIncassoClienti}}' || scale:=1000" placeholder="Inserire i giorni di incasso" />
+
+					<snp_label for="GiorniPagamentoCostiVar" data-pars="text:='Giorni pagamento costi variabili'" class="margin-t-20 margin-b-5" />
+					<widget_input_scaled data-pars="value:='{{GiorniPagamentoCostiVar}}' || scale:=1000" placeholder="Inserire i giorni di pagamento costi variabili" />
+
+					<snp_label for="GiorniPagamentoCostiEsterni" data-pars="text:='Giorni pagamento acquisti'" class="margin-t-20 margin-b-5" mandatory />
+					<widget_input_scaled data-pars="value:='{{GiorniPagamentoCostiEsterni}}' || scale:=1000" placeholder="Inserire i giorni di pagamento acquisti" />
+
+					<snp_label for="GiorniPagamentoMkgtComm" data-pars="text:='Giorni pagamento marketing/commerciale'" class="margin-t-20 margin-b-5" mandatory />
+					<widget_input_scaled data-pars="value:='{{GiorniPagamentoMkgtComm}}' || scale:=1000" placeholder="Inserire i giorni di pagamento marketing" />
+
+				</div>
+			</div>
+		</div>
+
+		<!-- 4: % TFR -->
+		<div id="tab-perc-tfr" class="tabContent hide">
+			<div class="row justify-content-center margin-v-30">
+				<div class="col-12 col-md-10 col-lg-6 padding-b-30">
+
+					<h4 class="margin-b30">% TFR in azienda</h4>
+
+					<label class="d-flex df-label margin-t-30">
+						<input type="radio" id="TFR1" name="tfrInAzienda" class="margin-r-5 align-self-center" value="100000"/>
+						<span>Tutto in azienda</span>
+					</label>
+					<label class="d-flex df-label margin-t-30">
+						<input type="radio" id="TFR2" name="tfrInAzienda" class="margin-r-5 align-self-center" value="0"/>
+						<span>Niente in azienda</span>
+					</label>
+                    <label class="d-flex df-label margin-v-20" id="TFR3Label">
+                        <input type="radio" id="TFR3" name="tfrInAzienda" class="margin-r-5 align-self-center" value="0" />
+                        <span class="align-self-center">Percentuale assegnata:</span>
+
+                        <snp_input_boxedNr value="0" data-pars="sClass:='PercTFR' || symbol:='PERCENT' || min:='0' || max:='100' || align:='right'" class="margin-l-10 align-self-center" />
+
+                        <!--<snp_input_float value="0" id="VisiblePercTFR" data-pars="symbol:='PERCENT' || min:='0' || max:='100' || align:='right'" class="margin-l-10 align-self-center" />-->
+                        <!--<input type="hidden" class="form-control input_hidden cleanInput" value="{{PercTFR}}" ov="{{PercTFR}}" id="PercTFR" key="PercTFR">-->
+                    </label>
+				</div>
+			</div>
+		</div>
+
+		<!-- 5: Valori IVA default -->
+		<div id="tab-iva-default" class="tabContent hide">
+			<div class="row justify-content-center margin-v-30">
+				<div class="col-12 col-md-10 col-lg-6 padding-b-30">
+					<h4 class="margin-b30">Valore IVA</h4>
+					<snp_label for="IvaDefault" data-pars="text:='Valore IVA default'" class="margin-t-20 margin-b-5" mandatory />
+					<div class="d-flex">
+						<snp_input_boxedNr value="0" id="VisibleIvaDefault" data-pars="symbol:='PERCENT' || min:='0' || max:='100'" />
+						<input type="hidden" class="form-control input_hidden cleanInput" value="{{IvaDefault}}" ov="{{IvaDefault}}" id="IvaDefault" key="IvaDefault">
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+	<!-- *** CONSOLE *** -->
+	<widget_btnConsole />
+
+</div>

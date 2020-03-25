@@ -1,0 +1,64 @@
+[2019-07-30 16:46:17] 200 - OK - application/json
+[2019-07-30 16:46:17] REQUEST GET - https://localhost:8082/public/ws/Resources.ashx/xml-economics/61111131252223224013000011333653
+[2019-07-30 16:46:17] ---- FROM  ::1 (WinNT)
+[2019-07-30 16:46:17] ---- BROWSER:  Chrome 75.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36)
+[2019-07-30 16:46:17] REQUEST POST - https://localhost:8082/public/ws/Config.asmx/All_Get
+[2019-07-30 16:46:17] ---- FROM  ::1 (WinNT)
+[2019-07-30 16:46:17] ---- BROWSER:  Chrome 75.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36)
+[2019-07-30 16:46:17] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190730164617308'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-07-30 16:46:17] REQUEST POST - https://localhost:8082/public/ws/Economics.asmx/messaggi_summary
+[2019-07-30 16:46:17] ---- FROM  ::1 (WinNT)
+[2019-07-30 16:46:17] ---- BROWSER:  Chrome 75.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36)
+[2019-07-30 16:46:17] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190730164617344'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-07-30 16:46:17] 200 - OK - application/json
+[2019-07-30 16:46:17] 200 - OK - text/xml
+[2019-07-30 16:46:17] 200 - OK - application/json
+[2019-07-30 16:46:17] REQUEST POST - https://localhost:8082/public/ws/Config.asmx/All_Get
+[2019-07-30 16:46:17] ---- FROM  ::1 (WinNT)
+[2019-07-30 16:46:17] ---- BROWSER:  Chrome 75.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36)
+[2019-07-30 16:46:17] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190730164617780'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-07-30 16:46:17] 200 - OK - application/json
+[2019-07-30 16:46:18] REQUEST POST - https://localhost:8082/public/ws/Config.asmx/All_Get
+[2019-07-30 16:46:18] ---- FROM  ::1 (WinNT)
+[2019-07-30 16:46:18] ---- BROWSER:  Chrome 75.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36)
+[2019-07-30 16:46:18] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='2019073016461887'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-07-30 16:46:18] 200 - OK - application/json
+[2019-07-30 16:46:24] REQUEST POST - https://localhost:8082/public/ws/AnnoPrec.asmx/Set
+[2019-07-30 16:46:24] ---- FROM  ::1 (WinNT)
+[2019-07-30 16:46:24] ---- BROWSER:  Chrome 75.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36)
+[2019-07-30 16:46:24] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8'?><Request ID='20190730164624605'><General><Token>61111131252223224013000011333653</Token></General><Data><Anni><Anno ID='1'><CreditiDebitiSoci><AP_CreditiSociMedio>17888000</AP_CreditiSociMedio><AP_DebitiSociMedio>0</AP_DebitiSociMedio></CreditiDebitiSoci><CreditiDebitiMedio><AP_CreditiMedioLungo>103917000</AP_CreditiMedioLungo><AP_DebitiMedioLungo>40146000</AP_DebitiMedioLungo></CreditiDebitiMedio></Anno><Anno ID='2'><CreditiDebitiSoci><AP_CreditiSociMedio>0</AP_CreditiSociMedio><AP_DebitiSociMedio>0</AP_DebitiSociMedio></CreditiDebitiSoci><CreditiDebitiMedio><AP_CreditiMedioLungo>0</AP_CreditiMedioLungo><AP_DebitiMedioLungo>0</AP_DebitiMedioLungo></CreditiDebitiMedio></Anno><Anno ID='3'><CreditiDebitiSoci><AP_CreditiSociMedio>10000000</AP_CreditiSociMedio><AP_DebitiSociMedio>0</AP_DebitiSociMedio></CreditiDebitiSoci><CreditiDebitiMedio><AP_CreditiMedioLungo>0</AP_CreditiMedioLungo><AP_DebitiMedioLungo>0</AP_DebitiMedioLungo></CreditiDebitiMedio></Anno></Anni><Liquidita><AP_Liquidita>59933000</AP_Liquidita><AP_Capitale>50000000</AP_Capitale><AP_Riserve>9788000</AP_Riserve><AP_Utile>38171000</AP_Utile><AP_NuovoUtile>49658000</AP_NuovoUtile></Liquidita><Rimanenze><AP_RimanenzePF>0</AP_RimanenzePF><AP_RimanenzeMP>0</AP_RimanenzeMP></Rimanenze><CreditiDebitiBreve><AP_CreditiSociBreve>0</AP_CreditiSociBreve><AP_DebitiSociBreve>0</AP_DebitiSociBreve><AP_CreditiComm>222711000</AP_CreditiComm><AP_DebitiComm>89136000</AP_DebitiComm><AP_AltriCrediti>0</AP_AltriCrediti><AP_AltriDebiti>0</AP_AltriDebiti><AP_CreditoIVA>4077000</AP_CreditoIVA><AP_CreditiTributari>0</AP_CreditiTributari><AP_DebitiTributari>0</AP_DebitiTributari></CreditiDebitiBreve><Tfr><AP_Tfr>101564000</AP_Tfr><AP_AltriFondi>15339000</AP_AltriFondi></Tfr><ImmFinanziarie_Partecipazioni><AP_Partecipazioni>27155000</AP_Partecipazioni></ImmFinanziarie_Partecipazioni><FinanziamentiBreve><AP_F_FinanziamentiABreve>13603000</AP_F_FinanziamentiABreve></FinanziamentiBreve><ImmMateriali><Investimento ID='1'><AP_IM_ValoreResiduo>0</AP_IM_ValoreResiduo><AP_IM_AmmortamentoAnnuale>0</AP_IM_AmmortamentoAnnuale><AP_IM_Iperammortamento>0</AP_IM_Iperammortamento></Investimento><Investimento ID='2'><AP_IM_ValoreResiduo>0</AP_IM_ValoreResiduo><AP_IM_AmmortamentoAnnuale>0</AP_IM_AmmortamentoAnnuale><AP_IM_Iperammortamento>0</AP_IM_Iperammortamento></Investimento><Investimento ID='3'><AP_IM_ValoreResiduo>0</AP_IM_ValoreResiduo><AP_IM_AmmortamentoAnnuale>0</AP_IM_AmmortamentoAnnuale><AP_IM_Iperammortamento>0</AP_IM_Iperammortamento></Investimento><Investimento ID='4'><AP_IM_ValoreResiduo>0</AP_IM_ValoreResiduo><AP_IM_AmmortamentoAnnuale>0</AP_IM_AmmortamentoAnnuale><AP_IM_Iperammortamento>0</AP_IM_Iperammortamento></Investimento></ImmMateriali><ImmImmateriali><Investimento ID='1'><AP_II_ValoreResiduo>19287000</AP_II_ValoreResiduo><AP_II_AmmortamentoAnnuale>2896000</AP_II_AmmortamentoAnnuale></Investimento><Investimento ID='2'><AP_II_ValoreResiduo>0</AP_II_ValoreResiduo><AP_II_AmmortamentoAnnuale>0</AP_II_AmmortamentoAnnuale></Investimento><Investimento ID='3'><AP_II_ValoreResiduo>0</AP_II_ValoreResiduo><AP_II_AmmortamentoAnnuale>0</AP_II_AmmortamentoAnnuale></Investimento><Investimento ID='4'><AP_II_ValoreResiduo>0</AP_II_ValoreResiduo><AP_II_AmmortamentoAnnuale>0</AP_II_AmmortamentoAnnuale></Investimento></ImmImmateriali><ImmFinanziarie_Titoli><Titolo ID='1'><AP_IF_Valore>345000000</AP_IF_Valore><AP_IF_AnniResidui>5000</AP_IF_AnniResidui><AP_IF_InteressiPerc>0</AP_IF_InteressiPerc><AP_IF_Interessi>0</AP_IF_Interessi></Titolo><Titolo ID='2'><AP_IF_Valore>0</AP_IF_Valore><AP_IF_AnniResidui>0</AP_IF_AnniResidui><AP_IF_InteressiPerc>0</AP_IF_InteressiPerc><AP_IF_Interessi>0</AP_IF_Interessi></Titolo><Titolo ID='3'><AP_IF_Valore>0</AP_IF_Valore><AP_IF_AnniResidui>0</AP_IF_AnniResidui><AP_IF_InteressiPerc>0</AP_IF_InteressiPerc><AP_IF_Interessi>0</AP_IF_Interessi></Titolo><Titolo ID='4'><AP_IF_Valore>0</AP_IF_Valore><AP_IF_AnniResidui>0</AP_IF_AnniResidui><AP_IF_InteressiPerc>0</AP_IF_InteressiPerc><AP_IF_Interessi>0</AP_IF_Interessi></Titolo></ImmFinanziarie_Titoli><Finanziamenti><Finanziamento ID='1'><AP_F_DebitoMedio>275166000</AP_F_DebitoMedio><AP_F_DebitoABreve>122854000</AP_F_DebitoABreve><AP_F_InteressiPerc>3000</AP_F_InteressiPerc></Finanziamento><Finanziamento ID='2'><AP_F_DebitoMedio>0</AP_F_DebitoMedio><AP_F_DebitoABreve>0</AP_F_DebitoABreve><AP_F_InteressiPerc>0</AP_F_InteressiPerc></Finanziamento><Finanziamento ID='3'><AP_F_DebitoMedio>0</AP_F_DebitoMedio><AP_F_DebitoABreve>0</AP_F_DebitoABreve><AP_F_InteressiPerc>0</AP_F_InteressiPerc></Finanziamento><Finanziamento ID='4'><AP_F_DebitoMedio>0</AP_F_DebitoMedio><AP_F_DebitoABreve>0</AP_F_DebitoABreve><AP_F_InteressiPerc>0</AP_F_InteressiPerc></Finanziamento></Finanziamenti></Data></Request>"}
+[2019-07-30 16:46:24] 200 - OK - application/json
+[2019-07-30 16:46:27] REQUEST POST - https://localhost:8082/public/ws/Economics.asmx/PreCompileAnnoPrec
+[2019-07-30 16:46:27] ---- FROM  ::1 (WinNT)
+[2019-07-30 16:46:27] ---- BROWSER:  Chrome 75.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36)
+[2019-07-30 16:46:27] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190730164627153'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-07-30 16:46:27] 200 - OK - application/json
+[2019-07-30 16:46:27] REQUEST POST - https://localhost:8082/public/ws/AnnoPrec.asmx/Get
+[2019-07-30 16:46:27] ---- FROM  ::1 (WinNT)
+[2019-07-30 16:46:27] ---- BROWSER:  Chrome 75.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36)
+[2019-07-30 16:46:27] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190730164627207'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-07-30 16:46:27] 200 - OK - application/json
+[2019-07-30 16:46:27] REQUEST POST - https://localhost:8082/public/ws/Config.asmx/All_Get
+[2019-07-30 16:46:27] ---- FROM  ::1 (WinNT)
+[2019-07-30 16:46:27] ---- BROWSER:  Chrome 75.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36)
+[2019-07-30 16:46:27] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190730164627294'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-07-30 16:46:27] 200 - OK - application/json
+[2019-07-30 16:46:27] REQUEST POST - https://localhost:8082/public/ws/Economics.asmx/messaggi_summary
+[2019-07-30 16:46:27] ---- FROM  ::1 (WinNT)
+[2019-07-30 16:46:27] ---- BROWSER:  Chrome 75.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36)
+[2019-07-30 16:46:27] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190730164627338'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-07-30 16:46:27] 200 - OK - application/json
+[2019-07-30 16:46:27] REQUEST GET - https://localhost:8082/public/ws/Resources.ashx/xml-economics/61111131252223224013000011333653
+[2019-07-30 16:46:27] ---- FROM  ::1 (WinNT)
+[2019-07-30 16:46:27] ---- BROWSER:  Chrome 75.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36)
+[2019-07-30 16:46:27] 200 - OK - text/xml
+[2019-07-30 16:46:27] REQUEST POST - https://localhost:8082/public/ws/Config.asmx/All_Get
+[2019-07-30 16:46:27] ---- FROM  ::1 (WinNT)
+[2019-07-30 16:46:27] ---- BROWSER:  Chrome 75.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36)
+[2019-07-30 16:46:27] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190730164627453'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-07-30 16:46:27] 200 - OK - application/json
+[2019-07-30 16:46:28] REQUEST POST - https://localhost:8082/public/ws/Config.asmx/All_Get
+[2019-07-30 16:46:28] ---- FROM  ::1 (WinNT)
+[2019-07-30 16:46:28] ---- BROWSER:  Chrome 75.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36)
+[2019-07-30 16:46:28] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20190730164628328'><General><Token>61111131252223224013000011333653</Token></General><Data></Data></Request>"}
+[2019-07-30 16:46:28] 200 - OK - application/json

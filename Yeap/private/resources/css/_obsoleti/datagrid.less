@@ -1,0 +1,533 @@
+﻿// -----------------------------------------------------------------------
+// NAME: datagrid.less
+//
+// Definizione degli stili per datagrid, nelle pagine di Economics
+// -----------------------------------------------------------------------
+
+@import "./costanti.pvt.less"; // Il file viene incluso in ogni file .LESS
+
+
+// ===================================
+//  Definizioni form-control
+// -----------------------------------
+
+.isDefault {
+    font-style: italic;
+    color: @greyGrid_50 !important;
+}
+//	@autofill  : #990;//#0c0;
+//	@autofillBg: #efc;//#0c0;
+//	.autofill {
+//		color     : @autofill !important;
+//		background: @autofillBg !important;
+//		//background: @greyGrid_20 !important;
+//		&.hasErr {
+//			color     : mix(#c00, @autofill) !important;
+//			background: mix(#fcc, @autofillBg) !important;
+//		}
+//	}
+
+.datagrid-1 input, .datagrid-2 input, .datagrid-3 input,
+.datagrid-4 input, .datagrid-5 input, .datagrid-6 input {
+    text-align: right;
+
+    &:not(.title) {
+        float: left;
+        width: 11%;
+        margin: 0 10px 15px 0;
+    }
+    //color: lime //@blueGrid_100;
+}
+
+.rowLabel {
+    float: left;
+    width: 13%;
+    margin: 0 10px 15px 0;
+    color: @blueGrid_100;
+}
+
+.input-context, .formula-context, .prospetti-context, .hidden-context {
+
+    .form-control {
+        display: block;
+        width: 100%;
+        padding: .5rem 0.2rem .5rem 0 !important;
+        font-size: .75rem;
+        line-height: 14px;
+        color: @blueGrid_100;
+        background-color: #fff;
+        background-image: none;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        border-radius: 0 .15rem .15rem 0;
+
+        &:not(.falseTotal) {
+            border-left: none;
+        }
+    }
+
+    .um {
+        float: left;
+        display: inline-block;
+        width: 2%;
+        border: 1px solid #ced4da;
+        border-right: transparent;
+        padding: .5rem 0 .5rem .25rem !important;
+        line-height: 14px;
+        -moz-line-height: 12px;
+        //color: #69c;
+        &.total {
+            background: @blueGrid_20 !important;
+            border-color: #69c !important;
+        }
+    }
+
+
+    .form-control[readonly] {
+        color: #888;
+        font-weight: bold;
+    }
+
+    .form-control.totale,
+    .form-control.calc_number {
+        color: #69c !important;
+        border-color: #69c;
+        background: @blueGrid_20;
+        text-align: right;
+        padding-right: 5px !important;
+    }
+
+    .form-control.falseTotal {
+        float: left;
+        width: 13%;
+        margin: 0 10px 15px 0;
+        color: #ccc;
+        height: 32px;
+        text-align: right;
+        padding-right: 15px !important;
+    }
+
+    .form-control.calc_number2 {
+        border-color: #69c;
+        background: @blueGrid_10;
+        text-align: right;
+        padding-right: 5px !important;
+    }
+}
+
+
+// ====================================
+//  Stili per "cassetti" - collapsible
+// ------------------------------------
+.card.card-info {
+    // ** Definizioni globali per gestione errori/alert **
+    .ico-warning { // Icona Warning
+        color: orange;
+        background: white;
+    }
+
+    .ico-error { // Icona Error
+        color: red;
+        background: white;
+    }
+    //.warning .ico-warning, .hasErr .ico-error {									// Stili comuni
+    .hasWarning .ico-warning, .hasErr .ico-error { // Stili comuni
+        border-radius: 50%;
+        border: 2px white solid;
+        display: inline-block !important;
+    }
+
+    input.hasErr:not(.autofill) {
+        border-color: #c00;
+        background: #fcc !important;
+        color: #c00 !important;
+    }
+
+    span.hasErr:not(.autofill) {
+        border-color: #c00;
+        background: #fcc !important;
+        color: #600 !important;
+    }
+
+    input.hasWarning:not(.autofill) {
+        border-color: #c00;
+        background: #fcd8b0 !important;
+        color: #e60 !important;
+    }
+
+    span.hasWarning:not(.autofill) {
+        border-color: #c00 !important;
+        background: #fcd8b0 !important;
+        color: #c60 !important;
+    }
+    // ** Stili comuni cassetti **
+    a {
+        .ico {
+            float: right;
+        }
+
+        &[aria-expanded=true] .ico-close {
+            display: none;
+        }
+
+        &[aria-expanded=false] .ico-open {
+            display: none;
+        }
+    }
+
+    .card-title-economics, // §§§§Temp
+    .card-title { // Titoli
+        margin: 15px 0 0;
+
+        a {
+            color: #fff;
+            display: block;
+            text-align: left;
+            font-size: 20px;
+            padding: 6px 12px;
+            border: none;
+            text-transform: uppercase;
+
+            .ico-warning, .ico-error { // Definizioni specifiche per gestione errori/alert
+                font-size: 22px;
+                display: none;
+            }
+        }
+    }
+
+    .card-body { // Corpo
+        border: 1px solid #ccc;
+        border-top: none;
+
+        a.drawerTitle { // Titoli cassetti
+            display: block;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 8px 10px;
+            margin: 0 0 10px;
+
+            .ico-warning, .ico-error { // Definizioni specifiche per gestione errori/alert
+                font-size: 20px;
+                display: none;
+            }
+        }
+
+        .drawerTitleExtend {
+            //	background: @blueGrid_30;
+            margin: -10px 0 0px;
+            text-align: right;
+            padding: 5px 10px;
+            display: none;
+
+            .btn {
+                padding: 3px 8px 3px 12px;
+                border-radius: 30px;
+            }
+        }
+
+        h4.subtitle { // §§§§§§§§§§§§§
+            font-size: 18px;
+            //font-weight: bold;
+            color: #888;
+            margin: 0px 15px 10px 0px;
+            padding: 0 0 3px 10px;
+            border-bottom: solid 1px @yeapGrey2;
+        }
+
+        h4.subsection {
+            padding: 0 10px;
+            //margin-bottom: 15px;
+            margin: 10px 0 15px;
+            border-bottom-width: 1px;
+            border-bottom-style: solid;
+
+            label {
+                margin: 0;
+            }
+        }
+
+        & > h4.subsection:not(:first-child) {
+            //margin-top: 15px;
+        }
+
+        .rowLabelTitle {
+            float: left;
+            width: 13%;
+            margin: 0 10px 10px 0;
+            padding: 5px 0;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .iva-row {
+            .rowLabel {
+                //color: @blueMenu_40;
+                //color: #aa9;
+                color: @greyGrid_80;
+            }
+
+            .form-control, .um {
+                color: #a4a098;
+                background: #d8d8d4 !important;
+                //color: @greyGrid_90;
+                //background: @greyGrid_30 !important;
+                //background: @blueGrid_30 !important;
+            }
+        }
+    }
+    // ** Stili specifici cassetti **
+    &.input-context { // Stili specifici cassetto "Input"
+        .card-title-economics, // §§§§Temp
+        .card-title {
+            background: @blueGrid_100;
+
+            &:hover {
+                background: @blueGrid_80;
+            }
+        }
+
+        .card-body { // Corpo
+            a.drawerTitle { // Titoli cassetti
+                color: @blueMenu_90;
+                background: @blueMenu_10;
+
+                &:hover {
+                    background: @blueMenu_20;
+                }
+            }
+
+            .rowLabelTitle {
+                color: @blueMenu_80;
+
+                &:not(:first-child) {
+                    background: @greyGrid_20;
+                }
+            }
+
+            h4.subsection {
+                color: @blueGrid_80;
+                border-color: @blueGrid_40;
+
+                &, & label {
+                    font-size: 20px;
+                }
+            }
+        }
+
+        .form-control.falseTotal {
+            color: @greyGrid_30;
+            background: @blueMenu_05;
+            border-color: @greyGrid_20;
+        }
+
+        .um {
+            color: @greyMenu_50;
+
+            &.total {
+                color: @blueMenu_50;
+                background: @blueGrid_20 !important;
+            }
+        }
+    }
+
+    &.formula-context { // Stili specifici cassetto "formula"
+        .card-title-economics, // §§§§Temp
+        .card-title {
+            background: @greyGrid_100;
+
+            &:hover {
+                background: @greyGrid_80;
+            }
+        }
+
+        .card-body { // Corpo
+            background: @greyGrid_10;
+
+            a.drawerTitle { // Titoli cassetti
+                color: @greyMenu_80;
+                background: @greyGrid_30;
+
+                &:hover {
+                    background: @greyGrid_40;
+                }
+            }
+
+            .rowLabelTitle {
+                color: #fff;
+
+                &:not(:first-child) {
+                    background: @blueGrid_50;
+                }
+            }
+
+            h4.subsection {
+                color: @greyGrid_80;
+                border-color: @greyGrid_40;
+
+                &, & label {
+                    font-size: 20px;
+                }
+            }
+        }
+
+        .form-control.falseTotal {
+            color: @greyGrid_40;
+            background: @greyMenu_10;
+            border-color: @greyMenu_30;
+        }
+
+        .um {
+            color: @greyMenu_50;
+            border-color: #69c;
+            background: @blueGrid_10;
+
+            &.total {
+                color: @blueMenu_50;
+            }
+        }
+    }
+
+    &.prospetti-context { // Stili specifici cassetto "formula"
+        .card-title-economics, // §§§§Temp
+        .card-title {
+            background: @blueMenu_80;
+
+            &:hover {
+                background: @blueMenu_60;
+            }
+        }
+
+        .card-body { // Corpo
+            background: @blueMenu_10;
+
+            a.drawerTitle { // Titoli cassetti
+                color: @blueMenu_90;
+                background: @blueMenu_20;
+
+                &:hover {
+                    background: @blueMenu_30;
+                }
+            }
+
+            .rowLabelTitle {
+                color: #fff; //@blueMenu_90;
+                &:not(:first-child) {
+                    background: @blueMenu_50;
+                }
+            }
+
+            h4.subsection {
+                color: @greyGrid_80;
+                border-color: @greyGrid_40;
+                font-size: 16px;
+            }
+        }
+
+        .form-control.falseTotal {
+            color: @greyGrid_40;
+            background: @blueMenu_10;
+            border-color: @blueMenu_40;
+        }
+
+        .form-control.calc_number {
+            //color: #69c !important;
+            //border-color: #69c;
+            background: @blueGrid_30;
+        }
+
+        .um {
+            border-color: #69c;
+        }
+
+        & .col:not(.iva-row) .um {
+            background: @blueGrid_10;
+            color: @greyMenu_50;
+
+            &.total:not(.hasWarning) {
+                color: @blueMenu_50;
+                background: @blueGrid_30 !important;
+            }
+        }
+    }
+
+    &.hidden-context {
+        display: none;
+
+        .card-title {
+            background: @greyMenu_100;
+        }
+
+        .form-control.falseTotal {
+            color: @greyMenu_30;
+            background: @greyMenu_10;
+            border-color: @greyMenu_20;
+        }
+    }
+    //======================================================================================
+    // §§§§§§§§§§§§§§§§ STILI TEMPORANEI DA CNCELLARE
+    //--------------------------------------------------------------------------------------
+    /*	&:not(.input-context):not(.formula-context) {	// §§§§ TEMP
+		.card-title-economics {
+			background: #369;
+		}
+	}
+
+	h4.title2, // §§§§§§§§§§§§§ TEMP
+	h4.title {
+
+		a {
+			display    : block;
+			font-size  : 16px;
+			font-weight: bold;
+			padding    : 8px 10px;
+			margin     : 0 0 10px;
+
+			color     : @blueMenu_100;
+			background: @yeapGrey0;
+
+			&:hover {
+				background: @yeapGrey1;
+			}
+		}
+
+	}
+	h4 label.rowLabel{ // §§§§§§§§§§§§§§
+		cursor: pointer;
+	}
+
+	//--------------------------------------------------------------------------------------*/
+}
+
+
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+    padding-right: 5px !important;
+}
+
+
+// ** Colori per Autofill
+@autofill: #069; //#990;//#0c0;
+@autofillBg: #def; //#efc;//#0c0;
+.autofill {
+    color: @autofill !important;
+    background: @autofillBg !important;
+
+    &.hasErr {
+        color: mix(#c00, @autofill) !important;
+        background: mix(#fcc, @autofillBg) !important;
+        border-color: mix(#c00, @autofill) !important;
+    }
+
+    &.hasWarning {
+        color: mix(#e60, @autofill) !important;
+        background: mix(#fcd8b0, @autofillBg) !important;
+        border-color: mix(#e60, @autofill) !important;
+    }
+}

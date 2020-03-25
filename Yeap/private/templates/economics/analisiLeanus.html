@@ -1,0 +1,94 @@
+﻿<reserved_header_section 
+	templateID="781"
+	templateFile="analisiLeanus.html"
+	templateDescription="HTML content template (Settings)"
+></reserved_header_section>
+
+<widget_pageHeader />
+
+<!---
+<h5 class="pageTitle">Report</h5>
+<h2 id="mainTitle" class="pageTitle">
+	Valutazione Business Plan
+	<a class="infoLnk" href="#info" data-toggle="collapse" data-target="#info" aria-expanded="false">
+		<i class="fa fa-info-circle"></i>
+	</a>
+</h2>
+<h2 id="scrollTitle">
+	Report - <span>Valutazione Business Plan</span>
+</h2>
+
+<div id="info" class="collapse row margin-h-50 margin-b-30">
+	<div class="col-12">
+		<div class="alertBox info">
+			<i class="floatLeft fa fa-info-circle"></i>
+			<div class="margin-l-60 margin-t-15">
+				Note e istruzioni per <b>Questa pagina</b>
+			</div>
+		</div>
+	</div>
+</div>
+--->
+
+<div class="container-fluid pageBody">
+
+	<!--<h3 class="pageTitle textCenter">
+		Valutazione Business Plan
+	</h3>-->
+
+		<!-- ** Leanus: abilitazione e invio report ** -->
+		<div id="leanus" class="notifica margin-t-40 margin-b-100 padding-b-100">
+
+			<div class="leanusMsg margin-h-50 padding-t-30 padding-b-50" id="noRisposta">
+				
+				<h5 class="margin-b-50">
+					Sto verificando la disponibilità della valutazione del Business Plan
+				</h5>
+
+				<div class="inner-loader margin-b-15">
+					<i class="outer spin"></i>
+					<i class="middle spin-reverse"></i>
+					<i class="inner spin"></i>
+				</div>
+				<p>
+					Attendere, prego...
+				</p>
+
+			</div>
+
+			<p class="leanusError margin-h-50 padding-v-20" id="noRisposta">
+				<b>La valutazione del Business Plan non è disponibile</b><br>
+				<br>
+				Il report sull'analisi e valutazione del Business Plan non è ancora stato elaborato. Ti invitiamo a riprovare più tardi.<br>
+				Se il problema persiste, contattare un responsabile.
+			</p>
+
+			<p class="leanusOk margin-h-50 padding-v-20" id="siRisposta">
+				<b>Il report sull'analisi e valutazione del Business Plan è disponibile.</b><br>
+				<br>
+				<br>
+				<a id="btnLeanus" class="padding-h-30 btn btn-action-light" target="leanusRpt" href="#send">
+					<i class="fa fa-sign-out-alt margin-r-5"></i>
+					Apri report
+				</a>
+			</p>
+
+			<p class="leanusTimeOut margin-h-50 padding-v-20" id="timeOut">
+				<b>Attenzione!</b>
+				Il report è scaduto e non è più disponibile (<i>timeout</i>).
+				<a href="/economics/analisi-leanus" class="">Clicca qui</a> per </b>ricaricare la pagina e rigenerarlo.</b>
+				<br>
+				<br>
+				<br>
+				<span class="disabled padding-h-30 btn xbtn-action-light">
+					<i class="fa fa-sign-out-alt margin-r-5"></i>
+					Apri report
+				</span>
+			</p>
+
+		</div>
+	
+	<!-- *** CONSOLE *** -->
+	<widget_btnConsole />
+
+</div>

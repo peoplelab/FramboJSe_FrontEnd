@@ -1,0 +1,973 @@
+.isDefault {
+  font-style: italic;
+  color: #b0bdc5 !important;
+}
+.datagrid-1 input,
+.datagrid-2 input,
+.datagrid-3 input,
+.datagrid-4 input,
+.datagrid-5 input,
+.datagrid-6 input {
+  text-align: right;
+}
+.datagrid-1 input:not(.title),
+.datagrid-2 input:not(.title),
+.datagrid-3 input:not(.title),
+.datagrid-4 input:not(.title),
+.datagrid-5 input:not(.title),
+.datagrid-6 input:not(.title) {
+  float: left;
+  width: 11%;
+  margin: 0 10px 15px 0;
+}
+.rowLabel {
+  float: left;
+  width: 13%;
+  margin: 0 10px 15px 0;
+  color: #6ba1c3;
+}
+.largeLabel .rowLabel {
+  width: 18%;
+}
+.singleCol .rowLabel {
+  width: 50%;
+}
+.singleCol .datagrid-1 input {
+  width: 35%;
+}
+.singleCol2rows .rowLabel {
+  width: 100%;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.singleCol2rows .datagrid-1 input {
+  width: 40%;
+}
+.singleCol2rows span.um {
+  width: 20%;
+}
+.specialHeader {
+  position: relative;
+}
+.specialHeader .datagrid-3 {
+  position: absolute;
+  top: -30px;
+}
+.specialHeader .rowLabelEmpty1,
+.specialHeader .rowLabelEmpty2 {
+  float: left;
+  width: 18%;
+  margin: 0 10px 15px 0;
+}
+.specialHeader .rowLabelEmpty2 {
+  width: 13%;
+}
+.specialHeader .rowLabelNrYear {
+  float: left;
+  width: 13%;
+  margin: 0 10px 10px 0;
+  padding: 5px 5px;
+  text-align: center;
+  font-weight: bold;
+  color: #89b4cf;
+}
+.input-context .form-control,
+.CDG-context .form-control,
+.formula-context .form-control,
+.prospetti-context .form-control,
+.hidden-context .form-control {
+  display: block;
+  width: 100%;
+  padding: .5rem 0.2rem .5rem 0 !important;
+  font-size: .75rem;
+  line-height: 14px;
+  color: #6ba1c3;
+  background-color: #fff;
+  background-image: none;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0 .15rem .15rem 0;
+}
+.input-context .form-control:not(.falseTotal),
+.CDG-context .form-control:not(.falseTotal),
+.formula-context .form-control:not(.falseTotal),
+.prospetti-context .form-control:not(.falseTotal),
+.hidden-context .form-control:not(.falseTotal) {
+  border-left: none;
+}
+.input-context .um,
+.CDG-context .um,
+.formula-context .um,
+.prospetti-context .um,
+.hidden-context .um {
+  float: left;
+  display: inline-block;
+  width: 2%;
+  border: 1px solid #ced4da;
+  border-right: transparent;
+  padding: .5rem 0 .5rem .25rem !important;
+  line-height: 1;
+  -moz-line-height: 12px;
+}
+.input-context .um.calc_number:not(.forecast),
+.CDG-context .um.calc_number:not(.forecast),
+.formula-context .um.calc_number:not(.forecast),
+.prospetti-context .um.calc_number:not(.forecast),
+.hidden-context .um.calc_number:not(.forecast),
+.input-context .um.total:not(.forecast),
+.CDG-context .um.total:not(.forecast),
+.formula-context .um.total:not(.forecast),
+.prospetti-context .um.total:not(.forecast),
+.hidden-context .um.total:not(.forecast) {
+  background: #e1ecf3 !important;
+  border-color: #69c !important;
+}
+.input-context .form-control[readonly],
+.CDG-context .form-control[readonly],
+.formula-context .form-control[readonly],
+.prospetti-context .form-control[readonly],
+.hidden-context .form-control[readonly] {
+  color: #888;
+  font-weight: bold;
+}
+.input-context .form-control.totale,
+.CDG-context .form-control.totale,
+.formula-context .form-control.totale,
+.prospetti-context .form-control.totale,
+.hidden-context .form-control.totale,
+.input-context .form-control.calc_number,
+.CDG-context .form-control.calc_number,
+.formula-context .form-control.calc_number,
+.prospetti-context .form-control.calc_number,
+.hidden-context .form-control.calc_number {
+  border-color: #69c !important;
+  background: #e1ecf3;
+  text-align: right;
+  padding-right: 5px !important;
+}
+.input-context .form-control.totale:not(.forecast),
+.CDG-context .form-control.totale:not(.forecast),
+.formula-context .form-control.totale:not(.forecast),
+.prospetti-context .form-control.totale:not(.forecast),
+.hidden-context .form-control.totale:not(.forecast),
+.input-context .form-control.calc_number:not(.forecast),
+.CDG-context .form-control.calc_number:not(.forecast),
+.formula-context .form-control.calc_number:not(.forecast),
+.prospetti-context .form-control.calc_number:not(.forecast),
+.hidden-context .form-control.calc_number:not(.forecast) {
+  color: #69c !important;
+}
+.input-context .form-control.falseTotal,
+.CDG-context .form-control.falseTotal,
+.formula-context .form-control.falseTotal,
+.prospetti-context .form-control.falseTotal,
+.hidden-context .form-control.falseTotal {
+  float: left;
+  width: 13%;
+  margin: 0 10px 15px 0;
+  color: #ccc;
+  height: 32px;
+  text-align: right;
+  padding-right: 15px !important;
+}
+.input-context .form-control.calc_number2,
+.CDG-context .form-control.calc_number2,
+.formula-context .form-control.calc_number2,
+.prospetti-context .form-control.calc_number2,
+.hidden-context .form-control.calc_number2,
+.input-context span.calc_number2,
+.CDG-context span.calc_number2,
+.formula-context span.calc_number2,
+.prospetti-context span.calc_number2,
+.hidden-context span.calc_number2 {
+  border-color: #69c;
+  background: #f0f6f9;
+  text-align: right;
+  padding-right: 5px !important;
+}
+#tabMenu .ico-error {
+  color: red;
+  background: white;
+  margin-left: 4px;
+  border-radius: 50%;
+  border: 2px white solid;
+  display: none;
+}
+#tabMenu .isVisible {
+  display: inline-block !important;
+}
+#dataQuality {
+  position: fixed;
+  top: 65px;
+  right: 5px;
+  text-align: center;
+  z-index: 1000;
+}
+#dataQuality .bollino {
+  display: none;
+  padding: 6px;
+  border-radius: 15px;
+  width: 72px;
+  border-width: 1px;
+  border-style: solid;
+}
+#dataQuality .svg-inline--fa {
+  font-size: 50px;
+  background: #fff;
+  border-radius: 50%;
+  padding: 2px;
+}
+#dataQuality span {
+  margin: 8px 0 0;
+  padding: 1px 2px;
+  display: block;
+  background: rgba(255, 255, 255, 0.25);
+}
+#dataQuality.isOk .bollino.ok {
+  background: rgba(128, 224, 128, 0.3);
+  color: #009900;
+  display: block;
+}
+#dataQuality.isOk .bollino.ok span {
+  color: #090;
+}
+#dataQuality.isKo .bollino.ko {
+  background: rgba(255, 128, 128, 0.3);
+  color: #ff0000;
+  display: block;
+}
+#dataQuality.isKo .bollino.ko span {
+  color: #900;
+}
+#dataQuality.isWarning .bollino.warning {
+  background: rgba(255, 224, 128, 0.3);
+  color: #ffc107;
+  display: block;
+}
+#dataQuality.isWarning .bollino.warning span {
+  color: #c60;
+}
+.card.card-info .ico-warning {
+  color: orange;
+  background: white;
+}
+.card.card-info .ico-error {
+  color: red;
+  background: white;
+}
+.card.card-info .hasWarning .ico-warning,
+.card.card-info .hasErr .ico-error {
+  border-radius: 50%;
+  border: 2px white solid;
+  display: inline-block !important;
+}
+.card.card-info input.hasErr:not(.autofill) {
+  border-color: #c00;
+  background: #fcc !important;
+  color: #c00 !important;
+}
+.card.card-info span.hasErr:not(.autofill) {
+  border-color: #c00;
+  background: #fcc !important;
+  color: #600 !important;
+}
+.card.card-info input.hasWarning:not(.autofill) {
+  border-color: #c00;
+  background: #fcd8b0 !important;
+  color: #e60 !important;
+}
+.card.card-info span.hasWarning:not(.autofill) {
+  border-color: #c00 !important;
+  background: #fcd8b0 !important;
+  color: #c60 !important;
+}
+.card.card-info input.hasChanged:not(.autofill) {
+  border-color: #0cf;
+  background: #f0fcfc !important;
+  color: #0af !important;
+}
+.card.card-info span.hasChanged:not(.autofill) {
+  border-color: #0cf !important;
+  background: #f0fcfc !important;
+  color: #09c !important;
+}
+.card.card-info input.hasChangedWithErr:not(.autofill) {
+  border-color: #c0f !important;
+  background: #f5ebeb !important;
+  color: #c0a !important;
+}
+.card.card-info span.hasChangedWithErr:not(.autofill) {
+  border-color: #c0f !important;
+  background: #f5ebeb !important;
+  color: #606 !important;
+}
+.card.card-info a .ico {
+  float: right;
+}
+.card.card-info a[aria-expanded=true] .ico-close {
+  display: none;
+}
+.card.card-info a[aria-expanded=false] .ico-open {
+  display: none;
+}
+.card.card-info .card-title-economics,
+.card.card-info .card-title {
+  margin: 15px 0 0;
+}
+.card.card-info .card-title-economics a,
+.card.card-info .card-title a {
+  color: #fff;
+  display: block;
+  text-align: left;
+  font-size: 20px;
+  padding: 6px 12px;
+  border: none;
+  text-transform: uppercase;
+}
+.card.card-info .card-title-economics a .ico-warning,
+.card.card-info .card-title a .ico-warning,
+.card.card-info .card-title-economics a .ico-error,
+.card.card-info .card-title a .ico-error {
+  font-size: 22px;
+  display: none;
+}
+.card.card-info .card-body {
+  border: 1px solid #ccc;
+  border-top: none;
+}
+.card.card-info .card-body a.drawerTitle {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 8px 10px;
+  margin: 0 0 10px;
+}
+.card.card-info .card-body a.drawerTitle .ico-warning,
+.card.card-info .card-body a.drawerTitle .ico-error {
+  font-size: 20px;
+  display: none;
+}
+.card.card-info .card-body a.drawerTitle.btn-disabled {
+  text-align: left;
+  color: #999 !important;
+  border: none;
+}
+.card.card-info .card-body .drawerTitleExtend {
+  margin: -10px 0 0px;
+  text-align: right;
+  padding: 5px 10px;
+  display: none;
+}
+.card.card-info .card-body .drawerTitleExtend .btn {
+  padding: 3px 8px 3px 12px;
+  border-radius: 30px;
+}
+.card.card-info .card-body .drawerTitleExtend .info {
+  font-size: 21px;
+  margin: 0 0 0 8px;
+  float: right;
+}
+.card.card-info .card-body h4.subtitle {
+  font-size: 18px;
+  color: #888;
+  margin: 0px 15px 10px 0px;
+  padding: 0 0 3px 10px;
+  border-bottom: solid 1px #e0e0e0;
+}
+.card.card-info .card-body h4.subsection {
+  padding: 0 10px;
+  margin: 10px 0 15px;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
+.card.card-info .card-body h4.subsection label {
+  margin: 0;
+}
+.card.card-info .card-body .rowLabelTitle {
+  float: left;
+  width: 13%;
+  margin: 0 10px 10px 0;
+  padding: 5px 0;
+  text-align: center;
+  font-weight: bold;
+}
+.card.card-info .card-body .iva-row .rowLabel {
+  color: #8095a3;
+}
+.card.card-info .card-body .iva-row .form-control,
+.card.card-info .card-body .iva-row .um {
+  color: #a4a098;
+  background: #d8d8d4 !important;
+}
+.card.card-info.input-context .card-title-economics,
+.card.card-info.input-context .card-title {
+  background: #6ba1c3;
+}
+.card.card-info.input-context .card-title-economics:hover,
+.card.card-info.input-context .card-title:hover {
+  background: #89b4cf;
+}
+.card.card-info.input-context .card-body a.drawerTitle {
+  color: #1c87cb;
+  background: #e6f2f9;
+}
+.card.card-info.input-context .card-body a.drawerTitle:hover {
+  background: #cde4f3;
+}
+.card.card-info.input-context .card-body h4.subsection {
+  color: #89b4cf;
+  border-color: #c4d9e7;
+}
+.card.card-info.input-context .card-body h4.subsection,
+.card.card-info.input-context .card-body h4.subsection label {
+  font-size: 20px;
+}
+.card.card-info.input-context .card-body .rowLabelTitle {
+  color: #3595d1;
+}
+.card.card-info.input-context .card-body .rowLabelTitle:not(:first-child) {
+  background: #dfe5e8;
+}
+.card.card-info.input-context .card-body a.drawerTitleDark {
+  color: #ffffff;
+  background: #8095a3;
+}
+.card.card-info.input-context .card-body a.drawerTitleDark:hover {
+  background: #708897;
+}
+.card.card-info.input-context .card-body a.drawerTitleLight {
+  color: #777777;
+  background: #cfd7dc;
+}
+.card.card-info.input-context .card-body a.drawerTitleLight:hover {
+  background: #bfcad1;
+}
+.card.card-info.input-context .card-body .drawerQuestions {
+  background: #eff2f3;
+  padding: 10px 25px 50px !important;
+  overflow-y: scroll;
+}
+.card.card-info.input-context .card-body .drawerQuestions p.intro {
+  margin: 0 0 15px;
+  color: #3595d1;
+  font-style: italic;
+}
+.card.card-info.input-context .card-body .drawerQuestions li:before {
+  content: "» ";
+  color: #3595d1;
+  margin: 0 5px 0 15px;
+}
+.card.card-info.input-context .card-body .includeContainer {
+  padding: 10px;
+  margin: -10px 0 10px;
+}
+.card.card-info.input-context .card-body .drawerSample {
+  color: #708897;
+  background: #f0f6f9;
+  padding: 15px 30px 50px;
+  text-align: justify;
+  overflow-y: scroll;
+}
+.card.card-info.input-context .card-body .drawerSample p {
+  margin: 0 0 10px;
+}
+.card.card-info.input-context .card-body div.borderNoTop {
+  border-color: #dfe5e8;
+  border-width: 0 1px 1px 1px;
+  border-style: solid;
+}
+.card.card-info.input-context .card-body .labelCampoTestuale {
+  margin: 5px 10px 5px;
+  color: #037ac5;
+  font-weight: bold;
+  font-size: 16px;
+}
+.card.card-info.input-context .card-body .labelCampoTestuale span {
+  font-style: italic;
+}
+.card.card-info.input-context .card-body textarea {
+  width: 100%;
+  border: solid 1px #dddddd;
+  padding: 10px 30px 10px 20px !important;
+  font-size: 14px;
+  min-height: 300px;
+  line-height: 21px;
+  text-align: justify;
+}
+.card.card-info.input-context .form-control.falseTotal {
+  color: #cfd7dc;
+  background: #f2f8fc;
+  border-color: #dfe5e8;
+}
+.card.card-info.input-context .um {
+  color: #aaaaaa;
+}
+.card.card-info.input-context .um.total:not(.forecast) {
+  color: #81bde2;
+  background: #e1ecf3 !important;
+}
+.card.card-info .input-context .input_float.input_generic {
+  width: 11% !important;
+}
+.card.card-info .input-context .input_float.input_generic .symbol {
+  color: #aaaaaa;
+}
+.card.card-info .input-context .input_float.input_generic .um {
+  line-height: 1.4;
+  color: #aaaaaa;
+}
+.card.card-info .input-context .input_float.input_generic .um.total {
+  color: #81bde2;
+  background: #e1ecf3 !important;
+}
+.card.card-info .input-context .input_float.input_generic .um.symbol {
+  left: 0;
+  padding: .5rem 0 0.5rem .5rem !important;
+  line-height: 1.45;
+  width: 1.3em;
+  background: #fff;
+  /*border-bottom: transparent;*/
+}
+.card.card-info .input-context .input_float.input_generic .um.symbol + .form-control.input_number.cleanInput.w-100 {
+  padding-right: 1em !important;
+}
+.card.card-info .input-context .input_float.input_generic .form-control.input_number.cleanInput.w-100 {
+  width: 100% !important;
+}
+.card.card-info .enableLabel .form-control.input_number.cleanInput.economics {
+  display: none;
+}
+.card.card-info .form-control.flabel {
+  color: #6ba1c3;
+}
+.card.card-info.formula-context .card-title-economics,
+.card.card-info.formula-context .card-title {
+  background: #607b8c;
+}
+.card.card-info.formula-context .card-title-economics:hover,
+.card.card-info.formula-context .card-title:hover {
+  background: #8095a3;
+}
+.card.card-info.formula-context .card-title-economics.title-light,
+.card.card-info.formula-context .card-title.title-light {
+  background: #90a3ae !important;
+}
+.card.card-info.formula-context .card-title-economics.title-light:hover,
+.card.card-info.formula-context .card-title.title-light:hover {
+  background: #b0bdc5 !important;
+}
+.card.card-info.formula-context .card-body {
+  background: #eff2f3;
+}
+.card.card-info.formula-context .card-body a.drawerTitle {
+  color: #777777;
+  background: #cfd7dc;
+}
+.card.card-info.formula-context .card-body a.drawerTitle:hover {
+  background: #bfcad1;
+}
+.card.card-info.formula-context .card-body .rowLabelTitle {
+  color: #fff;
+}
+.card.card-info.formula-context .card-body .rowLabelTitle:not(:first-child) {
+  background: #b5d0e1;
+}
+.card.card-info.formula-context .card-body .rowLabelTitle.fix {
+  background: #b0bdc5;
+  margin: 0 0px 0 3px;
+}
+.card.card-info.formula-context .card-body h4.subsection {
+  color: #8095a3;
+  border-color: #bfcad1;
+}
+.card.card-info.formula-context .card-body h4.subsection,
+.card.card-info.formula-context .card-body h4.subsection label {
+  font-size: 20px;
+}
+.card.card-info.formula-context .form-control.falseTotal {
+  color: #bfcad1;
+  background: #eeeeee;
+  border-color: #cccccc;
+}
+.card.card-info.formula-context .um {
+  color: #aaaaaa;
+  border-color: #69c;
+  background: #f0f6f9;
+}
+.card.card-info.formula-context .um.total {
+  color: #81bde2;
+}
+.card.card-info.prospetti-context .card-title-economics,
+.card.card-info.prospetti-context .card-title {
+  background: #3595d1;
+}
+.card.card-info.prospetti-context .card-title-economics:hover,
+.card.card-info.prospetti-context .card-title:hover {
+  background: #68afdc;
+}
+.card.card-info.prospetti-context .card-body {
+  background: #e6f2f9;
+}
+.card.card-info.prospetti-context .card-body a.drawerTitle {
+  color: #1c87cb;
+  background: #cde4f3;
+}
+.card.card-info.prospetti-context .card-body a.drawerTitle:hover {
+  background: #b3d7ee;
+}
+.card.card-info.prospetti-context .card-body .rowLabelTitle {
+  color: #fff;
+}
+.card.card-info.prospetti-context .card-body .rowLabelTitle:not(:first-child) {
+  background: #81bde2;
+}
+.card.card-info.prospetti-context .card-body h4.subsection {
+  color: #8095a3;
+  border-color: #bfcad1;
+  font-size: 16px;
+}
+.card.card-info.prospetti-context .form-control.falseTotal {
+  color: #bfcad1;
+  background: #e6f2f9;
+  border-color: #9acae8;
+}
+.card.card-info.prospetti-context .form-control.calc_number {
+  background: #d3e3ed;
+}
+.card.card-info.prospetti-context .um {
+  border-color: #69c;
+}
+.card.card-info.prospetti-context .col:not(.iva-row) .um {
+  background: #f0f6f9;
+  color: #aaaaaa;
+}
+.card.card-info.prospetti-context .col:not(.iva-row) .um.total:not(.hasWarning) {
+  color: #81bde2;
+  background: #d3e3ed !important;
+}
+.card.card-info.hidden-context {
+  display: none;
+}
+.card.card-info.hidden-context .card-title {
+  background: #555555;
+}
+.card.card-info.hidden-context .form-control.falseTotal {
+  color: #cccccc;
+  background: #eeeeee;
+  border-color: #dddddd;
+}
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+  padding-right: 5px !important;
+}
+.autofill {
+  color: #069 !important;
+  background: #def !important;
+}
+.autofill.hasErr {
+  color: #66334d !important;
+  background: #eedde6 !important;
+  border-color: #66334d !important;
+}
+.autofill.hasWarning {
+  color: #77664d !important;
+  background: #ede3d8 !important;
+  border-color: #77664d !important;
+}
+.input_text.hasChanged,
+.input_number.hasChanged,
+select.hasChanged {
+  border-color: #0cf;
+  background: #f0fcfc !important;
+  color: #0af !important;
+}
+.input_text.hasChangedWithErr,
+.input_number.hasChangedWithErr,
+select.hasChangedWithErr {
+  border-color: #c0f !important;
+  background: #f5ebeb !important;
+  color: #c0a !important;
+}
+label[for=IvaDefault],
+label[for=IresDefault],
+label[for=IrapDefault] {
+  width: 150px;
+}
+::-webkit-scrollbar {
+  width: 12px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 3px rgba(64, 128, 192, 0.3);
+  border-radius: 10px;
+  background: #e1ecf3;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+  background: #b5d0e1;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #81bde2;
+}
+.card-body.scrollable-head {
+  margin-right: 12px;
+  border: none !important;
+}
+.card-body.scrollable-head .formula-context {
+  background: none;
+}
+.card-body.scrollable {
+  max-height: 330px;
+  overflow-y: scroll;
+  padding: 0px 20px !important;
+  border: none !important;
+}
+.card-body.scrollable .formula-context {
+  background: none;
+}
+.tableWrapper.raw td,
+.tableWrapper.raw th,
+.tableWrapper.raw .rowLabel {
+  width: auto;
+  padding: 0 5px 0 0;
+  margin: 0;
+}
+.tableWrapper.raw td {
+  text-align: right;
+}
+.tableWrapper.scroll {
+  overflow-x: scroll;
+  margin-left: 200px;
+  margin-right: 75px;
+}
+.tableWrapper.scroll.head::-webkit-scrollbar-track:vertical {
+  background: red;
+}
+.tableWrapper.scroll.body {
+  overflow: hidden;
+}
+.tableWrapper.scroll.double {
+  margin-right: 0;
+}
+.tableWrapper.scroll.double th:last-child,
+.tableWrapper.scroll.double td:last-child {
+  width: 0px !important;
+}
+.tableWrapper.scroll.double .cumulato input {
+  color: #1c87cb;
+  background: #d7dee2 !important;
+  border-color: #69c !important;
+  width: 85px;
+}
+.tableWrapper.scroll.double th .fix2 {
+  width: 85px !important;
+}
+.tableWrapper.scroll.scenario {
+  margin-right: 0px;
+}
+.tableWrapper.scroll.scenario th:last-child,
+.tableWrapper.scroll.scenario td:last-child {
+  width: 0px !important;
+}
+.tableWrapper.scroll.scenario .scenarioTit0 {
+  width: 315px !important;
+}
+.tableWrapper.scroll.scenario span.scenarioTit1 {
+  width: 84px !important;
+  margin: 0 !important;
+}
+.tableWrapper.scroll.scenario span.scenarioTit2 {
+  width: 81px !important;
+}
+.tableWrapper.scroll.scenario span.scenarioTit3 {
+  width: 55px !important;
+}
+.tableWrapper.scroll.scenario input.scenarioTit1 {
+  width: 85px !important;
+}
+.tableWrapper.scroll.scenario input.scenarioTit2 {
+  width: 85px !important;
+}
+.tableWrapper.scroll.scenario input.scenarioTit3 {
+  width: 55px !important;
+}
+.tableWrapper.scroll .timesheet_table {
+  width: -webkit-max-content;
+  width: max-content;
+  -webkit-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.tableWrapper.scroll .timesheet_table .form-control {
+  width: 75px;
+  font-size: 12px;
+  text-align: right;
+  float: left;
+  border: 1px solid #ced4da;
+  font-size: 11px;
+}
+.tableWrapper.scroll .timesheet_table .form-control.calc_number2,
+.tableWrapper.scroll .timesheet_table .um.calc_number2 {
+  border-color: #69c;
+  background: #f0f6f9;
+  padding-right: 5px !important;
+}
+.tableWrapper.scroll .timesheet_table .form-control.calc_number3,
+.tableWrapper.scroll .timesheet_table .um.calc_number3 {
+  border-color: #69c;
+  background: #d3e3ed;
+  color: #037ac5;
+  padding-right: 5px !important;
+}
+.tableWrapper.scroll .timesheet_table .form-control.calc_number4,
+.tableWrapper.scroll .timesheet_table .um.calc_number4 {
+  border-color: #69c;
+  background: #b5d0e1;
+  color: #555555;
+  padding-right: 5px !important;
+}
+.tableWrapper.scroll .timesheet_table th {
+  padding: 0 2px 0px;
+}
+.tableWrapper.scroll .timesheet_table td {
+  padding: 0 2px 10px;
+}
+.tableWrapper.scroll .timesheet_table th,
+.tableWrapper.scroll .timesheet_table td {
+  width: 81px;
+  white-space: nowrap;
+  height: 36px;
+  line-height: 36px;
+}
+.tableWrapper.scroll .timesheet_table th .rowLabelTitle,
+.tableWrapper.scroll .timesheet_table td .rowLabelTitle {
+  display: block;
+  margin: 0px;
+  padding: 0 !important;
+  text-align: center;
+  font-weight: bold;
+  line-height: 30px;
+  color: #3595d1;
+  background: #dfe5e8;
+  width: 100%;
+}
+.formula-context .tableWrapper.scroll .timesheet_table th .rowLabelTitle,
+.formula-context .tableWrapper.scroll .timesheet_table td .rowLabelTitle {
+  background: #bfcad1;
+}
+.tableWrapper.scroll .timesheet_table th:first-child,
+.tableWrapper.scroll .timesheet_table td:first-child {
+  height: 37px;
+  width: 200px;
+  position: absolute;
+  left: 0px;
+}
+.tableWrapper.scroll .timesheet_table th:first-child:not(td),
+.tableWrapper.scroll .timesheet_table td:first-child:not(td) {
+  top: 3px;
+}
+.tableWrapper.scroll .timesheet_table th:first-child:not(th),
+.tableWrapper.scroll .timesheet_table td:first-child:not(th) {
+  font-size: 13px;
+}
+.tableWrapper.scroll .timesheet_table th:last-child,
+.tableWrapper.scroll .timesheet_table td:last-child {
+  height: 37px;
+  width: 85px;
+  position: absolute;
+  right: -12px;
+}
+.tableWrapper.scroll .timesheet_table th:last-child input,
+.tableWrapper.scroll .timesheet_table td:last-child input {
+  width: 85px;
+}
+.tableWrapper.scroll .timesheet_table th:last-child:not(td),
+.tableWrapper.scroll .timesheet_table td:last-child:not(td) {
+  top: 3px;
+}
+.tableWrapper.scroll .timesheet_table .um {
+  width: 0px;
+  margin-left: 1px;
+}
+.tableWrapper.scroll .timesheet_table .tTot .form-control,
+.tableWrapper.scroll .timesheet_table .tTot .um {
+  color: #666666;
+  background: #d8d8d4;
+  border-color: #69c;
+}
+.tableWrapper.scroll .timesheet_table .tTot .form-control.dark,
+.tableWrapper.scroll .timesheet_table .tTot .um.dark {
+  background: #c8c8c4;
+}
+.calcolatiCDG .drawerTitleExtendCDG {
+  margin: -10px 0 10px;
+  text-align: right;
+  padding: 5px 10px;
+}
+.calcolatiCDG .drawerTitleExtendCDG .btn {
+  padding: 3px 8px 3px 12px;
+  border-radius: 30px;
+  background: #fff;
+}
+.input-group .input-group-addon {
+  border-radius: .75em;
+}
+.input-group .input-group-addon.addon-left {
+  border-radius: .75em 0 0 .75em;
+}
+.input-group .input-group-addon.addon-right {
+  border-radius: 0 .75em .75em 0;
+}
+.input-group .readonly-withe {
+  background: #fff !important;
+}
+.mese .consuntivo {
+  color: #aaaaaa !important;
+  background: #dfe5e8 !important;
+}
+.mese .forecast {
+  color: #69c !important;
+  background: #def !important;
+}
+.quarter .forecast {
+  color: #4785c2 !important;
+  background: #aad4ff !important;
+}
+.cumulato .forecast {
+  color: #3870a8 !important;
+  background: #77bbff !important;
+}
+.scenario .row1 .rowLabelTitle {
+  cursor: pointer;
+}
+.popover-header {
+  color: #037ac5;
+  font-size: 14px;
+}
+.notifica {
+  position: relative;
+  margin: 30px 0 0;
+}
+.notifica .notificaErrorMsg {
+  text-align: center;
+  background: #fcc;
+  padding: 10px;
+  border: solid 2px #f66;
+  margin: 0 auto;
+  max-width: 770px;
+  display: none;
+}
+.notifica .notificaErrorMsg h5 {
+  color: #c66;
+  margin: 0;
+}
+.notifica .notificaErrorMsg .svg-inline--fa {
+  font-size: 50px;
+  color: red;
+}

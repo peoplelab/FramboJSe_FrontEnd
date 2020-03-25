@@ -1,0 +1,117 @@
+﻿ELENCO SERVIZI SAAS
+=============================
+
+GENERAL (HEADER) (General.asmx). Servizio SOAP Dati generali (header).
+	|-> Set (General_SET). "Inizializza" il business plan impostandone il nome (ne crea uno nuovo se non esiste).
+
+ANALISI QUALITATIVA (QAnalysis.asmx). Servizio SOAP analisi qualitativa.
+	|-> Get (QA_GET). Dati analisi qualitativa (compreso punteggio, stato, classifica dal migliore al peggiore).
+	|-> Save (QA_Save). Salvataggio dati (solo valori singoli campi)
+	|-> Analyze (QA_Analyze). Analisi e calcolo punteggio.
+
+ECONOMICS (Economics.asmx). Servizio SOAP per la gestione dei dati economici "compilati".
+	|-> PreCompile (Economics_Compile). PreCompilazione dei dati economici (per consentire immissione dati anno-1).
+	|-> PreCompileAnnoPrec (Economics_Compile). PreCompilazione dati anno-1.
+	|-> Compile (Economics_Compile). Compilazione completa dei dati economici.
+	|-> Confirm (Economics_Compile).Conferma il BP dopo l'operazione
+	|-> Messaggi (Messaggi). Elenco dei messaggi di errore (o warning) relativi all'ultima compilazione (limitato ad un numero massimo per evitare overflow json).
+	|-> Messaggi_Summary (Messaggi). Riepilogo contatori messaggi (errore / warning) relativi all'ultima compilazione.
+	|-> ContoEconomico (ContoEconomico_GET). Lettura dati Conto Economico (compresi quelli calcolati).
+	|-> RendicontoFinanziario (RendicontoFinanziario_GET). Lettura dati Rendiconto Finanziario (compresi quelli calcolati).
+	|-> StatoPatrimoniale (StatoPatrimoniale_GET). Lettura dati Stato Patrimoniale (compresi quelli calcolati).
+	|-> WorkingCapital (WorkingCapital_GET). Lettura dati Working Capital (compresi quelli calcolati).
+	|-> FontiFinanziarie (FontiFinanziarie_GET). Lettura dati Fonti Finanziarie (compresi quelli calcolati).
+
+ECONOMICS -> IVA (Iva.asmx). Servizio SOAP per la gestione dell'Iva (economics).
+	|-> Get (Iva_GET). Lettura dati (compresi quelli calcolati).
+	|-> Set (Iva_SET). Salvataggio dati (solo quelli input).
+
+ECONOMICS -> RICAVI (Ricavi.asmx). Servizio SOAP per la gestione dei ricavi (economics).
+	|-> Get (Ricavi_GET). Lettura dati (compresi quelli calcolati).
+	|-> Set (Ricavi_SET). Salvataggio dati (solo quelli input).
+	|-> Iva_Get (Ricavi_GET). Lettura dati Iva (compresi quelli calcolati).
+	|-> Iva_Set (Ricavi_Iva_SET). Salvataggio dati (solo quelli input).
+	|-> Ricavo_Get (Ricavi_GET). Lettura dati Ricavi (compresi quelli calcolati).
+	|-> Ricavo_Set (Ricavi_Ricavo_SET). Salvataggio dati (solo quelli input).
+	|-> CostiEsterniMagazzino_Get (Ricavi_GET). Lettura dati Costi Esterni + Magazzino (compresi quelli calcolati).
+	|-> CostiEsterniMagazzino_Set (Ricavi_CostiEsterniMagazzino_SET). Salvataggio dati (solo quelli input).
+
+ECONOMICS -> COSTI INTERNI (CostiInterni.asmx). Servizio SOAP per la gestione dei costi interni (economics).
+	|-> Get (CostiInterni_GET). Lettura dati (compresi quelli calcolati).
+	|-> Set (CostiInterni_SET). Salvataggio dati (solo quelli input).
+
+ECONOMICS -> COSTI VARIABILI (CostiVariabili.asmx). Servizio SOAP per la gestione dei costi variabili (economics).
+	|-> Get (CostiVariabili_GET). Lettura dati (compresi quelli calcolati).
+	|-> Set (CostiVariabili_SET). Salvataggio dati (solo quelli input).
+
+ECONOMICS -> HR (Hr.asmx). Servizio SOAP per la gestione dei costi HR (economics).
+	|-> Get (HR_GET). Lettura dati (compresi quelli calcolati).
+	|-> Set (HR_SET). Salvataggio dati (solo quelli input).
+
+ECONOMICS -> CAPEX (Capex.asmx). Servizio SOAP per la gestione dei Capex (economics).
+	|-> Get (Capex_GET). Lettura dati (compresi quelli calcolati).
+	|-> Set (Capex_SET). Salvataggio dati (solo quelli input).
+	|-> AumentiCapitale_Get (Capex_GET). Lettura dati Aumenti capitale (compresi quelli calcolati).
+	|-> AumentiCapitale_Set (Capex_AumentiCapitale_SET). Salvataggio dati Aumenti capitale (solo quelli input).
+	|-> Investimenti_Get (Capex_GET). Lettura dati immobilizzazioni (compresi quelli calcolati).
+	|-> Investimenti_Set (Capex_Investimenti_SET). Salvataggio dati immobilizzazioni (solo quelli input).
+	|-> Imm_Materiali_Get (Capex_GET). Lettura dati immobilizzazioni materiali (compresi quelli calcolati).
+	|-> Imm_Materiali_Set (Capex_Imm_Materiali_SET). Salvataggio dati immobilizzazioni materiali (solo quelli input).
+	|-> Imm_Immateriali_Get (Capex_GET). Lettura dati immobilizzazioni immateriali (compresi quelli calcolati).
+	|-> Imm_Immateriali_Set (Capex_Imm_Immateriali_SET). Salvataggio dati immobilizzazioni immateriali (solo quelli input).
+	|-> Imm_Finanziarie_Get (Capex_GET). Lettura dati immobilizzazioni finanziarie (compresi quelli calcolati).
+	|-> Imm_Finanziarie_Set (Capex_Imm_Finanziarie_SET). Salvataggio dati immobilizzazioni finanziarie (solo quelli input).
+	|-> Finanziamenti_Get (Capex_GET). Lettura dati finanziamenti (compresi quelli calcolati).
+	|-> Finanziamenti_Set (Capex_Finanziamenti_SET). Salvataggio dati finanziamenti (solo quelli input).
+
+ECONOMICS -> GESTIONE STRAORDINARIA (GestioneStraordinaria.asmx). Servizio SOAP per la gestione Straordinaria (economics).
+	|-> Get (GestioneStraordinaria_GET). Lettura dati (compresi quelli calcolati).
+	|-> Set (GestioneStraordinaria_SET). Salvataggio dati (solo quelli input).
+
+ECONOMICS -> ANNO PRECEDENTE (AnnoPrec.asmx). Servizio SOAP per la gestione Anno -1 (economics).
+	|-> Get (AnnoPrec_GET). Lettura dati (compresi quelli calcolati).
+	|-> Set (AnnoPrec_SET). Salvataggio dati (solo quelli input).
+	|-> Get (AnnoPrec_Valutazione). Valutazione dati.
+
+LEANUS GATEWAY (LeanusGateway.asmx). Servizio SOAP per la gestione della comunicazione con Leanus.
+	|-> Send (Economics_Send). Invio dei dati economici.
+	|-> Status (Leanus_Status). Informazioni sullo stato dell'ultimo invio.
+	|-> ResultData (Leanus_Response). Ricezione dei dati analitici (con generazione del report).
+
+
+REPORTS (Reports.asmx). Servizio SOAP per la generazione dei reports.
+	|-> QAnalysis (Reports_Default). Report Analisi Qualitativa.
+	|-> Economics (Reports_Default). Report dati economici (brogliaccio).
+	|-> TextData (Reports_TextData). Report dati testuali.
+	|-> EcoText (Reports_EcoText). Report dati testuali + prospetto economics.
+
+
+CONTROLLO DI GESTIONE (CDG.asmx). Servizio SOAP per la gestione del controllo di gestione.
+	|-> Create (CDG_Create). Creazione di un nuovo controllo di gestione.
+	|-> Get (CDG_GET). Informazioni "generali" sul controllo di gestione (status).
+	|-> Config (CDG_Config). Modifica la configurazione di un controllo di gestione esistente.
+	|-> BPData (CDG_BPData). Dati del Business Plan di riferimento.
+	|-> Weights_Get (CDG_Weights_GET). Pesi mensili delle singole voci del controllo di gestione.
+	|-> Weights_Set (CDG_Weights_SET). Impostazione dei pesi mensili delle singole voci del controllo di gestione.
+	|-> Forecast_Get (CDG_Common_GET). Dati della previsione.
+	|-> Forecast_Set (CDG_Common_GET). Conferma dei dati di previsione.
+	|-> Import (POST DATA / CDG_Import). Upload file + importazione dati (post data: [file] file da importare; [xml] dati xml).
+	|-> Data (CDG_Common_GET). Lettura dati importati.
+	|-> DataDiff (CDG_Common_GET). Lettura dati scostamenti.
+	|-> Scenario1 (CDG_Common_GET). Lettura dati scenario1.
+	|-> Scenario2 (CDG_Common_GET). Lettura dati scenario2.
+	|-> Scenario3 (CDG_Common_GET). Lettura dati scenario3.
+
+
+
+RESOURCES (Resources.ashx). Servizio REST.
+	|-> /xml-qa -> file xml etichette analisi qualitativa.
+	|-> /xml-general -> file xml etichette generali (settori/tipologie/valute).
+	|-> /xml-economics -> file xml etichette per dati economici. Con il parametro aggiuntivo /<token> viene fornito il file con le etichette personalizzate.
+
+CONFIG (Config.asmx). Servizio SOAP per la configurazione dell'ambiente.
+	|-> All_Get (General_GET). Lettura dati configurazione BP (unione metodi general+economics)
+	|-> General_Get (General_GET). Lettura dati generali BP (anagrafica + settore + tipologia)
+	|-> General_Set (Config_General_SET). Modifica dati generali BP (anagrafica + settore + tipologia)
+	|-> Economics_Get (General_GET). Lettura dati economics BP + Lettura etichette prodotti (Px) personalizzate.
+	|-> Economics_Set (Config_Economics_SET). Scrittura dati economics BP + etichette prodotti (Px) personalizzate.

@@ -1,0 +1,46 @@
+﻿********************************************************************************************
+********************************************************************************************
+
+							   SNIPPET HANDLER WIKI 
+							--------------------------
+
+********************************************************************************************
+
+
+									SYNTAX:
+							--------------------------
+
+<snp_NAME  class="myclass" id="myid" anyattr="anyvalue" data-pars=" <data-pars values> " />
+
+"myclass" (without class)					=> pbAttr[0]	|	snippet_handler will render these values "directly" as Attributes in the "root" tag
+id="myid" anyattr="anyvalue" ...			=> pbAttr[1]	|
+
+<data-pars values>											|	snippet_handler will compute (and transform) these values in the rendering process.
+<key_1> := '<value_1>'										|
+||															|
+<key_2> := '<value_2>'										|
+||															|
+...															|
+||															|
+<key_n> := '<value_n>'										|
+															|
+PS => <value_x> can be written as {{value_n}}, forcing a 	|
+	new computation by the template_controller.				|
+
+
+Example:   <snp_rtxt_tshType class="myclass" id="myid" anyattr="anyvalue" data-pars="mykey1:='myvalue1' || mykey2:='{{myvalue2}}'" />
+			will be rendered as :
+			<span class="myclass" id="myid" anyattr="anyvalue"><span class="glyphicon glyphicon-time"></span>text</span>
+			-> "text" is the computation result of "data-pars" elements
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+								DEFINITION LIST:
+							--------------------------
+
+Type			Name					Html Tag						Description													Data-pars
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+

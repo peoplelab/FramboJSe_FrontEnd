@@ -1,0 +1,39 @@
+﻿<reserved_header_section
+	templateID="1005" 
+	templateFile="modal_choose.html" 
+	templateDescription="template for 'Choose action' modal window">
+</reserved_header_section>
+
+<div id="modal" class="modal fade" data-backdrop="static" data-keyboard="false">
+	<div class="modal-dialog modal-md">
+		<div class="modal-content modal-choose">
+
+			<div class="modal-header">
+				<h1 class="modal-title">Scegli operazione</h1>
+				<button type="button" class="closeBox" data-dismiss="modal" aria-label="Close">
+					<i class="far fa-times-circle" aria-hidden="true"></i>
+				</button>
+			</div>
+
+			<div class="modal-body">
+				<div class="row">
+					<div class="col-md-3 icon">
+						<i class="fa fa-question-circle"></i>
+					</div>
+					<div class="col-md-9">
+						<h2>Scegli operazione</h2>
+						<h3 id="message">Cancellazione scadenze:</h3>
+						<div id="optionBtns"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="modal-footer">
+				<button type="button" class="btn btn-warning closeBox" data-dismiss="modal">
+					Annulla
+				</button>
+			</div>
+
+		</div>
+	</div>
+</div>

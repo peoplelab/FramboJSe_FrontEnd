@@ -1,0 +1,188 @@
+﻿<reserved_header_section
+	templateID="601"
+	templateFile="moduloDati.html"
+	templateDescription="HTML content template (QA)"
+></reserved_header_section>
+
+<!-- *** HEADER *** -->
+<widget_pageHeader />
+<br />
+<div id="info" class="collapse row margin-h-50 margin-b-30">
+	<div class="col-12">
+		<div class="alertBox info">
+			<i class="floatLeft fa fa-info-circle"></i>
+			<div class="margin-l-60 margin-t-15">
+
+				<p class=margin-b-20">
+					Questa sezione si articola su 13 punti, gestiti con menu a tendina e opzioni fisse.<br>
+					Obiettivo è quello di fornire una valutazione qualitativa sul posizionamento della società/idea/progetto.
+				</p>
+
+				<ul class="margin-t-10 margin-b-30 margin-l-50">
+
+					<li style="list-style:disc">STAGE: fase di evoluzione della start up</li>
+					<li style="list-style:disc">ANNI ATTIVITA’: anni di attività sul mercato</li>
+					<li style="list-style:disc">INNOVAZIONE: tipo di innovazione su cui si fa leva</li>
+					<li style="list-style:disc">PRODOTTO/CICLO VITA: fase della vita del prodotto/servizio</li>
+					<li style="list-style:disc">TRAZIONE: capacità di fare presa sul mercato e guadagnare visibilità</li>
+					<li style="list-style:disc">ECONOMICS: andamento e trend dei ricavi e dei relativi margini</li>
+					<li style="list-style:disc">DIMENSIONI MERCATO: macro area geografica e dimensioni (valore)</li>
+					<li style="list-style:disc">COMPETITORS: grado di “affollamento” del mercato target</li>
+					<li style="list-style:disc">BREVETTI/MARCHI: proprietà di brevetti/marchi di terzi o propri</li>
+					<li style="list-style:disc">VANTAGGIO COMPETITIVO: punti di forza distintivo del prodotto/servizio</li>
+					<li style="list-style:disc">PARTNERSHIP/CONTRATTI: contratti con clienti e/o partner (comemrciali e strategici)</li>
+					<li style="list-style:disc">TEAM: profilo del Team che gestisce il progetto/piano/società</li>
+					<li style="list-style:disc">FIGURE CHIAVE: ruolo e profilo delle due figure chiave</li>
+
+				</ul>
+				<p class="margin-b-20">
+					Una volta impostati i valori di tutte le opzioni è necessario salvare i dati prima di poter accedere al menu <b>Valutazione</b>.
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- Menu tab -->
+<div class="row margin-h-50 margin-b-30" id="tabMenu" status="load">
+	<div class="col-12">
+		<a href="#tab-moduloDati" class="btn btn-default btn-action-light">Inserimento dati</a>
+		<a href="#tab-valutazione" class="btn btn-default">Valutazione</a>
+	</div>
+</div>
+
+
+<div class="tab-content" id="tabContent">
+
+	<div id="tab-moduloDati" class="tabContent xhide">
+
+		<div class="row justify-content-center margin-b-20 margin-h-50">
+
+			<div class="col-md-6 col-12 padding-b-10 margin-b-30">
+
+				<snp_XML_label for="Q1" data-pars="value:='1' || before:='1 - '" />
+				<snp_dd_elenchiQA data-pars="value:='{{Q1}}' || root:='q1' || emptyLabel:='(Seleziona una voce)' || emptyValue:= '0'" />
+
+				<snp_XML_label for="Q2" data-pars="value:='2' || before:='2 - '" />
+				<snp_dd_elenchiQA data-pars="value:='{{Q2}}' || root:='q2' || emptyLabel:='(Seleziona una voce)' || emptyValue:= '0'" />
+
+				<snp_XML_label for="Q3" data-pars="value:='3' || before:='3 - '" />
+				<snp_dd_elenchiQA data-pars="value:='{{Q3}}' || root:='q3' || emptyLabel:='(Seleziona una voce)' || emptyValue:= '0'" />
+
+				<snp_XML_label for="Q4" data-pars="value:='4' || before:='4 - '" />
+				<snp_dd_elenchiQA data-pars="value:='{{Q4}}' || root:='q4' || emptyLabel:='(Seleziona una voce)' || emptyValue:= '0'" />
+
+				<snp_XML_label for="Q5" data-pars="value:='5' || before:='5 - '" />
+				<snp_dd_elenchiQA data-pars="value:='{{Q5}}' || root:='q5' || emptyLabel:='(Seleziona una voce)' || emptyValue:= '0'" />
+
+				<snp_XML_label for="Q6" data-pars="value:='6' || before:='6 - '" />
+				<snp_dd_elenchiQA data-pars="value:='{{Q6}}' || root:='q6' || emptyLabel:='(Seleziona una voce)' || emptyValue:= '0'" />
+
+				<snp_XML_label for="Q7" data-pars="value:='7' || before:='7 - '" />
+				<snp_dd_elenchiQA data-pars="value:='{{Q7}}' || root:='q7' || emptyLabel:='(Seleziona una voce)' || emptyValue:= '0'" />
+
+				<snp_XML_label for="Q8" data-pars="value:='8' || before:='8 - '" />
+				<snp_dd_elenchiQA data-pars="value:='{{Q8}}' || root:='q8' || emptyLabel:='(Seleziona una voce)' || emptyValue:= '0'" />
+
+				<snp_XML_label for="Q9" data-pars="value:='9' || before:='9 - '" />
+				<snp_dd_elenchiQA data-pars="value:='{{Q9}}' || root:='q9' || emptyLabel:='(Seleziona una voce)' || emptyValue:= '0'" />
+
+				<snp_XML_label for="Q10" data-pars="value:='10' || before:='10 - '" />
+				<snp_dd_elenchiQA data-pars="value:='{{Q10}}' || root:='q10' || emptyLabel:='(Seleziona una voce)' || emptyValue:= '0'" />
+
+				<snp_XML_label for="Q11" data-pars="value:='11' || before:='11 - '" />
+				<snp_dd_elenchiQA data-pars="value:='{{Q11}}' || root:='q11' || emptyLabel:='(Seleziona una voce)' || emptyValue:= '0'" />
+
+				<snp_XML_label for="Q12" data-pars="value:='12' || before:='12 - '" />
+				<snp_dd_elenchiQA data-pars="value:='{{Q12}}' || root:='q12' || emptyLabel:='(Seleziona una voce)' || emptyValue:= '0'" />
+
+				<snp_XML_label for="Q13" data-pars="value:='13' || before:='13 - '" />
+				<div class="figureChiave padding-l-25">
+
+					<p>Figura 1</p>
+					<div class="row padding-l-15">
+						<div class="col-10 padding-h-0">
+							<snp_dd_elenchiQA refid="1" ref="Q13Sub1_Driver" data-pars="value:='{{Q13Sub1_Driver}}' || root:='q13' || emptyLabel:='(Seleziona una voce)' || emptyValue:= '0' || search:='driver' || filter:=''" />
+						</div>
+					</div>
+					<div class="row padding-l-15 margin-t-10">
+						<div class="col-1 collegata"><i class="fa fa-level-up-alt fa-rotate-90 "></i></div>
+						<div class="col-10 padding-l-5">
+							<snp_dd_elenchiQA subid="1" ref="Q13Sub1_Code" data-pars="value:='{{Q13Sub1_Code}}' || root:='q13' || emptyLabel:='(Seleziona una voce)' || emptyValue:= '0'" />
+						</div>
+					</div>
+
+					<p>Figura 2</p>
+					<div class="row padding-l-15">
+						<div class="col-10 padding-h-0">
+							<snp_dd_elenchiQA refid="2" ref="Q13Sub2_Driver" data-pars="value:='{{Q13Sub2_Driver}}' || root:='q13' || emptyLabel:='(Seleziona una voce)' || emptyValue:= '0' || search:='driver' || filter:=''" />
+						</div>
+					</div>
+					<div class="row padding-l-15 margin-t-10">
+						<div class="col-1 collegata"><i class="fa fa-level-up-alt fa-rotate-90 "></i></div>
+						<div class="col-10 padding-l-5">
+							<snp_dd_elenchiQA subid="2" ref="Q13Sub2_Code" data-pars="value:='{{Q13Sub2_Code}}' || root:='q13' || emptyLabel:='(Seleziona una voce)' || emptyValue:= '0'" />
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+			<div class="w-100 margin-b-20"></div>
+
+		</div>
+		<!-- *** CONSOLE *** -->
+		<widget_btnConsole />
+
+	</div>
+
+	<div id="tab-valutazione" class="tabContent hide">
+
+		<div class="row justify-content-center margin-b-20 margin-h-50">
+			<div class="col-12">
+				<p class="margin-b-20">
+					In base alla nostra valutazione, ti elenchiamo quali sono i punti di forza e i punti deboli
+					della tua azienda.<br>
+					Per ottenere la valutazione aggiornata, ritorna nella sezione <b>Inserimento dati</b>,
+					compila l'elenco o modifica i valori precedentemente inseriti e premi il pulsante <b>Salva</b>.
+				</p>
+			</div>
+
+			<div id="reportNew" class="hide col-lg-10 col-12 padding-b-10 margin-b-30">
+				<div class="noResult">
+					Non è ancora stata effettuata una valutazione. Compila e salva l'elenco e premi il pulsante di richiesta valutazione
+				</div>
+			</div>
+
+			<div id="reportCompiled" class="col-lg-10 col-12 padding-b-10 margin-b-30">
+				<div class="result card card-info">
+					<div class="card-body">
+						<h3 class="margin-v-15 underline">Punteggio finale</h3>
+						<div id="ptTot" class="margin-b-20"></div>
+						<h3 class="margin-b-15 underline">Punti di forza</h3>
+						<ul class="best margin-b-50"></ul>
+						<h3 class="margin-b-15 underline">Punti deboli</h3>
+						<ul class="worst margin-b-50"></ul>
+						<a href="#report" id="btn-report" class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 btn btn-action-light float-right">
+							<i class="far fa-chart-bar margin-r-5"></i>
+							Genera report
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div id="reportError" class="hide col-9">
+				<div class="alertBox error">
+					<i class="floatLeft fa fa-info-circle"></i>
+					<div class="margin-l-60 margin-t-15">
+						L'elenco della sezione <b>Inserimento dati</b> è incompleto: non è possibile ottenere una valutazione attendibile.<br>
+						Ritorna alla pagina precedente, inserisci i dati mancanti e premi nuovamente il pulsante <b>Salva</ilb>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+</div>

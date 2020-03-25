@@ -1,0 +1,311 @@
+.datepicker {
+  font-family: Helvetica, Arial;
+  font-size: 14px;
+  color: #666;
+  background: #ffffff;
+  padding: 10px;
+  border-radius: 15px;
+  direction: ltr;
+}
+.datepicker:not([type=text]) {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+}
+.datepicker-inline {
+  width: 220px;
+}
+.datepicker-rtl {
+  direction: rtl;
+}
+.datepicker-rtl.dropdown-menu {
+  left: auto;
+}
+.datepicker-rtl table tr td span {
+  float: right;
+}
+.datepicker-dropdown {
+  top: 0;
+  left: 0;
+}
+.datepicker-dropdown:before {
+  content: '';
+  display: inline-block;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #999;
+  border-top: 0;
+  border-bottom-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+}
+.datepicker-dropdown:after {
+  content: '';
+  display: inline-block;
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  border-bottom: 9px solid #fff;
+  border-top: 0;
+  position: absolute;
+}
+.datepicker-dropdown.datepicker-orient-left:before {
+  left: 29px;
+}
+.datepicker-dropdown.datepicker-orient-left::after {
+  left: 30px;
+}
+.datepicker-dropdown.datepicker-orient-right:before {
+  right: 29px;
+}
+.datepicker-dropdown.datepicker-orient-right::after {
+  right: 30px;
+}
+.datepicker-dropdown.datepicker-orient-top:before {
+  bottom: -12px;
+  border-bottom: 0;
+  border-top: 12px solid #999;
+}
+.datepicker-dropdown.datepicker-orient-top:after {
+  bottom: -11px;
+  border-bottom: 0;
+  border-top: 11px solid #fff;
+}
+.datepicker-dropdown.datepicker-orient-bottom:before {
+  top: -12px;
+  border-top: 0;
+  border-bottom: 12px solid #999;
+}
+.datepicker-dropdown.datepicker-orient-bottom:after {
+  top: -11px;
+  border-top: 0;
+  border-bottom: 11px solid #fff;
+}
+.datepicker table {
+  margin: 0;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.datepicker td,
+.datepicker th {
+  text-align: center;
+  width: 30px;
+  height: 28px;
+  border-radius: 18px;
+  border: none;
+}
+.datepicker th.dow {
+  color: #369;
+  background: transparent;
+}
+.datepicker th.next,
+.datepicker th.prev {
+  color: #ffa500;
+  background: transparent;
+}
+.datepicker th.next:hover,
+.datepicker th.prev:hover {
+  background: #ffff9b;
+}
+.table-striped .datepicker table tr td,
+.table-striped .datepicker table tr th {
+  background-color: transparent;
+}
+.datepicker table tr td.day:hover,
+.datepicker table tr td.day.focused {
+  color: #fff;
+  background: #d8d8ff;
+  cursor: pointer;
+}
+.datepicker table tr td.old,
+.datepicker table tr td.new {
+  color: #bbb;
+  background: transparent;
+}
+.datepicker table tr td.old:hover,
+.datepicker table tr td.new:hover {
+  color: #b3b3b3;
+  background: rgba(216, 216, 255, 0.25);
+}
+.datepicker table tr td.disabled,
+.datepicker table tr td.disabled:hover {
+  background: none;
+  color: #999;
+  cursor: default;
+}
+.datepicker table tr td.highlighted {
+  background: #0f0;
+  border-radius: 0;
+}
+.datepicker table tr td.today {
+  color: #fff;
+  background: #5f84a3;
+  /*--
+			&.today:hover,
+			&.today.disabled,
+			&.today.disabled:hover {
+				color: @giornoCorrente_colore;
+				background-color: @giornoCorrente_sfondo;
+				color: #000;
+			}
+			&.today:hover:hover { // Thank bootstrap 2.0 for this selector...
+				// TODO: Bump min BS to 2.1, use @textColor in buttonBackground above
+				color: #000;
+			}
+			&.today.active:hover {
+				color: #fff;
+			}
+			--*/
+}
+.datepicker table tr td.today:hover {
+  color: #ffffff;
+  background: #9caed1;
+}
+.datepicker table tr td.range,
+.datepicker table tr td.range:hover,
+.datepicker table tr td.range.disabled,
+.datepicker table tr td.range.disabled:hover {
+  background: #d8d8ff;
+  border-radius: 0;
+}
+.datepicker table tr td.range.today,
+.datepicker table tr td.range.today:hover,
+.datepicker table tr td.range.today.disabled,
+.datepicker table tr td.range.today.disabled:hover {
+  border-radius: 0;
+}
+.datepicker table tr td.selected,
+.datepicker table tr td.selected:hover,
+.datepicker table tr td.selected.disabled,
+.datepicker table tr td.selected.disabled:hover {
+  color: #fff;
+}
+.datepicker table tr td.active {
+  color: #fff;
+  background: #ffa500;
+  /*
+		&.active:hover,
+		&.active.disabled,
+		&.active.disabled:hover {
+			.buttonBackground(@btnPrimaryBackground, spin(@btnPrimaryBackground, 20));		// Dummy
+			background-color: @orange;
+			color: #fff;
+			//text-shadow: 0 -1px 0 rgba(0,0,0,.25);
+		*/
+}
+.datepicker table tr td.active:hover {
+  color: #ffffff;
+  background: #ecbf80;
+}
+.datepicker table tr td span {
+  display: block;
+  width: 23%;
+  height: 54px;
+  line-height: 54px;
+  float: left;
+  margin: 1%;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.datepicker table tr td span:hover,
+.datepicker table tr td span.focused {
+  color: auto;
+  background: #d8d8ff;
+}
+.datepicker table tr td span.disabled,
+.datepicker table tr td span.disabled:hover {
+  background: none;
+  color: #999;
+  cursor: default;
+}
+.datepicker table tr td span.active,
+.datepicker table tr td span.active:hover,
+.datepicker table tr td span.active.disabled,
+.datepicker table tr td span.active.disabled:hover {
+  color: #fff;
+}
+.datepicker table tr td span.old,
+.datepicker table tr td span.new {
+  color: #bbb;
+  background: transparent;
+}
+.datepicker table tr td span.old:hover,
+.datepicker table tr td span.new:hover {
+  color: #b3b3b3;
+  background: rgba(216, 216, 255, 0.25);
+}
+.datepicker table tr td span.month,
+.datepicker table tr td span.year:not(.new):not(.old) {
+  font-weight: bold;
+  color: #369;
+  background: transparent;
+}
+.datepicker table tr td span.month.focused,
+.datepicker table tr td span.year:not(.new):not(.old).focused {
+  color: auto;
+  background: #d8d8ff;
+}
+.datepicker table tr td span.month:hover,
+.datepicker table tr td span.year:not(.new):not(.old):hover {
+  color: #668cb3;
+  background: rgba(216, 216, 255, 0.5);
+}
+.datepicker .datepicker-switch {
+  width: 145px;
+  color: #e69500;
+  background: transparent;
+  border-radius: 18px;
+}
+.datepicker .datepicker-switch:hover {
+  background: #ffff9b;
+}
+.datepicker .prev,
+.datepicker .next,
+.datepicker tfoot tr th {
+  cursor: pointer;
+}
+.datepicker .prev:hover,
+.datepicker .next:hover,
+.datepicker tfoot tr th:hover {
+  background: #d8d8ff;
+}
+.datepicker .prev.disabled,
+.datepicker .next.disabled {
+  visibility: hidden;
+}
+.datepicker .cw {
+  font-size: 10px;
+  width: 12px;
+  padding: 0 2px 0 5px;
+  vertical-align: middle;
+}
+.input-append.date .add-on,
+.input-prepend.date .add-on {
+  cursor: pointer;
+}
+.input-append.date .add-on i,
+.input-prepend.date .add-on i {
+  margin-top: 3px;
+}
+.input-daterange input {
+  text-align: center;
+}
+.input-daterange input:first-child {
+  border-radius: 3px 0 0 3px;
+}
+.input-daterange input:last-child {
+  border-radius: 0 3px 3px 0;
+}
+.input-daterange .add-on {
+  display: inline-block;
+  width: auto;
+  min-width: 16px;
+  height: 20px;
+  padding: 4px 5px;
+  font-weight: normal;
+  line-height: 20px;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #d8d8ff;
+  border: 1px solid #ccc;
+  margin-left: -5px;
+  margin-right: -5px;
+}

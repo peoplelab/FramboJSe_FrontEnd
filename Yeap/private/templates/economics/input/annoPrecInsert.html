@@ -1,0 +1,555 @@
+﻿<reserved_header_section
+	templateID="766"
+	templateFile="annoPrecInsert.html"
+	templateDescription="HTML content template (Economics)"
+></reserved_header_section>
+
+
+<!-- *** HEADER *** -->
+<widget_pageHeader />
+
+
+<div class="container-fluid pageBody">
+
+	<!-- *** SEZIONE "NASCOSTI" *** -->
+	<div class="card card-info hidden-context">
+		<div class="card-title" ref="Nascosti">
+			<a href="#btn" data-toggle="collapse" data-target="#Nascosti" aria-expanded="false">
+				<i class="fa fa-times-circle ico-error"></i>
+				<i class="fa fa-exclamation-circle ico-warning"></i>
+				<span class="text">
+					<i class="fa fa-puzzle-piece margin-r-5"></i>
+					Valori nascosti
+				</span>
+				<span class="ico">
+					<i class="fa fa-chevron-right ico-close"></i>
+					<i class="fa fa-chevron-down ico-open"></i>
+				</span>
+			</a>
+		</div>
+		<div id="Nascosti" class="collapse box_Lev_1">
+			<div class="card-body">
+
+				<div id="hiddenData" class="margin-v-10 box_Lev_2">
+					<div dsheader></div>
+					<div class="row" dstable
+						data-method="2"
+						data-name="Ricavi_PercIva"
+						data-type="hiddden"
+					></div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+	<!-- *** SEZIONE INPUT *** -->
+	<div class="card card-info input-context">
+		<div class="card-title" ref="Inseriti">
+			<a href="#btn" data-toggle="collapse" data-target="#Inseriti" aria-expanded="true">
+				<i class="fa fa-times-circle ico-error"></i>
+				<i class="fa fa-exclamation-circle ico-warning"></i>
+				<span class="text">
+					<i class="fa fa-pencil-alt margin-r-5"></i>
+					Dati da inserire
+				</span>
+				<span class="ico">
+					<i class="fa fa-chevron-right ico-close"></i>
+					<i class="fa fa-chevron-down ico-open"></i>
+				</span>
+			</a>
+		</div>
+		<div id="Inseriti" class="collapse box_Lev_1 show">
+			<div class="card-body input-context">
+
+				<widget_drawerTitle data-pars="title:='Subtitle_LiquiditaTitle' || mode:= 'edit' || ref:='Inseriti_1' || fillerBtn:='true'" />
+				<div id="Inseriti_1" class="collapse clearfix margin-v-10 box_Lev_2">
+
+					<h4 class="subsection">
+						<snp_XML_label_economics data-pars="value:='Subtitle_Liquidita'" class="title" />
+					</h4>
+					<div class="row largeLabel" dstable
+						data-years="1"
+						data-method="3"
+						data-name="AP_Liquidita"
+						data-child="AP_Liquidita"
+						data-parent="Liquidita"
+						data-type="input"
+						data-total="hide"
+					></div>
+
+					<h4 class="subsection">
+						<snp_XML_label_economics data-pars="value:='Subtitle_Capitale'" class="title" />
+					</h4>
+					<div class="row largeLabel" dstable
+						data-years="1"
+						data-method="3"
+						data-name="AP_Capitale"
+						data-child="AP_Capitale"
+						data-parent="Liquidita"
+						data-type="input"
+						data-total="hide"
+					></div>
+					<div class="row largeLabel" dstable
+						data-years="1"
+						data-method="3"
+						data-name="AP_Riserve"
+						data-child="AP_Riserve"
+						data-parent="Liquidita"
+						data-type="input"
+						data-total="hide"
+					></div>
+					<div class="row largeLabel" dstable
+						data-years="1"
+						data-method="3"
+						data-name="AP_Utile"
+						data-child="AP_Utile"
+						data-parent="Liquidita"
+						data-type="input"
+						data-total="hide"
+					></div>
+					<div class="row largeLabel" dstable
+						data-years="1"
+						data-method="3"
+						data-name="AP_NuovoUtile"
+						data-child="AP_NuovoUtile"
+						data-parent="Liquidita"
+						data-type="input"
+						data-total="hide"
+					></div>
+				</div>
+
+
+				<widget_drawerTitle data-pars="title:='Subtitle_Rimanenze' || mode:= 'edit' || ref:='Inseriti_2' || fillerBtn:='true'" />
+				<div id="Inseriti_2" class="collapse clearfix margin-v-10 box_Lev_2">
+
+					<div class="row largeLabel" dstable
+						data-years="1"
+						data-method="3"
+						data-name="AP_RimanenzePF"
+						data-child="AP_RimanenzePF"
+						data-parent="Rimanenze"
+						data-type="input"
+						data-total="hide"
+					></div>
+					<div class="row largeLabel" dstable
+						data-years="1"
+						data-method="3"
+						data-name="AP_RimanenzeMP"
+						data-child="AP_RimanenzeMP"
+						data-parent="Rimanenze"
+						data-type="input"
+						data-total="hide"
+					></div>
+				</div>
+
+
+				<widget_drawerTitle data-pars="title:='Subtitle_CreditiSoci' || mode:= 'edit' || ref:='Inseriti_3' || fillerBtn:='true'" />
+				<div id="Inseriti_3" class="collapse clearfix margin-v-10 box_Lev_2">
+
+					<div class="row largeLabel" dstable
+						data-years="1"
+						data-method="3"
+						data-name="AP_CreditiSociBreve"
+						data-child="AP_CreditiSociBreve"
+						data-parent="CreditiDebitiBreve"
+						data-type="input"
+						data-total="hide"
+					></div>
+					<div class="row largeLabel specialHeader">
+						<div class="col datagrid-3">
+							<div class="clear clearfix">
+								<label class="rowLabelEmpty1"></label>
+								<label class="rowLabelEmpty2"></label>
+								<label class="rowLabelNrYear" ref="1"></label>
+								<label class="rowLabelNrYear" ref="2"></label>
+								<label class="rowLabelNrYear" ref="3"></label>
+								<label class="rowLabelNrYear" ref="4"></label>
+							</div>
+						</div>
+					</div>
+					<div class="row largeLabel" dstable
+						data-method="21"
+						data-name="AP_CreditiSociMedio"
+						data-parent="CreditiDebitiSoci"
+						data-type="input"
+						data-total="hide"
+					></div>
+
+					<div class="row largeLabel" dstable
+							data-years="1"
+						data-method="3"
+						data-name="AP_DebitiSociBreve"
+						data-child="AP_DebitiSociBreve"
+						data-parent="CreditiDebitiBreve"
+						data-type="input"
+						data-total="hide"
+					></div>
+					<div class="row largeLabel specialHeader">
+						<div class="col datagrid-3">
+							<div class="clear clearfix">
+								<label class="rowLabelEmpty1"></label>
+								<label class="rowLabelEmpty2"></label>
+								<label class="rowLabelNrYear" ref="1"></label>
+								<label class="rowLabelNrYear" ref="2"></label>
+								<label class="rowLabelNrYear" ref="3"></label>
+								<label class="rowLabelNrYear" ref="4"></label>
+							</div>
+						</div>
+					</div>
+					<div class="row largeLabel" dstable
+						data-method="21"
+						data-name="AP_DebitiSociMedio"
+						data-parent="CreditiDebitiSoci"
+						data-type="input"
+						data-total="hide"
+					></div>
+
+				</div>
+
+
+				<widget_drawerTitle data-pars="title:='Subtitle_CreditiDebiti' || mode:= 'edit' || ref:='Inseriti_4' || fillerBtn:='true'" />
+				<div id="Inseriti_4" class="collapse clearfix margin-v-10 box_Lev_2">
+
+					<h4 class="subsection">
+						<snp_XML_label_economics data-pars="value:='Subtitle_Commerciali'" class="title" />
+					</h4>
+
+					<div class="row largeLabel" dstable
+						data-years="1"
+						data-method="3"
+						data-name="AP_CreditiComm"
+						data-child="AP_CreditiComm"
+						data-parent="CreditiDebitiBreve"
+						data-type="input"
+						data-total="hide"
+					></div>
+					<div class="row largeLabel" dstable
+						data-years="1"
+						data-method="3"
+						data-name="AP_DebitiComm"
+						data-child="AP_DebitiComm"
+						data-parent="CreditiDebitiBreve"
+						data-type="input"
+						data-total="hide"
+					></div>
+
+					<h4 class="subsection">
+						<snp_XML_label_economics data-pars="value:='Subtitle_Altri'" class="title" />
+					</h4>
+					<div class="row largeLabel" dstable
+						data-years="1"
+						data-method="3"
+						data-name="AP_AltriCrediti"
+						data-child="AP_AltriCrediti"
+						data-parent="CreditiDebitiBreve"
+						data-type="input"
+						data-total="hide"
+					></div>
+					<div class="row largeLabel" dstable
+						data-years="1"
+						data-method="3"
+						data-name="AP_AltriDebiti"
+						data-child="AP_AltriDebiti"
+						data-parent="CreditiDebitiBreve"
+						data-type="input"
+						data-total="hide"
+					></div>
+
+					<div class="row largeLabel margin-t-30" dstable
+						data-years="1"
+						data-method="3"
+						data-name="AP_CreditoIVA"
+						data-child="AP_CreditoIVA"
+						data-parent="CreditiDebitiBreve"
+						data-type="input"
+						data-total="hide"
+					></div>
+					<div class="row largeLabel" dstable
+						data-years="1"
+						data-method="3"
+						data-name="AP_CreditiTributari"
+						data-child="AP_CreditiTributari"
+						data-parent="CreditiDebitiBreve"
+						data-type="input"
+						data-total="hide"
+					></div>
+					<div class="row largeLabel" dstable
+						data-years="1"
+						data-method="3"
+						data-name="AP_DebitiTributari"
+						data-child="AP_DebitiTributari"
+						data-parent="CreditiDebitiBreve"
+						data-type="input"
+						data-total="hide"
+					></div>
+				</div>
+
+
+				<widget_drawerTitle data-pars="title:='Subtitle_CreditiDebitiMedi' || mode:= 'edit' || ref:='Inseriti_5' || fillerBtn:='true'" />
+				<div id="Inseriti_5" class="collapse clearfix margin-v-10 box_Lev_2">
+
+					<div class="row largeLabel specialHeader">
+						<div class="col datagrid-3">
+							<div class="clear clearfix">
+								<label class="rowLabelEmpty1"></label>
+								<label class="rowLabelEmpty2"></label>
+								<label class="rowLabelNrYear" ref="1"></label>
+								<label class="rowLabelNrYear" ref="2"></label>
+								<label class="rowLabelNrYear" ref="3"></label>
+								<label class="rowLabelNrYear" ref="4"></label>
+							</div>
+						</div>
+					</div>
+					<div class="row largeLabel" dstable
+						data-method="21"
+						data-name="AP_CreditiMedioLungo"
+						data-parent="CreditiDebitiMedio"
+						data-type="input"
+						data-total="hide"
+					></div>
+					<div class="row largeLabel" dstable
+						data-method="21"
+						data-name="AP_DebitiMedioLungo"
+						data-parent="CreditiDebitiMedio"
+						data-type="input"
+						data-total="hide"
+					></div>
+				</div>
+
+
+				<widget_drawerTitle data-pars="title:='Subtitle_TFReAltri' || mode:= 'edit' || ref:='Inseriti_6' || fillerBtn:='true'" />
+				<div id="Inseriti_6" class="collapse clearfix margin-v-10 box_Lev_2">
+
+					<div class="row largeLabel" dstable
+						data-years="1"
+						data-method="3"
+						data-name="AP_Tfr"
+						data-child="AP_Tfr"
+						data-parent="Tfr"
+						data-type="input"
+						data-total="hide"
+					></div>
+					<div class="row largeLabel" dstable
+						data-years="1"
+						data-method="3"
+						data-name="AP_AltriFondi"
+						data-child="AP_AltriFondi"
+						data-parent="Tfr"
+						data-type="input"
+						data-total="hide"
+					></div>
+				</div>
+
+
+				<h4 class="subsection">
+					<snp_XML_label_economics data-pars="value:='Subtitle_ImmobilEFinanz'" class="title" />
+				</h4>
+
+				<widget_drawerTitle data-pars="title:='Subtitle_AP_Materiali' || mode:= 'edit' || ref:='Inseriti_7' || fillerBtn:='true'" />
+				<div id="Inseriti_7" class="collapse clearfix margin-v-10 box_Lev_2">
+
+					<div class="row largeLabel specialHeader">
+						<div class="col datagrid-3">
+							<div class="clear clearfix">
+								<label class="rowLabelEmpty1"></label>
+								<label class="rowLabelNrYear">Investimento 1</label>
+								<label class="rowLabelNrYear">Investimento 2</label>
+								<label class="rowLabelNrYear">Investimento 3</label>
+								<label class="rowLabelNrYear">Investimento 4</label>
+							</div>
+						</div>
+					</div>
+					<div class="row largeLabel" dstable
+						data-years="4"
+						data-method="31"
+						data-name="AP_IM_ValoreResiduo"
+						data-child="Investimento"
+						data-parent="ImmMateriali"
+						data-type="input"
+						data-total="hide"
+					></div>
+					<div class="row largeLabel" dstable
+						data-years="4"
+						data-method="31"
+						data-name="AP_IM_AmmortamentoAnnuale"
+						data-child="Investimento"
+						data-parent="ImmMateriali"
+						data-type="input"
+						data-total="hide"
+					></div>
+					<div class="row largeLabel" dstable
+						data-years="4"
+						data-method="31"
+						data-name="AP_IM_Iperammortamento"
+						data-child="Investimento"
+						data-parent="ImmMateriali"
+						data-type="input"
+						data-total="hide"
+					></div>
+				</div>
+
+
+				<widget_drawerTitle data-pars="title:='Subtitle_AP_Immateriali' || mode:= 'edit' || ref:='Inseriti_8' || fillerBtn:='true'" />
+				<div id="Inseriti_8" class="collapse clearfix margin-v-10 box_Lev_2">
+					<div class="row largeLabel specialHeader">
+						<div class="col datagrid-3">
+							<div class="clear clearfix">
+								<label class="rowLabelEmpty1"></label>
+								<label class="rowLabelNrYear">Investimento 1</label>
+								<label class="rowLabelNrYear">Investimento 2</label>
+								<label class="rowLabelNrYear">Investimento 3</label>
+								<label class="rowLabelNrYear">Investimento 4</label>
+							</div>
+						</div>
+					</div>
+					<div class="row largeLabel" dstable
+						data-years="4"
+						data-method="31"
+						data-name="AP_II_ValoreResiduo"
+						data-child="Investimento"
+						data-parent="ImmImmateriali"
+						data-type="input"
+						data-total="hide"
+					></div>
+					<div class="row largeLabel" dstable
+						data-years="4"
+						data-method="31"
+						data-name="AP_II_AmmortamentoAnnuale"
+						data-child="Investimento"
+						data-parent="ImmImmateriali"
+						data-type="input"
+						data-total="hide"
+					></div>
+				</div>
+
+
+				<widget_drawerTitle data-pars="title:='Subtitle_AP_Finanziarie' || mode:= 'edit' || ref:='Inseriti_9' || fillerBtn:='true'" />
+				<div id="Inseriti_9" class="collapse clearfix margin-v-10 box_Lev_2">
+
+					<div class="row margin-b-30 largeLabel" dstable
+						data-years="1"
+						data-method="3"
+						data-name="AP_Partecipazioni"
+						data-child="AP_Partecipazioni"
+						data-parent="ImmFinanziarie_Partecipazioni"
+						data-type="input"
+						data-total="hide"
+					></div>
+
+					<div class="row largeLabel specialHeader">
+						<div class="col datagrid-3">
+							<div class="clear clearfix">
+								<label class="rowLabelEmpty1"></label>
+								<label class="rowLabelNrYear">Titoli 1</label>
+								<label class="rowLabelNrYear">Titoli 2</label>
+								<label class="rowLabelNrYear">Titoli 3</label>
+								<label class="rowLabelNrYear">Titoli 4</label>
+							</div>
+						</div>
+					</div>
+					<div class="row largeLabel" dstable
+						data-years="4"
+						data-method="31"
+						data-name="AP_IF_Valore"
+						data-child="Titolo"
+						data-parent="ImmFinanziarie_Titoli"
+						data-type="input"
+						data-total="hide"
+					></div>
+					<div class="row largeLabel" dstable
+						data-years="4"
+						data-method="31"
+						data-name="AP_IF_AnniResidui"
+						data-child="Titolo"
+						data-parent="ImmFinanziarie_Titoli"
+						data-type="input"
+						data-total="hide"
+					></div>
+					<div class="row largeLabel" dstable
+						data-years="4"
+						data-method="31"
+						data-name="AP_IF_InteressiPerc"
+						data-child="Titolo"
+						data-parent="ImmFinanziarie_Titoli"
+						data-type="input"
+						data-total="hide"
+					></div>
+					<div class="row largeLabel" dstable
+						data-years="4"
+						data-method="31"
+						data-name="AP_IF_Interessi"
+						data-child="Titolo"
+						data-parent="ImmFinanziarie_Titoli"
+						data-type="input"
+						data-total="hide"
+					></div>
+				</div>
+
+
+				<widget_drawerTitle data-pars="title:='Subtitle_AP_Finanziamenti' || mode:= 'edit' || ref:='Inseriti_10' || fillerBtn:='true'" />
+				<div id="Inseriti_10" class="collapse clearfix margin-v-10 box_Lev_2">
+					<div class="row largeLabel margin-b-30" dstable
+						data-years="1"
+						data-method="3"
+						data-name="AP_F_FinanziamentiABreve"
+						data-child="AP_F_FinanziamentiABreve"
+						data-parent="FinanziamentiBreve"
+						data-type="input"
+						data-total="hide"
+					></div>
+
+					<div class="row largeLabel specialHeader">
+						<div class="col datagrid-3">
+							<div class="clear clearfix">
+								<label class="rowLabelEmpty1"></label>
+								<!--<label class="rowLabelNrYear">Finanziamento 1</label>
+								<label class="rowLabelNrYear">Finanziamento 2</label>
+								<label class="rowLabelNrYear">Finanziamento 3</label>
+								<label class="rowLabelNrYear">Finanziamento 4</label>-->
+								<label class="rowLabelNrYear" title="Finanziamento a MLT 1">Finanziam. a MLT 1</label>
+								<label class="rowLabelNrYear" title="Finanziamento a MLT 2">Finanziam. a MLT 2</label>
+								<label class="rowLabelNrYear" title="Finanziamento a MLT 3">Finanziam. a MLT 3</label>
+								<label class="rowLabelNrYear" title="Finanziamento a MLT 4">Finanziam. a MLT 4</label>
+							</div>
+						</div>
+					</div>
+					<div class="row largeLabel" dstable
+						data-years="4"
+						data-method="31"
+						data-name="AP_F_DebitoMedio"
+						data-child="Finanziamento"
+						data-parent="Finanziamenti"
+						data-type="input"
+						data-total="hide"
+					></div>
+					<div class="row largeLabel" dstable
+						data-years="4"
+						data-method="31"
+						data-name="AP_F_DebitoABreve"
+						data-child="Finanziamento"
+						data-parent="Finanziamenti"
+						data-type="input"
+						data-total="hide"
+					></div>
+					<div class="row largeLabel" dstable
+						data-years="4"
+						data-method="31"
+						data-name="AP_F_InteressiPerc"
+						data-child="Finanziamento"
+						data-parent="Finanziamenti"
+						data-type="input"
+						data-total="hide"
+					></div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- *** CONSOLE *** -->
+	<widget_btnConsole />
+
+</div>

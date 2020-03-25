@@ -1,0 +1,1287 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<economics>
+
+	<!-- ===== Sez. 1:	Fogli di introduzione dati ============================================================== -->
+
+	<!-- 1: Ricavi -->
+	<PercIva page="iva">
+		<title codiceRPT="" codiceUI="TitleIva1_title" tot="0">Ricavi e acquisti</title>
+		<item  codiceRPT="" codiceUI="Ricavi_1" um="%" tot="0">Ricavi</item>
+		<item  codiceRPT="" codiceUI="Acquisti_1" um="%" tot="0">Acquisti</item>
+		<title codiceRPT="" codiceUI="TitleIva2_title" tot="0">Costi variabili</title>
+		<item  codiceRPT="" codiceUI="CI_VarComm_1" um="%" tot="0">Commerciali</item>
+		<item  codiceRPT="" codiceUI="CI_VarProd_1" um="%" tot="0">Di Produzione</item>
+		<title codiceRPT="" codiceUI="TitleIva3_title" tot="0">Costi interni</title>
+		<item  codiceRPT="" codiceUI="CI_Marketing_1" um="%" tot="0">Marketing</item>
+		<item  codiceRPT="" codiceUI="CI_Comunicazione_1" um="%" tot="0">Comunicazione</item>
+		<item  codiceRPT="" codiceUI="CI_Struttura_1" um="%" tot="0">Struttura</item>
+		<item  codiceRPT="" codiceUI="CI_Infrastrutture_1" um="%" tot="0">Infrastrutture</item>
+		<item  codiceRPT="" codiceUI="CI_Amministrativi_1" um="%" tot="0">Amministrativi</item>
+		<item  codiceRPT="" codiceUI="CI_Altri_1" um="%" tot="0">Altri</item>
+		<title codiceRPT="" codiceUI="TitleIva4_title" tot="0">Immobilizzazioni Materiali</title>
+		<item  codiceRPT="" codiceUI="IMat_1_1" um="%" tot="0">%25 IVA (Gruppo 1)</item>
+		<item  codiceRPT="" codiceUI="IMat_2_1" um="%" tot="0">%25 IVA (Gruppo 2)</item>
+		<item  codiceRPT="" codiceUI="IMat_3_1" um="%" tot="0">%25 IVA (Gruppo 3)</item>
+		<item  codiceRPT="" codiceUI="IMat_4_1" um="%" tot="0">%25 IVA (Gruppo 4)</item>
+		<title codiceRPT="" codiceUI="TitleIva5_title" tot="0">Immobilizzazioni Immateriali</title>
+		<item  codiceRPT="" codiceUI="IImmat_1_1" um="%" tot="0">%25 IVA (Gruppo 1)</item>
+		<item  codiceRPT="" codiceUI="IImmat_2_1" um="%" tot="0">%25 IVA (Gruppo 2)</item>
+		<item  codiceRPT="" codiceUI="IImmat_3_1" um="%" tot="0">%25 IVA (Gruppo 3)</item>
+		<item  codiceRPT="" codiceUI="IImmat_4_1" um="%" tot="0">%25 IVA (Gruppo 4)</item>
+	</PercIva>
+	<Ricavi_PercIva page="ricavi">
+		<title codiceRPT="1098" codiceUI="Ricavi_PercIva_title" tot="0">Percentuali IVA</title>
+		<item  codiceRPT="1001" codiceUI="Ricavi_PercIva_1" um="%" tot="0">%25 IVA ricavi</item>
+		<item  codiceRPT="1002" codiceUI="CostiEsterni_PercIva_1" um="%" tot="0">%25 IVA acquisti</item>
+	</Ricavi_PercIva>
+	<Prodotto_QtaVenduta page="ricavi">
+		<title codiceRPT="1085" codiceUI="Prodotto_QtaVenduta_title" tot="0">Quantità prodotti / servizi / clienti / linee di prodotto / partite contabili</title>
+		<item  codiceRPT="1003" codiceUI="Prodotto_QtaVenduta_1" default="Custom1" tot="1">Custom1</item>
+		<item  codiceRPT="1004" codiceUI="Prodotto_QtaVenduta_2" default="Custom2" tot="1">Custom2</item>
+		<item  codiceRPT="1005" codiceUI="Prodotto_QtaVenduta_3" default="Custom3" tot="1">Custom3</item>
+		<item  codiceRPT="1006" codiceUI="Prodotto_QtaVenduta_4" default="Custom4" tot="1">Custom4</item>
+		<item  codiceRPT="1007" codiceUI="Prodotto_QtaVenduta_5" default="Custom5" tot="1">Custom5</item>
+		<item  codiceRPT="1008" codiceUI="Prodotto_QtaVenduta_t" tot="1">Totale</item>
+	</Prodotto_QtaVenduta>
+	<Prodotto_PrezzoUnitario page="ricavi">
+		<title codiceRPT="1086" codiceUI="Prodotto_PrezzoUnitario_title" tot="0">Ricavo unitario netto medio totale</title>
+		<item  codiceRPT="1009" codiceUI="Prodotto_PrezzoUnitario_1" um="€" default="Custom1" tot="0">Custom1</item>
+		<item  codiceRPT="1010" codiceUI="Prodotto_PrezzoUnitario_2" um="€" default="Custom2" tot="0">Custom2</item>
+		<item  codiceRPT="1011" codiceUI="Prodotto_PrezzoUnitario_3" um="€" default="Custom3" tot="0">Custom3</item>
+		<item  codiceRPT="1012" codiceUI="Prodotto_PrezzoUnitario_4" um="€" default="Custom4" tot="0">Custom4</item>
+		<item  codiceRPT="1013" codiceUI="Prodotto_PrezzoUnitario_5" um="€" default="Custom5" tot="0">Custom5</item>
+		<item  codiceRPT="1014" codiceUI="Prodotto_PrezzoMedio_1" um="€" tot="0">Ricavo unitario medio totale</item>
+	</Prodotto_PrezzoUnitario>
+	<Ricavi_RicavoNetto page="ricavi">
+		<title codiceRPT="1087" codiceUI="Ricavi_RicavoNetto_title" tot="0">Ricavi medi netti annuali prodotti/servizi/clienti/linee di prodotto/partite contabili</title>
+		<item  codiceRPT="1015" codiceUI="Ricavi_RicavoNetto_1" um="€" default="Custom1" tot="1">Custom1</item>
+		<item  codiceRPT="1016" codiceUI="Ricavi_RicavoNetto_2" um="€" default="Custom2" tot="1">Custom2</item>
+		<item  codiceRPT="1017" codiceUI="Ricavi_RicavoNetto_3" um="€" default="Custom3" tot="1">Custom3</item>
+		<item  codiceRPT="1018" codiceUI="Ricavi_RicavoNetto_4" um="€" default="Custom4" tot="1">Custom4</item>
+		<item  codiceRPT="1019" codiceUI="Ricavi_RicavoNetto_5" um="€" default="Custom5" tot="1">Custom5</item>
+		<item  codiceRPT="1020" codiceUI="Ricavi_RicavoNetto_t" um="€" tot="1">Totale</item>
+		<item  codiceRPT="    " codiceUI="Ricavi_RicavoNetto_Tot_1" um="€" tot="1">Totale</item>
+	</Ricavi_RicavoNetto>
+	<Ricavi_Iva page="ricavi">
+		<title codiceRPT="0   " codiceUI="Ricavi_Iva_title" tot="0">IVA sui ricavi (IVA a debito)</title>
+		<item  codiceRPT="1021" codiceUI="Ricavi_Iva_1" um="€" tot="1">IVA sui Ricavi</item>
+	</Ricavi_Iva>
+	<Ricavi_RicavoTotale page="ricavi">
+		<title codiceRPT="0   " codiceUI="Ricavi_RicavoTotale_title" tot="0">Ricavi totali lordi</title>
+		<item  codiceRPT="1022" codiceUI="Ricavi_RicavoTotale_1" um="€" tot="1">Ricavi totali lordi</item>
+	</Ricavi_RicavoTotale>
+	<!-- (Ricavi) -->
+
+	<!-- 2.1: Acquisti e magazzino -->
+	<Acquisti_PF_PercPrezzoUnitario page="acquisti e magazzino">
+		<title codiceRPT="1088" codiceUI="Acquisti_PF_PercPrezzoUnitario_title" tot="0">Costo unitario acquisti prodotti finiti (%25 sul ricavo unitario netto)</title>
+		<item  codiceRPT="1023" codiceUI="Acquisti_PF_PercPrezzoUnitario_1" um="%" default="Custom1" tot="0">Custom1</item>
+		<item  codiceRPT="1024" codiceUI="Acquisti_PF_PercPrezzoUnitario_2" um="%" default="Custom2" tot="0">Custom2</item>
+		<item  codiceRPT="1025" codiceUI="Acquisti_PF_PercPrezzoUnitario_3" um="%" default="Custom3" tot="0">Custom3</item>
+		<item  codiceRPT="1026" codiceUI="Acquisti_PF_PercPrezzoUnitario_4" um="%" default="Custom4" tot="0">Custom4</item>
+		<item  codiceRPT="1027" codiceUI="Acquisti_PF_PercPrezzoUnitario_5" um="%" default="Custom5" tot="0">Custom5</item>
+		<item  codiceRPT="1028" codiceUI="Acquisti_PF_PercPrezzoUnitario_t" um="%" tot="0">Totale</item>
+	</Acquisti_PF_PercPrezzoUnitario>
+	<Acquisti_PF_CostoUnitario page="acquisti e magazzino">
+		<title codiceRPT="6060" codiceUI="ProdottiFiniti" tot="0">Prodotti finiti</title>
+		<title codiceRPT="1089" codiceUI="Acquisti_PF_CostoUnitario_title" tot="0">Costo unitario acquisti prodotti finiti</title>
+		<item  codiceRPT="1029" codiceUI="Acquisti_PF_CostoUnitario_1" um="€" default="Custom1" tot="0">Custom1</item>
+		<item  codiceRPT="1030" codiceUI="Acquisti_PF_CostoUnitario_2" um="€" default="Custom2" tot="0">Custom2</item>
+		<item  codiceRPT="1031" codiceUI="Acquisti_PF_CostoUnitario_3" um="€" default="Custom3" tot="0">Custom3</item>
+		<item  codiceRPT="1032" codiceUI="Acquisti_PF_CostoUnitario_4" um="€" default="Custom4" tot="0">Custom4</item>
+		<item  codiceRPT="1033" codiceUI="Acquisti_PF_CostoUnitario_5" um="€" default="Custom5" tot="0">Custom5</item>
+		<item  codiceRPT="" codiceUI="Acquisti_PF_CostoUnitario_t" um="€" tot="0">Totale</item>
+	</Acquisti_PF_CostoUnitario>
+	<Acquisti_PF_CostoNetto page="acquisti e magazzino">
+		<title codiceRPT="1090" codiceUI="Acquisti_PF_CostoNetto_title" tot="0">Costi netti acquisti prodotti finiti</title>
+		<item  codiceRPT="1035" codiceUI="Acquisti_PF_CostoNetto_1" um="€" default="Custom1" tot="1">Custom1</item>
+		<item  codiceRPT="1036" codiceUI="Acquisti_PF_CostoNetto_2" um="€" default="Custom2" tot="1">Custom2</item>
+		<item  codiceRPT="1037" codiceUI="Acquisti_PF_CostoNetto_3" um="€" default="Custom3" tot="1">Custom3</item>
+		<item  codiceRPT="1038" codiceUI="Acquisti_PF_CostoNetto_4" um="€" default="Custom4" tot="1">Custom4</item>
+		<item  codiceRPT="1039" codiceUI="Acquisti_PF_CostoNetto_5" um="€" default="Custom5" tot="1">Custom5</item>
+		<item  codiceRPT="1040" codiceUI="Acquisti_PF_CostoNetto_Tot_1" um="€" tot="1">Totale</item>
+		<item  codiceRPT="1034" codiceUI="Acquisti_PF_CostoMedio_1" um="€" tot="0">Costo unitario medio totale</item>
+	</Acquisti_PF_CostoNetto>
+	<Acquisti_PF_Iva page="acquisti e magazzino">
+		<title codiceRPT="0   " codiceUI="Acquisti_PF_Iva_title" tot="0">IVA sugli acquisti</title>
+		<item  codiceRPT="1041" codiceUI="Acquisti_PF_Iva_1" um="€" tot="1">IVA a credito</item>
+	</Acquisti_PF_Iva>
+	<Acquisti_PF_CostoTotale page="acquisti e magazzino">
+		<title codiceRPT="0   " codiceUI="Acquisti_PF_CostoTotale_title" tot="0">Costi lordi totali acquisti</title>
+		<item  codiceRPT="1042" codiceUI="Acquisti_PF_CostoTotale_1" um="€" tot="1">Costi lordi totali acquisti P.F.</item>
+	</Acquisti_PF_CostoTotale>
+	<Acquisti_MP_PrezzoUnitario page="acquisti e magazzino">
+		<title codiceRPT="1136" codiceUI="Acquisti_MP_PrezzoUnitario_title" tot="0">Costo unitario acquisti materie prime</title>
+		<item  codiceRPT="1115" codiceUI="Acquisti_MP_PrezzoUnitario_1" um="€" default="Materia1" tot="0">Materia 1</item>
+		<item  codiceRPT="1116" codiceUI="Acquisti_MP_PrezzoUnitario_2" um="€" default="Materia2" tot="0">Materia 2</item>
+		<item  codiceRPT="1117" codiceUI="Acquisti_MP_PrezzoUnitario_3" um="€" default="Materia3" tot="0">Materia 3</item>
+		<item  codiceRPT="1118" codiceUI="Acquisti_MP_PrezzoUnitario_4" um="€" default="Materia4" tot="0">Materia 4</item>
+		<item  codiceRPT="1119" codiceUI="Acquisti_MP_PrezzoUnitario_5" um="€" default="Materia5" tot="0">Materia 5</item>
+		<item  codiceRPT="1120" codiceUI="Acquisti_MP_PrezzoUnitario_6" um="€" default="Materia6" tot="0">Materia 6</item>
+		<item  codiceRPT="1121" codiceUI="Acquisti_MP_PrezzoUnitario_7" um="€" default="Materia7" tot="0">Materia 7</item>
+		<item  codiceRPT="1122" codiceUI="Acquisti_MP_PrezzoUnitario_8" um="€" default="Materia8" tot="0">Materia 8</item>
+		<item  codiceRPT="1123" codiceUI="Acquisti_MP_PrezzoUnitario_9" um="€" default="Materia9" tot="0">Materia 9</item>
+		<item  codiceRPT="1124" codiceUI="Acquisti_MP_PrezzoUnitario_10" um="€" default="Materia10" tot="0">Materia 10</item>
+		<item  codiceRPT="" codiceUI="Acquisti_MP_PrezzoUnitario_t" um="€" tot="0">Totale</item>
+	</Acquisti_MP_PrezzoUnitario>
+	<Acquisti_MP_Quantita page="acquisti e magazzino">
+		<title codiceRPT="1135" codiceUI="Acquisti_MP_Quantita_title" tot="1">Quantità acquisti materie prime</title>
+		<item  codiceRPT="1105" codiceUI="Acquisti_MP_Quantita_1" default="Materia1" tot="1">Materia 1</item>
+		<item  codiceRPT="1106" codiceUI="Acquisti_MP_Quantita_2" default="Materia2" tot="1">Materia 2</item>
+		<item  codiceRPT="1107" codiceUI="Acquisti_MP_Quantita_3" default="Materia3" tot="1">Materia 3</item>
+		<item  codiceRPT="1108" codiceUI="Acquisti_MP_Quantita_4" default="Materia4" tot="1">Materia 4</item>
+		<item  codiceRPT="1109" codiceUI="Acquisti_MP_Quantita_5" default="Materia5" tot="1">Materia 5</item>
+		<item  codiceRPT="1110" codiceUI="Acquisti_MP_Quantita_6" default="Materia6" tot="1">Materia 6</item>
+		<item  codiceRPT="1111" codiceUI="Acquisti_MP_Quantita_7" default="Materia7" tot="1">Materia 7</item>
+		<item  codiceRPT="1112" codiceUI="Acquisti_MP_Quantita_8" default="Materia8" tot="1">Materia 8</item>
+		<item  codiceRPT="1113" codiceUI="Acquisti_MP_Quantita_9" default="Materia9" tot="1">Materia 9</item>
+		<item  codiceRPT="1114" codiceUI="Acquisti_MP_Quantita_10" default="Materia10" tot="1">Materia 10</item>
+		<item  codiceRPT="" codiceUI="Acquisti_MP_Quantita_t" tot="1">Totale</item>
+	</Acquisti_MP_Quantita>
+	<Acquisti_MP_CostoNetto page="acquisti e magazzino">
+		<title codiceRPT="6064" codiceUI="MateriePrime" tot="0">Materie prime</title>
+		<title codiceRPT="1154" codiceUI="Acquisti_MP_CostoNetto_title" tot="0">Costi netti acquisti materie prime</title>
+		<item  codiceRPT="1137" codiceUI="Acquisti_MP_CostoNetto_1" um="€" default="Materia1" tot="1">Materia 1</item>
+		<item  codiceRPT="1138" codiceUI="Acquisti_MP_CostoNetto_2" um="€" default="Materia2" tot="1">Materia 2</item>
+		<item  codiceRPT="1139" codiceUI="Acquisti_MP_CostoNetto_3" um="€" default="Materia3" tot="1">Materia 3</item>
+		<item  codiceRPT="1140" codiceUI="Acquisti_MP_CostoNetto_4" um="€" default="Materia4" tot="1">Materia 4</item>
+		<item  codiceRPT="1141" codiceUI="Acquisti_MP_CostoNetto_5" um="€" default="Materia5" tot="1">Materia 5</item>
+		<item  codiceRPT="1142" codiceUI="Acquisti_MP_CostoNetto_6" um="€" default="Materia6" tot="1">Materia 6</item>
+		<item  codiceRPT="1143" codiceUI="Acquisti_MP_CostoNetto_7" um="€" default="Materia7" tot="1">Materia 7</item>
+		<item  codiceRPT="1144" codiceUI="Acquisti_MP_CostoNetto_8" um="€" default="Materia8" tot="1">Materia 8</item>
+		<item  codiceRPT="1145" codiceUI="Acquisti_MP_CostoNetto_9" um="€" default="Materia9" tot="1">Materia 9</item>
+		<item  codiceRPT="1146" codiceUI="Acquisti_MP_CostoNetto_10" um="€" default="Materia10" tot="1">Materia 10</item>
+		<item  codiceRPT="1147" codiceUI="Acquisti_MP_CostoNetto_Tot_1" um="€" tot="1">Totale</item>
+	</Acquisti_MP_CostoNetto>
+	<Acquisti_MP_Iva page="acquisti e magazzino">
+		<title codiceRPT="0   " codiceUI="Acquisti_MP_Iva_title" tot="0">IVA sugli acquisti</title>
+		<item  codiceRPT="1148" codiceUI="Acquisti_MP_Iva_1" um="€" tot="1">IVA a credito</item>
+	</Acquisti_MP_Iva>
+	<Acquisti_MP_CostoTotale page="acquisti e magazzino">
+		<title codiceRPT="0   " codiceUI="Acquisti_MP_CostoTotale_title" tot="0">Costi lordi totali acquisti</title>
+		<item  codiceRPT="1149" codiceUI="Acquisti_MP_CostoTotale_1" um="€" tot="1">Costi lordi totali acquisti M.P.</item>
+	</Acquisti_MP_CostoTotale>
+	<Acquisti_CostiTotali  page="acquisti e magazzino">
+		<title codiceRPT="1153" codiceUI="TotaleAcquisti" tot="1">Costi totali Acquisti</title>
+		<item  codiceRPT="1150" codiceUI="Acquisti_CostoNettoTotale_1" um="€" tot="1">Costi netti totali acquisti</item>
+		<item  codiceRPT="1151" codiceUI="Acquisti_IvaTotale_1" um="€" tot="1">IVA totale a credito</item>
+		<item  codiceRPT="1152" codiceUI="Acquisti_CostoLordoTotale_1" um="€" tot="1">Costi lordi totali acquisti</item>
+	</Acquisti_CostiTotali>
+	<!-- (Acquisti) -->
+
+	<!-- 2.2: Magazzino -->
+	<Magazzino_PF_Giorni page="acquisti e magazzino">
+		<title codiceRPT="1104" codiceUI="Magazzino_PF_Giorni_title" tot="0">Giorni magazzino prodotti finiti</title>
+		<item  codiceRPT="1099" codiceUI="Magazzino_PF_Giorni_1" default="Custom1" tot="0">Custom1</item>
+		<item  codiceRPT="1100" codiceUI="Magazzino_PF_Giorni_2" default="Custom2" tot="0">Custom2</item>
+		<item  codiceRPT="1101" codiceUI="Magazzino_PF_Giorni_3" default="Custom3" tot="0">Custom3</item>
+		<item  codiceRPT="1102" codiceUI="Magazzino_PF_Giorni_4" default="Custom4" tot="0">Custom4</item>
+		<item  codiceRPT="1103" codiceUI="Magazzino_PF_Giorni_5" default="Custom5" tot="0">Custom5</item>
+		<item  codiceRPT="1048" codiceUI="Magazzino_PF_Giorni_t" tot="0">Totale</item>
+	</Magazzino_PF_Giorni>
+	<Magazzino_PF_Quantita page="acquisti e magazzino">
+		<title codiceRPT="1092" codiceUI="Magazzino_PF_Quantita_title" tot="0">Quantità prodotti finiti/semilavorati/servizi</title>
+		<item  codiceRPT="1049" codiceUI="Magazzino_PF_Quantita_1" default="Custom1" tot="0">Custom1</item>
+		<item  codiceRPT="1050" codiceUI="Magazzino_PF_Quantita_2" default="Custom2" tot="0">Custom2</item>
+		<item  codiceRPT="1051" codiceUI="Magazzino_PF_Quantita_3" default="Custom3" tot="0">Custom3</item>
+		<item  codiceRPT="1052" codiceUI="Magazzino_PF_Quantita_4" default="Custom4" tot="0">Custom4</item>
+		<item  codiceRPT="1053" codiceUI="Magazzino_PF_Quantita_5" default="Custom5" tot="0">Custom5</item>
+		<item  codiceRPT="1054" codiceUI="Magazzino_PF_Quantita_t" tot="0">Totale</item>
+	</Magazzino_PF_Quantita>
+	<Magazzino_PF_CostoNetto page="acquisti e magazzino">
+		<title codiceRPT="1096" codiceUI="Magazzino_PF_CostoNetto_title" tot="0">Valori netti magazzino Prodotti Finiti</title>
+		<item  codiceRPT="1071" codiceUI="Magazzino_PF_CostoNetto_1" um="€" default="Custom1" tot="0">Custom1</item>
+		<item  codiceRPT="1072" codiceUI="Magazzino_PF_CostoNetto_2" um="€" default="Custom2" tot="0">Custom2</item>
+		<item  codiceRPT="1073" codiceUI="Magazzino_PF_CostoNetto_3" um="€" default="Custom3" tot="0">Custom3</item>
+		<item  codiceRPT="1074" codiceUI="Magazzino_PF_CostoNetto_4" um="€" default="Custom4" tot="0">Custom4</item>
+		<item  codiceRPT="1075" codiceUI="Magazzino_PF_CostoNetto_5" um="€" default="Custom5" tot="0">Custom5</item>
+		<item  codiceRPT="1166" codiceUI="Magazzino_PF_CostoNetto_Tot_1" um="€" tot="0">Totale</item>
+	</Magazzino_PF_CostoNetto>
+	<Magazzino_PF_Iva page="acquisti e magazzino">
+		<title codiceRPT="0   " codiceUI="Magazzino_PF_Iva_title" tot="0">IVA Magazzino</title>
+		<item  codiceRPT="1083" codiceUI="Magazzino_PF_Iva_1" um="€" tot="1">IVA a credito</item>
+	</Magazzino_PF_Iva>
+	<Magazzino_PF_CostoTotale page="acquisti e magazzino">
+		<title codiceRPT="0   " codiceUI="Magazzino_PF_CostoTotale_title" tot="0">Costi acquisti totali</title>
+		<item  codiceRPT="1084" codiceUI="Magazzino_PF_CostoTotale_1" um="€" tot="1">Valore lordo totale magazzino P.F.</item>
+	</Magazzino_PF_CostoTotale>
+	<Magazzino_MP_Giorni page="acquisti e magazzino">
+		<title codiceRPT="1155" codiceUI="Magazzino_MP_Giorni_title" tot="0">Giorni magazzino materie prime</title>
+		<item  codiceRPT="1125" codiceUI="Magazzino_MP_Giorni_1" default="Materia1" tot="0">Materia 1</item>
+		<item  codiceRPT="1126" codiceUI="Magazzino_MP_Giorni_2" default="Materia2" tot="0">Materia 2</item>
+		<item  codiceRPT="1127" codiceUI="Magazzino_MP_Giorni_3" default="Materia3" tot="0">Materia 3</item>
+		<item  codiceRPT="1128" codiceUI="Magazzino_MP_Giorni_4" default="Materia4" tot="0">Materia 4</item>
+		<item  codiceRPT="1129" codiceUI="Magazzino_MP_Giorni_5" default="Materia5" tot="0">Materia 5</item>
+		<item  codiceRPT="1130" codiceUI="Magazzino_MP_Giorni_6" default="Materia6" tot="0">Materia 6</item>
+		<item  codiceRPT="1131" codiceUI="Magazzino_MP_Giorni_7" default="Materia7" tot="0">Materia 7</item>
+		<item  codiceRPT="1132" codiceUI="Magazzino_MP_Giorni_8" default="Materia8" tot="0">Materia 8</item>
+		<item  codiceRPT="1133" codiceUI="Magazzino_MP_Giorni_9" default="Materia9" tot="0">Materia 9</item>
+		<item  codiceRPT="1134" codiceUI="Magazzino_MP_Giorni_10" default="Materia10" tot="0">Materia 10</item>
+		<item  codiceRPT="" codiceUI="Magazzino_MP_Giorni_t" tot="0">Totale</item>
+	</Magazzino_MP_Giorni>
+	<Magazzino_MP_Quantita page="acquisti e magazzino">
+		<title codiceRPT="1091" codiceUI="Magazzino_MP_Quantita_title" tot="0">Quantità magazzino materie prime</title>
+		<item  codiceRPT="1156" codiceUI="Magazzino_MP_Quantita_1" default="Materia1" tot="0">Materia 1</item>
+		<item  codiceRPT="1157" codiceUI="Magazzino_MP_Quantita_2" default="Materia2" tot="0">Materia 2</item>
+		<item  codiceRPT="1158" codiceUI="Magazzino_MP_Quantita_3" default="Materia3" tot="0">Materia 3</item>
+		<item  codiceRPT="1159" codiceUI="Magazzino_MP_Quantita_4" default="Materia4" tot="0">Materia 4</item>
+		<item  codiceRPT="1160" codiceUI="Magazzino_MP_Quantita_5" default="Materia5" tot="0">Materia 5</item>
+		<item  codiceRPT="1161" codiceUI="Magazzino_MP_Quantita_6" default="Materia6" tot="0">Materia 6</item>
+		<item  codiceRPT="1162" codiceUI="Magazzino_MP_Quantita_7" default="Materia7" tot="0">Materia 7</item>
+		<item  codiceRPT="1163" codiceUI="Magazzino_MP_Quantita_8" default="Materia8" tot="0">Materia 8</item>
+		<item  codiceRPT="1164" codiceUI="Magazzino_MP_Quantita_9" default="Materia9" tot="0">Materia 9</item>
+		<item  codiceRPT="1165" codiceUI="Magazzino_MP_Quantita_10" default="Materia10" tot="0">Materia 10</item>
+		<item  codiceRPT="" codiceUI="Magazzino_MP_Quantita_t" tot="0">Totale</item>
+	</Magazzino_MP_Quantita>
+	<Magazzino_MP_CostoNetto page="acquisti e magazzino">
+		<title codiceRPT="1094" codiceUI="Magazzino_MP_CostoNetto_title" tot="0">Valori netti magazzino Materie Prime</title>
+		<item  codiceRPT="1169" codiceUI="Magazzino_MP_CostoNetto_1" default="Materia1" tot="0">Materia 1</item>
+		<item  codiceRPT="1170" codiceUI="Magazzino_MP_CostoNetto_2" default="Materia2" tot="0">Materia 2</item>
+		<item  codiceRPT="1171" codiceUI="Magazzino_MP_CostoNetto_3" default="Materia3" tot="0">Materia 3</item>
+		<item  codiceRPT="1172" codiceUI="Magazzino_MP_CostoNetto_4" default="Materia4" tot="0">Materia 4</item>
+		<item  codiceRPT="1173" codiceUI="Magazzino_MP_CostoNetto_5" default="Materia5" tot="0">Materia 5</item>
+		<item  codiceRPT="1174" codiceUI="Magazzino_MP_CostoNetto_6" default="Materia6" tot="0">Materia 6</item>
+		<item  codiceRPT="1175" codiceUI="Magazzino_MP_CostoNetto_7" default="Materia7" tot="0">Materia 7</item>
+		<item  codiceRPT="1176" codiceUI="Magazzino_MP_CostoNetto_8" default="Materia8" tot="0">Materia 8</item>
+		<item  codiceRPT="1177" codiceUI="Magazzino_MP_CostoNetto_9" default="Materia9" tot="0">Materia 9</item>
+		<item  codiceRPT="1178" codiceUI="Magazzino_MP_CostoNetto_10" default="Materia10" tot="0">Materia 10</item>
+		<item  codiceRPT="1179" codiceUI="Magazzino_MP_CostoNetto_Tot_1" tot="0">Totale</item>
+	</Magazzino_MP_CostoNetto>
+	<Magazzino_MP_Iva page="acquisti e magazzino">
+		<item  codiceRPT="" codiceUI="Magazzino_MP_Iva_1" um="€" tot="1">IVA a credito</item>
+	</Magazzino_MP_Iva>
+	<Magazzino_MP_CostoTotale page="acquisti e magazzino">
+		<item  codiceRPT="" codiceUI="Magazzino_MP_CostoTotale_1" um="€" tot="1">Valore lordo totale magazzino M.P.</item>
+	</Magazzino_MP_CostoTotale>
+	<Magazzino_CostiTotali  page="acquisti e magazzino">
+		<title codiceRPT="1097" codiceUI="TotaleMagazzino" tot="0">Valore totale Magazzino</title>
+		<item  codiceRPT="" codiceUI="Magazzino_IvaTotale_1" um="€" tot="1">IVA totale a credito</item>
+		<item  codiceRPT="" codiceUI="Magazzino_CostoLordoTotale_1" um="€" tot="1">Valore totale lordo Magazzino</item>
+		<item  codiceRPT="" codiceUI="RiportoTot_PF_1" um="€" tot="1">Valore netto P.F.</item>
+		<item  codiceRPT="" codiceUI="RiportoTot_MP_1" um="€" tot="1">Valore netto M.P.</item>
+		<item  codiceRPT="1082" codiceUI="ValoreNettoMagazzino_1" um="€" tot="0">Valore totale netto Magazzino</item>
+	</Magazzino_CostiTotali>
+	<!-- (Magazzino) -->
+
+	<!-- 3: Costi interni -->
+	<CostiVarComm page="costi_interni">
+		<title codiceRPT="2001" codiceUI="CostiVarComm_title" tot="0">Costi variabili commerciali</title>
+		<item  codiceRPT="2002" codiceUI="CostiVarComm_CostoNetto_1" um="€" tot="1">Costi variabili commerciali netti</item>
+		<item  codiceRPT="2003" codiceUI="CostiVarComm_PercIva_1" um="%" tot="0">Valore %25 IVA</item>
+		<item  codiceRPT="2004" codiceUI="CostiVarComm_Iva_1" um="€" tot="1">IVA a credito</item>
+		<item  codiceRPT="2005" codiceUI="CostiVarComm_TotaleMensile_1" um="€" tot="1">Costi variabili commerciali lordi</item>
+		<item  codiceRPT="2006" codiceUI="CostiVarComm_TotaleAnnuale_1" um="€" tot="0">Costi netti variabili commerciali annuali</item>
+	</CostiVarComm>
+	<CostiVarProd page="costi_interni">
+		<title codiceRPT="2007" codiceUI="CostiVarProd_title" tot="0">Costi variabili produzione</title>
+		<item  codiceRPT="2008" codiceUI="CostiVarProd_CostoNetto_1" um="€" tot="1">Costi variabili di produzione netti</item>
+		<item  codiceRPT="2009" codiceUI="CostiVarProd_PercIva_1" um="%" tot="0">Valore %25 IVA</item>
+		<item  codiceRPT="2010" codiceUI="CostiVarProd_Iva_1" um="€" tot="1">IVA a credito</item>
+		<item  codiceRPT="2011" codiceUI="CostiVarProd_TotaleMensile_1" um="€" tot="1">Costi variabili di produzione lordi</item>
+		<item  codiceRPT="2012" codiceUI="CostiVarProd_TotaleAnnuale_1" um="€" tot="0">Costi netti variabili di produzione annuali</item>
+	</CostiVarProd>
+	<CostiMarketing page="costi_interni">
+		<title codiceRPT="2013" codiceUI="CostiMarketing_title" tot="0">Costi marketing</title>
+		<item  codiceRPT="2014" codiceUI="CostiMarketing_CostoNetto_1" um="€" tot="1">Costi marketing netti</item>
+		<item  codiceRPT="2015" codiceUI="CostiMarketing_PercIva_1" um="%" tot="0">Valore %25 IVA</item>
+		<item  codiceRPT="2016" codiceUI="CostiMarketing_Iva_1" um="€" tot="1">IVA a credito</item>
+		<item  codiceRPT="2017" codiceUI="CostiMarketing_TotaleMensile_1" um="€" tot="1">Costi marketing lordi</item>
+		<item  codiceRPT="2018" codiceUI="CostiMarketing_TotaleAnnuale_1" um="€" tot="0">Costi marketing netti annuali</item>
+	</CostiMarketing>
+	<CostiInfrastrutture page="costi_interni">
+		<title codiceRPT="2019" codiceUI="CostiInfrastrutture_title" tot="0">Costi infrastrutture</title>
+		<item  codiceRPT="2020" codiceUI="CostiInfrastrutture_CostoNetto_1" um="€" tot="1">Costi operativi netti</item>
+		<item  codiceRPT="2021" codiceUI="CostiInfrastrutture_PercIva_1" um="%" tot="0">Valore %25 IVA</item>
+		<item  codiceRPT="2022" codiceUI="CostiInfrastrutture_Iva_1" um="€" tot="1">IVA a credito</item>
+		<item  codiceRPT="2023" codiceUI="CostiInfrastrutture_TotaleMensile_1" um="€" tot="1">Costi infrastrutture lordi</item>
+		<item  codiceRPT="2024" codiceUI="CostiInfrastrutture_TotaleAnnuale_1" um="€" tot="0">Costi infrastrutture netti annuali</item>
+	</CostiInfrastrutture>
+	<CostiComunicazione page="costi_interni">
+		<title codiceRPT="2025" codiceUI="CostiComunicazione_title" tot="0">Costi comunicazione</title>
+		<item  codiceRPT="2026" codiceUI="CostiComunicazione_CostoNetto_1" um="€" tot="1">Costi comunicazione netti</item>
+		<item  codiceRPT="2027" codiceUI="CostiComunicazione_PercIva_1" um="%" tot="0">Valore %25 IVA</item>
+		<item  codiceRPT="2028" codiceUI="CostiComunicazione_Iva_1" um="€" tot="1">IVA a credito</item>
+		<item  codiceRPT="2029" codiceUI="CostiComunicazione_TotaleMensile_1" um="€" tot="1">Costi comunicazione lordi</item>
+		<item  codiceRPT="2030" codiceUI="CostiComunicazione_TotaleAnnuale_1" um="€" tot="0">Costi comunicazione netti annuali</item>
+	</CostiComunicazione>
+	<CostiStruttura page="costi_interni">
+		<title codiceRPT="2031" codiceUI="CostiStruttura_title" tot="0">Costi struttura</title>
+		<item  codiceRPT="2032" codiceUI="CostiStruttura_CostoNetto_1" um="€" tot="1">Affitto, utenze varie, manutenzioni, Servizi, Miscellaneus</item>
+		<item  codiceRPT="2033" codiceUI="CostiStruttura_PercIva_1" um="%" tot="0">Valore %25 IVA</item>
+		<item  codiceRPT="2034" codiceUI="CostiStruttura_Iva_1" um="€" tot="1">IVA a credito</item>
+		<item  codiceRPT="2035" codiceUI="CostiStruttura_TotaleMensile_1" um="€" tot="1">Costi struttura lordi</item>
+		<item  codiceRPT="2036" codiceUI="CostiStruttura_TotaleAnnuale_1" um="€" tot="0">Costi struttura annuali</item>
+	</CostiStruttura>
+	<CostiAmministrativi page="costi_interni">
+		<title codiceRPT="2037" codiceUI="CostiAmministrativi_title" tot="0">Costi amministrativi</title>
+		<item  codiceRPT="2038" codiceUI="CostiAmministrativi_CostoNetto_1" um="€" tot="1">Costi amministrativi, legale, commercialista netti</item>
+		<item  codiceRPT="2039" codiceUI="CostiAmministrativi_PercIva_1" um="%" tot="0">Valore %25 IVA</item>
+		<item  codiceRPT="2040" codiceUI="CostiAmministrativi_Iva_1" um="€" tot="1">IVA a credito</item>
+		<item  codiceRPT="2041" codiceUI="CostiAmministrativi_TotaleMensile_1" um="€" tot="1">Costi amministrativi lordi</item>
+		<item  codiceRPT="2042" codiceUI="CostiAmministrativi_TotaleAnnuale_1" um="€" tot="0">Costi ammin. leg. comm netti annuali</item>
+	</CostiAmministrativi>
+	<CostiAltri page="costi_interni">
+		<title codiceRPT="2043" codiceUI="CostiAltri_title" tot="0">Altri costi</title>
+		<item  codiceRPT="2044" codiceUI="CostiAltri_CostoNetto_1" um="€" tot="1">Costi Altro netti</item>
+		<item  codiceRPT="2045" codiceUI="CostiAltri_PercIva_1" um="%" tot="0">Valore %25 IVA</item>
+		<item  codiceRPT="2046" codiceUI="CostiAltri_Iva_1" um="€" tot="1">IVA a credito</item>
+		<item  codiceRPT="2047" codiceUI="CostiAltri_TotaleMensile_1" um="€" tot="1">Costi Altro lordi</item>
+		<item  codiceRPT="2048" codiceUI="CostiAltri_TotaleAnnuale_1" um="€" tot="0">Costi Altro netti annuali</item>
+	</CostiAltri>
+	<ValoriCalcolati page="costi_interni">
+		<item  codiceRPT="2049" codiceUI="IvaMediaCostiInterni_1" um="€" tot="0">IVA media costi interni</item>
+		<item  codiceRPT="2050" codiceUI="Mensilita_1" tot="0">Mensilità</item>
+		<item  codiceRPT="2051" codiceUI="Ires_1" tot="0">IRES</item>
+		<item  codiceRPT="2052" codiceUI="Irap_1" tot="0">IRAP</item>
+		<item  codiceRPT="" codiceUI="TotaleCostiNetti_1" um="€" tot="1">Totale costi netti</item>
+		<item  codiceRPT="2054" codiceUI="IvaTotaleMeseMedia_1" um="€" tot="0">IVA totale mese media</item>
+		<item  codiceRPT="2055" codiceUI="IvaMeseEffettiva_1" um="€" tot="0">IVA mese effettiva</item>
+		<item  codiceRPT="2056" codiceUI="IvaAnnoEffettiva_1" um="€" tot="0">IVA anno effettiva</item>
+		<title codiceRPT="" codiceUI="DettaglioCostiLordi_title" tot="0">Costi lordi: dettaglio</title>
+		<title codiceRPT="2057" codiceUI="TotaleCosti_title" tot="0">Totali complessivi</title>
+		<item  codiceRPT="2053" codiceUI="TotaleNetti_1" um="€" tot="1">Costi netti totali</item>
+		<item  codiceRPT="2058" codiceUI="CostiLordi_Iva_1" um="€" tot="1">IVA a credito totale</item>
+		<item  codiceRPT="2059" codiceUI="CostiLordi_Totale_1" um="€" tot="1">Costi lordi totali</item>
+	</ValoriCalcolati>
+	<!-- (Costi interni) -->
+
+	<!-- 4: Human Resources -->
+	<Clevel page="hr">
+		<title codiceRPT="3001" codiceUI="CLevel_title" tot="0">Costo annuale Direzione generale</title>
+		<item  codiceRPT="3002" codiceUI="CLevel_Costo_1" um="€" tot="0">Costo medio azienda per risorsa</item>
+		<item  codiceRPT="3003" codiceUI="CLevel_Risorse_1" tot="0">Numero risorse</item>
+		<item  codiceRPT="3021" codiceUI="CLevel_Totale_1" um="€" tot="0">Totale</item>
+	</Clevel>
+	<Manager page="hr">
+		<title codiceRPT="3004" codiceUI="Manager_title" tot="0">Costo annuale Dirigenti/Quadri</title>
+		<item  codiceRPT="3005" codiceUI="Manager_Costo_1" um="€" tot="0">Costo medio azienda per risorsa</item>
+		<item  codiceRPT="3006" codiceUI="Manager_Risorse_1" tot="0">Numero risorse</item>
+		<item  codiceRPT="3022" codiceUI="Manager_Totale_1" um="€" tot="0">Totale</item>
+	</Manager>
+	<Marketing page="hr">
+		<title codiceRPT="3007" codiceUI="Marketing_title" tot="0">Costo annuale Marketing/Vendite</title>
+		<item  codiceRPT="3008" codiceUI="Marketing_Costo_1" um="€" tot="0">Costo medio azienda per risorsa</item>
+		<item  codiceRPT="3009" codiceUI="Marketing_Risorse_1" tot="0">Numero risorse</item>
+		<item  codiceRPT="3023" codiceUI="Marketing_Totale_1" um="€" tot="0">Totale</item>
+	</Marketing>
+	<PM_IT page="hr">
+		<title codiceRPT="3010" codiceUI="PM_IT_title" tot="0">Costo annuale Area tecnica</title>
+		<item  codiceRPT="3011" codiceUI="PM_IT_Costo_1" um="€" tot="0">Costo medio azienda per risorsa</item>
+		<item  codiceRPT="3012" codiceUI="PM_IT_Risorse_1" tot="0">Numero risorse</item>
+		<item  codiceRPT="3024" codiceUI="PM_IT_Totale_1" um="€" tot="0">Totale</item>
+	</PM_IT>
+	<Adm page="hr">
+		<title codiceRPT="3013" codiceUI="Adm_title" tot="0">Costo annuale Amministrazione/Staff</title>
+		<item  codiceRPT="3014" codiceUI="Adm_Costo_1" um="€" tot="0">Costo medio azienda per risorsa</item>
+		<item  codiceRPT="3015" codiceUI="Adm_Risorse_1" tot="0">Numero risorse</item>
+		<item  codiceRPT="3025" codiceUI="Adm_Totale_1" um="€" tot="0">Totale</item>
+	</Adm>
+	<Totali page="hr">
+		<title codiceRPT="3016" codiceUI="Totali_title" tot="0">Costi totali</title>
+		<item  codiceRPT="3017" codiceUI="TotManagement_1" tot="0">Management</item>
+		<item  codiceRPT="3018" codiceUI="TotStruttura_1" tot="0">Struttura</item>
+		<item  codiceRPT="3019" codiceUI="TotRisorse_1" tot="0">Totale Risorse</item>
+		<item  codiceRPT="3020" codiceUI="CostoTotaleAnnuale_1" um="€" tot="1">Costo totale</item>
+	</Totali>
+	<!-- (Human Resources) -->
+
+	<!-- 5: Capex -->
+	<AC_Capitale page="capex">
+		<title codiceRPT="4001" codiceUI="Capitale_title" tot="0">Capitale</title>
+		<item  codiceRPT="4002" codiceUI="CapitaleSociale_1" um="€" tot="1">Capitale Sociale</item>
+		<item  codiceRPT="4003" codiceUI="Riserve_1" um="€" tot="1">Riserve (sovrap./altre)</item>
+		<item  codiceRPT="4004" codiceUI="TotaleCapitale_1" um="€" tot="1">Totale</item>
+	</AC_Capitale>
+	<AC_Crediti page="capex">
+		<title codiceRPT="4050" codiceUI="AC_Crediti_title" um="€" tot="0">Crediti/Debiti</title>
+		<item  codiceRPT="4051" codiceUI="AC_CreditiSoci_1" um="€" tot="0">Crediti verso Soci</item>
+		<item  codiceRPT="4052" codiceUI="AC_CreditiAltri_1" um="€" tot="0">Altri crediti</item>
+		<item  codiceRPT="4053" codiceUI="AC_DebitiAltri_1" um="€" tot="0">Altri debiti</item>
+		<item  codiceRPT="4054" codiceUI="TotaleCrediti_1" um="€" tot="0">Totale</item>
+		<item  codiceRPT="4055" codiceUI="AC_DebitiBreve_1" um="€" tot="0">Debiti tributari esercizi precedenti a breve</item>
+		<item  codiceRPT="4056" codiceUI="AC_DebitiMedio_1" um="€" tot="0">Debiti tributari esercizi precedenti a medio</item>
+		<item  codiceRPT="4057" codiceUI="UtiliDistribuiti_1" um="€" tot="1">Utili distribuiti</item>
+	</AC_Crediti>
+	<Immob_Materiali page="capex">
+		<title codiceRPT="" codiceUI="Subtitle_Iperammortamento" tot="0">Iperammortamento</title>
+		<title codiceRPT="" codiceUI="Subtitle_InvestimentiNetti" tot="0">Investimenti netti</title>
+		<title codiceRPT="" codiceUI="Subtitle_Ammortamenti" tot="0">Ammortamenti</title>
+		<title codiceRPT="4180" codiceUI="Subtitle_IperammortamentiCalc" tot="0">Iperammortamenti</title>
+		<title codiceRPT="" codiceUI="Subtitle_ValoriResidui" tot="0">Valori residui</title>
+		<!-- Set 1 -->
+		<item  codiceRPT="4110" codiceUI="IM1_AmmortamentoAnnoP_1" tot="0">Ammortamento esercizio prec.</item>
+		<item  codiceRPT="4113" codiceUI="IM1_ResiduoCapexAnnoP_1" tot="0">Valore residuo capex esercizio prec.</item>
+		<item  codiceRPT="4104" codiceUI="IM1_IvaCreditoPerc_1" um="%" tot="0">%25 IVA credito</item>
+		<title codiceRPT="4100" codiceUI="Immob_Materiali_title1" tot="0">Immobilizzazioni Materiali - Gruppo 1</title>
+		<item  codiceRPT="4103" codiceUI="IM1_CapexNette_1" um="€" add=" (Grp. 1)" tot="1">Investimenti netti</item>
+		<item  codiceRPT="4107" codiceUI="IM1_AnniAmmortamento_1" add=" (Grp. 1)" tot="0">Anni ammortamenti</item>
+		<item  codiceRPT="4160" codiceUI="IM1_IperammortamentoPercAggiunta_1" um="%" add=" (Grp. 1)" tot="0">%25 Aggiunta</item>
+		<item  codiceRPT="4105" codiceUI="IM1_IvaCredito_1" um="€" add=" (Grp. 1)" tot="1">IVA credito</item>
+		<item  codiceRPT="4106" codiceUI="IM1_InvestimentiTotali_1" um="€" add=" (Grp. 1)" tot="1">Investimenti lordi</item>
+		<item  codiceRPT="4108" codiceUI="IM1_QuotaAmmortamentoAnnuale_1" um="€" add=" (Grp. 1)" tot="0">Quota ammortamento annuale</item>
+		<item  codiceRPT="4109" codiceUI="IM1_AmmortamentoNuovoCumulato_1" um="€" add=" (Grp. 1)" tot="0">Ammortamento totale anno</item>
+		<item  codiceRPT="4111" codiceUI="IM1_AmmortamentoTotaleCumulato_1" um="€" add=" (Grp. 1)" tot="0">Ammortamento totale cumulato</item>
+		<item  codiceRPT="4161" codiceUI="IM1_IperammortamentoTotale_1" um="%" add=" (Grp. 1)" tot="0">%25 Totale</item>
+		<item  codiceRPT="4162" codiceUI="IM1_IperammortamentoIper_1" um="€" add=" (Grp. 1)" tot="0">Ammortamento</item>
+		<item  codiceRPT="4163" codiceUI="IM1_IperammortamentoAggiuntivo_1" um="€" add=" (Grp. 1)" tot="2">Ammortamento aggiuntivo</item>
+		<item  codiceRPT="4164" codiceUI="IM1_IperammortamentoCumulato_1" um="€" add=" (Grp. 1)" tot="3">Ammortamento cumulato</item>
+		<item  codiceRPT="4112" codiceUI="IM1_ResiduoCapexNuove_1" um="€" add=" (Grp. 1)" tot="0">Valore residuo nuovi investimenti netti</item>
+		<item  codiceRPT="4114" codiceUI="IM1_Totali_1" um="€" add=" (Grp. 1)" tot="0">Immobilizzazioni totali (residue)</item>
+		<!-- Set 2 -->
+		<item  codiceRPT="" codiceUI="IM2_AmmortamentoAnnoP_1" tot="0">Ammortamento esercizio prec.</item>
+		<item  codiceRPT="" codiceUI="IM2_ResiduoCapexAnnoP_1" tot="0">Valore residuo capex esercizio prec.</item>
+		<item  codiceRPT="4119" codiceUI="IM2_IvaCreditoPerc_1" um="%" tot="0">%25 IVA credito</item>
+		<title codiceRPT="4115" codiceUI="Immob_Materiali_title2" tot="0">Immobilizzazioni Materiali - Gruppo 2</title>
+		<item  codiceRPT="4118" codiceUI="IM2_CapexNette_1" um="€" add=" (Grp. 2)" tot="1">Investimenti netti</item>
+		<item  codiceRPT="4122" codiceUI="IM2_AnniAmmortamento_1" add=" (Grp. 2)" tot="0">Anni ammortamenti</item>
+		<item  codiceRPT="4165" codiceUI="IM2_IperammortamentoPercAggiunta_1" um="%" add=" (Grp. 2)" tot="0">%25 Aggiunta</item>
+		<item  codiceRPT="4120" codiceUI="IM2_IvaCredito_1" um="€" add=" (Grp. 2)" tot="1">IVA credito</item>
+		<item  codiceRPT="4121" codiceUI="IM2_InvestimentiTotali_1" um="€" add=" (Grp. 2)" tot="1">Investimenti lordi</item>
+		<item  codiceRPT="4123" codiceUI="IM2_QuotaAmmortamentoAnnuale_1" um="€" add=" (Grp. 2)" tot="0">Quota ammortamento annuale</item>
+		<item  codiceRPT="4124" codiceUI="IM2_AmmortamentoNuovoCumulato_1" um="€" add=" (Grp. 2)" tot="0">Ammortamento totale anno</item>
+		<item  codiceRPT="4126" codiceUI="IM2_AmmortamentoTotaleCumulato_1" um="€" add=" (Grp. 2)" tot="0">Ammortamento totale cumulato</item>
+		<item  codiceRPT="4166" codiceUI="IM2_IperammortamentoTotale_1" um="%" add=" (Grp. 2)" tot="0">%25 Totale</item>
+		<item  codiceRPT="4167" codiceUI="IM2_IperammortamentoIper_1" um="€" add=" (Grp. 2)" tot="0">Ammortamento</item>
+		<item  codiceRPT="4168" codiceUI="IM2_IperammortamentoAggiuntivo_1" um="€" add=" (Grp. 2)" tot="2">Ammortamento aggiuntivo</item>
+		<item  codiceRPT="4169" codiceUI="IM2_IperammortamentoCumulato_1" um="€" add=" (Grp. 2)" tot="3">Ammortamento cumulato</item>
+		<item  codiceRPT="4127" codiceUI="IM2_ResiduoCapexNuove_1" um="€" add=" (Grp. 2)" tot="0">Valore residuo nuovi investimenti netti</item>
+		<item  codiceRPT="4129" codiceUI="IM2_Totali_1" um="€" add=" (Grp. 2)" tot="0">Immobilizzazioni totali (residue)</item>
+		<!-- Set 3 -->
+		<item  codiceRPT="" codiceUI="IM3_AmmortamentoAnnoP_1" tot="0">Ammortamento esercizio prec.</item>
+		<item  codiceRPT="" codiceUI="IM3_ResiduoCapexAnnoP_1" tot="0">Valore residuo capex esercizio prec.</item>
+		<item  codiceRPT="4134" codiceUI="IM3_IvaCreditoPerc_1" um="%" tot="0">%25 IVA credito</item>
+		<title codiceRPT="4130" codiceUI="Immob_Materiali_title3" tot="0">Immobilizzazioni Materiali - Gruppo 3</title>
+		<item  codiceRPT="4133" codiceUI="IM3_CapexNette_1" um="€" add=" (Grp. 3)" tot="1">Investimenti netti</item>
+		<item  codiceRPT="4137" codiceUI="IM3_AnniAmmortamento_1" add=" (Grp. 3)" tot="0">Anni ammortamenti</item>
+		<item  codiceRPT="4170" codiceUI="IM3_IperammortamentoPercAggiunta_1" um="%" add=" (Grp. 3)" tot="0">%25 Aggiunta</item>
+		<item  codiceRPT="4135" codiceUI="IM3_IvaCredito_1" um="€" add=" (Grp. 3)" tot="1">IVA credito</item>
+		<item  codiceRPT="4136" codiceUI="IM3_InvestimentiTotali_1" um="€" add=" (Grp. 3)" tot="1">Investimenti lordi</item>
+		<item  codiceRPT="4138" codiceUI="IM3_QuotaAmmortamentoAnnuale_1" um="€" add=" (Grp. 3)" tot="0">Quota ammortamento annuale</item>
+		<item  codiceRPT="4139" codiceUI="IM3_AmmortamentoNuovoCumulato_1" um="€" add=" (Grp. 3)" tot="0">Ammortamento totale anno</item>
+		<item  codiceRPT="4141" codiceUI="IM3_AmmortamentoTotaleCumulato_1" um="€" add=" (Grp. 3)" tot="0">Ammortamento totale cumulato</item>
+		<item  codiceRPT="4171" codiceUI="IM3_IperammortamentoTotale_1" um="%" add=" (Grp. 3)" tot="0">%25 Totale</item>
+		<item  codiceRPT="4172" codiceUI="IM3_IperammortamentoIper_1" um="€" add=" (Grp. 3)" tot="0">Ammortamento</item>
+		<item  codiceRPT="4173" codiceUI="IM3_IperammortamentoAggiuntivo_1" um="€" add=" (Grp. 3)" tot="2">Ammortamento aggiuntivo</item>
+		<item  codiceRPT="4174" codiceUI="IM3_IperammortamentoCumulato_1" um="€" add=" (Grp. 3)" tot="3">Ammortamento cumulato</item>
+		<item  codiceRPT="4142" codiceUI="IM3_ResiduoCapexNuove_1" um="€" add=" (Grp. 3)" tot="0">Valore residuo nuovi investimenti netti</item>
+		<item  codiceRPT="4144" codiceUI="IM3_Totali_1" um="€" add=" (Grp. 3)" tot="0">Immobilizzazioni totali (residue)</item>
+		<!-- Set 4 -->
+		<item  codiceRPT="" codiceUI="IM4_AmmortamentoAnnoP_1" tot="0">Ammortamento esercizio prec.</item>
+		<item  codiceRPT="" codiceUI="IM4_ResiduoCapexAnnoP_1" tot="0">Valore residuo capex esercizio prec.</item>
+		<item  codiceRPT="4149" codiceUI="IM4_IvaCreditoPerc_1" um="%" tot="0">%25 IVA credito</item>
+		<title codiceRPT="4145" codiceUI="Immob_Materiali_title4" tot="0">Immobilizzazioni Materiali - Gruppo 4</title>
+		<item  codiceRPT="4148" codiceUI="IM4_CapexNette_1" um="€" add=" (Grp. 4)" tot="1">Investimenti netti</item>
+		<item  codiceRPT="4152" codiceUI="IM4_AnniAmmortamento_1" add=" (Grp. 4)" tot="0">Anni ammortamenti</item>
+		<item  codiceRPT="4175" codiceUI="IM4_IperammortamentoPercAggiunta_1" um="%" add=" (Grp. 4)" tot="0">%25 Aggiunta</item>
+		<item  codiceRPT="4150" codiceUI="IM4_IvaCredito_1" um="€" add=" (Grp. 4)" tot="1">IVA credito</item>
+		<item  codiceRPT="4151" codiceUI="IM4_InvestimentiTotali_1" um="€" add=" (Grp. 4)" tot="1">Investimenti lordi</item>
+		<item  codiceRPT="4153" codiceUI="IM4_QuotaAmmortamentoAnnuale_1" um="€" add=" (Grp. 4)" tot="0">Quota ammortamento annuale</item>
+		<item  codiceRPT="4154" codiceUI="IM4_AmmortamentoNuovoCumulato_1" um="€" add=" (Grp. 4)" tot="0">Ammortamento totale anno</item>
+		<item  codiceRPT="4156" codiceUI="IM4_AmmortamentoTotaleCumulato_1" um="€" add=" (Grp. 4)" tot="0">Ammortamento totale cumulato</item>
+		<item  codiceRPT="4176" codiceUI="IM4_IperammortamentoTotale_1" um="%" add=" (Grp. 4)" tot="0">%25 Totale</item>
+		<item  codiceRPT="4177" codiceUI="IM4_IperammortamentoIper_1" um="€" add=" (Grp. 4)" tot="0">Ammortamento</item>
+		<item  codiceRPT="4178" codiceUI="IM4_IperammortamentoAggiuntivo_1" um="€" add=" (Grp. 4)" tot="2">Ammortamento aggiuntivo</item>
+		<item  codiceRPT="4179" codiceUI="IM4_IperammortamentoCumulato_1" um="€" add=" (Grp. 4)" tot="3">Ammortamento cumulato</item>
+		<item  codiceRPT="4157" codiceUI="IM4_ResiduoCapexNuove_1" um="€" add=" (Grp. 4)" tot="0">Valore residuo nuovi investimenti netti</item>
+		<item  codiceRPT="4159" codiceUI="IM4_Totali_1" um="€" add=" (Grp. 4)" tot="0">Immobilizzazioni totali (residue)</item>
+	</Immob_Materiali>
+	<Immob_Immateriali page="capex">
+		<title codiceRPT="4200" codiceUI="Immob_Immateriali_title1" tot="0">Immobilizzazioni Immateriali - Gruppo 1</title>
+		<item  codiceRPT="4201" codiceUI="II1_CapexNette_1" um="€" add=" (Grp. 1)" tot="1">Investimenti netti</item>
+		<item  codiceRPT="4202" codiceUI="II1_IvaCreditoPerc_1" um="%" add=" (Grp. 1)" tot="0">%25 IVA credito</item>
+		<item  codiceRPT="4203" codiceUI="II1_IvaCredito_1" um="€" add=" (Grp. 1)" tot="1">IVA credito</item>
+		<item  codiceRPT="4204" codiceUI="II1_InvestimentiTotali_1" um="€" add=" (Grp. 1)" tot="1">Investimenti lordi</item>
+		<item  codiceRPT="4205" codiceUI="II1_AnniAmmortamento_1" add=" (Grp. 1)" tot="0">Anni ammortamenti</item>
+		<item  codiceRPT="4206" codiceUI="II1_QuotaAmmortamentoAnnuale_1" um="€" add=" (Grp. 1)" tot="0">Quota ammortamento annuale</item>
+		<item  codiceRPT="4207" codiceUI="II1_AmmortamentoNuovoCumulato_1" um="€" add=" (Grp. 1)" tot="0">Ammortamento totale anno</item>
+		<item  codiceRPT="4208" codiceUI="II1_AmmortamentoAnnoP_1" add=" (Grp. 1)" tot="0">Ammortamento esercizio prec.</item>
+		<item  codiceRPT="4209" codiceUI="II1_AmmortamentoTotaleCumulato_1" um="€" add=" (Grp. 1)" tot="0">Ammortamento totale cumulato</item>
+		<item  codiceRPT="4210" codiceUI="II1_ResiduoCapexNuove_1" um="€" add=" (Grp. 1)" tot="0">Valore residuo nuovi investimenti netti</item>
+		<item  codiceRPT="4211" codiceUI="II1_ResiduoCapexAnnoP_1" add=" (Grp. 1)" tot="0">Valore residuo capex esercizio prec.</item>
+		<item  codiceRPT="4212" codiceUI="II1_Totali_1" um="€" add=" (Grp. 1)" tot="0">Immobilizzazioni totali (residue)</item>
+		<title codiceRPT="4213" codiceUI="Immob_Immateriali_title2" tot="0">Immobilizzazioni Immateriali - Gruppo 2</title>
+		<item  codiceRPT="4214" codiceUI="II2_CapexNette_1" um="€" add=" (Grp. 2)" tot="1">Investimenti netti</item>
+		<item  codiceRPT="4215" codiceUI="II2_IvaCreditoPerc_1" um="%" add=" (Grp. 2)" tot="0">%25 IVA credito</item>
+		<item  codiceRPT="4216" codiceUI="II2_IvaCredito_1" um="€" add=" (Grp. 2)" tot="1">IVA credito</item>
+		<item  codiceRPT="4217" codiceUI="II2_InvestimentiTotali_1" um="€" add=" (Grp. 2)" tot="1">Investimenti lordi</item>
+		<item  codiceRPT="4218" codiceUI="II2_AnniAmmortamento_1" add=" (Grp. 2)" tot="0">Anni ammortamenti</item>
+		<item  codiceRPT="4219" codiceUI="II2_QuotaAmmortamentoAnnuale_1" um="€" add=" (Grp. 2)" tot="0">Quota ammortamento annuale</item>
+		<item  codiceRPT="4220" codiceUI="II2_AmmortamentoNuovoCumulato_1" um="€" add=" (Grp. 2)" tot="0">Ammortamento totale anno</item>
+		<item  codiceRPT="4221" codiceUI="II2_AmmortamentoAnnoP_1" add=" (Grp. 2)" tot="0">Ammortamento esercizio prec.</item>
+		<item  codiceRPT="4222" codiceUI="II2_AmmortamentoTotaleCumulato_1" um="€" add=" (Grp. 2)" tot="0">Ammortamento totale cumulato</item>
+		<item  codiceRPT="4223" codiceUI="II2_ResiduoCapexNuove_1" um="€" add=" (Grp. 2)" tot="0">Valore residuo nuovi investimenti netti</item>
+		<item  codiceRPT="4224" codiceUI="II2_ResiduoCapexAnnoP_1" add=" (Grp. 2)" tot="0">Valore residuo capex esercizio prec.</item>
+		<item  codiceRPT="4225" codiceUI="II2_Totali_1" um="€" add=" (Grp. 2)" tot="0">Immobilizzazioni totali (residue)</item>
+		<title codiceRPT="4226" codiceUI="Immob_Immateriali_title3" tot="0">Immobilizzazioni Immateriali - Gruppo 3</title>
+		<item  codiceRPT="4227" codiceUI="II3_CapexNette_1" um="€" add=" (Grp. 3)" tot="1">Investimenti netti</item>
+		<item  codiceRPT="4228" codiceUI="II3_IvaCreditoPerc_1" um="%" add=" (Grp. 3)" tot="0">%25 IVA credito</item>
+		<item  codiceRPT="4229" codiceUI="II3_IvaCredito_1" um="€" add=" (Grp. 3)" tot="1">IVA credito</item>
+		<item  codiceRPT="4230" codiceUI="II3_InvestimentiTotali_1" um="€" add=" (Grp. 3)" tot="1">Investimenti lordi</item>
+		<item  codiceRPT="4231" codiceUI="II3_AnniAmmortamento_1" add=" (Grp. 3)" tot="0">Anni ammortamenti</item>
+		<item  codiceRPT="4232" codiceUI="II3_QuotaAmmortamentoAnnuale_1" um="€" add=" (Grp. 3)" tot="0">Quota ammortamento annuale</item>
+		<item  codiceRPT="4233" codiceUI="II3_AmmortamentoNuovoCumulato_1" um="€" add=" (Grp. 3)" tot="0">Ammortamento totale anno</item>
+		<item  codiceRPT="4234" codiceUI="II3_AmmortamentoAnnoP_1" add=" (Grp. 3)" tot="0">Ammortamento esercizio prec.</item>
+		<item  codiceRPT="4235" codiceUI="II3_AmmortamentoTotaleCumulato_1" um="€" add=" (Grp. 3)" tot="0">Ammortamento totale cumulato</item>
+		<item  codiceRPT="4236" codiceUI="II3_ResiduoCapexNuove_1" um="€" add=" (Grp. 3)" tot="0">Valore residuo nuovi investimenti netti</item>
+		<item  codiceRPT="4237" codiceUI="II3_ResiduoCapexAnnoP_1" add=" (Grp. 3)" tot="0">Valore residuo capex esercizio prec.</item>
+		<item  codiceRPT="4238" codiceUI="II3_Totali_1" um="€" add=" (Grp. 3)" tot="0">Immobilizzazioni totali (residue)</item>
+		<title codiceRPT="4239" codiceUI="Immob_Immateriali_title4" tot="0">Immobilizzazioni Immateriali - Gruppo 4</title>
+		<item  codiceRPT="4240" codiceUI="II4_CapexNette_1" um="€" add=" (Grp. 4)" tot="1">Investimenti netti</item>
+		<item  codiceRPT="4241" codiceUI="II4_IvaCreditoPerc_1" um="%" add=" (Grp. 4)" tot="0">%25 IVA credito</item>
+		<item  codiceRPT="4242" codiceUI="II4_IvaCredito_1" um="€" add=" (Grp. 4)" tot="1">IVA credito</item>
+		<item  codiceRPT="4243" codiceUI="II4_InvestimentiTotali_1" um="€" add=" (Grp. 4)" tot="1">Investimenti lordi</item>
+		<item  codiceRPT="4244" codiceUI="II4_AnniAmmortamento_1" add=" (Grp. 4)" tot="0">Anni ammortamenti</item>
+		<item  codiceRPT="4245" codiceUI="II4_QuotaAmmortamentoAnnuale_1" um="€" add=" (Grp. 4)" tot="0">Quota ammortamento annuale</item>
+		<item  codiceRPT="4246" codiceUI="II4_AmmortamentoNuovoCumulato_1" um="€" add=" (Grp. 4)" tot="0">Ammortamento totale anno</item>
+		<item  codiceRPT="4247" codiceUI="II4_AmmortamentoAnnoP_1" add=" (Grp. 4)" tot="0">Ammortamento esercizio prec.</item>
+		<item  codiceRPT="4248" codiceUI="II4_AmmortamentoTotaleCumulato_1" um="€" add=" (Grp. 4)" tot="0">Ammortamento totale cumulato</item>
+		<item  codiceRPT="4249" codiceUI="II4_ResiduoCapexNuove_1" um="€" add=" (Grp. 4)" tot="0">Valore residuo nuovi investimenti netti</item>
+		<item  codiceRPT="4250" codiceUI="II4_ResiduoCapexAnnoP_1" add=" (Grp. 4)" tot="0">Valore residuo capex esercizio prec.</item>
+		<item  codiceRPT="4251" codiceUI="II4_Totali_1" um="€" add=" (Grp. 4)" tot="0">Immobilizzazioni totali (residue)</item>
+	</Immob_Immateriali>
+	<Immob_Finanziarie page="capex">
+		<title codiceRPT="4300" codiceUI="Immob_Finanziarie_title" tot="0">Immobilizzazioni Finanziarie - Gruppo 1</title>
+		<item  codiceRPT="4301" codiceUI="Subtitle_Partecipazioni1" um="€" add=" (Grp. 1)" tot="0">Partecipazioni e quote societarie</item>
+		<item  codiceRPT="4302" codiceUI="Subtitle_Titoli" um="€" add=" (Grp. 1)" tot="0">Titoli nuovi</item>
+		<item  codiceRPT="4303" codiceUI="Subtitle_Partecipazioni2" um="€" add=" (Grp. 1)" tot="0">Partecipazioni, quote societarie e titoli venduti</item>
+		<item  codiceRPT="4304" codiceUI="Subtitle_Capex" um="€" add=" (Grp. 1)" tot="0">Partecipazioni, quote societarie e titoli venduti</item>
+		<item  codiceRPT="4305" codiceUI="IF1_CapexNette_1" um="€" add=" (Grp. 1)" tot="1">Immobilizzazioni finanziarie</item>
+		<item  codiceRPT="4306" codiceUI="IF1_Partecipazioni_1" um="€" add=" (Grp. 1)" tot="1">Partecipazioni/Quote societarie (ext.) nuove</item>
+		<item  codiceRPT="4307" codiceUI="IF1_PCommissioniPerc_1" um="%" add=" (Grp. 1)" tot="0">%25 commissioni acquisto/bolli</item>
+		<item  codiceRPT="4308" codiceUI="IF1_PCommissioni_1" um="€" add=" (Grp. 1)" tot="1">Commissioni acquisto/bolli</item>
+		<item  codiceRPT="4309" codiceUI="IF1_PSvalutazioni_1" um="€" add=" (Grp. 1)" tot="1">Svalutazioni/Rivalutazioni Part./Quote soc.</item>
+		<item  codiceRPT="4310" codiceUI="IF1_PDividendi_1" um="€" add=" (Grp. 1)" tot="1">Dividendi</item>
+		<item  codiceRPT="4311" codiceUI="IF1_PTassePerc_1" um="%" add=" (Grp. 1)" tot="0">Aliquota fiscale</item>
+		<item  codiceRPT="4312" codiceUI="IF1_PTasse_1" um="€" add=" (Grp. 1)" tot="1">Imposte</item>
+		<item  codiceRPT="4313" codiceUI="IF1_TitoliNuovi_1" um="€" add=" (Grp. 1)" tot="1">Titoli nuovi</item>
+		<item  codiceRPT="4314" codiceUI="IF1_TNCommissioniPerc_1" um="%" add=" (Grp. 1)" tot="0">%25 commissioni acquisto/bolli</item>
+		<item  codiceRPT="4315" codiceUI="IF1_TNCommissioni_1" um="€" add=" (Grp. 1)" tot="1">Commissioni acquisto/bolli</item>
+		<item  codiceRPT="4316" codiceUI="IF1_TNSvalutazioni_1" um="€" add=" (Grp. 1)" tot="1">Svalutazioni/Rivalutazioni titoli</item>
+		<item  codiceRPT="4317" codiceUI="IF1_TNAnniInvestimento_1" add=" (Grp. 1)" tot="0">Anni investimento</item>
+		<item  codiceRPT="4318" codiceUI="IF1_TNInteressiPerc_1" um="%" add=" (Grp. 1)" tot="0">%25 interessi/cedole annuali</item>
+		<item  codiceRPT="4319" codiceUI="IF1_TNInteressi_1" um="€" add=" (Grp. 1)" tot="1">Interessi / cedole annuali (titoli nuovi)</item>
+		<item  codiceRPT="4320" codiceUI="IF1_TNTassePerc_1" um="%" add=" (Grp. 1)" tot="0">Aliquota fiscale</item>
+		<item  codiceRPT="4321" codiceUI="IF1_TNTasse_1" um="€" add=" (Grp. 1)" tot="1">Imposte</item>
+		<item  codiceRPT="4322" codiceUI="IF1_TNInteressiAnnoP_1" add=" (Grp. 1)" tot="0">Interessi/cedole annuali esercizio prec.</item>
+		<item  codiceRPT="4323" codiceUI="IF1_TNInteressiTotali_1" um="€" add=" (Grp. 1)" tot="1">Interessi/cedole annuali totali</item>
+		<item  codiceRPT="4324" codiceUI="IF1_Immobilizzazioni_1" um="€" add=" (Grp. 1)" tot="1">Immobilizzazioni finanziarie (SP)</item>
+		<item  codiceRPT="4325" codiceUI="IF1_AnnoP_1" add=" (Grp. 1)" tot="1">Immobilizzazioni finanziarie (SP) esercizio prec.</item>
+		<item  codiceRPT="4326" codiceUI="IF1_QuotePartecip_1" um="€" add=" (Grp. 1)" tot="1">Quote part./Titoli finanziari venduti</item>
+		<title codiceRPT="4327" codiceUI="Immob_Finanziarie_title2" tot="0">Immobilizzazioni Finanziarie - Gruppo 2</title>
+		<item  codiceRPT="4328" codiceUI="Subtitle_Partecipazioni1_1" um="€" add=" (Grp. 2)" tot="0">Partecipazioni e quote societarie</item>
+		<item  codiceRPT="4329" codiceUI="Subtitle_Titoli2" um="€" add=" (Grp. 2)" tot="0">Titoli nuovi</item>
+		<item  codiceRPT="4330" codiceUI="Subtitle_Partecipazioni2_1" um="€" add=" (Grp. 2)" tot="0">Partecipazioni, quote societarie e titoli venduti</item>
+		<item  codiceRPT="4331" codiceUI="Subtitle_Capex2" um="€" add=" (Grp. 2)" tot="0">Partecipazioni, quote societarie e titoli venduti</item>
+		<item  codiceRPT="4332" codiceUI="IF2_CapexNette_1" um="€" add=" (Grp. 2)" tot="1">Immobilizzazioni finanziarie</item>
+		<item  codiceRPT="4333" codiceUI="IF2_Partecipazioni_1" um="€" add=" (Grp. 2)" tot="1">Partecipazioni/Quote societarie (ext.) nuove</item>
+		<item  codiceRPT="4334" codiceUI="IF2_PCommissioniPerc_1" um="%" add=" (Grp. 2)" tot="0">%25 commissioni acquisto/bolli</item>
+		<item  codiceRPT="4335" codiceUI="IF2_PCommissioni_1" um="€" add=" (Grp. 2)" tot="1">Commissioni acquisto/bolli</item>
+		<item  codiceRPT="4336" codiceUI="IF2_PSvalutazioni_1" um="€" add=" (Grp. 2)" tot="1">Svalutazioni/Rivalutazioni Part./Quote soc.</item>
+		<item  codiceRPT="4337" codiceUI="IF2_PDividendi_1" um="€" add=" (Grp. 2)" tot="1">Dividendi</item>
+		<item  codiceRPT="4338" codiceUI="IF2_PTassePerc_1" um="%" add=" (Grp. 2)" tot="0">Aliquota fiscale</item>
+		<item  codiceRPT="4339" codiceUI="IF2_PTasse_1" um="€" add=" (Grp. 2)" tot="1">Imposte</item>
+		<item  codiceRPT="4340" codiceUI="IF2_TitoliNuovi_1" um="€" add=" (Grp. 2)" tot="1">Titoli nuovi</item>
+		<item  codiceRPT="4341" codiceUI="IF2_TNCommissioniPerc_1" um="%" add=" (Grp. 2)" tot="0">%25 commissioni acquisto/bolli</item>
+		<item  codiceRPT="4342" codiceUI="IF2_TNCommissioni_1" um="€" add=" (Grp. 2)" tot="1">Commissioni acquisto/bolli</item>
+		<item  codiceRPT="4343" codiceUI="IF2_TNSvalutazioni_1" um="€" add=" (Grp. 2)" tot="1">Svalutazioni/Rivalutazioni titoli</item>
+		<item  codiceRPT="4344" codiceUI="IF2_TNAnniInvestimento_1" add=" (Grp. 2)" tot="0">Anni investimento</item>
+		<item  codiceRPT="4345" codiceUI="IF2_TNInteressiPerc_1" um="%" add=" (Grp. 2)" tot="0">%25 interessi/cedole annuali</item>
+		<item  codiceRPT="4346" codiceUI="IF2_TNInteressi_1" um="€" add=" (Grp. 2)" tot="1">Interessi / cedole annuali (titoli nuovi)</item>
+		<item  codiceRPT="4347" codiceUI="IF2_TNTassePerc_1" um="%" add=" (Grp. 2)" tot="0">Aliquota fiscale</item>
+		<item  codiceRPT="4348" codiceUI="IF2_TNTasse_1" um="€" add=" (Grp. 2)" tot="1">Imposte</item>
+		<item  codiceRPT="4349" codiceUI="IF2_TNInteressiAnnoP_1" add=" (Grp. 2)" tot="0">Interessi/cedole annuali esercizio prec.</item>
+		<item  codiceRPT="4350" codiceUI="IF2_TNInteressiTotali_1" um="€" add=" (Grp. 2)" tot="1">Interessi/cedole annuali totali</item>
+		<item  codiceRPT="4351" codiceUI="IF2_Immobilizzazioni_1" um="€" add=" (Grp. 2)" tot="1">Immobilizzazioni finanziarie (SP)</item>
+		<item  codiceRPT="4352" codiceUI="IF2_AnnoP_1" add=" (Grp. 2)" tot="1">Immobilizzazioni finanziarie (SP) esercizio prec.</item>
+		<item  codiceRPT="4353" codiceUI="IF2_QuotePartecip_1" um="€" add=" (Grp. 2)" tot="1">Quote part./Titoli finanziari venduti</item>
+	</Immob_Finanziarie>
+	<Finanziamenti page="capex">
+		<title codiceRPT="4400" codiceUI="Finanziamenti_title1" tot="0">Finanziamenti bancari (onerosi) - Gruppo 1</title>
+		<item  codiceRPT="4401" codiceUI="FinanziamentiBancari1_1" um="€" add=" (Grp. 1)" tot="1">Finanziamenti Bancari</item>
+		<item  codiceRPT="4402" codiceUI="TassoFinanziamenti1_1" um="%" add=" (Grp. 1)" tot="0">Tasso finanziamenti</item>
+		<item  codiceRPT="4403" codiceUI="DurataFinanziamenti1_1" add=" (Grp. 1)" tot="0">Durata finanziamenti</item>
+		<item  codiceRPT="4404" codiceUI="QCA_DebitoNuovoBreve1_1" um="€" add=" (Grp. 1)" tot="0">Debito a breve</item>
+		<item  codiceRPT="4405" codiceUI="QCA_AnnoPBreve1_1" add=" (Grp. 1)" tot="0">Debito esercizio precedente a breve</item>
+		<item  codiceRPT="4452" codiceUI="QCA_TotaleBreve1_1" um="€" add=" (Grp. 1)" tot="0">Breve(?)</item>
+		<item  codiceRPT="4406" codiceUI="QCA_Totale1_1" um="€" add=" (Grp. 1)" tot="0">Totale</item>
+		<item  codiceRPT="4407" codiceUI="ResiduoDebitoNuovoMedio1_1" um="€" add=" (Grp. 1)" tot="0">Debito a medio</item>
+		<item  codiceRPT="4408" codiceUI="ResiduoDebitoAnnoPMedio1_1" add=" (Grp. 1)" tot="0">Debito esercizio precedente a medio</item>
+		<item  codiceRPT="4409" codiceUI="ResiduoTotaleMedio1_1" um="€" add=" (Grp. 1)" tot="0">Totale</item>
+		<item  codiceRPT="4410" codiceUI="InteressiAnnoDebitoNuovo1_1" um="€" add=" (Grp. 1)" tot="1">Interessi anno</item>
+		<item  codiceRPT="4411" codiceUI="InteressiDebitoAnnoP1_1" add=" (Grp. 1)" tot="0">Interessi debito esercizio prec.</item>
+		<item  codiceRPT="4412" codiceUI="InteressiTotaliAnno1_1" um="€" add=" (Grp. 1)" tot="1">Interessi totale annuo</item>
+		<title codiceRPT="4413" codiceUI="Finanziamenti_title2" tot="0">Finanziamenti bancari (onerosi) - Gruppo 2</title>
+		<item  codiceRPT="4414" codiceUI="FinanziamentiBancari2_1" um="€" add=" (Grp. 2)" tot="1">Finanziamenti Bancari</item>
+		<item  codiceRPT="4415" codiceUI="TassoFinanziamenti2_1" um="%" add=" (Grp. 2)" tot="0">Tasso finanziamenti</item>
+		<item  codiceRPT="4416" codiceUI="DurataFinanziamenti2_1" add=" (Grp. 2)" tot="0">Durata finanziamenti</item>
+		<item  codiceRPT="4417" codiceUI="QCA_DebitoNuovoBreve2_1" um="€" add=" (Grp. 2)" tot="0">Debito a breve</item>
+		<item  codiceRPT="4418" codiceUI="QCA_AnnoPBreve2_1" add=" (Grp. 2)" tot="0">Debito esercizio precedente a breve</item>
+		<item  codiceRPT="4453" codiceUI="QCA_TotaleBreve2_1" um="€" add=" (Grp. 2)" tot="0">Breve(?)</item>
+		<item  codiceRPT="4419" codiceUI="QCA_Totale2_1" um="€" add=" (Grp. 2)" tot="0">Totale</item>
+		<item  codiceRPT="4420" codiceUI="ResiduoDebitoNuovoMedio2_1" um="€" add=" (Grp. 2)" tot="0">Debito a medio</item>
+		<item  codiceRPT="4421" codiceUI="ResiduoDebitoAnnoPMedio2_1" add=" (Grp. 2)" tot="0">Debito esercizio precedente a medio</item>
+		<item  codiceRPT="4422" codiceUI="ResiduoTotaleMedio2_1" um="€" add=" (Grp. 2)" tot="0">Totale</item>
+		<item  codiceRPT="4423" codiceUI="InteressiAnnoDebitoNuovo2_1" um="€" add=" (Grp. 2)" tot="1">Interessi anno</item>
+		<item  codiceRPT="4424" codiceUI="InteressiDebitoAnnoP2_1" add=" (Grp. 2)" tot="0">Interessi debito esercizio prec.</item>
+		<item  codiceRPT="4425" codiceUI="InteressiTotaliAnno2_1" um="€" add=" (Grp. 2)" tot="1">Interessi totale annuo</item>
+		<title codiceRPT="4426" codiceUI="Finanziamenti_title3" tot="0">Finanziamenti bancari (onerosi) - Gruppo 3</title>
+		<item  codiceRPT="4427" codiceUI="FinanziamentiBancari3_1" um="€" add=" (Grp. 3)" tot="1">Finanziamenti Bancari</item>
+		<item  codiceRPT="4428" codiceUI="TassoFinanziamenti3_1" um="%" add=" (Grp. 3)" tot="0">Tasso finanziamenti</item>
+		<item  codiceRPT="4429" codiceUI="DurataFinanziamenti3_1" add=" (Grp. 3)" tot="0">Durata finanziamenti</item>
+		<item  codiceRPT="4430" codiceUI="QCA_DebitoNuovoBreve3_1" um="€" add=" (Grp. 3)" tot="0">Debito a breve</item>
+		<item  codiceRPT="4431" codiceUI="QCA_AnnoPBreve3_1" add=" (Grp. 3)" tot="0">Debito esercizio precedente a breve</item>
+		<item  codiceRPT="4454" codiceUI="QCA_TotaleBreve3_1" um="€" add=" (Grp. 3)" tot="0">Breve(?)</item>
+		<item  codiceRPT="4432" codiceUI="QCA_Totale3_1" um="€" add=" (Grp. 3)" tot="0">Totale</item>
+		<item  codiceRPT="4433" codiceUI="ResiduoDebitoNuovoMedio3_1" um="€" add=" (Grp. 3)" tot="0">Debito a medio</item>
+		<item  codiceRPT="4434" codiceUI="ResiduoDebitoAnnoPMedio3_1" add=" (Grp. 3)" tot="0">Debito esercizio precedente a medio</item>
+		<item  codiceRPT="4435" codiceUI="ResiduoTotaleMedio3_1" um="€" add=" (Grp. 3)" tot="0">Totale</item>
+		<item  codiceRPT="4436" codiceUI="InteressiAnnoDebitoNuovo3_1" um="€" add=" (Grp. 3)" tot="1">Interessi anno</item>
+		<item  codiceRPT="4437" codiceUI="InteressiDebitoAnnoP3_1" add=" (Grp. 3)" tot="0">Interessi debito esercizio prec.</item>
+		<item  codiceRPT="4438" codiceUI="InteressiTotaliAnno3_1" um="€" add=" (Grp. 3)" tot="1">Interessi totale annuo</item>
+		<title codiceRPT="4439" codiceUI="Finanziamenti_title4" tot="0">Finanziamenti bancari (onerosi) - Gruppo 4</title>
+		<item  codiceRPT="4440" codiceUI="FinanziamentiBancari4_1" um="€" add=" (Grp. 4)" tot="1">Finanziamenti Bancari</item>
+		<item  codiceRPT="4441" codiceUI="TassoFinanziamenti4_1" um="%" add=" (Grp. 4)" tot="0">Tasso finanziamenti</item>
+		<item  codiceRPT="4442" codiceUI="DurataFinanziamenti4_1" add=" (Grp. 4)" tot="0">Durata finanziamenti</item>
+		<item  codiceRPT="4443" codiceUI="QCA_DebitoNuovoBreve4_1" um="€" add=" (Grp. 4)" tot="0">Debito a breve</item>
+		<item  codiceRPT="4444" codiceUI="QCA_AnnoPBreve4_1" add=" (Grp. 4)" tot="0">Debito esercizio precedente a breve</item>
+		<item  codiceRPT="4455" codiceUI="QCA_TotaleBreve4_1" um="€" add=" (Grp. 4)" tot="0">Breve(?)</item>
+		<item  codiceRPT="4445" codiceUI="QCA_Totale4_1" um="€" add=" (Grp. 4)" tot="0">Totale</item>
+		<item  codiceRPT="4446" codiceUI="ResiduoDebitoNuovoMedio4_1" um="€" add=" (Grp. 4)" tot="0">Debito a medio</item>
+		<item  codiceRPT="4447" codiceUI="ResiduoDebitoAnnoPMedio4_1" add=" (Grp. 4)" tot="0">Debito esercizio precedente a medio</item>
+		<item  codiceRPT="4448" codiceUI="ResiduoTotaleMedio4_1" um="€" add=" (Grp. 4)" tot="0">Totale</item>
+		<item  codiceRPT="4449" codiceUI="InteressiAnnoDebitoNuovo4_1" um="€" add=" (Grp. 4)" tot="1">Interessi anno</item>
+		<item  codiceRPT="4450" codiceUI="InteressiDebitoAnnoP4_1" add=" (Grp. 4)" tot="0">Interessi debito esercizio prec.</item>
+		<item  codiceRPT="4451" codiceUI="InteressiTotaliAnno4_1" um="€" add=" (Grp. 4)" tot="1">Interessi totale annuo</item>
+	</Finanziamenti>
+	<!-- (Capex) -->
+
+	<!-- (Gestione straordinaria) -->
+	<GestioneStraordinaria page="gestione_straordinaria">
+		<title codiceRPT="11019" codiceUI="GS1_ProventiTitle" tot="0">Proventi - Gruppo 1</title>
+		<item  codiceRPT="11001" codiceUI="GS1_ProventiValore_1" um="€" add=" (Grp. 1)" tot="1">Proventi</item>
+		<item  codiceRPT="11002" codiceUI="GS1_ProventiPercIva_1" um="%" add=" (Grp. 1)" tot="0">%25 IVA</item>
+		<item  codiceRPT="11010" codiceUI="GS1_IvaProventi_1" um="€" add=" (Grp. 1)" tot="1">Iva a debito</item>
+		<item  codiceRPT="11009" codiceUI="GS1_ProventiTotale_1" um="€" add=" (Grp. 1)" tot="1">Totale Lordo</item>
+		<title codiceRPT="11020" codiceUI="GS2_ProventiTitle" tot="0">Proventi - Gruppo 2</title>
+		<item  codiceRPT="11003" codiceUI="GS2_ProventiValore_1" um="€" add=" (Grp. 2)" tot="1">Proventi</item>
+		<item  codiceRPT="11004" codiceUI="GS2_ProventiPercIva_1" um="%" add=" (Grp. 2)" tot="0">%25 IVA</item>
+		<item  codiceRPT="11012" codiceUI="GS2_IvaProventi_1" um="€" add=" (Grp. 2)" tot="1">Iva a debito</item>
+		<item  codiceRPT="11011" codiceUI="GS2_ProventiTotale_1" um="€" tot="1">Totale Lordo</item>
+		<title codiceRPT="11021" codiceUI="GS1_OneriTitle" tot="0">Oneri - Gruppo 1</title>
+		<item  codiceRPT="11005" codiceUI="GS1_OneriValore_1" um="€" add=" (Grp. 1)" tot="1">Oneri</item>
+		<item  codiceRPT="11006" codiceUI="GS1_OneriPercIva_1" um="%" add=" (Grp. 1)" tot="0">%25 IVA</item>
+		<item  codiceRPT="11014" codiceUI="GS1_IvaOneri_1" um="€" add=" (Grp. 1)" tot="1">Iva a credito</item>
+		<item  codiceRPT="11013" codiceUI="GS1_OneriTotale_1" um="€" add=" (Grp. 1)" tot="1">Totale Lordo</item>
+		<title codiceRPT="11022" codiceUI="GS2_OneriTitle" tot="0">Oneri - Gruppo 2</title>
+		<item  codiceRPT="11007" codiceUI="GS2_OneriValore_1" um="€" add=" (Grp. 2)" tot="1">Oneri</item>
+		<item  codiceRPT="11008" codiceUI="GS2_OneriPercIva_1" um="%" add=" (Grp. 2)" tot="0">%25 IVA</item>
+		<item  codiceRPT="11016" codiceUI="GS2_IvaOneri_1" um="€" add=" (Grp. 2)" tot="1">Iva a credito</item>
+		<item  codiceRPT="11015" codiceUI="GS2_OneriTotale_1" um="€" add=" (Grp. 2)" tot="1">Totale Lordo</item>
+		<title codiceRPT="11023" codiceUI="GS_Totali" tot="0">Totali complessivi</title>
+		<item  codiceRPT="11018" codiceUI="GS_IvaTotale_1" um="€" tot="1">Iva complessiva</item>
+		<item  codiceRPT="11017" codiceUI="GS_TotaleNetto_1" um="€" tot="1">Totale Netto (Proventi - Oneri)</item>
+		<item  codiceRPT="11024" codiceUI="GS_TotaleLordo_1" um="€" tot="1">Totale Lordo</item>
+	</GestioneStraordinaria>
+	<!-- (Gestione straordinaria) -->
+
+	<!-- ===== Sez. 2:	Fogli calcolati ========================================================================= -->
+
+	<!-- 1: Conto economico -->
+	<Ricavi_CE page="conto_economico">
+		<title codiceRPT="6047" codiceUI="Ricavi_CE_title" tot="0">Ricavi</title>
+		<item  codiceRPT="6001" codiceUI="Ricavi_CE_1" um="€" default="Custom1" tot="1">Custom1</item>
+		<item  codiceRPT="6002" codiceUI="Ricavi_CE_2" um="€" default="Custom2" tot="1">Custom2</item>
+		<item  codiceRPT="6003" codiceUI="Ricavi_CE_3" um="€" default="Custom3" tot="1">Custom3</item>
+		<item  codiceRPT="6004" codiceUI="Ricavi_CE_4" um="€" default="Custom4" tot="1">Custom4</item>
+		<item  codiceRPT="6005" codiceUI="Ricavi_CE_5" um="€" default="Custom5" tot="1">Custom5</item>
+		<item  codiceRPT="6006" codiceUI="Ricavi_CE_TotaleNetto_1" um="€" tot="1">Totale ricavi netti</item>
+		<item  codiceRPT="6007" codiceUI="Ricavi_CE_Iva_1" um="€" tot="1">IVA a debito</item>
+		<item  codiceRPT="6008" codiceUI="Ricavi_CE_Totale_1" um="€" tot="1">Ricavi totali</item>
+	</Ricavi_CE>
+	<CostiEsterni_CE page="conto_economico">
+		<title codiceRPT="6048" codiceUI="CostiEsterni_CE_title" tot="0">Acquisti</title>
+		<item  codiceRPT="6009" codiceUI="CostiEsterniPF_CE_1" um="€" default="Custom1" tot="1">Custom1</item>
+		<item  codiceRPT="6010" codiceUI="CostiEsterniPF_CE_2" um="€" default="Custom2" tot="1">Custom2</item>
+		<item  codiceRPT="6011" codiceUI="CostiEsterniPF_CE_3" um="€" default="Custom3" tot="1">Custom3</item>
+		<item  codiceRPT="6012" codiceUI="CostiEsterniPF_CE_4" um="€" default="Custom4" tot="1">Custom4</item>
+		<item  codiceRPT="6013" codiceUI="CostiEsterniPF_CE_5" um="€" default="Custom5" tot="1">Custom5</item>
+		<item  codiceRPT="6061" codiceUI="CostiEsterniPF_CE_TotaleNetto_1" um="€" tot="1">Acquisti netti P.F.</item>
+		<item  codiceRPT="6062" codiceUI="CostiEsterniPF_CE_Iva_1" um="€" tot="1">IVA a credito</item>
+		<item  codiceRPT="6063" codiceUI="CostiEsterniPF_CE_Totale_1" um="€" tot="1">Acquisti totali P.F.</item>
+		<item  codiceRPT="6065" codiceUI="CostiEsterniMP_CE_1" um="€" default="Materia1" tot="1">Materia 1</item>
+		<item  codiceRPT="6066" codiceUI="CostiEsterniMP_CE_2" um="€" default="Materia2" tot="1">Materia 2</item>
+		<item  codiceRPT="6067" codiceUI="CostiEsterniMP_CE_3" um="€" default="Materia3" tot="1">Materia 3</item>
+		<item  codiceRPT="6068" codiceUI="CostiEsterniMP_CE_4" um="€" default="Materia4" tot="1">Materia 4</item>
+		<item  codiceRPT="6069" codiceUI="CostiEsterniMP_CE_5" um="€" default="Materia5" tot="1">Materia 5</item>
+		<item  codiceRPT="6070" codiceUI="CostiEsterniMP_CE_6" um="€" default="Materia6" tot="1">Materia 6</item>
+		<item  codiceRPT="6071" codiceUI="CostiEsterniMP_CE_7" um="€" default="Materia7" tot="1">Materia 7</item>
+		<item  codiceRPT="6072" codiceUI="CostiEsterniMP_CE_8" um="€" default="Materia8" tot="1">Materia 8</item>
+		<item  codiceRPT="6073" codiceUI="CostiEsterniMP_CE_9" um="€" default="Materia9" tot="1">Materia 9</item>
+		<item  codiceRPT="6074" codiceUI="CostiEsterniMP_CE_10" um="€" default="Materia10" tot="1">Materia 10</item>
+		<item  codiceRPT="6075" codiceUI="CostiEsterniMP_CE_TotaleNetto_1" um="€" tot="1">Acquisti netti M.P.</item>
+		<item  codiceRPT="6076" codiceUI="CostiEsterniMP_CE_Iva_1" um="€" tot="1">IVA a credito</item>
+		<item  codiceRPT="6077" codiceUI="CostiEsterniMP_CE_Totale_1" um="€" tot="1">Acquisti totali M.P.</item>
+		<title codiceRPT="6048" codiceUI="Totali_CE_title" tot="0">Totali</title>
+		<item  codiceRPT="6014" codiceUI="CostiEsterni_CE_TotaleNetto_1" um="€" tot="1">Totale acquisti netti</item>
+		<item  codiceRPT="6078" codiceUI="CostiEsterni_CE_Iva_1" um="€" tot="1">IVA a credito</item>
+		<item  codiceRPT="6016" codiceUI="CostiEsterni_CE_Totale_1" um="€" tot="1">Acquisti totali</item>
+	</CostiEsterni_CE>
+	<Rimanenze_CE page="conto_economico">
+		<title codiceRPT="6056" codiceUI="Rimanenze_CE_title" tot="0">Variazione rimanenze</title>
+		<item  codiceRPT="6080" codiceUI="Rimanenze_CE_VariazioniPF_1" um="€" tot="1">Variazione rimanenze P.F.</item>
+		<item  codiceRPT="6079" codiceUI="Rimanenze_CE_VariazioniMP_1" um="€" tot="1">Variazione rimanenze M.P.</item>
+		<item  codiceRPT="6057" codiceUI="Rimanenze_CE_TotaleNetto_1" um="€" tot="1">Variazione rimanenze totali</item>
+		<item  codiceRPT="6058" codiceUI="Rimanenze_CE_Iva_1" um="€" tot="1">IVA a credito</item>
+		<item  codiceRPT="6059" codiceUI="Rimanenze_CE_Totale_1" um="€" tot="1">Totale rimanenze</item>
+	</Rimanenze_CE>
+	<CostiVariabili_CE page="conto_economico">
+		<title codiceRPT="6049" codiceUI="CostiVariabili_CE_title" tot="0">Costi variabili</title>
+		<item  codiceRPT="6017" codiceUI="CostiVariabili_CE_CostiVarComm_1" um="€" tot="1">Costi Variabili Commerciali</item>
+		<item  codiceRPT="6018" codiceUI="CostiVariabili_CE_CostiVarProd_1" um="€" tot="1">Costi Variabili di Produzione</item>
+		<item  codiceRPT="6019" codiceUI="CostiVariabili_CE_TotaleNetto_1" um="€" tot="1">Costi variabili netti</item>
+		<item  codiceRPT="6020" codiceUI="CostiVariabili_CE_Iva_1" um="€" tot="1">IVA a credito</item>
+		<item  codiceRPT="6021" codiceUI="CostiVariabili_CE_Totale_1" um="€" tot="1">Costi variabili totali</item>
+	</CostiVariabili_CE>
+	<MargineContribuzione_CE page="conto_economico">
+		<title codiceRPT="6050" codiceUI="MargineContribuzione_CE_title" tot="0">Margine contribuzione</title>
+		<item  codiceRPT="6022" codiceUI="MargineContribuzione_CE_ValoreEuro_1" um="€" tot="1">Valore in Euro</item>
+		<item  codiceRPT="6023" codiceUI="MargineContribuzione_CE_ValorePerc_1" um="%" tot="1">Valore in %25</item>
+	</MargineContribuzione_CE>
+	<CostiInterni_CE page="conto_economico">
+		<title codiceRPT="6051" codiceUI="CostiInterni_CE_title" tot="0">Costi interni</title>
+		<item  codiceRPT="6024" codiceUI="CostiInterni_CE_CostiMrkt_1" um="€" tot="1">Mkgt / Comunicazione</item>
+		<item  codiceRPT="6025" codiceUI="CostiInterni_CE_CostiStruttura_1" um="€" tot="1">Struttura</item>
+		<item  codiceRPT="6026" codiceUI="CostiInterni_CE_CostiInfrastruttura_1" um="€" tot="1">Infrastruttura</item>
+		<item  codiceRPT="6027" codiceUI="CostiInterni_CE_CostiHR_1" um="€" tot="1">HR</item>
+		<item  codiceRPT="6028" codiceUI="CostiInterni_CE_CostiAmministrativi_1" um="€" tot="1">Costi amministrativi</item>
+		<item  codiceRPT="6029" codiceUI="CostiInterni_CE_CostiAltri_1" um="€" tot="1">Altro - vari</item>
+		<item  codiceRPT="6030" codiceUI="CostiInterni_CE_TotaleNetto_1" um="€" tot="1">Costi interni netti</item>
+		<item  codiceRPT="6031" codiceUI="CostiInterni_CE_Iva_1" um="€" tot="1">IVA a credito</item>
+		<item  codiceRPT="6032" codiceUI="CostiInterni_CE_Totale_1" um="€" tot="1">Costi interni totali</item>
+	</CostiInterni_CE>
+	<Ebitda_CE page="conto_economico">
+		<title codiceRPT="6052" codiceUI="Ebitda_CE_title" tot="0">EBITDA (Margine Operativo Lordo)</title>
+		<item  codiceRPT="6033" codiceUI="Ebitda_CE_ValoreEuro_1" um="€" tot="1">Valore in Euro</item>
+		<item  codiceRPT="6034" codiceUI="Ebitda_CE_ValorePerc_1" um="%" tot="1">Valore in %25</item>
+		<item  codiceRPT="6035" codiceUI="Ammortamenti_CE_1" um="€" tot="1">Ammortamenti</item>
+		<item  codiceRPT="6036" codiceUI="Svalutazioni_CE_1" um="€" tot="1">Svalutazioni/Deprezzamenti</item>
+	</Ebitda_CE>
+	<Ebit page="conto_economico">
+		<title codiceRPT="6053" codiceUI="Ebit_CE_title" tot="0">EBIT (Risultato Operativo)</title>
+		<item  codiceRPT="6037" codiceUI="Ebit_CE_ValoreEuro_1" um="€" tot="1">Valore in Euro</item>
+		<item  codiceRPT="6038" codiceUI="Ebit_CE_ValorePerc_1" um="%" tot="1">Valore in %25</item>
+		<item  codiceRPT="6039" codiceUI="OneriGestioneFinanziaria_CE_1" um="€" tot="1">Oneri/Proventi gestione finanziaria</item>
+		<item  codiceRPT="6040" codiceUI="OneriGestioneStraordinaria_CE_1" um="€" tot="1">Oneri/Proventi gestione straordinaria</item>
+	</Ebit>
+	<Ebt page="conto_economico">
+		<title codiceRPT="6054" codiceUI="Ebt_CE_title" tot="0">EBT (Risultato Ante Imposte)</title>
+		<item  codiceRPT="6041" codiceUI="Ebt_CE_ValoreEuro_1" um="€" tot="1">Valore in Euro</item>
+		<item  codiceRPT="6042" codiceUI="Ebt_CE_ValorePerc_1" um="%" tot="1">Valore in %25</item>
+		<item  codiceRPT="6043" codiceUI="Tasse_CE_1" um="€" tot="1">Imposte</item>
+	</Ebt>
+	<Eat page="conto_economico">
+		<title codiceRPT="6055" codiceUI="Eat_CE_title" tot="0">EAT (Risultato Netto)</title>
+		<item  codiceRPT="6044" codiceUI="Eat_CE_ValoreEuro_1" um="€" tot="1">Valore in Euro</item>
+		<item  codiceRPT="6045" codiceUI="Eat_CE_ValorePerc_1" um="%" tot="1">Valore in %25</item>
+		<item  codiceRPT="6046" codiceUI="Personale_1" um="nr" tot="0">Organizzazione risorse umane</item>
+	</Eat>
+	<!-- (Conto economico) -->
+
+	<!-- 2: Rendiconto finanziario -->
+	<LiquiditaIniziale_RF page="rendiconto_finanziario">
+		<title codiceRPT="" codiceUI="ValoriIniziali_title" tot="0">Valori iniziali</title>
+		<item  codiceRPT="7001" codiceUI="LiquiditaIniziale_RF_1" um="€" tot="1">Liquidità iniziale</item>
+		<item  codiceRPT="7072" codiceUI="VariazioneCashCrediti_RF_1" um="€" tot="1">Variazione cash crediti/debiti esercizio precedente</item>
+		<item  codiceRPT="7039" codiceUI="CompensazioneAnnoPrec_RF_1" um="€" tot="1">Compensazione quadratura esercizio precedente</item>
+	</LiquiditaIniziale_RF>
+	<Ricavi_RF page="rendiconto_finanziario">
+		<title codiceRPT="7002" codiceUI="Ricavi_RF_title" tot="0">Ricavi</title>
+		<item  codiceRPT="7003" codiceUI="Ricavi_RF_Netto_1" um="€" tot="1">Totale ricavi netti</item>
+		<item  codiceRPT="7004" codiceUI="Ricavi_RF_Iva_1" um="€" tot="1">IVA a debito</item>
+		<item  codiceRPT="7005" codiceUI="Ricavi_RF_Totale_1" um="€" tot="1">Totale ricavi lordi</item>
+	</Ricavi_RF>
+	<CostiEsterni_RF page="rendiconto_finanziario">
+		<title codiceRPT="7006" codiceUI="CostiEsterni_RF_title" tot="0">Costi acquisti</title>
+		<item  codiceRPT="7077" codiceUI="CostiEsterniPF_RF_Netto_1" um="€" tot="1">Acquisti Prodotti finiti</item>
+		<item  codiceRPT="7074" codiceUI="CostiEsterniMP_RF_Netto_1" um="€" tot="1">Acquisti Materie prime</item>
+		<item  codiceRPT="7007" codiceUI="CostiEsterni_RF_Netto_1" um="€" tot="1">Totale acquisti netti</item>
+		<item  codiceRPT="7008" codiceUI="CostiEsterni_RF_Iva_1" um="€" tot="1">IVA a credito</item>
+		<item  codiceRPT="7009" codiceUI="CostiEsterni_RF_Totale_1" um="€" tot="1">Totale acquisti lordi</item>
+	</CostiEsterni_RF>
+	<CostiMagazzino_RF page="rendiconto_finanziario">
+		<title codiceRPT="7010" codiceUI="CostiMagazzino_RF_title" tot="0">Costi magazzino</title>
+		<item  codiceRPT="7011" codiceUI="CostiMagazzino_RF_Netto_1" um="€" tot="1">Variazione magazino netta</item>
+		<item  codiceRPT="7012" codiceUI="CostiMagazzino_RF_Iva_1" um="€" tot="1">IVA a credito</item>
+		<item  codiceRPT="7013" codiceUI="CostiMagazzino_RF_Totale_1" um="€" tot="1">Variazione magazino lorda</item>
+	</CostiMagazzino_RF>
+	<CostiVar_RF page="rendiconto_finanziario">
+		<title codiceRPT="7014" codiceUI="CostiVar_RF_title" tot="0">Costi variabili</title>
+		<item  codiceRPT="7082" codiceUI="CostiVarComm_RF_1" um="€" tot="1">Costi variabili commerciali</item>
+		<item  codiceRPT="7081" codiceUI="CostiVarProd_RF_1" um="€" tot="1">Costi variabili produzione</item>
+		<item  codiceRPT="7015" codiceUI="CostiVar_RF_Netto_1" um="€" tot="1">Totale costi variabili netti</item>
+		<item  codiceRPT="7016" codiceUI="CostiVar_RF_Iva_1" um="€" tot="1">IVA a credito</item>
+		<item  codiceRPT="7017" codiceUI="CostiVar_RF_Totale_1" um="€" tot="1">Totale costi variabili lordi</item>
+	</CostiVar_RF>
+	<CostiInterni_RF page="rendiconto_finanziario">
+		<title codiceRPT="7018" codiceUI="CostiInterni_RF_title" tot="0">Costi interni</title>
+		<item  codiceRPT="7019" codiceUI="CostiInterni_RF_Netto_1" um="€" tot="1">Costi interni netti</item>
+		<item  codiceRPT="7020" codiceUI="CostiInterni_RF_Iva_1" um="€" tot="1">IVA a credito</item>
+		<item  codiceRPT="7021" codiceUI="CostiInterni_RF_Totale_1" um="€" tot="1">Costi interni lordi</item>
+	</CostiInterni_RF>
+	<Oneri page="rendiconto_finanziario">
+		<title codiceRPT="7022" codiceUI="Oneri_title" tot="0">Oneri / Proventi periodici</title>
+		<item  codiceRPT="7023" codiceUI="HR_RF_1" um="€" tot="1">Risorse umane</item>
+		<item  codiceRPT="7024" codiceUI="OneriFinanziari_RF_1" um="€" tot="1">Oneri finanziari</item>
+		<item  codiceRPT="7025" codiceUI="OneriFinanziariAnnoPrec_RF_1" um="€" tot="1">Oneri finanziari esercizio precedente</item>
+		<item  codiceRPT="7026" codiceUI="Interessi_RF_1" um="€" tot="1">Interessi/Cedole imm. finanziarie</item>
+		<item  codiceRPT="7027" codiceUI="Dividendi_RF_1" um="€" tot="1">Dividendi partecipazioni finanziarie</item>
+		<item  codiceRPT="7028" codiceUI="Tasse_RF_1" um="€" tot="1">Imposte</item>
+		<item  codiceRPT="7029" codiceUI="TasseDividendi_RF_1" um="€" tot="1">Imposte dividendi e cedole (imm. finanz.)</item>
+	</Oneri>
+	<QuoteCapitale page="rendiconto_finanziario">
+		<title codiceRPT="7086" codiceUI="QuoteCapitale_title" tot="0">Quote capitale</title>
+		<item  codiceRPT="7038" codiceUI="QuotaCapitaleRimborsata_RF_1" um="€" tot="1">Quota capitale rimborsata</item>
+	</QuoteCapitale>
+	<CashFlowOperativo_RF page="rendiconto_finanziario">
+		<title codiceRPT="7030" codiceUI="CashFlowOperativo_RF_title" tot="0">Cash-flow operativo</title>
+		<item  codiceRPT="7031" codiceUI="CashFlowOperativo_RF_Annuale_1" um="€" tot="1">Annuale</item>
+		<item  codiceRPT="7032" codiceUI="CashFlowOperativo_RF_Cumulato_1" um="€" tot="0">Cumulato</item>
+	</CashFlowOperativo_RF>
+	<Tfr page="rendiconto_finanziario">
+		<title codiceRPT="7087" codiceUI="Tfr_title" tot="0">TFR</title>
+		<item  codiceRPT="7034" codiceUI="Tfr_RF_1" um="€" tot="1">TFR</item>
+		<item  codiceRPT="7035" codiceUI="TfrAnnoPrec_RF_1" tot="0">TFR esercizio precedente cumulato</item>
+	</Tfr>
+	<Iva page="rendiconto_finanziario">
+		<title codiceRPT="7033" codiceUI="Iva_title" tot="0">IVA</title>
+		<item  codiceRPT="7083" codiceUI="IvaCashFlow_RF_1" um="€" tot="1">IVA liquidata erario</item>
+		<item  codiceRPT="7036" codiceUI="CreditoDebitoIva_RF_1" um="€" tot="1">Credito/debito IVA</item>
+		<item  codiceRPT="7037" codiceUI="IvaCreditoCumulata_RF_1" um="€" tot="0">IVA a credito cumulata</item>
+		<item  codiceRPT="7039" codiceUI="QuotaCapitaleRimborsataAnnoPrec_RF_1" um="€" tot="0">Quota capitale rimborsata esercizio precedente</item>
+	</Iva>
+	<GestStraordinaria page="rendiconto_finanziario">
+		<title codiceRPT="7085" codiceUI="GestStroardinaria_title" tot="0">Gestione straordinaria</title>
+		<item  codiceRPT="7084" codiceUI="GestioneStraordinaria_RF_1" um="€" tot="0">Gestione straordinaria</item>
+	</GestStraordinaria>
+	<CostiInvestimenti_RF page="rendiconto_finanziario">
+		<title codiceRPT="7040" codiceUI="CostiInvestimenti_RF_title" tot="0">Costi investimenti</title>
+		<title codiceRPT="7041" codiceUI="CostiInvestimentiMateriali_RF_title" tot="0">Costi investimenti materiali</title>
+		<item  codiceRPT="7042" codiceUI="CostiInvestimentiMateriali_RF_Netto_1" um="€" tot="1">Costi investimenti materiali</item>
+		<item  codiceRPT="7043" codiceUI="CostiInvestimentiMateriali_RF_Iva_1" um="€" tot="1">IVA a credito</item>
+		<item  codiceRPT="7044" codiceUI="CostiInvestimentiMateriali_RF_Totale_1" um="€" tot="1">Totale investimenti</item>
+		<title codiceRPT="7045" codiceUI="CostiInvestimentiImmateriali_RF_title" tot="0">Costi investimenti immateriali</title>
+		<item  codiceRPT="7046" codiceUI="CostiInvestimentiImmateriali_RF_Netto_1" um="€" tot="1">Costi investimenti immateriali</item>
+		<item  codiceRPT="7047" codiceUI="CostiInvestimentiImmateriali_RF_Iva_1" um="€" tot="1">IVA a credito</item>
+		<item  codiceRPT="7048" codiceUI="CostiInvestimentiImmateriali_RF_Totale_1" um="€" tot="1">Totale investimenti</item>
+		<title codiceRPT="7049" codiceUI="CostiInvestimentiFinanziari_RF_title" tot="0">Costi investimenti Finanziari</title>
+		<item  codiceRPT="7050" codiceUI="CostiInvestimentiFinanziari_RF_1" um="€" tot="1">Totale investimenti</item>
+		<item  codiceRPT="7051" codiceUI="IvaCreditoCumulataExInv_RF_title" tot="0">IVA a credito cumulata ex Investimenti</item>
+		<item  codiceRPT="7052" codiceUI="IvaCreditoCumulataExInv_RF_1" um="€" tot="1">Totale IVA</item>
+	</CostiInvestimenti_RF>
+	<CapitaleSociale_RF page="rendiconto_finanziario">
+		<title codiceRPT="7053" codiceUI="CapitaleSociale_RF_title" tot="0">Fonti</title>
+		<item  codiceRPT="7054" codiceUI="CapitaleSociale_RF_1" um="€" tot="1">Capitale sociale</item>
+		<item  codiceRPT="7055" codiceUI="FinanziamentiBancari_RF_1" um="€" tot="1">Finanziamenti bancari (o onerosi)</item>
+		<item  codiceRPT="7056" codiceUI="Riserve_RF_1" um="€" tot="1">Riserve/Altre fonti</item>
+		<item  codiceRPT="7057" codiceUI="Totale_RF_1" um="€" tot="1">Totale</item>
+	</CapitaleSociale_RF>
+	<FreeCashFlow_RF page="rendiconto_finanziario">
+		<title codiceRPT="7058" codiceUI="FreeCashFlow_RF_title" tot="0">Free cash flow</title>
+		<item  codiceRPT="7059" codiceUI="FreeCashFlow_RF_Annuale_1" um="€" tot="1">Annuale</item>
+		<item  codiceRPT="7060" codiceUI="FreeCashFlow_RF_Cumulato_1" um="€" tot="0">Cumulato</item>
+		<title codiceRPT="7061" codiceUI="Utili_RF_title" tot="0">Utili distribuiti - Partecipazioni/Titoli venduti</title>
+		<item  codiceRPT="7062" codiceUI="UtiliDistribuiti_RF_1" um="€" tot="1">Utili distribuiti</item>
+		<item  codiceRPT="7063" codiceUI="PartecipazioniVendute_RF_1" um="€" tot="1">Partecipazioni/Titoli venduti</item>
+	</FreeCashFlow_RF>
+	<CashFlowEffettivo_RF page="rendiconto_finanziario">
+		<title codiceRPT="7064" codiceUI="CashFlowEffettivo_RF_title" tot="0">Cash flow effettivo</title>
+		<item  codiceRPT="7065" codiceUI="CashFlowEffettivo_RF_Annuale_1" um="€" tot="1">Annuale</item>
+		<item  codiceRPT="7066" codiceUI="CashFlowEffettivo_RF_Cumulato_1" um="€" tot="0">Cumulato</item>
+	</CashFlowEffettivo_RF>
+	<CreditiDebiti_RF page="rendiconto_finanziario">
+		<title codiceRPT="7067" codiceUI="CreditiDebiti_RF_title" tot="0">Crediti e debiti</title>
+		<item  codiceRPT="7068" codiceUI="CreditiClienti_RF_Netto_1" um="€" tot="0">Crediti verso  clienti</item>
+		<item  codiceRPT="7069" codiceUI="CreditiClienti_RF_Iva_1" um="€" tot="0">IVA a debito</item>
+		<item  codiceRPT="7070" codiceUI="DebitiFornitori_RF_Netto_1" um="€" tot="0">Debiti verso fornitori</item>
+		<item  codiceRPT="7071" codiceUI="DebitiFornitori_RF_Iva_1" um="€" tot="0">IVA a credito</item>
+	</CreditiDebiti_RF>
+	<!-- (Rendiconto finanziario) -->
+
+	<!-- 3: Stato Patrimoniale -->
+	<Attivita_SP page="stato_patrimoniale">
+		<title codiceRPT="8028" codiceUI="Attivita_SP_title" tot="0">Attività</title>
+		<item  codiceRPT="8001" codiceUI="Attivita_SP_ImmobilizzazioniMateriali_1" um="€" tot="0">Immobilizzazioni materiali</item>
+		<item  codiceRPT="8002" codiceUI="Attivita_SP_ImmobilizzazioniImmateriali_1" um="€" tot="0">Immobilizzazioni immateriali</item>
+		<item  codiceRPT="8003" codiceUI="Attivita_SP_ImmobilizzazioniFinanziarie_1" um="€" tot="0">Immobilizzazioni finanziarie</item>
+		<item  codiceRPT="8004" codiceUI="Attivita_SP_Liquidita_1" um="€" tot="0">Liquidità</item>
+		<item  codiceRPT="8005" codiceUI="Attivita_SP_CreditiClienti_1" um="€" tot="0">Crediti vs clienti</item>
+		<item  codiceRPT="8006" codiceUI="Attivita_SP_CreditoIva_1" um="€" tot="0">Credito IVA</item>
+		<item  codiceRPT="8032" codiceUI="Attivita_SP_CreditiAltri_1" um="€" tot="0">Altri crediti</item>
+		<item  codiceRPT="8009" codiceUI="Attivita_SP_Magazzino_1" um="€" tot="0">Rimanenza di magazzino</item>
+		<item  codiceRPT="8010" codiceUI="Attivita_SP_Totale_1" um="€" tot="0">Totale attività</item>
+	</Attivita_SP>
+	<Passivita_SP page="stato_patrimoniale">
+		<title codiceRPT="8029" codiceUI="passivita_SP_title" tot="0">Passività</title>
+		<item  codiceRPT="8011" codiceUI="Passivita_SP_DebitiBanche_BT_1" um="€" tot="0">Debiti vs banche (o onerosi)</item>
+		<item  codiceRPT="8012" codiceUI="Passivita_SP_DebitiFornitori_BT_1" um="€" tot="0">Debiti verso fornitori</item>
+		<item  codiceRPT="8033" codiceUI="Passivita_SP_DebitiAltri_BT_1" um="€" tot="0">Altri debiti</item>
+		<item  codiceRPT="8013" codiceUI="Passivita_SP_Tfr_BT_1" um="€" tot="0">TFR - Altri fondi</item>
+		<item  codiceRPT="8014" codiceUI="Passivita_SP_Totale_BT_1" um="€" tot="0">Totale a breve</item>
+		<item  codiceRPT="8015" codiceUI="Passivita_SP_DebitiBanche_MT_1" um="€" tot="0">Debiti vs banche (o onerosi)</item>
+		<item  codiceRPT="8017" codiceUI="Passivita_SP_DebitiAltri_MT_1" um="€" tot="0">Altri debiti</item>
+		<item  codiceRPT="8018" codiceUI="Passivita_SP_Totale_MT_1" um="€" tot="0">Totale a medio/lungo</item>
+		<item  codiceRPT="8019" codiceUI="Passivita_SP_Totale_1" um="€" tot="0">Totale passività</item>
+	</Passivita_SP>
+	<PatrimonioNetto_SP page="stato_patrimoniale">
+		<title codiceRPT="8030" codiceUI="PatrimonioNetto_SP_title" tot="0">Patrimonio netto</title>
+		<item  codiceRPT="8020" codiceUI="PatrimonioNetto_SP_CapitaleSociale_1" um="€" tot="0">Capitale sociale</item>
+		<item  codiceRPT="8021" codiceUI="PatrimonioNetto_SP_Riserve_1" um="€" tot="0">Riserve</item>
+		<item  codiceRPT="8022" codiceUI="PatrimonioNetto_SP_UtiliPerdite_1" um="€" tot="0">Utili non distribuiti/Perdite</item>
+		<item  codiceRPT="8023" codiceUI="PatrimonioNetto_SP_UtiliPerditeEsPrec_1" um="€" tot="0">Utile/Perdite esercizi precedenti</item>
+		<item  codiceRPT="8024" codiceUI="PatrimonioNetto_SP_Totale_1" um="€" tot="0">Totale patrimonio netto</item>
+		<item  codiceRPT="8025" codiceUI="Totale_SP_1" um="€" tot="0">Passività + Patrimonio netto</item>
+		<item  codiceRPT="8026" codiceUI="Delta_SP_1" tot="0">Delta</item>
+	</PatrimonioNetto_SP>
+	<!-- (Stato Patrimoniale) -->
+
+	<!-- 4: Working capital -->
+	<LiquiditaIniziale_WC page="rendiconto_finanziario">
+		<item  codiceRPT="9000" codiceUI="LiquiditaIniziale_WC_1" tot="0">Valore (?)</item>
+	</LiquiditaIniziale_WC>
+	<Ricavi_WC page="rendiconto_finanziario">
+		<title codiceRPT="9001" codiceUI="Ricavi_WC_title" tot="0">Ricavi</title>
+		<item  codiceRPT="9002" codiceUI="Ricavi_WC_Netto_1" tot="0">Totale ricavi netti</item>
+		<item  codiceRPT="9003" codiceUI="Ricavi_WC_Iva_1" tot="0">IVA a debito</item>
+		<item  codiceRPT="9004" codiceUI="Ricavi_WC_Totale_1" tot="0">Ricavi totali</item>
+	</Ricavi_WC>
+	<CostiEsterni_WC page="rendiconto_finanziario">
+		<title codiceRPT="9005" codiceUI="CostiEsterni_WC_title" tot="0">Costi acquisti</title>
+		<item  codiceRPT="9006" codiceUI="CostiEsterni_WC_Netto_1" tot="0">Costi acquisti netti</item>
+		<item  codiceRPT="9007" codiceUI="CostiEsterni_WC_Iva_1" tot="0">IVA a credito</item>
+		<item  codiceRPT="9008" codiceUI="CostiEsterni_WC_Totale_1" tot="0">Totale costi esterni</item>
+	</CostiEsterni_WC>
+	<CostiMagazzino_WC page="rendiconto_finanziario">
+		<title codiceRPT="9009" codiceUI="CostiMagazzino_WC_title" tot="0">Costi magazzino</title>
+		<item  codiceRPT="9010" codiceUI="CostiMagazzino_WC_Netto_1" tot="0">Variazione magazino</item>
+		<item  codiceRPT="9011" codiceUI="CostiMagazzino_WC_Iva_1" tot="0">IVA a credito</item>
+		<item  codiceRPT="9012" codiceUI="CostiMagazzino_WC_Totale_1" tot="0">Totale costi esterni</item>
+	</CostiMagazzino_WC>
+	<CostiVar_WC page="rendiconto_finanziario">
+		<title codiceRPT="9013" codiceUI="CostiVar_WC_title" tot="0">Costi variabili</title>
+		<item  codiceRPT="9014" codiceUI="CostiVar_WC_Netto_1" tot="0">Costi variabili netti</item>
+		<item  codiceRPT="9015" codiceUI="CostiVar_WC_Iva_1" tot="0">IVA a credito</item>
+		<item  codiceRPT="9016" codiceUI="CostiVar_WC_Totale_1" tot="0">Totale costi esterni</item>
+	</CostiVar_WC>
+	<CostiInterni_WC page="rendiconto_finanziario">
+		<title codiceRPT="9017" codiceUI="CostiInterni_WC_title" tot="0">Costi fissi</title>
+		<item  codiceRPT="9018" codiceUI="CostiInterni_WC_Netto_1" tot="0">Costi fissi netti</item>
+		<item  codiceRPT="9019" codiceUI="CostiInterni_WC_Iva_1" tot="0">IVA a credito</item>
+		<item  codiceRPT="9020" codiceUI="CostiInterni_WC_Totale_1" tot="0">Totale costi esterni</item>
+	</CostiInterni_WC>
+	<Oneri page="rendiconto_finanziario">
+		<title codiceRPT="9021" codiceUI="Oneri_title" tot="0">Oneri e tasse</title>
+		<item  codiceRPT="9022" codiceUI="HR_WC_1" tot="0">Risorse umane</item>
+		<item  codiceRPT="9023" codiceUI="OneriFinanziari_WC_1" tot="0">Oneri finanziari</item>
+		<item  codiceRPT="9024" codiceUI="OneriFinanziariAnnoPrec_WC_1" tot="0">Oneri finanziari esercizio precedente</item>
+		<item  codiceRPT="9025" codiceUI="Interessi_WC_1" tot="0">Interessi/Cedole imm. finanziarie</item>
+		<item  codiceRPT="9026" codiceUI="Dividendi_WC_1" tot="0">Dividendi partecipazioni finanziarie</item>
+		<item  codiceRPT="9027" codiceUI="Tasse_WC_1" tot="0">Tasse</item>
+		<item  codiceRPT="9028" codiceUI="TasseDividendi_WC_1" tot="0">Tasse dividendi e cedole (imm. finanz.)</item>
+	</Oneri>
+	<CashFlowOperativo_WC page="rendiconto_finanziario">
+		<title codiceRPT="9029" codiceUI="CashFlowOperativo_WC_title" tot="0">Cash-flow operativo</title>
+		<item  codiceRPT="9030" codiceUI="CashFlowOperativo_WC_Annuale_1" tot="0">Annuale</item>
+		<item  codiceRPT="9031" codiceUI="CashFlowOperativo_WC_Cumulato_1" tot="0">Cumulato</item>
+	</CashFlowOperativo_WC>
+	<Tfr page="rendiconto_finanziario">
+		<title codiceRPT="9032" codiceUI="Tfr_title" tot="0">TFR, IVA, Quote capitali</title>
+		<item  codiceRPT="9033" codiceUI="Tfr_WC_1" tot="0">TFR</item>
+		<item  codiceRPT="9034" codiceUI="TfrAnnoPrec_WC_1" tot="0">TFR esercizio precedente cumulato</item>
+		<item  codiceRPT="9035" codiceUI="CreditoDebitoIva_WC_1" tot="0">Credito/debito IVA</item>
+		<item  codiceRPT="9036" codiceUI="IvaCreditoCumulata_WC_1" tot="0">IVA a credito cumulata</item>
+		<item  codiceRPT="9037" codiceUI="QuotaCapitaleRimborsata_WC_1" tot="0">Quota capitale rimborsata</item>
+		<item  codiceRPT="9038" codiceUI="QuotaCapitaleRimborsataAnnoPrec_WC_1" tot="0">Quota capitale rimborsata esercizio precedente</item>
+	</Tfr>
+	<!-- sospeso ==	
+	<CostiInvestimenti_WC page="rendiconto_finanziario">	
+		<title codiceRPT="9039" codiceUI="CostiInvestimenti_WC_title" tot="0">Costi investimenti</title>
+		<title codiceRPT="9040" codiceUI="CostiInvestimentiMateriali_WC_title" tot="0">Costi investimenti materiali</title>
+		<item  codiceRPT="9041" codiceUI="CostiInvestimentiMateriali_WC_Netto_1" tot="0">Costi investimenti materiali</item>
+		<item  codiceRPT="9042" codiceUI="CostiInvestimentiMateriali_WC_Iva_1" tot="0">IVA A credito</item>
+		<item  codiceRPT="9043" codiceUI="CostiInvestimentiMateriali_WC_Totale_1" tot="1">Totale investimenti</item>
+		<title codiceRPT="9044" codiceUI="CostiInvestimentiImmateriali_WC_title" tot="0">Costi investimenti immateriali</title>
+		<item  codiceRPT="9045" codiceUI="CostiInvestimentiImmateriali_WC_Netto_1" tot="0">Costi investimenti immateriali</item>
+		<item  codiceRPT="9046" codiceUI="CostiInvestimentiImmateriali_WC_Iva_1" tot="0">IVA A credito</item>
+		<item  codiceRPT="9047" codiceUI="CostiInvestimentiImmateriali_WC_Totale_1" tot="0">Totale investimenti</item>
+		<title codiceRPT="9048" codiceUI="CostiInvestimentiFinanziari_WC_title" tot="0">Costi investimenti Finanziari</title>
+		<item  codiceRPT="9049" codiceUI="CostiInvestimentiFinanziari_WC_1" tot="0">Totale investimenti</item>
+		<item  codiceRPT="9050" codiceUI="IvaCreditoCumulataExInv_WC_title" tot="0">IVA a credito cumulata ex Investimenti</item>
+		<item  codiceRPT="9051" codiceUI="IvaCreditoCumulataExInv_WC_1" tot="0">Totale IVA</item>
+	</CostiInvestimenti_WC>	
+	<CapitaleSociale_WC page="rendiconto_finanziario">	
+		<title codiceRPT="9052" codiceUI="CapitaleSociale_WC_title" tot="0">Aumenti capitale sociale</title>
+		<item  codiceRPT="9053" codiceUI="CapitaleSociale_WC_1" tot="0">Capitale sociale</item>
+		<item  codiceRPT="9054" codiceUI="FinanziamentiBancari_WC_1" tot="0">Finanziamenti bancari</item>
+		<item  codiceRPT="9055" codiceUI="Riserve_WC_1" tot="0">Riserve/Altre fonti</item>
+		<item  codiceRPT="9056" codiceUI="Totale_WC_1" tot="0">Totale</item>
+	</CapitaleSociale_WC>	
+	== sospeso -->
+	<FreeCashFlow_WC page="rendiconto_finanziario">
+		<title codiceRPT="9057" codiceUI="FreeCashFlow_WC_title" tot="0">Free cash flow</title>
+		<item  codiceRPT="9058" codiceUI="FreeCashFlow_WC_Annuale_1" tot="0">Annuale</item>
+		<item  codiceRPT="9059" codiceUI="FreeCashFlow_WC_Cumulato_1" tot="0">Cumulato</item>
+		<title codiceRPT="9060" codiceUI="Utili_WC_title" tot="0">Utili e partecipazioni</title>
+		<item  codiceRPT="9061" codiceUI="UtiliDistribuiti_WC_1" tot="0">Utili distribuiti</item>
+		<item  codiceRPT="9062" codiceUI="PartecipazioniVendute_WC_1" tot="0">Partecipazioni vendute</item>
+	</FreeCashFlow_WC>
+	<CashFlowEffettivo_WC page="rendiconto_finanziario">
+		<title codiceRPT="9063" codiceUI="CashFlowEffettivo_WC_title" tot="0">Cash flow effettivo</title>
+		<item  codiceRPT="9064" codiceUI="CashFlowEffettivo_WC_Annuale_1" tot="0">Annuale</item>
+		<item  codiceRPT="9065" codiceUI="CashFlowEffettivo_WC_Cumulato_1" tot="0">Cumulato</item>
+	</CashFlowEffettivo_WC>
+	<CreditiDebiti_WC page="rendiconto_finanziario">
+		<title codiceRPT="9066" codiceUI="CreditiDebiti_WC_title" tot="0">Crediti e debiti</title>
+		<item  codiceRPT="9067" codiceUI="CreditiClienti_WC_Netto_1" tot="0">Crediti verso  clienti</item>
+		<item  codiceRPT="9068" codiceUI="CreditiClienti_WC_Iva_1" tot="0">IVA a debito</item>
+		<item  codiceRPT="9069" codiceUI="DebitiFornitori_WC_Netto_1" tot="0">Debiti verso fornitori</item>
+		<item  codiceRPT="9070" codiceUI="DebitiFornitori_WC_Iva_1" tot="0">IVA a credito</item>
+	</CreditiDebiti_WC>
+	<Effetti page="rendiconto_finanziario">
+		<title codiceRPT="9071" codiceUI="Effetti_title" tot="0">Effetti</title>
+		<item  codiceRPT="9072" codiceUI="Effetti_Effetto1_1" tot="0">Effetto 1</item>
+		<item  codiceRPT="9073" codiceUI="Effetti_Effetto2_1" tot="0">Effetto 2</item>
+		<item  codiceRPT="9074" codiceUI="Effetti_Effetto3_1" tot="0">Effetto 3</item>
+		<item  codiceRPT="9075" codiceUI="Effetti_Effetto4_1" tot="0">Effetto 4</item>
+		<item  codiceRPT="9076" codiceUI="Effetti_Effetto5_1" tot="0">Effetto 5</item>
+		<item  codiceRPT="9077" codiceUI="Effetti_Totale_1" tot="0">Effetto Distorsivo compensazione IVA ex investimenti</item>
+	</Effetti>
+	<!-- (Working capital) -->
+
+	<!-- 5: Fonti finanziarie -->
+	<Fabbisogni page="fonti_finanziarie">
+		<title codiceRPT="10001" codiceUI="Fabbisogni_title" tot="0">Fabbisogni</title>
+		<item  codiceRPT="10002" codiceUI="FabbisognoInvestimenti_1" um="€" tot="1">Investimenti</item>
+		<item  codiceRPT="10003" codiceUI="FabbisognoWC_1" um="€" tot="1">Working capital</item>
+		<item  codiceRPT="10004" codiceUI="FabbisognoRettifica_1" um="€" tot="1">Rettifica effetto compensativo IVA investimenti</item>
+		<item  codiceRPT="10005" codiceUI="FabbisognoTotaleImpieghi_1" um="€" tot="1">Totale impieghi</item>
+	</Fabbisogni>
+	<Capitale page="fonti_finanziarie">
+		<title codiceRPT="10006" codiceUI="Capitale_title" tot="0">Capitale sociale e altre fonti</title>
+		<item  codiceRPT="10007" codiceUI="FontiAumentoCapitale_1" um="€" tot="1">Aumento capitale/Riserve</item>
+		<item  codiceRPT="10008" codiceUI="FontiFinanziamenti_1" um="€" tot="1">Finanziamenti onerosi</item>
+		<item  codiceRPT="10009" codiceUI="FontiAltro_1" um="€" tot="1">Riserve/Altro</item>
+		<item  codiceRPT="10010" codiceUI="FontiLiquiditaAnnoPrec_1" tot="0">Liquidità esercizio precedente</item>
+		<item  codiceRPT="10011" codiceUI="FontiTotale_1" um="€" tot="1">Totale fonti</item>
+	</Capitale>
+	<CashFlow page="fonti_finanziarie">
+		<title codiceRPT="10012" codiceUI="CashFlow_title" tot="0">Cash flow e rapporti impieghi</title>
+		<item  codiceRPT="10013" codiceUI="Freecashflow_1" um="€" tot="1">Cash flow</item>
+		<item  codiceRPT="10014" codiceUI="RapportoImpieghiAnnuale_1" um="%" tot="0">Indice copertura Fabbisogni/Fonti annuale</item>
+		<item  codiceRPT="10015" codiceUI="RapportoImpieghiCumulato_1" um="%" tot="1">Indice copertura Fabbisogni/Fonti cumulato</item>
+	</CashFlow>
+	<!-- (Fonti finanziarie) -->
+
+	<!-- (Anno-1) -->
+	<AnnoPrecedente page="Anno-1">
+		<title codiceRPT="" codiceUI="Subtitle_LiquiditaTitle" um="" tot="0">Liquidità e Capitale Sociale</title>
+		<title codiceRPT="5249" codiceUI="Subtitle_Liquidita" um="" tot="0">Liquidità</title>
+		<item  codiceRPT="5001" codiceUI="AP_Liquidita_1" um="€" tot="0">Liquidità esercizio precedente</item>
+		<title codiceRPT="5250" codiceUI="Subtitle_Capitale" tot="0">Capitale Sociale</title>
+		<item  codiceRPT="5002" codiceUI="AP_Capitale_1" um="€" tot="0">Capitale Sociale</item>
+		<item  codiceRPT="5003" codiceUI="AP_Riserve_1" um="€" tot="0">Riserve</item>
+		<item  codiceRPT="5004" codiceUI="AP_Utile_1" um="€" tot="0">Utile/perdita netto</item>
+		<item  codiceRPT="5005" codiceUI="AP_NuovoUtile_1" um="€" tot="0">Utile/perdita portato a nuovo</item>
+		<item  codiceRPT="" codiceUI="AP_Patrimonio" um="€" tot="0">Patrimonio netto</item>
+		<title codiceRPT="5251" codiceUI="Subtitle_Rimanenze" tot="0">Rimanenze</title>
+		<item  codiceRPT="5006" codiceUI="AP_RimanenzePF_1" um="€" tot="0">Rimanenze finali prodotti finiti</item>
+		<item  codiceRPT="5007" codiceUI="AP_RimanenzeMP_1" um="€" tot="0">Rimanenze finali materie prime</item>
+		<title codiceRPT="5252" codiceUI="Subtitle_CreditiSoci" tot="0">Crediti e debiti verso Soci</title>
+		<item  codiceRPT="5008" codiceUI="AP_CreditiSociBreve_1" um="€" tot="0">Crediti a breve verso soci</item>
+		<item  codiceRPT="5009" codiceUI="AP_CreditiSociMedio_1" um="€" tot="0">Crediti a medio verso soci</item>
+		<item  codiceRPT="5014" codiceUI="AP_DebitiSociBreve_1" um="€" tot="0">Debiti a breve verso soci</item>
+		<item  codiceRPT="5015" codiceUI="AP_DebitiSociMedio_1" um="€" tot="0">Debiti a medio verso soci</item>
+		<title codiceRPT="5253" codiceUI="Subtitle_CreditiDebiti" tot="0">Crediti e debiti a breve</title>
+		<title codiceRPT="5254" codiceUI="Subtitle_Commerciali" tot="0">Commerciali</title>
+		<item  codiceRPT="5020" codiceUI="AP_CreditiComm_1" um="€" tot="0">Crediti a breve</item>
+		<item  codiceRPT="5021" codiceUI="AP_DebitiComm_1" um="€" tot="0">Debiti a breve</item>
+		<title codiceRPT="5255" codiceUI="Subtitle_Altri" tot="0">Altri Crediti/Debiti</title>
+		<item  codiceRPT="5022" codiceUI="AP_AltriCrediti_1" um="€" tot="0">Crediti a breve</item>
+		<item  codiceRPT="5023" codiceUI="AP_AltriDebiti_1" um="€" tot="0">Debiti a breve</item>
+		<item  codiceRPT="5024" codiceUI="AP_CreditoIVA_1" um="€" tot="0">Credito IVA</item>
+		<item  codiceRPT="5025" codiceUI="AP_DebitiTributari_1" um="€" tot="0">Debiti tributari a breve</item>
+		<item  codiceRPT="5263" codiceUI="AP_CreditiTributari_1" um="€" tot="0">Crediti tributari a breve</item>
+		<title codiceRPT="5256" codiceUI="Subtitle_CreditiDebitiMedi" tot="0">Crediti e debiti a medio/lungo</title>
+		<item  codiceRPT="5026" codiceUI="AP_CreditiMedioLungo_1" um="€" tot="0">Crediti a Medio/Lungo (compresi tributari )</item>
+		<item  codiceRPT="5031" codiceUI="AP_DebitiMedioLungo_1" um="€" tot="0">Debiti a Medio/Lungo (compresi tributari )</item>
+		<title codiceRPT="5257" codiceUI="Subtitle_TFReAltri" tot="0">TFR e altri fondi</title>
+		<item  codiceRPT="5036" codiceUI="AP_Tfr_1" um="€" tot="0">Fondo TFR</item>
+		<item  codiceRPT="5037" codiceUI="AP_AltriFondi_1" um="€" tot="0">Altri fondi</item>
+		<title codiceRPT="5258" codiceUI="Subtitle_ImmobilEFinanz" tot="0">Immobilizzazioni e Finanziamenti</title>
+		<title codiceRPT="5259" codiceUI="Subtitle_AP_Materiali" tot="0">Immobilizzazioni Materiali</title>
+		<title codiceRPT="5030" codiceUI="Subtitle_AP_Materiali_Investimento1" tot="0">Investimento 1</title>
+		<title codiceRPT="5032" codiceUI="Subtitle_AP_Materiali_Investimento2" tot="0">Investimento 2</title>
+		<title codiceRPT="5033" codiceUI="Subtitle_AP_Materiali_Investimento3" tot="0">Investimento 3</title>
+		<title codiceRPT="5034" codiceUI="Subtitle_AP_Materiali_Investimento4" tot="0">Investimento 4</title>
+		<item  codiceRPT="5038" codiceUI="AP_IM_ValoreResiduo_1" um="€" tot="0">Valore residuo</item>
+		<item  codiceRPT="5042" codiceUI="AP_IM_AmmortamentoAnnuale_1" um="€" tot="0">Quota ammortamento annuale</item>
+		<item  codiceRPT="5046" codiceUI="AP_IM_Iperammortamento_1" um="%" tot="0">Iperammortamento aggiuntivo</item>
+		<title codiceRPT="5260" codiceUI="Subtitle_AP_Immateriali" tot="0">Immobilizzazioni Immateriali</title>
+		<item  codiceRPT="5050" codiceUI="AP_II_ValoreResiduo_1" um="€" tot="0">Valore residuo</item>
+		<item  codiceRPT="5054" codiceUI="AP_II_AmmortamentoAnnuale_1" um="€" tot="0">Quota ammortamento annuale</item>
+		<title codiceRPT="5261" codiceUI="Subtitle_AP_Finanziarie" tot="0">Immobilizzazioni Finanziarie</title>
+		<title codiceRPT="5039" codiceUI="Subtitle_AP_Finanziarie_Titoli1" tot="0">Titoli 1</title>
+		<title codiceRPT="5040" codiceUI="Subtitle_AP_Finanziarie_Titoli2" tot="0">Titoli 2</title>
+		<title codiceRPT="5041" codiceUI="Subtitle_AP_Finanziarie_Titoli3" tot="0">Titoli 3</title>
+		<title codiceRPT="5043" codiceUI="Subtitle_AP_Finanziarie_Titoli4" tot="0">Titoli 4</title>
+		<item  codiceRPT="5058" codiceUI="AP_Partecipazioni_1" um="€" tot="0">Partecipazioni esercizio prec.</item>
+		<item  codiceRPT="5062" codiceUI="AP_IF_Valore_1" um="€" tot="0">Valore</item>
+		<item  codiceRPT="5063" codiceUI="AP_IF_AnniResidui_1" um="€" tot="0">Anni residui</item>
+		<item  codiceRPT="5064" codiceUI="AP_IF_InteressiPerc_1" um="%" tot="0">%25 Interessi/Cedole</item>
+		<item  codiceRPT="5065" codiceUI="AP_IF_Interessi_1" um="€" tot="0">Valore Interessi/Cedole</item>
+		<title codiceRPT="5262" codiceUI="Subtitle_AP_Finanziamenti" tot="0">Finanziamenti</title>
+		<title codiceRPT="5044" codiceUI="Subtitle_AP_Finanziamenti_finanziamento_mlt1" tot="0">Finanziamenti a MLT 1</title>
+		<title codiceRPT="5045" codiceUI="Subtitle_AP_Finanziamenti_finanziamento_mlt2" tot="0">Finanziamenti a MLT 2</title>
+		<title codiceRPT="5047" codiceUI="Subtitle_AP_Finanziamenti_finanziamento_mlt3" tot="0">Finanziamenti a MLT 3</title>
+		<title codiceRPT="5048" codiceUI="Subtitle_AP_Finanziamenti_finanziamento_mlt4" tot="0">Finanziamenti a MLT 4</title>
+		<item  codiceRPT="5078" codiceUI="AP_F_DebitoMedio_1" um="€" tot="0">Debito medio</item>
+		<item  codiceRPT="5079" codiceUI="AP_F_DebitoABreve_1" um="€" tot="0">Debito a breve</item>
+		<item  codiceRPT="5080" codiceUI="AP_F_InteressiPerc_1" um="%" tot="0">%25 Interessi</item>
+		<item  codiceRPT="5264" codiceUI="AP_F_FinanziamentiABreve_1" um="€" tot="0">Prestito a breve</item>
+		<title codiceRPT="5290" codiceUI="Subtitle_AP_Quadratura" um="" tot="0">Quadratura Stato Patrimoniale</title>
+		<item  codiceRPT="5265" codiceUI="AP_QSP_ImmMateriali_1" um="€" tot="0">immobilizzazioni materiali</item>
+		<item  codiceRPT="5266" codiceUI="AP_QSP_ImmImmateriali_1" um="€" tot="0">immobilizzazioni immateriali</item>
+		<item  codiceRPT="5267" codiceUI="AP_QSP_ImmFinanziarie_1" um="€" tot="0">immobilizzazioni finanziarie</item>
+		<item  codiceRPT="5268" codiceUI="AP_QSP_Liquidita_1" um="€" tot="0">Liquidità</item>
+		<item  codiceRPT="5269" codiceUI="AP_QSP_CreditiClienti_1" um="€" tot="0">Crediti verso clienti</item>
+		<item  codiceRPT="5270" codiceUI="AP_QSP_CreditoIva_1" um="€" tot="0">Credito IVA</item>
+		<item  codiceRPT="5271" codiceUI="AP_QSP_CreditiAltri_1" um="€" tot="0">Altri crediti</item>
+		<item  codiceRPT="5272" codiceUI="AP_QSP_Magazzino_1" um="€" tot="0">Magazzino (Rimanenza al 31/12)</item>
+		<item  codiceRPT="5273" codiceUI="AP_QSP_TotaleAttivita_1" um="€" tot="0">Totale attività</item>
+		<item  codiceRPT="5291" codiceUI="AP_QSP_DebitiBreve_1" um="€" tot="0">Debiti a breve</item>
+		<item  codiceRPT="5274" codiceUI="AP_QSP_DebitiBreveBanche_1" um="€" tot="0">Debiti verso Banche</item>
+		<item  codiceRPT="5275" codiceUI="AP_QSP_DebitiBreveFornitori_1" um="€" tot="0">Debiti verso Fornitori</item>
+		<item  codiceRPT="5276" codiceUI="AP_QSP_DebitiBreveAltri_1" um="€" tot="0">Altri debiti </item>
+		<item  codiceRPT="5277" codiceUI="AP_QSP_TfrBreve_1" um="€" tot="0">TFR - Altri fondi</item>
+		<item  codiceRPT="5278" codiceUI="AP_QSP_TotaleDebitiBreve_1" um="€" tot="0">Totale a breve</item>
+		<item  codiceRPT="5279" codiceUI="AP_QSP_DebitiMedioBanche_1" um="€" tot="0">debiti vs banche</item>
+		<item  codiceRPT="5280" codiceUI="AP_QSP_DebitiMedioAltri_1" um="€" tot="0">Altri debiti </item>
+		<item  codiceRPT="5281" codiceUI="AP_QSP_TotaleDebitiMedio_1" um="€" tot="0">Totale a medio/lungo</item>
+		<item  codiceRPT="5282" codiceUI="AP_QSP_TotalePassivita_1" um="€" tot="0">Totale passività</item>
+		<item  codiceRPT="5283" codiceUI="AP_QSP_CapitaleSociale_1" um="€" tot="0">Capitale sociale</item>
+		<item  codiceRPT="5284" codiceUI="AP_QSP_Riserve_1" um="€" tot="0">Riserve</item>
+		<item  codiceRPT="5285" codiceUI="AP_QSP_UtiliPerdite_1" um="€" tot="0">Utili non distribuiti / Perdite</item>
+		<item  codiceRPT="5286" codiceUI="AP_QSP_UtiliPerditePrecedenti_1" um="€" tot="0">Utile /Perdite esercizi prec.</item>
+		<item  codiceRPT="5287" codiceUI="AP_QSP_TotalePatrimonio_1" um="€" tot="0">Totale patrimonio netto</item>
+		<item  codiceRPT="" codiceUI="AP_QSP_TotaleAttivitaBis_1" um="€" tot="0">Totale attività</item>
+		<item  codiceRPT="" codiceUI="AP_QSP_TotalePassivitaBis_1" um="€" tot="0">Totale passività</item>
+		<item  codiceRPT="5287" codiceUI="AP_QSP_TotalePatrimonioBis_1" um="€" tot="0">Totale patrimonio netto</item>
+		<item  codiceRPT="5288" codiceUI="AP_QSP_TotaleGenerale_1" um="€" tot="0">Totale passività + patrimonio netto</item>
+		<item  codiceRPT="5289" codiceUI="AP_QSP_Sbilancio_1" um="€" tot="0">Sbilancio</item>
+		<item  codiceRPT="" codiceUI="AP_QSP_LiquiditaCompensare_1" um="€" tot="0">Liquidita</item>
+		<item  codiceRPT="5293" codiceUI="F_ANNOPREC_TITLE_Years" tot="0">esercizio precedente titolo anno</item>
+
+
+		<title codiceRPT="5292" codiceUI="Subtitle_AP_RIsultatiCompilati" tot="0">Risultati compilati</title>
+		<title codiceRPT="5245" codiceUI="Subtitle_AP_Attivita" tot="0">Attività</title>
+		<title codiceRPT="" codiceUI="Subtitle_AP_Immobilizzazioni" tot="0">Immobilizzazioni</title>
+		<item  codiceRPT="5105" codiceUI="AP_PC_ImmMateriali_1" um="€" tot="0">immobilizzazioni materiali</item>
+		<item  codiceRPT="5110" codiceUI="AP_PC_ImmImmateriali_1" um="€" tot="0">immobilizzazioni immateriali</item>
+		<item  codiceRPT="5115" codiceUI="AP_PC_ImmFinanziarie_1" um="€" tot="0">immobilizzazioni finanziarie</item>
+		<item  codiceRPT="5120" codiceUI="AP_PC_Liquidita_1" um="€" tot="0">Liquidità</item>
+		<title codiceRPT="" codiceUI="Subtitle_AP_CreditiClienti" tot="0">Crediti verso clienti</title>
+		<item  codiceRPT="5125" codiceUI="AP_PC_CreditiClienti_1" um="€" tot="0">Crediti verso clienti</item>
+		<item  codiceRPT="5130" codiceUI="AP_PC_CreditoIva_1" um="€" tot="0">Credito IVA</item>
+		<item  codiceRPT="5135" codiceUI="AP_PC_CreditiAltri_1" um="€" tot="0">Altrui crediti M/L (vs soci, ecc)</item>
+		<item  codiceRPT="5140" codiceUI="AP_PC_Magazzino_1" um="€" tot="0">Magazzino (Rimanenza al 31/12)</item>
+		<item  codiceRPT="5145" codiceUI="AP_PC_TotaleAttivita_1" um="€" tot="0">Totale attività</item>
+		<title codiceRPT="5246" codiceUI="Subtitle_AP_Passivita" tot="0">Passività</title>
+		<title codiceRPT="" codiceUI="Subtitle_AP_Breve" tot="0">A breve</title>
+		<item  codiceRPT="5150" codiceUI="AP_PC_DebitiBreveBanche_1" um="€" tot="0">Debiti verso Banche</item>
+		<item  codiceRPT="5155" codiceUI="AP_PC_DebitiBreveFornitori_1" um="€" tot="0">Debiti verso Fornitori</item>
+		<item  codiceRPT="5160" codiceUI="AP_PC_AltriDebitiBreve_1" um="€" tot="0">Debiti (esercizi precedenti)</item>
+		<item  codiceRPT="5165" codiceUI="AP_PC_TfrBreve_1" um="€" tot="0">TFR - Altri fondi</item>
+		<item  codiceRPT="5170" codiceUI="AP_PC_TotaleDebitiBreve_1" um="€" tot="0">Totale a breve</item>
+		<title codiceRPT="" codiceUI="Subtitle_AP_MedioLungo" tot="0">A medio/lungo</title>
+		<item  codiceRPT="5175" codiceUI="AP_PC_DebitiMedioBanche_1" um="€" tot="0">debiti vs banche</item>
+		<item  codiceRPT="5185" codiceUI="AP_PC_AltriDebitiMedio_1" um="€" tot="0">Altri debiti </item>
+		<item  codiceRPT="5223" codiceUI="AP_PC_TotaleDebitiMedio_1" um="€" tot="0">Totale a medio/lungo</item>
+		<item  codiceRPT="5190" codiceUI="AP_PC_TotalePassivita_1" um="€" tot="0">Totale passività</item>
+		<title codiceRPT="5247" codiceUI="Subtitle_AP_PatrimonioNetto" tot="0">Patrimonio netto</title>
+		<item  codiceRPT="5195" codiceUI="AP_PC_CapitaleSociale_1" um="€" tot="0">Capitale sociale</item>
+		<item  codiceRPT="5200" codiceUI="AP_PC_Riserve_1" um="€" tot="0">Riserve</item>
+		<item  codiceRPT="5205" codiceUI="AP_PC_UtiliPerdite_1" um="€" tot="0">Utili non distribuiti / Perdite</item>
+		<item  codiceRPT="5210" codiceUI="AP_PC_UtiliPerditePrecedenti_1" um="€" tot="0">Utile /Perdite esercizi prec.</item>
+		<item  codiceRPT="5215" codiceUI="AP_PC_TotalePatrimonio_1" um="€" tot="0">Totale patrimonio netto</item>
+		<title codiceRPT="" codiceUI="Subtitle_AP_Totali" tot="0">Totali</title>
+		<item  codiceRPT="" codiceUI="AP_PC_TotaleAttivitaBis_1" um="€" tot="0">Totale attività</item>
+		<item  codiceRPT="" codiceUI="AP_PC_TotalePassivitaBis_1" um="€" tot="0">Totale passività</item>
+		<item  codiceRPT="5215" codiceUI="AP_PC_TotalePatrimonioBis_1" um="€" tot="0">Totale patrimonio netto</item>
+		<item  codiceRPT="5228" codiceUI="AP_PC_TotaleGenerale_1" um="€" tot="0">Totale passività + patrimonio netto</item>
+		<item  codiceRPT="5233" codiceUI="AP_PC_Sbilancio_1" um="€" tot="0">Sbilancio</item>
+		<item  codiceRPT="5238" codiceUI="AP_PC_LiquiditaCompensare_1" um="€" tot="0">Liquidità da compensare</item>
+		<item  codiceRPT="5239" codiceUI="AP_PC_SbilancioEffettivoPerc_Anno1_1" um="%" tot="0">Sbilancio effettivo (in %25)</item>
+		<item  codiceRPT="5248" codiceUI="AP_PC_SbilancioRiferimentoWrnPerc_1" um="%" tot="0">Valore soglia per stato Allerta</item>
+		<item  codiceRPT="5244" codiceUI="AP_PC_SbilancioRiferimentoErrPerc_1" um="%" tot="0">Valore soglia per stato Errore</item>
+	</AnnoPrecedente>
+	<!-- (Anno-1) -->
+
+	<!-- ===== Sez. 3:	Controllo di Gestione ============================================================== -->
+	<CDG page="Distribuzione_mensile">
+		<title codiceRPT="" codiceUI="DistribuzioneMensileStd" tot="0">Distribuzione percentuale mensile standard</title>
+		<title codiceRPT="" codiceUI="DistribuzioneMensileCustom" tot="0">Distribuzione percentuale mensile personalizzata</title>
+		<item  codiceRPT="20065" codiceUI="Ricavi_Cdg_1" um="€" tot="0">Ricavi</item>
+		<item  codiceRPT="20066" codiceUI="Acquisti_Cdg_1" um="€" tot="0">Acquisti</item>
+		<item  codiceRPT="20067" codiceUI="VariazioneRimanenze_1" um="€" tot="0">Variazione Rimanenze</item>
+		<item  codiceRPT="20068" codiceUI="Consumi_1" um="€" tot="0">Consumi</item>
+		<item  codiceRPT="20069" codiceUI="ValoreAggiuntoConsumi_1" um="€" tot="0">Valore Aggiunto Consumi</item>
+		<item  codiceRPT="20011" codiceUI="CostiVariabiliProduzione_1" um="€" tot="0">Costi Variabili Produzione</item>
+		<item  codiceRPT="20014" codiceUI="TotaleCostiVariabili_1" um="€" tot="0">Totale Costi Variabili</item>
+		<item  codiceRPT="20010" codiceUI="CostiVariabiliCommerciali_1" um="€" tot="0">Costi Variabili Commerciali</item>
+		<item  codiceRPT="20015" codiceUI="MargineContribuzione_1" um="€" tot="0">Margine Contribuzione</item>
+		<item  codiceRPT="20070" codiceUI="CostiFissiProduzione_1" um="€" tot="0">Costi Fissi Produzione</item>
+		<item  codiceRPT="20071" codiceUI="CostiFissiCommerciali_1" um="€" tot="0">Costi Fissi Commerciali</item>
+		<item  codiceRPT="20073" codiceUI="CostiGeneraliAmministrativi_1" um="€" tot="0">Costi Generali Amministrativi</item>
+		<item  codiceRPT="20072" codiceUI="TotaleCostiFissi_1" um="€" tot="0">Totale Costi Fissi</item>
+		<item  codiceRPT="20026" codiceUI="Ebitda_1" um="€" tot="0">EBITDA</item>
+		<item  codiceRPT="20028" codiceUI="Ammortamenti_1" um="€" tot="0">Ammortamenti</item>
+		<item  codiceRPT="20029" codiceUI="Accantonamenti_1" um="€" tot="0">Accantonamenti</item>
+		<item  codiceRPT="20030" codiceUI="Svalutazioni_1" um="€" tot="0">Svalutazioni</item>
+		<item  codiceRPT="20017" codiceUI="Ebit_1" um="€" tot="0">EBIT</item>
+		<item  codiceRPT="20018" codiceUI="SaldoOneriRicavi_1" um="€" tot="0">Saldo Oneri Ricavi</item>
+		<item  codiceRPT="20076" codiceUI="UtileAnteGestioneFinStra_1" um="€" tot="0">Utile Ante Gestione Finestra </item>
+		<item  codiceRPT="20032" codiceUI="GestioneFinanziaria_1" um="€" tot="0">Gestione Finanziaria</item>
+		<item  codiceRPT="20077" codiceUI="UtileCorrente_1" um="€" tot="0">Utile Corrente</item>
+		<item  codiceRPT="20033" codiceUI="GestioneStraordinaria_1" um="€" tot="0">Gestione Straordinaria</item>
+		<item  codiceRPT="20034" codiceUI="Ebt_1" um="€" tot="0">EBT</item>
+		<item  codiceRPT="20078" codiceUI="Imposte_1" um="€" tot="0">Imposte</item>
+		<item  codiceRPT="20079" codiceUI="RedditoNetto_1" um="€" tot="0">Reddito Netto</item>
+	</CDG>
+	<!--CDG-->
+
+	<!-- 6: Others -->
+	<Pagenames>
+		<item  codiceRPT="" codiceUI="Menu1" um="" link="/economics/ricavi" tot="0">Ricavi</item>
+		<item  codiceRPT="" codiceUI="Menu2" um="" link="/economics/costi-esterni" tot="0">Acquisti e Magazzino</item>
+		<item  codiceRPT="" codiceUI="Menu3" um="" link="/economics/costi-esterni" tot="0">Acquisti e Magazzino</item>
+		<item  codiceRPT="" codiceUI="Menu4" um="" link="/economics/iva" tot="0">IVA</item>
+		<item  codiceRPT="" codiceUI="Menu5" um="" link="/economics/costi-variabili" tot="0">Costi Variabili</item>
+		<item  codiceRPT="" codiceUI="Menu6" um="" link="/economics/costi-interni" tot="0">Costi Interni</item>
+		<item  codiceRPT="" codiceUI="Menu7" um="" link="/economics/risorse-umane" tot="0">Risorse Umane</item>
+		<item  codiceRPT="" codiceUI="Menu8" um="" link="/economics/fonti" tot="0">Aumenti Capitale</item>
+		<item  codiceRPT="" codiceUI="Menu9" um="" link="/economics/investimenti" tot="0">Investimenti</item>
+		<item  codiceRPT="" codiceUI="Menu10" um="" link="/economics/finanziamenti" tot="0">Finanziamenti</item>
+		<item  codiceRPT="" codiceUI="Menu11" um="" link="/economics/altro" tot="0">Altro</item>
+		<item  codiceRPT="" codiceUI="Menu12" um="" link="" tot="0">Esercizio prec.: Inserimento</item>
+		<item  codiceRPT="" codiceUI="Menu13" um="" link="/economics/conto-economico" tot="0">Conto Economico</item>
+		<item  codiceRPT="" codiceUI="Menu14" um="" link="/economics/rendiconto-finanziario" tot="0">Rendiconto Finanziario</item>
+		<item  codiceRPT="" codiceUI="Menu15" um="" link="/economics/stato-patrimoniale" tot="0">Stato Patrimoniale</item>
+		<item  codiceRPT="" codiceUI="Menu16" um="" link="/economics/working-capital" tot="0">Working Capital</item>
+		<item  codiceRPT="" codiceUI="Menu17" um="" link="/economics/fonti-finanziarie" tot="0">Fonti Finanziarie</item>
+		<item  codiceRPT="" codiceUI="Menu18" um="" link="/economics/materiali" tot="0">Imm. Materiali</item>
+		<item  codiceRPT="" codiceUI="Menu19" um="" link="/economics/immateriali" tot="0">Imm. Immateriali</item>
+		<item  codiceRPT="" codiceUI="Menu20" um="" link="/economics/finanziarie" tot="0">Imm. Finanziarie</item>
+		<item  codiceRPT="" codiceUI="Menu21" um="" link="/economics/finanziarie" tot="0">Gestione straordinaria</item>
+		<item  codiceRPT="" codiceUI="Menu22" um="" link="/economics/finanziarie" tot="0">Esercizio prec.: Prospetto</item>
+	</Pagenames>
+	<!-- (Others) -->
+</economics>

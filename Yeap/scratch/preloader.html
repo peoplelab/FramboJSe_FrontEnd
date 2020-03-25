@@ -1,0 +1,83 @@
+<html>
+<head>
+<script type="text/javascript" src="/System/3rd-parties/fontawesome/js/fontawesome-all.min.js"></script>
+<link rel="stylesheet" type="text/css" href="/System/3rd-parties/fontawesome/css/fa-svg-with-js.css">
+<style>
+#preloader {
+  position: fixed;
+  top: 0px;
+  left: 0;
+  z-index: 999999;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 80, 128, 0.1);
+}
+#preloader .outer,
+#preloader .middle,
+#preloader .inner {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  border-width: 6px;
+  border-style: solid;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+}
+#preloader .outer {
+  border-color: #264c73;
+  border-right-color: rgba(0, 0, 0, 0) !important;
+  margin: -50px 0 0 -50px;
+  width: 100px;
+  height: 100px;
+}
+#preloader .middle {
+  border-color: #369;
+  border-top-color: rgba(0, 0, 0, 0) !important;
+  margin: -38px 0 0 -38px;
+  width: 76px;
+  height: 76px;
+}
+#preloader .inner {
+  border-color: #538cc6;
+  border-left-color: rgba(0, 0, 0, 0) !important;
+  margin: -26px 0 0 -26px;
+  width: 52px;
+  height: 52px;
+}
+#preloader .spin {
+  animation: fa-spin 2s infinite linear;
+}
+#preloader .spin-reverse {
+  animation: fa-spin 2s infinite linear reverse;
+}
+#preloader .loader_html2 {
+  border-color: rgba(150, 150, 150, 0.5);
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  margin: -41px 0 0 -41px;
+  width: 82px;
+  height: 82px;
+  border-width: 10px;
+  border-style: solid;
+  border-right-color: rgba(0, 0, 0, 0) !important;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  background-color: rgba(200, 200, 200, 0.75);
+  padding: 10px;
+}
+#preloader .loader-animation {
+  animation: fa-spin 2s infinite linear reverse;
+}
+</style>
+</head>
+<body>
+	<div id="preloader" xstyle="display:none;">
+		<i class="outer spin"></i>
+		<i class="middle spin-reverse"></i>
+		<i class="inner spin"></i>
+	</div>
+</body>
+</html>

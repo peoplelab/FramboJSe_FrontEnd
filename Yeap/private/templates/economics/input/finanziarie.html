@@ -1,0 +1,368 @@
+﻿<reserved_header_section
+	templateID="764"
+	templateFile="investimenti.html"
+	templateDescription="HTML content template (Economics)"
+></reserved_header_section>
+
+<!-- *** HEADER *** -->
+<widget_pageHeader />
+
+<div class="container-fluid pageBody">
+
+	<!-- *** SEZIONE "NASCOSTI" *** -->
+	<div class="card card-info hidden-context">
+		<div class="card-title" ref="Nascosti">
+			<a href="#btn" data-toggle="collapse" data-target="#Nascosti" aria-expanded="false">
+				<i class="fa fa-times-circle ico-error"></i>
+				<i class="fa fa-exclamation-circle ico-warning"></i>
+				<span class="text">
+					<i class="fa fa-puzzle-piece margin-r-5"></i>
+					Valori nascosti
+				</span>
+				<span class="ico">
+					<i class="fa fa-chevron-right ico-close"></i>
+					<i class="fa fa-chevron-down ico-open"></i>
+				</span>
+			</a>
+		</div>
+		<div id="Nascosti" class="collapse box_Lev_1">
+			<div class="card-body">
+
+				<div id="hiddenData" class="margin-v-10 box_Lev_2">
+					<div dsheader></div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- *** SEZIONE INPUT *** -->
+	<div class="card card-info input-context">
+		<div class="card-title" ref="Inseriti">
+			<a href="#btn" data-toggle="collapse" data-target="#Inseriti" aria-expanded="true">
+				<i class="fa fa-times-circle ico-error"></i>
+				<i class="fa fa-exclamation-circle ico-warning"></i>
+				<span class="text">
+					<i class="fa fa-pencil-alt margin-r-5"></i>
+					Dati da inserire
+				</span>
+				<span class="ico">
+					<i class="fa fa-chevron-right ico-close"></i>
+					<i class="fa fa-chevron-down ico-open"></i>
+				</span>
+			</a>
+		</div>
+		<div id="Inseriti" class="collapse box_Lev_1 show">
+			<div class="card-body">
+
+				<widget_drawerTitle data-pars="title:='Immob_Finanziarie_title' || mode:= 'edit' || ref:='Inseriti_1' || fillerBtn:='true'" />
+				<div id="Inseriti_1" class="collapse clearfix margin-v-10 box_Lev_2">
+					<div dsheader></div>
+
+					<h4 class="subsection">
+						<snp_XML_label_economics data-pars="value:='Subtitle_Partecipazioni1' || fillerBtn:='true'" class="title" />
+					</h4>
+					<div class="row" dstable
+						data-method="2"
+						data-name="IF1_Partecipazioni"
+						data-type="input"
+						data-total="rows"
+					></div>
+					<div class="row" dstable
+						data-method="2"
+						data-name="IF1_PCommissioniPerc"
+						data-type="input"
+					></div>
+					<div class="row" dstable
+						data-method="2"
+						data-name="IF1_PSvalutazioni"
+						data-type="input"
+						data-total="rows"
+						data-total="rows"
+					></div>
+					<div class="row" dstable
+						data-method="2"
+						data-name="IF1_PDividendi"
+						data-type="input"
+					></div>
+					<div class="row" dstable
+						data-method="2"
+						data-name="IF1_PTassePerc"
+						data-type="input"
+					></div>
+
+					<h4 class="subsection">
+						<snp_XML_label_economics data-pars="value:='Subtitle_Titoli' || fillerBtn:='true'" class="title" />
+					</h4>
+					<div class="row" dstable
+						data-method="2"
+						data-name="IF1_TitoliNuovi"
+						data-type="input"
+						data-total="rows"
+					></div>
+					<div class="row" dstable
+						data-method="2"
+						data-name="IF1_TNCommissioniPerc"
+						data-type="input"
+					></div>
+					<div class="row" dstable
+						data-method="2"
+						data-name="IF1_TNSvalutazioni"
+						data-type="input"
+						data-total="rows"
+					></div>
+					<div class="row" dstable
+						data-method="2"
+						data-name="IF1_TNInteressiPerc"
+						data-type="input"
+					></div>
+					<div class="row" dstable
+						data-method="2"
+						data-name="IF1_TNTassePerc"
+						data-type="input"
+					></div>
+
+					<h4 class="subsection">
+						<snp_XML_label_economics data-pars="value:='Subtitle_Partecipazioni2' || fillerBtn:='true'" class="title" />
+					</h4>
+					<div class="row" dstable
+						data-method="2"
+						data-name="IF1_QuotePartecip"
+						data-type="input"
+						data-total="rows"
+					></div>
+				</div>
+
+				<widget_drawerTitle data-pars="title:='Immob_Finanziarie_title2' || mode:= 'edit' || ref:='Inseriti_2' || fillerBtn:='true'" />
+				<div id="Inseriti_2" class="collapse clearfix margin-v-10 box_Lev_2">
+					<div dsheader></div>
+
+					<h4 class="subsection">
+						<snp_XML_label_economics data-pars="value:='Subtitle_Partecipazioni1' || fillerBtn:='true'" class="title" />
+					</h4>
+					<div class="row" dstable
+						data-method="2"
+						data-name="IF2_Partecipazioni"
+						data-type="input"
+						data-total="rows"
+					></div>
+					<div class="row" dstable
+						data-method="2"
+						data-name="IF2_PCommissioniPerc"
+						data-type="input"
+					></div>
+					<div class="row" dstable
+						data-method="2"
+						data-name="IF2_PSvalutazioni"
+						data-type="input"
+						data-total="rows"
+						data-total="rows"
+					></div>
+					<div class="row" dstable
+						data-method="2"
+						data-name="IF2_PDividendi"
+						data-type="input"
+					></div>
+					<div class="row" dstable
+						data-method="2"
+						data-name="IF2_PTassePerc"
+						data-type="input"
+					></div>
+
+					<h4 class="subsection">
+						<snp_XML_label_economics data-pars="value:='Subtitle_Titoli' || fillerBtn:='true'" class="title" />
+					</h4>
+					<div class="row" dstable
+						data-method="2"
+						data-name="IF2_TitoliNuovi"
+						data-type="input"
+						data-total="rows"
+					></div>
+					<div class="row" dstable
+						data-method="2"
+						data-name="IF2_TNCommissioniPerc"
+						data-type="input"
+					></div>
+					<div class="row" dstable
+						data-method="2"
+						data-name="IF2_TNSvalutazioni"
+						data-type="input"
+						data-total="rows"
+					></div>
+					<div class="row" dstable
+						data-method="2"
+						data-name="IF2_TNInteressiPerc"
+						data-type="input"
+					></div>
+					<div class="row" dstable
+						data-method="2"
+						data-name="IF2_TNTassePerc"
+						data-type="input"
+					></div>
+
+					<h4 class="subsection">
+						<snp_XML_label_economics data-pars="value:='Subtitle_Partecipazioni2' || fillerBtn:='true'" class="title" />
+					</h4>
+					<div class="row" dstable
+						data-method="2"
+						data-name="IF2_QuotePartecip"
+						data-type="input"
+						data-total="rows"
+					></div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+	<!-- *** SEZIONE CALCOLATI *** -->
+	<div class="card card-info formula-context">
+		<div class="card-title" ref="Calcolati">
+			<a href="#btn" data-toggle="collapse" data-target="#Calcolati" aria-expanded="false">
+				<i class="fa fa-times-circle ico-error"></i>
+				<i class="fa fa-exclamation-circle ico-warning"></i>
+				<span class="text">
+					<i class="fa fa-cogs margin-r-5"></i>
+					Valori calcolati
+				</span>
+				<span class="ico">
+					<i class="fa fa-chevron-right ico-close"></i>
+					<i class="fa fa-chevron-down ico-open"></i>
+				</span>
+			</a>
+		</div>
+		<div id="Calcolati" class="collapse box_Lev_1">
+			<div class="card-body">
+				<widget_drawerTitle data-pars="title:='Immob_Finanziarie_title' || mode:= 'calc' || ref:='Formule_1'" />
+				<div id="Formule_1" class="collapse clearfix margin-v-10 box_Lev_2">
+					<div dsheader></div>
+
+					<h4 class="subsection">
+						<snp_XML_label_economics data-pars="value:='Subtitle_Partecipazioni1'" class="title" />
+					</h4>
+					<div class="row" dstable
+						data-name="IF1_PCommissioni"
+						data-type="formula"
+						data-formula="[IF1_Partecipazioni] * [IF1_PCommissioniPerc] / 100"
+						data-total="rows"
+					></div>
+					<div class="row" dstable
+						data-name="IF1_PTasse"
+						data-type="formula"
+						data-formula="[IF1_PDividendi] * [IF1_PTassePerc] / 100"
+						data-total="rows"
+					></div>
+
+					<h4 class="subsection">
+						<snp_XML_label_economics data-pars="value:='Subtitle_Titoli'" class="title" />
+					</h4>
+					<div class="row" dstable
+						data-name="IF1_TNCommissioni"
+						data-type="formula"
+						data-formula="[IF1_TitoliNuovi] * [IF1_TNCommissioniPerc] / 100"
+						data-total="rows"
+					></div>
+					<div class="row" dstable
+						data-name="IF1_TNInteressi"
+						data-type="formula"
+						data-formula="[IF1_TitoliNuovi] * [IF1_TNInteressiPerc] / 100"
+						data-total="rows"
+					></div>
+					<div class="row" dstable
+						data-name="IF1_TNTasse"
+						data-type="formula"
+						data-formula="[IF1_TNInteressi] * [IF1_TNTassePerc] / 100"
+						data-total="rows"
+					></div>
+					<div class="row" dstable
+						data-name="IF1_TNInteressiTotali"
+						data-type="formulaComplex"
+						data-formula="CumulativoInteressiAnnuali([IF1_TNInteressi] [IF1_TNInteressiTotali])"
+						data-total="rows"
+					></div>
+					<div class="row" dstable
+						data-name="IF1_Immobilizzazioni"
+						data-type="formulaComplex"
+						data-formula="Immobilizzazioni([IF1_Immobilizzazioni] [IF1_Partecipazioni] [IF1_PCommissioni] [IF1_TitoliNuovi] [IF1_TNCommissioni] [IF1_PSvalutazioni] [IF1_TNSvalutazioni] [IF1_QuotePartecip])"
+					></div>
+
+					<div class="row margin-t-30" dstable
+						data-name="IF1_CapexNette"
+						data-method="7"
+						data-type="formula"
+						data-formula="[IF1_Partecipazioni] + [IF1_PCommissioni] + [IF1_TitoliNuovi] + [IF1_TNCommissioni]"
+						data-total="rows"
+					></div>
+				</div>
+
+				<widget_drawerTitle data-pars="title:='Immob_Finanziarie_title2' || mode:= 'calc' || ref:='Formule_2'" />
+				<div id="Formule_2" class="collapse clearfix margin-v-10 box_Lev_2">
+					<div dsheader></div>
+
+					<h4 class="subsection">
+						<snp_XML_label_economics data-pars="value:='Subtitle_Partecipazioni1'" class="title" />
+					</h4>
+					<div class="row" dstable
+						data-name="IF2_PCommissioni"
+						data-type="formula"
+						data-formula="[IF2_Partecipazioni] * [IF2_PCommissioniPerc] / 100"
+						data-total="rows"></div>
+					<div class="row" dstable
+						data-name="IF2_PTasse"
+						data-type="formula"
+						data-formula="[IF2_PDividendi] * [IF2_PTassePerc] / 100"
+						data-total="rows"
+					></div>
+
+					<h4 class="subsection">
+						<snp_XML_label_economics data-pars="value:='Subtitle_Titoli'" class="title" />
+					</h4>
+					<div class="row" dstable
+						data-name="IF2_TNCommissioni"
+						data-type="formula"
+						data-formula="[IF2_TitoliNuovi] * [IF2_TNCommissioniPerc] / 100"
+						data-total="rows"
+					></div>
+					<div class="row" dstable
+						data-name="IF2_TNInteressi"
+						data-type="formula"
+						data-formula="[IF2_TitoliNuovi] * [IF2_TNInteressiPerc] / 100"
+						data-total="rows"
+					></div>
+					<div class="row" dstable
+						data-name="IF2_TNTasse"
+						data-type="formula"
+						data-formula="[IF2_TNInteressi] * [IF2_TNTassePerc] / 100"
+						data-total="rows"
+					></div>
+					<div class="row" dstable
+						data-name="IF2_TNInteressiTotali"
+						data-type="formulaComplex"
+						data-formula="CumulativoInteressiAnnuali([IF2_TNInteressi] [IF2_TNInteressiTotali])"
+						data-total="rows"
+					></div>
+					<div class="row" dstable
+						data-name="IF2_Immobilizzazioni"
+						data-type="formulaComplex"
+						data-formula="Immobilizzazioni([IF2_Immobilizzazioni] [IF2_Partecipazioni] [IF2_PCommissioni] [IF2_TitoliNuovi] [IF2_TNCommissioni] [IF2_PSvalutazioni] [IF2_TNSvalutazioni] [IF2_QuotePartecip])"
+					></div>
+
+					<div class="row margin-t-30" dstable
+						data-name="IF2_CapexNette"
+						data-method="7"
+						data-type="formula"
+						data-formula="[IF2_Partecipazioni] + [IF2_PCommissioni] + [IF2_TitoliNuovi] + [IF2_TNCommissioni]"
+						data-total="rows"
+					></div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- *** CONSOLE *** -->
+	<widget_btnConsole />
+
+</div>

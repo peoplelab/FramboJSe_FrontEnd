@@ -1,0 +1,112 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Private.Master.cs" Inherits="Yeap.MasterPages.Private" %>
+
+<!DOCTYPE html>
+
+<html>
+
+	<head runat="server">
+
+	<title>Yeap! - Business Plan</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+
+	<!-- ** 3d Partes ** -->
+	<% = LibFiles[JS_FILES]  %>
+	<% = LibFiles[CSS_FILES] %>
+
+	<!-- ** System - Script e stili di sistema ** -->
+	<script type="text/javascript">
+		var __PageScope   = 'private';								// Declare page scope (Public or Private)
+		var __SYS_config  = '';										// System configuration: Core (framework) definitions
+		var __SYS_version = '<% =Version %>';
+	</script>
+	<% = SysFiles[JS_FILES]  %>
+	<% = SysFiles[CSS_FILES] %>
+
+	<!-- ** Application - Script e stili specifici dell'applicazione ** -->
+	<link rel="icon" href="/Public/resources/images/favicon.ico?v=2.1" />
+	<% = PvtFiles[JS_FILES]  %>
+	<% = PvtFiles[CSS_FILES] %>
+
+    <asp:ContentPlaceHolder ID="cph_head" runat="server"></asp:ContentPlaceHolder>
+</head>
+<body>
+
+    <form id="form1" runat="server">
+
+		<div id="breakLabelsContainer" class="hide" style="position:absolute; z-index: 500; background: #fc3"> 
+			<span class="viewportStatus d-inline-block d-sm-none">Minimal</span>
+			<span class="viewportStatus d-none d-sm-inline-block d-md-none">Small</span>
+			<span class="viewportStatus d-none d-md-inline-block d-lg-none">Medium</span>
+			<span class="viewportStatus d-none d-lg-inline-block d-xl-none">Large</span>
+			<span class="viewportStatus d-none d-xl-inline-block">Extralarge</span>
+			<span id="xSize"></span>
+		</div>
+
+		<%-- 1: Navbar --%>
+		<div id="navbarContainer"></div>
+
+
+		<%-- 2: section "Sitemap" --%>
+		<asp:ContentPlaceHolder ID="cph_sitemap" runat="server"></asp:ContentPlaceHolder>
+
+		<%-- 3: section "pageDashboard" --%>
+		<asp:ContentPlaceHolder ID="cph_dashboard" runat="server"></asp:ContentPlaceHolder>
+
+		<%-- 4: section "pageContent" --%>
+		<asp:ContentPlaceHolder ID="cph_pageBody" runat="server"></asp:ContentPlaceHolder>
+
+		<%-- 5: section "modalsContainer" --%>
+		<section id="modalsContainer"></section>
+
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+		<div id="preloader">
+			<i class="outer spin"></i>
+			<i class="middle spin-reverse"></i>
+			<i class="inner spin"></i>
+		</div>
+
+		<div id="footer" class="pageFooter">
+
+			<div id="footerODC" class="hide">
+				<div class="floatLeft">
+					OPEN Dot Com S.p.a. - Cod. fiscale e p.IVA 02926100047
+				</div>
+				<div class="floatRight">
+					Powered by:
+					<img src="/private/resources/images/logo_yeap_white.png" height="40px" class="padding-l-5">
+				</div>
+			</div>
+			
+			<div id="footerYeap" class="hide">
+				<div class="floatLeft">
+					© Copyright 2020 Yeap S.r.l. - Via Cassano D’Adda 27/1 - 20139 Milano - P.IVA e C.F. 09039420964
+				</div>
+			</div>
+
+		</div>
+
+    </form>
+
+	<script type="text/javascript">
+		
+		// ** Intercetta l'evento chiusura tab/window
+		window.onbeforeunload = function() {
+			if (__SYS_checksChanges && __SYS_status.hasChanged) {			// Se la gertione è abilitata e se i valori sono cambiati restituisce un valore (a piacere) => il browser chiede conferma
+				return "Stop closing";
+			}
+		}
+	</script>
+
+</body>
+</html>

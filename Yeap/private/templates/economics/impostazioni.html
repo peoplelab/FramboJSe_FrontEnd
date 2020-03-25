@@ -1,0 +1,297 @@
+﻿<reserved_header_section
+	templateID="751"
+	templateFile="impostazioni.html"
+	templateDescription="HTML content template (Economics)"
+></reserved_header_section>
+
+<!-- *** HEADER *** -->
+<widget_pageHeader />
+
+<div class="container-fluid pageBody">
+
+	<!-- Menu tab -->
+	<div class="row margin-h-60 margin-b-30" id="tabMenu" status="load">
+		<div class="col-12">
+			<a href="#tab-settings" class="btn btn-default btn-action-light">Periodo del Business plan<i class="fa fa-times-circle ico-error"></i></a>
+			<a href="#tab-prodotti" class="btn btn-default">Etichette prodotti<i class="fa fa-times-circle ico-error"></i></a>
+			<a href="#tab-materie" class="btn btn-default">Etichette materie prime<i class="fa fa-times-circle ico-error"></i></a>
+			<a href="#tab-mensili" class="btn btn-default">Tempi incasso/pagamento<i class="fa fa-times-circle ico-error"></i></a>
+			<a href="#tab-perc-tfr" class="btn btn-default">% TFR<i class="fa fa-times-circle ico-error"></i></a>
+			<a href="#tab-iva" class="btn btn-default">% Imposte<i class="fa fa-times-circle ico-error"></i></a>
+		</div>
+	</div>
+
+	<div class="tab-content" id="tabContent">
+
+		<!-- 1: Parametri Business plan -->
+		<div id="tab-settings" class="tabContent">
+			<div class="row justify-content-center margin-v-30">
+				<div class="col-12 col-md-10 col-lg-6 padding-b-30">
+
+					<h4 class="margin-b30">Parametri fondamentali del Business Plan</h4>
+
+					<snp_label for="NumAnni" data-pars="text:='Durata del Business Plan'" class="margin-t-20 margin-b-5" mandatory />
+					<snp_dd_custom
+						data-options="{'(Selezionare una durata)': 0, 'Un anno': 1000, 'Due anni': 2000, 'Tre anni': 3000, 'Quattro anni': 4000, 'Cinque anni': 5000}"
+						default="{{NumAnni}}"
+						data-pars="value:='{{NumAnni}}' || emptyItem:='none'"
+					/>
+					<label for="NumAnni" class="error">La durata del Business Plan non è valida</label>
+
+					<snp_label for="AnnoInizioRef" data-pars="text:='Anno di inizio'" class="margin-t-20 margin-b-5" mandatory />
+					<widget_input_scaled data-pars="value:='{{AnnoInizio}}' || scale:=1000" placeholder="Inserire l'anno di inizio" />
+					<label for="AnnoInizioRef" class="error">L'anno d'inizio non è valido</label>
+
+					<div class="margin-t-30 checkBtn">
+						<snp_label for="UtilizzoAnnoPrec" data-pars="text:='Abilita gestione Esercizio precedente:'" />
+						<widget_switcher data-pars="value:='{{UtilizzoAnnoPrec}}'" class="medium d-inline-block margin-l-5 trace-on">
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<!-- 2: Etichette prodotti -->
+		<div id="tab-prodotti" class="tabContent hide">
+			<div class="row justify-content-around margin-v-30">
+
+				<div class="col-12 col-md-10 col-lg-6 padding-b-30">
+
+					<div class="nProdotti">
+						<h4 class="margin-b30">Numero Prodotti</h4>
+						<div class="itemContainer margin-t-20 d-flex">
+							<snp_label for="N_Prodotti" data-pars="text:='Numero prodotti gestiti:'" class="XML_label margin-t-5 align-self-center" mandatory />
+							<snp_dd_custom
+								data-options="{'0': 0, '1': 1000, '2': 2000, '3': 3000, '4': 4000, '5': 5000}"
+								default="{{N_Prodotti}}"
+								data-pars="value:='{{N_Prodotti}}' || emptyItem:='none'"
+							/>
+						</div>
+						<label for="N_Prodotti" class="error">Il numero prodotti non è valido</label>
+					</div>
+
+					<h4 class="margin-b-20 margin-t-40">Etichette</h4>
+
+					<div class="itemContainer">
+						<snp_label for="P1" data-pars="text:='Nome/Linea prodotto 1'" class="XML_label" />
+						<snp_input_text data-pars="value:='{{P1}}'" placeholder="Custom1" />
+					</div>
+
+					<div class="itemContainer">
+						<snp_label for="P2" data-pars="text:='Nome/Linea prodotto 2'" class="XML_label" />
+						<snp_input_text data-pars="value:='{{P2}}'" placeholder="Custom2" />
+					</div>
+
+					<div class="itemContainer">
+						<snp_label for="P3" data-pars="text:='Nome/Linea prodotto 3'" class="XML_label" />
+						<snp_input_text data-pars="value:='{{P3}}'" placeholder="Custom3" />
+					</div>
+
+					<div class="itemContainer">
+						<snp_label for="P4" data-pars="text:='Nome/Linea prodotto 4'" class="XML_label" />
+						<snp_input_text data-pars="value:='{{P4}}'" placeholder="Custom4" />
+					</div>
+
+					<div class="itemContainer">
+						<snp_label for="P5" data-pars="text:='Nome/Linea prodotto 5'" class="XML_label" />
+						<snp_input_text data-pars="value:='{{P5}}'" placeholder="Custom5" />
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<!-- 6: Etichette materie prime -->
+		<div id="tab-materie" class="tabContent hide">
+			<div class="row justify-content-around margin-v-30">
+
+				<div class="col-12 col-md-10 col-lg-6 padding-b-30">
+
+					<div class="nProdotti">
+						<h4 class="margin-b30">Numero Materie prime</h4>
+						<div class="itemContainer margin-t-20 d-flex">
+							<snp_label for="N_MateriePrime" data-pars="text:='Numero materie prime gestite:'" class="XML_label margin-t-5 align-self-center" mandatory />
+							<snp_dd_custom
+								data-options="{'0': 0, '1': 1000, '2': 2000, '3': 3000, '4': 4000, '5': 5000, '6': 6000, '7': 7000, '8': 8000, '9': 9000, '10': 10000}"
+								default="{{N_MateriePrime}}"
+								data-pars="value:='{{N_MateriePrime}}' || emptyItem:='none'"
+							/>
+						</div>
+						<label for="N_MateriePrime" class="error">Il numero materie prime non è valido</label>
+					</div>
+
+					<h4 class="margin-b-20 margin-t-40">Etichette</h4>
+
+					<div class="itemContainer">
+						<snp_label for="M01" data-pars="text:='Materia prima 1'" class="XML_label" />
+						<snp_input_text data-pars="value:='{{M01}}'" placeholder="Custom1" />
+					</div>
+
+					<div class="itemContainer">
+						<snp_label for="M02" data-pars="text:='Materia prima 2'" class="XML_label" />
+						<snp_input_text data-pars="value:='{{M02}}'" placeholder="Custom2" />
+					</div>
+
+					<div class="itemContainer">
+						<snp_label for="M03" data-pars="text:='Materia prima 3'" class="XML_label" />
+						<snp_input_text data-pars="value:='{{M03}}'" placeholder="Custom3" />
+					</div>
+
+					<div class="itemContainer">
+						<snp_label for="M04" data-pars="text:='Materia prima 4'" class="XML_label" />
+						<snp_input_text data-pars="value:='{{M04}}'" placeholder="Custom4" />
+					</div>
+
+					<div class="itemContainer">
+						<snp_label for="M05" data-pars="text:='Materia prima 5'" class="XML_label" />
+						<snp_input_text data-pars="value:='{{M05}}'" placeholder="Custom5" />
+					</div>
+
+					<div class="itemContainer">
+						<snp_label for="M06" data-pars="text:='Materia prima 6'" class="XML_label" />
+						<snp_input_text data-pars="value:='{{M06}}'" placeholder="Custom6" />
+					</div>
+
+					<div class="itemContainer">
+						<snp_label for="M07" data-pars="text:='Materia prima 7'" class="XML_label" />
+						<snp_input_text data-pars="value:='{{M07}}'" placeholder="Custom7" />
+					</div>
+
+					<div class="itemContainer">
+						<snp_label for="M08" data-pars="text:='Materia prima 8'" class="XML_label" />
+						<snp_input_text data-pars="value:='{{M08}}'" placeholder="Custom8" />
+					</div>
+
+					<div class="itemContainer">
+						<snp_label for="M09" data-pars="text:='Materia prima 9'" class="XML_label" />
+						<snp_input_text data-pars="value:='{{M09}}'" placeholder="Custom9" />
+					</div>
+
+					<div class="itemContainer">
+						<snp_label for="M10" data-pars="text:='Materia prima 10'" class="XML_label" />
+						<snp_input_text data-pars="value:='{{M10}}'" placeholder="Custom10" />
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<!-- 3: Valori mensili -->
+		<div id="tab-mensili" class="tabContent hide">
+			<div class="row justify-content-center margin-v-30">
+				<div class="col-12 col-md-10 col-lg-6 padding-b-30">
+
+					<h4 class="margin-b30">Valori fissi giornalieri</h4>
+
+					<snp_label for="GiorniIncassoClienti" data-pars="text:='Giorni incasso clienti'" class="margin-t-20 margin-b-5" mandatory />
+					<widget_input_scaled data-pars="value:='{{GiorniIncassoClienti}}' || scale:=1000" placeholder="Inserire i giorni di incasso" />
+					<label for="GiorniIncassoClienti" class="error">Il numero di giorni non è valido</label>
+
+					<hr class="margin-t-20 margin-h--30">
+
+					<snp_label for="GiorniPagamentoCostiVar_Prod" data-pars="text:='Giorni pagamento costi variabili: Produzione'" class="margin-t-20 margin-b-5" mandatory />
+					<widget_input_scaled data-pars="value:='{{GiorniPagamentoCostiVar_Prod}}' || scale:=1000" placeholder="Inserire i giorni di pagamento costi variabili" />
+					<label for="GiorniPagamentoCostiVar_Prod" class="error">Il numero di giorni non è valido</label>
+
+					<snp_label for="GiorniPagamentoCostiVar_Comm" data-pars="text:='Giorni pagamento costi variabili: Commerciali'" class="margin-t-20 margin-b-5" mandatory />
+					<widget_input_scaled data-pars="value:='{{GiorniPagamentoCostiVar_Comm}}' || scale:=1000" placeholder="Inserire i giorni di pagamento costi variabili" />
+					<label for="GiorniPagamentoCostiVar_Comm" class="error">Il numero di giorni non è valido</label>
+
+					<hr class="margin-t-20 margin-h--30">
+
+					<snp_label for="GiorniPagamentoCostiEsterni_PF" data-pars="text:='Giorni pagamento acquisti: Prodotti Finiti'" class="margin-t-20 margin-b-5" mandatory />
+					<widget_input_scaled data-pars="value:='{{GiorniPagamentoCostiEsterni_PF}}' || scale:=1000" placeholder="Inserire i giorni di pagamento acquisti" />
+					<label for="GiorniPagamentoCostiEsterni_PF" class="error">Il numero di giorni non è valido</label>
+
+					<snp_label for="GiorniPagamentoCostiEsterni_MP" data-pars="text:='Giorni pagamento acquisti: Materie Prime'" class="margin-t-20 margin-b-5" mandatory />
+					<widget_input_scaled data-pars="value:='{{GiorniPagamentoCostiEsterni_MP}}' || scale:=1000" placeholder="Inserire i giorni di pagamento acquisti" />
+					<label for="GiorniPagamentoCostiEsterni_MP" class="error">Il numero di giorni non è valido</label>
+
+					<hr class="margin-t-20 margin-h--30">
+
+					<snp_label for="GiorniPagamentoMkgtComm" data-pars="text:='Giorni pagamento Marketing/comunicazione'" class="margin-t-20 margin-b-5" mandatory />
+					<widget_input_scaled data-pars="value:='{{GiorniPagamentoMkgtComm}}' || scale:=1000" placeholder="Inserire i giorni di pagamento marketing" />
+					<label for="GiorniPagamentoMkgtComm" class="error">Il numero di giorni non è valido</label>
+
+
+				</div>
+			</div>
+		</div>
+
+		<!-- 4: % TFR -->
+		<div id="tab-perc-tfr" class="tabContent hide">
+			<div class="row justify-content-center margin-v-30">
+				<div class="col-12 col-md-10 col-lg-6 padding-b-30">
+
+					<h4 class="margin-b30">Valore % TFR in azienda</h4>
+
+					<label class="d-flex df-label margin-t-30">
+						<input type="radio" id="TFR1" name="tfrInAzienda" class="margin-r-5 align-self-center" value="100000" />
+						<span>Tutto in azienda</span>
+					</label>
+					<label class="d-flex df-label margin-t-30">
+						<input type="radio" id="TFR2" name="tfrInAzienda" class="margin-r-5 align-self-center" value="0" />
+						<span>Niente in azienda</span>
+					</label>
+					<label class="d-flex df-label margin-v-20" id="TFR3Label">
+						<input type="radio" id="TFR3" name="tfrInAzienda" class="margin-r-5 align-self-center" value="0" />
+						<span class="align-self-center">Percentuale che rimane in azienda:</span>
+						<snp_input_boxedNr value="0" id="VisiblePercTFR" data-pars="symbol:='PERCENT' || min:='0' || max:='100'" class="margin-l-10 align-self-center" step=".01" />
+						<input type="hidden" class="form-control input_hidden cleanInput" value="{{PercTFR}}" ov="{{PercTFR}}" id="PercTFR" key="PercTFR">
+					</label>
+
+					<hr class="margin-v-30 margin-h--30">
+
+					<div class="d-flex df-label margin-v-20">
+						<span class="align-self-center">Percentuale TFR sul costo risorsa:</span>
+						<snp_input_boxedNr value="0" id="VisiblePercTFR_Risorsa" data-pars="symbol:='PERCENT' || min:='0' || max:='100'" class="margin-l-10 margin-t--10 align-self-center" step=".01"/>
+						<input type="hidden" class="form-control input_hidden cleanInput" value="{{PercTFR_Risorsa}}" ov="{{PercTFR_Risorsa}}" id="PercTFR_Risorsa" key="PercTFR_Risorsa">
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+
+		<!-- 5: Valori IVA default -->
+		<div id="tab-iva" class="tabContent hide">
+
+			<div class="row justify-content-center">
+				<div class="col-12 col-md-10 col-lg-6">
+					<h4 class="margin-b-30">Valori % imposte (IVA, IRES, IRAP)</h4>
+					<div class="d-flex df-label margin-v-20">
+						<snp_label for="IvaDefault" data-pars="text:='Valore IVA default:'" class="margin-b-5" mandatory />
+						<snp_input_boxedNr value="0" id="VisibleIvaDefault" data-pars="symbol:='PERCENT' || min:='0' || max:='100'" class="margin-l-10 margin-t--10 align-self-center" step=".01" />
+						<input type="hidden" class="form-control input_hidden cleanInput" value="{{IvaDefault}}" ov="{{IvaDefault}}" id="IvaDefault" key="IvaDefault">
+					</div>
+				</div>
+			</div>
+
+			<div class="row justify-content-center">
+				<div class="col-12 col-md-10 col-lg-6">
+					<div class="d-flex df-label margin-v-20">
+						<snp_label for="IresDefault" data-pars="text:='Valore IRES default:'" class="margin-b-5" mandatory />
+						<snp_input_boxedNr value="0" id="VisibleIresDefault" data-pars="symbol:='PERCENT' || min:='0' || max:='100'" class="margin-l-10 margin-t--10 align-self-center" step=".01" />
+						<input type="hidden" class="form-control input_hidden cleanInput" value="{{IresDefault}}" ov="{{IresDefault}}" id="IresDefault" key="IresDefault">
+					</div>
+				</div>
+			</div>
+
+			<div class="row justify-content-center">
+				<div class="col-12 col-md-10 col-lg-6">
+					<div class="d-flex df-label margin-v-20">
+						<snp_label for="IrapDefault" data-pars="text:='Valore IRAP default:'" class="margin-b-5" mandatory />
+						<snp_input_boxedNr value="0" id="VisibleIrapDefault" data-pars="symbol:='PERCENT' || min:='0' || max:='100'" class="margin-l-10 margin-t--10 align-self-center" step=".01" />
+						<input type="hidden" class="form-control input_hidden cleanInput" value="{{IrapDefault}}" ov="{{IrapDefault}}" id="IrapDefault" key="IrapDefault">
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+
+	<!-- *** CONSOLE *** -->
+	<widget_btnConsole />
+
+</div>

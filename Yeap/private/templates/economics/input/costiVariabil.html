@@ -1,0 +1,170 @@
+﻿<reserved_header_section
+	templateID="754"
+	templateFile="costiVariabil.html"
+	templateDescription="HTML content template (Economics)"
+></reserved_header_section>
+
+<!-- *** HEADER *** -->
+<widget_pageHeader />
+
+<div class="container-fluid pageBody">
+
+	<!-- *** SEZIONE "NASCOSTI" *** -->
+	<div class="card card-info hidden-context">
+		<div class="card-title" ref="Nascosti">
+			<a href="#btn" data-toggle="collapse" data-target="#Nascosti" aria-expanded="false">
+				<i class="fa fa-times-circle ico-error"></i>
+				<i class="fa fa-exclamation-circle ico-warning"></i>
+				<span class="text">
+					<i class="fa fa-puzzle-piece margin-r-5"></i>
+					Valori nascosti
+				</span>
+				<span class="ico">
+					<i class="fa fa-chevron-right ico-close"></i>
+					<i class="fa fa-chevron-down ico-open"></i>
+				</span>
+			</a>
+		</div>
+		<div id="Nascosti" class="collapse box_Lev_1">
+			<div class="card-body">
+
+				<div id="hiddenData" class="margin-v-10 box_Lev_2">
+					<div dsheader></div>
+
+					<h4 class="subsection">CostiVarComm_PercIva</h4>
+					<div class="row" dstable
+							data-method="3"
+							data-name="CostiVarComm_PercIva"
+							data-child="PercIva"
+							data-parent="CostiVarComm"
+							data-type="input"></div>
+
+					<h4 class="subsection">CostiVarProd_PercIva</h4>
+					<div class="row" dstable
+							data-method="3"
+							data-name="CostiVarProd_PercIva"
+							data-child="PercIva"
+							data-parent="CostiVarProd"
+							data-type="input"></div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+	<!-- *** SEZIONE INPUT *** -->
+	<div class="card card-info input-context">
+		<div class="card-title" ref="Inseriti">
+			<a href="#btn" data-toggle="collapse" data-target="#Inseriti" aria-expanded="true">
+				<i class="fa fa-times-circle ico-error"></i>
+				<i class="fa fa-exclamation-circle ico-warning"></i>
+				<span class="text">
+					<i class="fa fa-pencil-alt margin-r-5"></i>
+					Dati da inserire
+				</span>
+				<span class="ico">
+					<i class="fa fa-chevron-right ico-close"></i>
+					<i class="fa fa-chevron-down ico-open"></i>
+				</span>
+			</a>
+		</div>
+		<div id="Inseriti" class="collapse box_Lev_1 show">
+			<div class="card-body">
+
+				<widget_drawerTitle data-pars="title:='CostiVarComm_title' || mode:= 'edit' || ref:='Inseriti_1' || fillerBtn:='true'" />
+				<div id="Inseriti_1" class="collapse clearfix margin-v-10 box_Lev_2">
+					<div dsheader></div>
+					<div class="row" dstable
+						data-method="3"
+						data-name="CostiVarComm_CostoNetto"
+						data-child="CostoNetto"
+						data-parent="CostiVarComm"
+						data-type="input"
+						data-total="rows"
+					></div>
+				</div>
+
+				<widget_drawerTitle data-pars="title:='CostiVarProd_title' || mode:= 'edit' || ref:='Inseriti_2' || fillerBtn:='true'" />
+				<div id="Inseriti_2" class="collapse clearfix margin-v-10 box_Lev_2">
+					<div dsheader></div>
+					<div class="row" dstable
+						data-method="3"
+						data-name="CostiVarProd_CostoNetto"
+						data-child="CostoNetto"
+						data-parent="CostiVarProd"
+						data-type="input"
+						data-total="rows"
+					></div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+	<!-- *** SEZIONE CALCOLATI *** -->
+	<div class="card card-info formula-context">
+		<div class="card-title" ref="Calcolati">
+			<a href="#btn" data-toggle="collapse" data-target="#Calcolati" aria-expanded="false">
+				<i class="fa fa-times-circle ico-error"></i>
+				<i class="fa fa-exclamation-circle ico-warning"></i>
+				<span class="text">
+					<i class="fa fa-cogs margin-r-5"></i>
+					Valori calcolati
+				</span>
+				<span class="ico">
+					<i class="fa fa-chevron-right ico-close"></i>
+					<i class="fa fa-chevron-down ico-open"></i>
+				</span>
+			</a>
+		</div>
+		<div id="Calcolati" class="collapse box_Lev_1">
+			<div class="card-body">
+
+				<widget_drawerTitle data-pars="title:='CostiVarComm_title' || mode:= 'calc' || ref:='Calcolati_1'" />
+				<div id="Calcolati_1" class="collapse clearfix margin-v-10 box_Lev_2">
+					<div dsheader></div>
+					<div class="row" dstable
+						data-method="8"
+						data-name="CostiVarComm_Iva"
+						data-type="formula"
+						data-formula="[CostiVarComm_CostoNetto] * [CostiVarComm_PercIva] / 100"
+						data-total="rows"
+					></div>
+					<div class="row" dstable
+						data-method="7"
+						data-name="CostiVarComm_TotaleMensile"
+						data-type="formula"
+						data-formula="[CostiVarComm_CostoNetto] + [CostiVarComm_Iva]"
+						data-total="rows"
+					></div>
+				</div>
+
+				<widget_drawerTitle data-pars="title:='CostiVarProd_title' || mode:= 'calc' || ref:='Calcolati_2'" />
+				<div id="Calcolati_2" class="collapse clearfix margin-v-10 box_Lev_2">
+					<div dsheader></div>
+					<div class="row" dstable
+						data-method="8"
+						data-name="CostiVarProd_Iva"
+						data-type="formula"
+						data-formula="[CostiVarProd_CostoNetto] * [CostiVarProd_PercIva] / 100"
+						data-total="rows"
+					></div>
+					<div class="row" dstable
+						data-method="7"
+						data-name="CostiVarProd_TotaleMensile"
+						data-type="formula"
+						data-formula="[CostiVarProd_CostoNetto] + [CostiVarProd_Iva]"
+						data-total="rows"
+					></div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- *** CONSOLE *** -->
+	<widget_btnConsole />
+
+</div>

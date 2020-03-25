@@ -1,0 +1,130 @@
+﻿<reserved_header_section templateID="806"
+                         templateFile="welcome.html"
+                         templateDescription="HTML content template (welcome)">
+</reserved_header_section>
+
+<!-- *** HEADER *** -->
+<widget_pageHeader />
+
+
+
+
+<div class="container-fluid pageBody">
+
+
+	<!-- *** SEZIONE "NASCOSTI" *** -->
+	<div class="card card-info hidden-context">
+		<div class="card-title" ref="Nascosti">
+			<a href="#btn" data-toggle="collapse" data-target="#Nascosti" aria-expanded="false">
+				<i class="fa fa-times-circle ico-error"></i>
+				<i class="fa fa-exclamation-circle ico-warning"></i>
+				<span class="text">
+					<i class="fa fa-puzzle-piece margin-r-5"></i>
+					Valori nascosti
+				</span>
+				<span class="ico">
+					<i class="fa fa-chevron-right ico-close"></i>
+					<i class="fa fa-chevron-down ico-open"></i>
+				</span>
+			</a>
+		</div>
+		<div id="Nascosti" class="collapse box_Lev_1">
+
+			<h4>Valori da Dati previsionali</h4>
+			<div class="tableWrapper raw">
+				<table>
+					<tbody id="datiPrev"></tbody>
+				</table>
+			</div>
+
+		</div>
+	</div>
+
+
+    <!-- *** SEZIONE CALCOLATI *** -->
+    <div class="card card-info formula-context">
+
+        <!-- Forecast 1 -->
+        <div class="card-title" ref="Calcolati">
+            <a href="#btn" data-toggle="collapse" data-target="#Forecast1" aria-expanded="true">
+                <i class="fa fa-times-circle ico-error"></i>
+                <i class="fa fa-exclamation-circle ico-warning"></i>
+                <span class="text">
+                    <i class="fa fa-cogs margin-r-5"></i>
+                    Scenario 1: Proiezione mantenendo il trend consuntivato
+                </span>
+                <span class="ico">
+                    <i class="fa fa-chevron-right ico-close"></i>
+                    <i class="fa fa-chevron-down ico-open"></i>
+                </span>
+            </a>
+        </div>
+        <div id="Forecast1" class="collapse box_Lev_1 calcolatiCDG show">
+			<div id="ForecastT1" scrollTable groupSize="3" qcfactor="0" init="1" stop="12" type="scenario" idextend="_S1">
+				<div class="card-body scrollable-head">
+					<div class="card card-info formula-context" ref="head"></div>
+				</div>
+				<div class="card-body scrollable">
+					<div class="card card-info formula-context" ref="body"></div>
+				</div>
+			</div>
+        </div>
+
+
+        <!-- Forecast 2 -->
+        <div class="card-title" ref="Calcolati">
+            <a href="#btn" data-toggle="collapse" data-target="#Forecast2" aria-expanded="false">
+                <i class="fa fa-times-circle ico-error"></i>
+                <i class="fa fa-exclamation-circle ico-warning"></i>
+                <span class="text">
+                    <i class="fa fa-cogs margin-r-5"></i>
+                    Scenario 2: Proiezione con mesi successivi ricalcolati
+                </span>
+                <span class="ico">
+                    <i class="fa fa-chevron-right ico-close"></i>
+                    <i class="fa fa-chevron-down ico-open"></i>
+                </span>
+            </a>
+        </div>
+        <div id="Forecast2" class="collapse box_Lev_1 calcolatiCDG">
+			<div id="ForecastT2" scrollTable groupSize="3" qcfactor="0" init="1" stop="12" type="scenario" idextend="_S2">
+				<div class="card-body scrollable-head">
+					<div class="card card-info formula-context" ref="head"></div>
+				</div>
+				<div class="card-body scrollable">
+					<div class="card card-info formula-context" ref="body"></div>
+				</div>
+			</div>
+        </div>
+
+
+        <!-- Forecast 3 -->
+        <div class="card-title" ref="Calcolati">
+            <a href="#btn" data-toggle="collapse" data-target="#Forecast3" aria-expanded="false">
+                <i class="fa fa-times-circle ico-error"></i>
+                <i class="fa fa-exclamation-circle ico-warning"></i>
+                <span class="text">
+                    <i class="fa fa-cogs margin-r-5"></i>
+                    Scenario 3: Proiezione mantenendo il budget previsto
+                </span>
+                <span class="ico">
+                    <i class="fa fa-chevron-right ico-close"></i>
+                    <i class="fa fa-chevron-down ico-open"></i>
+                </span>
+            </a>
+        </div>
+        <div id="Forecast3" class="collapse box_Lev_1 calcolatiCDG">
+			<div id="ForecastT3" scrollTable groupSize="3" qcfactor="0" init="1" stop="12" type="scenario" idextend="_S3">
+				<div class="card-body scrollable-head">
+					<div class="card card-info formula-context" ref="head"></div>
+				</div>
+				<div class="card-body scrollable">
+					<div class="card card-info formula-context" ref="body"></div>
+				</div>
+			</div>
+        </div>
+
+        <!-- *** CONSOLE *** -->
+        <widget_btnConsole_CDG />
+
+    </div>

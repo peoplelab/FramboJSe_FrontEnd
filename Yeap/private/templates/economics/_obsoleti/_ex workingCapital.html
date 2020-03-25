@@ -1,0 +1,755 @@
+﻿<reserved_header_section 
+	templateID="709"
+	templateFile="statoPatrimoniale.html"
+	templateDescription="HTML content template (Economics)">
+</reserved_header_section>
+
+<h2 class="margin-h-50 margin-b-30">Economics - Working Capital</h2>
+
+
+<input id="nColonne" type="hidden" value="1">
+
+<div class="container-fluid">
+
+	<!-- *** COSTI *** -->
+	<div class="card card-info">
+		<div class="card-title-economics">
+			<a class="btn" href="#btn" data-toggle="collapse" data-target="#Costi" aria-expanded="false">
+				4.1 Costi
+				<span class="ico">
+					<i class="fa fa-chevron-right ico-close"></i>
+					<i class="fa fa-chevron-down ico-open"></i>
+				</span>
+			</a>
+		</div>
+		<div id="Costi" class="collapse">
+			<div class="card-body">
+
+				<h4 class="subtitle">Liquidità iniziale</h4>
+				<div class="row" dstable
+					data-method="2"
+					data-name="LiquiditaIniziale_WC"
+					data-rows="1"
+					data-cols=""
+					data-total="ncRow"
+				></div>
+
+				<h4 class="title2">
+					<a href="#btn" data-toggle="collapse" data-target="#Costi_1" aria-expanded="false">
+						<snp_XML_label_economics data-pars="value:='Ricavi_WC_title'" class="title" />
+						<span class="ico">
+							<i class="fa fa-chevron-right ico-close"></i>
+							<i class="fa fa-chevron-down ico-open"></i>
+						</span>
+					</a>
+				</h4>
+				<div id="Costi_1" class="collapse clearfix margin-v-10">
+					<div dsheader></div>
+                    <div class="row" dstable
+						data-method="5"
+						data-name="Ricavi_WC_Netto"
+						data-child="Netto"
+						data-parent="Ricavi_WC"
+						data-rows="1"
+						data-cols=""
+						data-total="ncRow"
+					></div>
+                    <div class="row" dstable
+						data-method="5"
+						data-name="Ricavi_WC_Iva"
+						data-child="Iva"
+						data-parent="Ricavi_WC"
+						data-rows="1"
+						data-cols=""
+						data-total="ncRow"
+					></div>
+                    <div class="row" dstable
+						data-method="6"
+						data-name="Ricavi_WC_Totale"
+						data-child="Totale"
+						data-parent="Ricavi_WC"
+						data-rows="1"
+						data-cols=""
+						data-total="ncRow"
+					></div>
+				</div>
+
+
+
+
+
+
+
+				<h4 class="title2">
+					<a href="#btn" data-toggle="collapse" data-target="#Costi_2" aria-expanded="false">
+						<snp_XML_label_economics data-pars="value:='CostiEsterni_WC_title'" class="title" />
+						<span class="ico">
+							<i class="fa fa-chevron-right ico-close"></i>
+							<i class="fa fa-chevron-down ico-open"></i>
+						</span>
+					</a>
+				</h4>
+				<div id="Costi_2" class="collapse clearfix margin-v-10">
+					<div dsheader></div>
+                    <div class="row" dstable
+						data-method="5"
+						data-name="CostiEsterni_WC_Netto"
+						data-child="Netto"
+						data-parent="CostiEsterni_WC"
+						data-rows="1"
+						data-cols=""
+						data-total="ncRow"
+					></div>
+                    <div class="row" dstable
+						data-method="5"
+						data-name="CostiEsterni_WC_Iva"
+						data-child="Iva"
+						data-parent="CostiEsterni_WC"
+						data-rows="1"
+						data-cols=""
+						data-total="ncRow"
+					></div>
+                    <div class="row" dstable
+						data-method="6"
+						data-name="CostiEsterni_WC_Totale"
+						data-child="Totale"
+						data-parent="CostiEsterni_WC"
+						data-rows="1"
+						data-cols=""
+						data-total="ncRow"
+					></div>
+				</div>
+
+				<h4 class="title2">
+					<a href="#btn" data-toggle="collapse" data-target="#Costi_3" aria-expanded="false">
+						<snp_XML_label_economics data-pars="value:='CostiMagazzino_WC_title'" class="title" />
+						<span class="ico">
+							<i class="fa fa-chevron-right ico-close"></i>
+							<i class="fa fa-chevron-down ico-open"></i>
+						</span>
+					</a>
+				</h4>
+				<div id="Costi_3" class="collapse clearfix margin-v-10">
+					<div dsheader></div>
+                    <div class="row" dstable
+						data-method="5"
+						data-name="CostiMagazzino_WC_Netto"
+						data-child="Netto"
+						data-parent="CostiMagazzino_WC"
+						data-rows="1"
+						data-cols=""
+						data-total="ncRow"
+					></div>
+                    <div class="row" dstable
+						data-method="5"
+						data-name="CostiMagazzino_WC_Iva"
+						data-child="Iva"
+						data-parent="CostiMagazzino_WC"
+						data-rows="1"
+						data-cols=""
+						data-total="ncRow"
+					></div>
+                    <div class="row" dstable
+						data-method="6"
+						data-name="CostiMagazzino_WC_Totale"
+						data-child="Totale"
+						data-parent="CostiMagazzino_WC"
+						data-rows="1"
+						data-cols=""
+						data-total="ncRow"
+					></div>
+				</div>
+
+				<h4 class="title2">
+					<a href="#btn" data-toggle="collapse" data-target="#Costi_4" aria-expanded="false">
+						<snp_XML_label_economics data-pars="value:='CostiVar_WC_title'" class="title" />
+						<span class="ico">
+							<i class="fa fa-chevron-right ico-close"></i>
+							<i class="fa fa-chevron-down ico-open"></i>
+						</span>
+					</a>
+				</h4>
+				<div id="Costi_4" class="collapse clearfix margin-v-10">
+					<div dsheader></div>
+                    <div class="row" dstable
+						data-method="5"
+						data-name="CostiVar_WC_Netto"
+						data-child="Netto"
+						data-parent="CostiVar_WC"
+						data-rows="1"
+						data-cols=""
+						data-total="ncRow"
+					></div>
+                    <div class="row" dstable
+						data-method="5"
+						data-name="CostiVar_WC_Iva"
+						data-child="Iva"
+						data-parent="CostiVar_WC"
+						data-rows="1"
+						data-cols=""
+						data-total="ncRow"
+					></div>
+                    <div class="row" dstable
+						data-method="6"
+						data-name="CostiVar_WC_Totale"
+						data-child="Totale"
+						data-parent="CostiVar_WC"
+						data-rows="1"
+						data-cols=""
+						data-total="ncRow"
+					></div>
+				</div>
+
+				<h4 class="title2">
+					<a href="#btn" data-toggle="collapse" data-target="#Costi_5" aria-expanded="false">
+						<snp_XML_label_economics data-pars="value:='CostiInterni_WC_title'" class="title" />
+						<span class="ico">
+							<i class="fa fa-chevron-right ico-close"></i>
+							<i class="fa fa-chevron-down ico-open"></i>
+						</span>
+					</a>
+				</h4>
+				<div id="Costi_5" class="collapse clearfix margin-v-10">
+					<div dsheader></div>
+                    <div class="row" dstable
+						data-method="5"
+						data-name="CostiInterni_WC_Netto"
+						data-child="Netto"
+						data-parent="CostiInterni_WC"
+						data-rows="1"
+						data-cols=""
+						data-total="ncRow"
+					></div>
+                    <div class="row" dstable
+						data-method="5"
+						data-name="CostiInterni_WC_Iva"
+						data-child="Iva"
+						data-parent="CostiInterni_WC"
+						data-rows="1"
+						data-cols=""
+						data-total="ncRow"
+					></div>
+                    <div class="row" dstable
+						data-method="6"
+						data-name="CostiInterni_WC_Totale"
+						data-child="Totale"
+						data-parent="CostiInterni_WC"
+						data-rows="1"
+						data-cols=""
+						data-total="ncRow"
+					></div>
+				</div>
+
+				<h4 class="title2">
+					<a href="#btn" data-toggle="collapse" data-target="#Costi_6" aria-expanded="false">
+						<snp_XML_label_economics data-pars="value:='Oneri_title'" class="title" />
+						<span class="ico">
+							<i class="fa fa-chevron-right ico-close"></i>
+							<i class="fa fa-chevron-down ico-open"></i>
+						</span>
+					</a>
+				</h4>
+				<div id="Costi_6" class="collapse clearfix margin-v-10">
+					<div dsheader></div>
+					<div class="row" dstable
+						data-method="2"
+						data-name="HR_WC"
+						data-rows="1"
+						data-cols=""
+						data-total="ncRow"
+					></div>
+					<div class="row" dstable
+						data-method="2"
+						data-name="OneriFinanziari_WC"
+						data-rows="1"
+						data-cols=""
+						data-total="ncRow"
+					></div>
+					<div class="row" dstable
+						data-method="2"
+						data-name="OneriFinanziariAnnoPrec_WC"
+						data-rows="1"
+						data-cols=""
+						data-total="ncRow"
+					></div>
+					<div class="row" dstable
+						data-method="2"
+						data-name="Interessi_WC"
+						data-rows="1"
+						data-cols=""
+						data-total="ncRow"
+					></div>
+					<div class="row" dstable
+						data-method="2"
+						data-name="Dividendi_WC"
+						data-rows="1"
+						data-cols=""
+						data-total="ncRow"
+					></div>
+					<div class="row" dstable
+						data-method="2"
+						data-name="Tasse_WC"
+						data-rows="1"
+						data-cols=""
+						data-total="ncRow"
+					></div>
+					<div class="row" dstable
+						data-method="2"
+						data-name="TasseDividendi_WC"
+						data-rows="1"
+						data-cols=""
+						data-total="ncRow"
+					></div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+	<!-- *** CASH FLOW *** -->
+	<div class="card card-info">
+		<div class="card-title-economics">
+			<a class="btn" href="#btn" data-toggle="collapse" data-target="#Cashflow" aria-expanded="false">
+				4.2 Cash flow
+				<span class="ico">
+					<i class="fa fa-chevron-right ico-close"></i>
+					<i class="fa fa-chevron-down ico-open"></i>
+				</span>
+			</a>
+		</div>
+		<div id="Cashflow" class="collapse">
+			<div class="card-body">
+
+
+				<h4 class="title2">
+					<a href="#btn" data-toggle="collapse" data-target="#Cash_1" aria-expanded="false">
+						<snp_XML_label_economics data-pars="value:='CashFlowOperativo_WC_title'" class="title" />
+						<span class="ico">
+							<i class="fa fa-chevron-right ico-close"></i>
+							<i class="fa fa-chevron-down ico-open"></i>
+						</span>
+					</a>
+				</h4>
+				<div id="Cash_1" class="collapse clearfix margin-v-10">
+					<div dsheader></div>
+                    <div class="row" dstable
+						data-method="5"
+						data-name="CashFlowOperativo_WC_Annuale"
+						data-child="Annuale"
+						data-parent="CashFlowOperativo_WC"
+						data-rows="1"
+						data-cols=""
+						data-total="ncRow"
+					></div>
+                    <div class="row" dstable
+						data-method="5"
+						data-name="CashFlowOperativo_WC_Cumulato"
+						data-child="Cumulato"
+						data-parent="CashFlowOperativo_WC"
+						data-rows="1"
+						data-cols=""
+						data-total="ncRow"
+					></div>
+				</div>
+
+				<h4 class="title2">
+					<a href="#btn" data-toggle="collapse" data-target="#Cash_2" aria-expanded="false">
+						<snp_XML_label_economics data-pars="value:='Tfr_title'" class="title" />
+						<span class="ico">
+							<i class="fa fa-chevron-right ico-close"></i>
+							<i class="fa fa-chevron-down ico-open"></i>
+						</span>
+					</a>
+				</h4>
+				<div id="Cash_2" class="collapse clearfix margin-v-10">
+					<div dsheader></div>
+					<div class="row" dstable
+						data-method="2"
+						data-name="Tfr_WC"
+						data-rows="1"
+						data-cols=""
+						data-total="ncRow"
+					></div>
+					<div class="row" dstable
+						data-method="2"
+						data-name="TfrAnnoPrec_WC"
+						data-rows="1"
+						data-cols=""
+						data-total="ncRow"
+					></div>
+					<div class="row" dstable
+						data-method="2"
+						data-name="CreditoDebitoIva_WC"
+						data-rows="1"
+						data-cols=""
+						data-total="ncRow"
+					></div>
+					<div class="row" dstable
+						data-method="7"
+						data-name="IvaCreditoCumulata_WC"
+						data-rows="1"
+						data-cols=""
+						data-total="ncRow"
+					></div>
+					<div class="row" dstable
+						data-method="2"
+						data-name="QuotaCapitaleRimborsata_WC"
+						data-rows="1"
+						data-cols=""
+						data-total="ncRow"
+					></div>
+					<div class="row" dstable
+						data-method="2"
+						data-name="QuotaCapitaleRimborsataAnnoPrec_WC"
+						data-rows="1"
+						data-cols=""
+						data-total="ncRow"
+					></div>
+				</div>
+
+<!--- Sospeso:
+				<h4 class="title2">
+					<a href="#btn" data-toggle="collapse" data-target="#Cash_3" aria-expanded="false">
+						<snp_XML_label_economics data-pars="value:='CostiInvestimenti_WC_title'" class="title" />
+						<span class="ico">
+							<i class="fa fa-chevron-right ico-close"></i>
+							<i class="fa fa-chevron-down ico-open"></i>
+						</span>
+					</a>
+				</h4>
+				<div id="Cash_3" class="collapse clearfix margin-v-10">
+					<div dsheader></div>
+					<h4 class="subtitle">
+						<snp_XML_label_economics data-pars="value:='CostiInvestimentiMateriali_WC_title'" class="title" />
+					</h4>
+                    <div class="row" dstable
+						data-method="5"
+						data-name="CostiInvestimentiMateriali_WC_Netto"
+						data-child="Netto"
+						data-parent="CostiInvestimentiMateriali_WC"
+						data-rows="1"
+						data-cols=""
+						data-total="ncRow"
+					></div>
+                    <div class="row" dstable
+						data-method="5"
+						data-name="CostiInvestimentiMateriali_WC_Iva"
+						data-child="Iva"
+						data-parent="CostiInvestimentiMateriali_WC"
+						data-rows="1"
+						data-cols=""
+						data-total="ncRow"
+					></div>
+                    <div class="row" dstable
+						data-method="6"
+						data-name="CostiInvestimentiMateriali_WC_Totale"
+						data-child="Totale"
+						data-parent="CostiInvestimentiMateriali_WC"
+						data-rows="1"
+						data-cols=""
+						data-total="ncRow"
+					></div>
+
+					<h4 class="subtitle">
+						<snp_XML_label_economics data-pars="value:='CostiInvestimentiImmateriali_WC_title'" class="title" />
+					</h4>
+                    <div class="row" dstable
+						data-method="5"
+						data-name="CostiInvestimentiImmateriali_WC_Netto"
+						data-child="Netto"
+						data-parent="CostiInvestimentiImmateriali_WC"
+						data-rows="1"
+						data-cols=""
+						data-total="ncRow"
+					></div>
+                    <div class="row" dstable
+						data-method="5"
+						data-name="CostiInvestimentiImmateriali_WC_Iva"
+						data-child="Iva"
+						data-parent="CostiInvestimentiImmateriali_WC"
+						data-rows="1"
+						data-cols=""
+						data-total="ncRow"
+					></div>
+                    <div class="row" dstable
+						data-method="6"
+						data-name="CostiInvestimentiImmateriali_WC_Totale"
+						data-child="Totale"
+						data-parent="CostiInvestimentiImmateriali_WC"
+						data-rows="1"
+						data-cols=""
+						data-total="ncRow"
+					></div>
+
+					<h4 class="subtitle ">
+						<snp_XML_label_economics data-pars="value:='CostiInvestimentiFinanziari_WC_title'" class="title" />
+					</h4>
+                    <div class="row" dstable
+						data-method="2"
+						data-name="CostiInvestimentiFinanziari_WC"
+						data-rows="1"
+						data-cols=""
+						data-total="ncRow"
+					></div>
+
+					<h4 class="subtitle ">
+						<snp_XML_label_economics data-pars="value:='IvaCreditoCumulataExInv_WC_title'" class="title" />
+					</h4>
+                    <div class="row" dstable
+						data-method="7"
+						data-name="IvaCreditoCumulataExInv_WC"
+						data-rows="1"
+						data-cols=""
+						data-total="ncRow"
+					></div>
+				</div>
+
+				<h4 class="title2">
+					<a href="#btn" data-toggle="collapse" data-target="#Cash_4" aria-expanded="false">
+						<snp_XML_label_economics data-pars="value:='CapitaleSociale_WC_title'" class="title" />
+						<span class="ico">
+							<i class="fa fa-chevron-right ico-close"></i>
+							<i class="fa fa-chevron-down ico-open"></i>
+						</span>
+					</a>
+				</h4>
+				<div id="Cash_4" class="collapse clearfix margin-v-10">
+					<div dsheader></div>
+                    <div class="row" dstable
+						data-method="2"
+						data-name="CapitaleSociale_WC"
+						data-rows="1"
+						data-cols=""
+						data-total="ncRow"
+					></div>
+                    <div class="row" dstable
+						data-method="2"
+						data-name="FinanziamentiBancari_WC"
+						data-rows="1"
+						data-cols=""
+						data-total="ncRow"
+					></div>
+                    <div class="row" dstable
+						data-method="2"
+						data-name="Riserve_WC"
+						data-rows="1"
+						data-cols=""
+						data-total="ncRow"
+					></div>
+                    <div class="row" dstable
+						data-method="7"
+						data-name="Totale_WC"
+						data-rows="1"
+						data-cols=""
+						data-total="ncRow"
+					></div>
+				</div>
+ Sospeso --->
+
+				<h4 class="title2">
+					<a href="#btn" data-toggle="collapse" data-target="#Cash_5" aria-expanded="false">
+						<snp_XML_label_economics data-pars="value:='FreeCashFlow_WC_title'" class="title" />
+						<span class="ico">
+							<i class="fa fa-chevron-right ico-close"></i>
+							<i class="fa fa-chevron-down ico-open"></i>
+						</span>
+					</a>
+				</h4>
+				<div id="Cash_5" class="collapse clearfix margin-v-10">
+					<div dsheader></div>
+                    <div class="row" dstable
+						data-method="5"
+						data-name="FreeCashFlow_WC_Annuale"
+						data-child="Annuale"
+						data-parent="FreeCashFlow_WC"
+						data-rows="1"
+						data-cols=""
+						data-total="ncRow"
+					></div>
+                    <div class="row" dstable
+						data-method="5"
+						data-name="FreeCashFlow_WC_Cumulato"
+						data-child="Cumulato"
+						data-parent="FreeCashFlow_WC"
+						data-rows="1"
+						data-cols=""
+						data-total="ncRow"
+					></div>
+
+					<h4 class="subtitle ">
+						<snp_XML_label_economics data-pars="value:='Utili_WC_title'" class="title" />
+					</h4>
+                    <div class="row" dstable
+						data-method="2"
+						data-name="UtiliDistribuiti_WC"
+						data-rows="1"
+						data-cols=""
+						data-total="ncRow"
+					></div>
+                    <div class="row" dstable
+						data-method="2"
+						data-name="PartecipazioniVendute_WC"
+						data-rows="1"
+						data-cols=""
+						data-total="ncRow"
+					></div>
+				</div>
+
+				<h4 class="title2">
+					<a href="#btn" data-toggle="collapse" data-target="#Cash_6" aria-expanded="false">
+						<snp_XML_label_economics data-pars="value:='CashFlowEffettivo_WC_title'" class="title" />
+						<span class="ico">
+							<i class="fa fa-chevron-right ico-close"></i>
+							<i class="fa fa-chevron-down ico-open"></i>
+						</span>
+					</a>
+				</h4>
+				<div id="Cash_6" class="collapse clearfix margin-v-10">
+					<div dsheader></div>
+                    <div class="row" dstable
+						data-method="5"
+						data-name="CashFlowEffettivo_WC_Annuale"
+						data-child="Annuale"
+						data-parent="CashFlowEffettivo_WC"
+						data-rows="1"
+						data-cols=""
+						data-total="ncRow"
+					></div>
+                    <div class="row" dstable
+						data-method="5"
+						data-name="CashFlowEffettivo_WC_Cumulato"
+						data-child="Cumulato"
+						data-parent="CashFlowEffettivo_WC"
+						data-rows="1"
+						data-cols=""
+						data-total="ncRow"
+					></div>
+				</div>
+
+				<h4 class="title2">
+					<a href="#btn" data-toggle="collapse" data-target="#Cash_7" aria-expanded="false">
+						<snp_XML_label_economics data-pars="value:='CreditiDebiti_WC_title'" class="title" />
+						<span class="ico">
+							<i class="fa fa-chevron-right ico-close"></i>
+							<i class="fa fa-chevron-down ico-open"></i>
+						</span>
+					</a>
+				</h4>
+				<div id="Cash_7" class="collapse clearfix margin-v-10">
+					<div dsheader></div>
+                    <div class="row" dstable
+						data-method="5"
+						data-name="CreditiClienti_WC_Netto"
+						data-child="Netto"
+						data-parent="CreditiClienti_WC"
+						data-rows="1"
+						data-cols=""
+						data-total="ncRow"
+					></div>
+                    <div class="row" dstable
+						data-method="5"
+						data-name="CreditiClienti_WC_Iva"
+						data-child="Iva"
+						data-parent="CreditiClienti_WC"
+						data-rows="1"
+						data-cols=""
+						data-total="ncRow"
+					></div>
+                    <div class="row" dstable
+						data-method="5"
+						data-name="DebitiFornitori_WC_Netto"
+						data-child="Netto"
+						data-parent="DebitiFornitori_WC"
+						data-rows="1"
+						data-cols=""
+						data-total="ncRow"
+					></div>
+                    <div class="row" dstable
+						data-method="5"
+						data-name="DebitiFornitori_WC_Iva"
+						data-child="Iva"
+						data-parent="DebitiFornitori_WC"
+						data-rows="1"
+						data-cols=""
+						data-total="ncRow"
+					></div>
+				</div>
+
+				<h4 class="title2">
+					<a href="#btn" data-toggle="collapse" data-target="#Cash_8" aria-expanded="false">
+						<snp_XML_label_economics data-pars="value:='Effetti_title'" class="title" />
+						<span class="ico">
+							<i class="fa fa-chevron-right ico-close"></i>
+							<i class="fa fa-chevron-down ico-open"></i>
+						</span>
+					</a>
+				</h4>
+				<div id="Cash_8" class="collapse clearfix margin-v-10">
+					<div dsheader></div>
+                    <div class="row" dstable
+						data-method="5"
+						data-name="Effetti_Effetto1"
+						data-child="Effetto1"
+						data-parent="Effetti"
+						data-rows="1"
+						data-cols=""
+						data-total="ncRow"
+					></div>
+                    <div class="row" dstable
+						data-method="5"
+						data-name="Effetti_Effetto2"
+						data-child="Effetto2"
+						data-parent="Effetti"
+						data-rows="1"
+						data-cols=""
+						data-total="ncRow"
+					></div>
+                    <div class="row" dstable
+						data-method="5"
+						data-name="Effetti_Effetto3"
+						data-child="Effetto3"
+						data-parent="Effetti"
+						data-rows="1"
+						data-cols=""
+						data-total="ncRow"
+					></div>
+                    <div class="row" dstable
+						data-method="5"
+						data-name="Effetti_Effetto4"
+						data-child="Effetto4"
+						data-parent="Effetti"
+						data-rows="1"
+						data-cols=""
+						data-total="ncRow"
+					></div>
+                    <div class="row" dstable
+						data-method="5"
+						data-name="Effetti_Effetto5"
+						data-child="Effetto5"
+						data-parent="Effetti"
+						data-rows="1"
+						data-cols=""
+						data-total="ncRow"
+					></div>
+                    <div class="row" dstable
+						data-method="6"
+						data-name="Effetti_Totale"
+						data-child="Totale"
+						data-parent="Effetti"
+						data-rows="1"
+						data-cols=""
+						data-total="ncRow"
+					></div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+	<div class="margin-t-40 padding-b-10 textRight">
+		<a href="#save" id="btn-save" class="padding-h-30 btn btn-action-light"><i class="far fa-save margin-r-5"></i> Salva e continua</a>
+	</div>
+
+</div>

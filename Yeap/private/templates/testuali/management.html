@@ -1,0 +1,174 @@
+﻿<reserved_header_section
+	templateID="905"
+	templateFile="management.html"
+	templateDescription="HTML content template (Dati testuali)">
+</reserved_header_section>
+
+<!-- *** HEADER *** -->
+<widget_pageHeader />
+
+<div class="container-fluid pageBody">
+
+	<!-- *** CONSOLE PCT. DI COMPLETAMENTO *** -->
+	<snp_include_file data-pars="file:='@common/consolleTestuali.html'"/>
+
+	<!-- *** SEZIONE INPUT *** -->
+	<div class="card card-info input-context">
+		<div class="card-title" ref="Inseriti">
+			<a href="#btn" data-toggle="collapse" data-target="#Inseriti" aria-expanded="true">
+				<i class="fa fa-times-circle ico-error"></i>
+				<i class="fa fa-exclamation-circle ico-warning"></i>
+				<span class="text">
+					<i class="fa fa-pencil-alt margin-r-5"></i>
+					Dati da inserire
+				</span>
+				<span class="ico">
+					<i class="fa fa-chevron-right ico-close"></i>
+					<i class="fa fa-chevron-down ico-open"></i>
+				</span>
+			</a>
+		</div>
+		<div id="Inseriti" class="collapse box_Lev_1 show">
+
+			<!-- *** MAIN CONTAINER *** -->
+			<div class="card-body" id="parentContainer" path="@management">
+
+
+				<!-- ** Descrizione generale ** -->
+				<div class="includeContainer">
+					<h2 class="pageDescr">
+						Management e organizzazione
+					</h2>
+					<snp_include_file data-pars="file:='descrizione.html' || parent:='parentContainer'"/>
+				</div>
+
+				<!-- ** Domande chiave ** -->
+				<div class="margin-b-40">
+					<widget_drawerTitle data-pars="title:='Domande chiave' || mode:= 'domande' || ref:='Inseriti_1' || xml:='false'" class="drawerTitleDark" />
+					<div id="Inseriti_1" class="collapse clearfix includeContainer drawerQuestions">
+						<snp_include_file data-pars="file:='@common/domandeChiaveIntro.html'"/>
+						<snp_include_file data-pars="file:='domandeChiave.html' || parent:='parentContainer'"/>
+					</div>
+				</div>
+
+
+				<!-- ** CASSETTI CAMPI TESTUALI ** -->
+
+				<!----| Sezione 1: Posizione competitiva |---->
+				<div class="margin-b-20">
+					<h4 class="subsection">
+						Sezione "Management"
+					</h4>
+
+					<!----| Cassetto 01: Profili dei componenti del Management team |---->
+					<widget_drawerTitle data-pars="title:='01: Profili dei componenti del Management team' || mode:= 'edit' || ref:='Testuale_1' || expand:='false' || xml:='false'"/>
+					<div id="Testuale_1" class="collapse clearfix includeContainer borderNoTop">
+
+						<!-- Intro -->
+						<h4 class="labelCampoTestuale">
+							Scopo
+						</h4>
+						<div class="includeContainer fullHtml">
+							<snp_include_file data-pars="file:='descrizioni/01_profili.html' || parent:='parentContainer'"/>
+						</div>
+
+						<!-- Esempio -->
+						<div class="padding-h-30 margin-b-25">
+							<widget_drawerTitle data-pars="title:='Esempio' || mode:= 'esempio' || ref:='Esempi_1' || xml:='false'" class="drawerTitleLight" />
+							<div id="Esempi_1" class="collapse clearfix includeContainer borderNoTop drawerSample fullHtml">
+								<snp_include_file data-pars="file:='esempi/01_profili.html' || parent:='parentContainer'"/>
+							</div>
+						</div>
+
+						<!-- Campo testuale -->
+						<h4 class="labelCampoTestuale">
+							Inseririmento testo
+							<span>(Campo Obbligatorio)</span>
+						</h4>
+						<div class="padding-h-30">
+							<snp_textarea data-pars="value:=''" mandatory="true" placeholder="(Scrivere qui il testo)" TODO="Manca il nome campo" />
+						</div>
+
+					</div>
+
+					<!----| Cassetto 02: Advisory board |---->
+					<widget_drawerTitle data-pars="title:='02: Advisory board' || mode:= 'edit' || ref:='Testuale_2' || expand:='false' || xml:='false'"/>
+					<div id="Testuale_2" class="collapse clearfix includeContainer borderNoTop">
+
+						<!-- Intro -->
+						<h4 class="labelCampoTestuale">
+							Scopo
+						</h4>
+						<div class="includeContainer fullHtml">
+							<snp_include_file data-pars="file:='descrizioni/02_advisoryBoard.html' || parent:='parentContainer'"/>
+						</div>
+
+						<!-- Esempio -->
+						<div class="padding-h-30 margin-b-25">
+							<widget_drawerTitle data-pars="title:='Esempio' || mode:= 'esempio' || ref:='Esempi_2' || xml:='false'" class="drawerTitleLight" />
+							<div id="Esempi_2" class="collapse clearfix includeContainer borderNoTop drawerSample fullHtml">
+								<snp_include_file data-pars="file:='esempi/02_advisoryBoard.html' || parent:='parentContainer'"/>
+							</div>
+						</div>
+
+						<!-- Campo testuale -->
+						<h4 class="labelCampoTestuale">
+							Inseririmento testo
+							<span>(Campo Obbligatorio)</span>
+						</h4>
+						<div class="padding-h-30">
+							<snp_textarea data-pars="value:=''" mandatory="true" placeholder="(Scrivere qui il testo)" TODO="Manca il nome campo" />
+						</div>
+
+					</div>
+
+				</div>
+
+
+				<!----| Sezione 2: Organizzazione |---->
+				<div class="margin-b-20">
+					<h4 class="subsection">
+						Sezione "Analisi rischi"
+					</h4>
+
+					<!----| Cassetto 03: Organigramma |---->
+					<widget_drawerTitle data-pars="title:='03: Organigramma' || mode:= 'edit' || ref:='Testuale_3' || expand:='false' || xml:='false'"/>
+					<div id="Testuale_3" class="collapse clearfix includeContainer borderNoTop">
+
+						<!-- Intro -->
+						<h4 class="labelCampoTestuale">
+							Scopo
+						</h4>
+						<div class="includeContainer fullHtml">
+							<snp_include_file data-pars="file:='descrizioni/03_organigramma.html' || parent:='parentContainer'"/>
+						</div>
+
+						<!-- Esempio -->
+						<div class="padding-h-30 margin-b-25">
+							<widget_drawerTitle data-pars="title:='Esempio' || mode:= 'esempio' || ref:='Esempi_3' || xml:='false'" class="drawerTitleLight" />
+							<div id="Esempi_3" class="collapse clearfix includeContainer borderNoTop drawerSample fullHtml">
+								<snp_include_file data-pars="file:='esempi/03_organigramma.html' || parent:='parentContainer'"/>
+							</div>
+						</div>
+
+						<!-- Campo testuale -->
+						<h4 class="labelCampoTestuale">
+							Inseririmento testo
+							<span>(Campo Obbligatorio)</span>
+						</h4>
+						<div class="padding-h-30">
+							<snp_textarea data-pars="value:=''" mandatory="true" placeholder="(Scrivere qui il testo)" TODO="Manca il nome campo" />
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- *** CONSOLE *** -->
+	<widget_btnConsole_testuali />
+
+</div>

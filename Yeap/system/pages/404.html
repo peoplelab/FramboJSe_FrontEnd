@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Not Found</title>
+    <script type="text/javascript" src="/System/3rd-parties/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="/System/3rd-parties/jscookie/js.cookie.js"></script>
+    <script type="text/javascript">
+        var cookie_name = 'pm-error';
+        var cookie_error_key = 'Error-msg';
+
+        $(document).ready(function () {
+            var cookie = $.parseJSON(Cookies.get(cookie_name));
+            $('#message').text(cookie[cookie_error_key]);
+            Cookies.remove(cookie_name);
+        });
+    </script>
+</head>
+<body>
+    404 Not Found.
+    <span id="message"></span>
+</body>
+</html>

@@ -1,0 +1,602 @@
+﻿<reserved_header_section
+	templateID="502"
+	templateFile="menu.html"
+	templateDescription="HTML content template (QA)"
+></reserved_header_section>
+
+<div id="leftMenu">
+
+	<div class="row">
+		<div class="col" id="mainLogo">
+			<a href="/home/welcome"><h1>Logo</h1></a>
+		</div>
+	</div>
+
+	<div id="nuovoMenu" class="row">
+		<div class="col menu">
+			
+			<ul>
+
+				<!-- ** 1: ANAGRAFICA: settings principali ** ----------------------------------------->
+				<li class="lev1">
+					<a id="settings" href="/settings/settings">
+						<span class="infoContainer">
+							<snp_infoPopup class="infoMenu" data-pars="msg:='Inserimento delle informazioni generali obbligatorie (<i>Tipologia, Partita IVA, Anagrafica</i>) e facoltative sull'azienda.'" />
+						</span>
+						<span class="menuTxt">
+							Anagrafica
+						</span>
+					</a>
+				</li>
+
+
+				<!-- ** 2: POSIZIONAMENTO: Analisi qualitativa ** ------------------------------------->
+				<li class="lev1">
+					<a id="posizionamento" class="test1 expand" href="#economicsMenu">
+						<span class="marker float-left"></span>
+						<span class="infoContainer">
+							<snp_infoPopup class="infoMenu" data-pars="msg:='Inserimento delle informazioni relative al Posizionamento e alla Valutazione Qualitativa dell'azienda'" />
+							<i class="chevrons fa fa-chevron-right"></i>
+						</span>
+						<span class="menuTxt">
+							Posizionamento
+						</span>
+					</a>
+
+					<!-- ** Submenu Livello 2 ** ------------------------------------------------------>
+					<ul id="posizionamentoMenu">
+						<li class="lev2">
+							<a id="qualitativa" href="/qa/qualitativa">
+								<span class="menuTxt">
+									Posizionamento progetto
+								</span>
+							</a>
+						</li>
+						<li class="lev2">
+							<a id="repPosiz" class="test1 calcPage" href="/report/qa">
+								<span class="marker"></span>
+								<span class="menuTxt" style="width: auto;">
+									Visualizza report
+								</span>
+							</a>
+						</li>
+					</ul>
+					<!-- // Fine submenu liv. 2 ------------------------------------------------------->
+
+				</li>
+
+
+				<!-- ** 3: DATI PREVISIONALI: Inserimento dati dell'utente ** ------------------------->
+				<li class="lev1">
+					<a id="economics" class="test1 expand" href="#economicsMenu">
+						<span class="marker float-left"></span>
+						<span class="infoContainer">
+							<snp_infoPopup class="infoMenu" data-pars="msg:='Inserimento dati del Piano economico finanziario'" />
+							<i class="chevrons fa fa-chevron-right"></i>
+						</span>
+						<span class="menuTxt">
+							Dati Previsionali
+						</span>
+					</a>
+
+					<!-- ** Submenu Livello 2 ** ------------------------------------------------------>
+					<ul id="economicsMenu">
+						<li class="lev2">
+							<a id="impostazioni" class="test1 inputPage" href="/economics/impostazioni" title="Impostazioni Business Plan">
+								<span class="marker"></span>
+								<span class="menuTxt">
+									Impostazioni
+								</span>
+							</a>
+						</li>
+						<li class="lev2">
+							<a id="iva" class="test1 inputPage" href="/economics/iva" title="IVA">								
+								<span class="marker"></span>
+								<span class="menuTxt">
+									Percentuali IVA
+								</span>
+							</a>
+						</li>
+						<li class="lev2">
+							<a id="ricavi" class="test1 inputPage" href="/economics/ricavi" title="Ricavi">
+								<span class="marker"></span>
+								<span class="menuTxt">
+									Ricavi
+								</span>
+							</a>
+						</li>
+						<li class="lev2">
+							<a id="costiEsterni" class="test1 inputPage" href="/economics/costi-esterni" title="Acquisti e magazzino">
+								<span class="marker"></span>
+								<span class="menuTxt">
+									Acquisti e magazzino
+								</span>
+							</a>
+						</li>
+						<li class="lev2">
+							<a id="costiVariabili" class="test1 inputPage" href="/economics/costi-variabili" title="Costi Variabili">
+								<span class="menuTxt">
+									Costi Variabili
+								</span>
+								<span class="marker"></span>
+							</a>
+						</li>
+						<li class="lev2">
+							<a id="costiInterni" class="test1 inputPage" href="/economics/costi-interni" title="Costi Interni">
+								<span class="marker"></span>
+								<span class="menuTxt">
+									Costi Interni
+								</span>
+							</a>
+						</li>
+						<li class="lev2">
+							<a id="risorseUmane" class="test1 inputPage" href="/economics/risorse-umane" title="Risorse umane">								
+								<span class="marker"></span>
+								<span class="menuTxt">
+									Risorse umane
+								</span>
+							</a>
+						</li>
+						<li class="lev2">
+							<a id="gestStraordinaria" class="test1 inputPage" href="/economics/gestione-straordinaria" title="Gestione straordinaria">
+								<span class="marker"></span>
+								<span class="menuTxt">
+									Gestione straordinaria
+								</span>
+							</a>
+						</li>
+
+						<!-- ** 3.1: SOTTOSEZIONE: Immobilizzazioni ----------------------------------->
+						<li class="lev2">
+							<a id="immobilizzazioni" class="test expand" href="#immobilizzazioniMenu">
+								<span class="marker float-left"></span>
+								<span class="infoContainer">
+									<snp_infoPopup class="infoMenu inputPage" data-html="true" data-pars="msg:='Sotto menu Immobilizzazioni.'" />
+									<i class="chevrons fa fa-chevron-right"></i>
+								</span>
+								<span class="menuTxt">
+									Immobilizzazioni
+								</span>
+							</a>
+
+							<!-- ** Submenu Livello 3 ** - - - - - - - - - - - - - - - - - - - - - - -->
+							<ul>
+								<li class="lev3">
+									<a id="materiali" class="test1 inputPage" href="/economics/materiali">
+										<span class="marker"></span>
+										<span class="menuTxt">
+											Materiali
+										</span>
+									</a>
+								</li>
+								<li class="lev3">
+									<a id="immateriali" class="test1 inputPage" href="/economics/immateriali">
+										<span class="marker"></span>
+										<span class="menuTxt">
+											Immateriali
+										</span>
+									</a>
+								</li>
+								<li class="lev3">
+									<a id="finanziarie" class="test1 inputPage" href="/economics/finanziarie">
+										<span class="marker"></span>
+										<span class="menuTxt">
+											Finanziarie
+										</span>
+									</a>
+								</li>
+							</ul>
+							<!-- // Fine submenu liv. 3  - - - - - - - - - - - - - - - - - - - - - - -->
+						</li>
+
+						<li class="lev2">
+							<a id="fonti" class="test1 inputPage" href="/economics/fonti" title="Fonti">
+								<span class="marker"></span>
+								<span class="menuTxt">
+									Aumenti capitale
+								</span>
+							</a>
+						</li>
+						<li class="lev2">
+							<a id="finanziamenti" class="test1 inputPage" href="/economics/finanziamenti" title="Finanziamenti">
+								<span class="marker"></span>
+								<span class="menuTxt">
+									Finanziamenti
+								</span>
+							</a>
+						</li>
+
+						<!-- ** 3.2: SOTTOSEZIONE: Gestione Esercizio precedente --------------------------->
+						<li class="lev2">
+							<a id="annoPrec" class="test expand" href="#annoPrecMenu">
+								<span class="marker float-left"></span>
+								<span class="infoContainer">
+									<snp_infoPopup class="infoMenu inputPage" data-html="true" data-pars="msg:='Sotto menu Gestione Esercizio precedente'" />
+									<i class="chevrons fa fa-chevron-right"></i>
+								</span>
+								<span class="menuTxt">
+									Esercizio precedente
+								</span>
+							</a>
+
+							<!-- ** Submenu Livello 3 ** - - - - - - - - - - - - - - - - - - - - - - -->
+							<ul id="annoprecMenu">
+								<li class="lev3">
+									<a id="annoPrecInsert" class="test1 inputPage" href="/economics/anno-precedente-insert" title="Introduzione dati Esercizio precedente">
+										<span class="marker"></span>
+										<span class="menuTxt">
+											Inserimento dati
+										</span>
+									</a>
+								</li>
+								<li class="lev3">
+									<a id="annoPrecProspetto" class="test1 inputPage" href="/economics/anno-precedente-prospetto" title="Prospetto compilato Esercizio precedente">
+										<span class="marker"></span>
+										<span class="menuTxt">
+											Prospetti
+										</span>
+									</a>
+								</li>
+								<li class="lev3">
+									<a id="annoPrecConferma" class="test1 inputPage" href="/economics/anno-precedente-conferma" title="Conferma Dati Esercizio precedente">
+										<span class="marker"></span>
+										<span class="menuTxt">
+											Esito e conferma
+										</span>
+									</a>
+								</li>
+							</ul>
+							<!-- // Fine submenu liv. 3  - - - - - - - - - - - - - - - - - - - - - - -->
+						</li>
+
+
+						<!-- ** 3.1: SOTTOSEZIONE: Report --------------------------------------------->
+						<li class="lev2">
+							<a id="report_DP" class="test expand" href="#report_DPMenu">
+								<span class="marker float-left"></span>
+								<span class="infoContainer">
+									<snp_infoPopup class="infoMenu inputPage" data-html="true" data-pars="msg:='Sotto menu dei report'" />
+									<i class="chevrons fa fa-chevron-right"></i>
+								</span>
+								<span class="menuTxt">
+									Report
+								</span>
+							</a>
+
+							<!-- ** Submenu Livello 3 ** - - - - - - - - - - - - - - - - - - - - - - -->
+							<ul id="report_DPMenu">
+								<li class="lev3">
+									<a id="repPiano" class="test1 calcPage" href="/report/bp" title="Piano economico">
+										<span class="marker"></span>
+										<span class="menuTxt">
+											Piano economico (PDF)
+										</span>
+									</a>
+								</li>
+							</ul>
+							<!-- // Fine submenu liv. 3  - - - - - - - - - - - - - - - - - - - - - - -->
+						</li>
+
+					</ul>
+					<!-- // Fine submenu liv. 2 ------------------------------------------------------->
+				</li>
+
+
+				<!-- ** 4: PROSPETTI: Risultati dei prospetti economico finanziari ** ----------------->
+				<li class="lev1">
+					<a id="calcolati" class="test1 expand" href="#calcolatiMenu">
+						<span class="marker float-left"></span>
+						<div class="infoContainer">
+							<snp_infoPopup class="infoMenu" data-html="true" data-pars="msg:='Risultati prospetti economico finanziari. Per accedere lo status del Business Plan deve essere almeno «Compilato».'" />
+							<i class="chevrons fa fa-chevron-right"></i>
+						</div>
+						<span class="menuTxt">
+							Prospetti
+						</span>
+					</a>
+					<!-- ** Submenu Livello 2 ** ------------------------------------------------------>
+					<ul id="calcolatiMenu">
+						<li class="lev2">
+							<a id="contoEconomico" class="test1 calcPage" href="/economics/conto-economico" title="Conto economico">								
+								<span class="marker"></span>
+								<span class="menuTxt">
+									Conto economico
+								</span>
+							</a>
+						</li>
+						<li class="lev2">
+							<a id="rendiconto" class="test1 calcPage" href="/economics/rendiconto-finanziario" title="Rendiconto finanziario">
+								<span class="marker"></span>
+								<span class="menuTxt">
+									Rendiconto finanziario
+								</span>
+							</a>
+						</li>
+						<li class="lev2">
+							<a id="statoPatrimoniale" class="test1 calcPage" href="/economics/stato-patrimoniale" title="Stato patrimoniale">
+								<span class="marker"></span>
+								<span class="menuTxt">
+									Stato patrimoniale
+								</span>
+							</a>
+						</li>
+						<li class="lev2">
+							<a id="fontiFinanziarie" class="test1 calcPage" href="/economics/fonti-finanziarie" title="Fonti finanziarie">
+								<span class="marker"></span>
+								<span class="menuTxt">
+									Fonti finanziarie
+								</span>
+							</a>
+						</li>
+
+						<!-- ** 4.1: SOTTOSEZIONE: Report --------------------------------------------->
+						<li class="lev2">
+							<a id="report_calcolati" class="test expand" href="#report_calcolatiMenu">
+								<span class="marker float-left"></span>
+								<span class="infoContainer">
+									<snp_infoPopup class="infoMenu inputPage" data-html="true" data-pars="msg:='Sotto menu dei report'" />
+									<i class="chevrons fa fa-chevron-right"></i>
+								</span>
+								<span class="menuTxt">
+									Report
+								</span>
+							</a>
+
+							<!-- ** Submenu Livello 3 ** - - - - - - - - - - - - - - - - - - - - - - -->
+							<ul id="report_calcolatiMenu">
+								<li class="lev3">
+									<a id="repProsp" class="test1 calcPage" href="/report/testo-prospetti" title="Sintesi progetto">
+										<span class="marker"></span>
+										<span class="menuTxt">
+											Sintesi progetto
+										</span>
+									</a>
+								</li>
+							</ul>
+							<!-- // Fine submenu liv. 3  - - - - - - - - - - - - - - - - - - - - - - -->
+						</li>
+					</ul>
+					<!-- // Fine submenu liv. 2 ------------------------------------------------------->
+				</li>
+
+<!-- 5: Report -->
+<li class="lev1">
+	<a id="report" class="test1 expand" href="#reportMenu">
+		<span class="marker float-left"></span>
+		<div class="infoContainer">
+			<snp_infoPopup class="infoMenu" data-pars="msg:='Visualizza i report'" />
+			<i class="chevrons fa fa-chevron-right"></i>
+		</div>
+		<span class="menuTxt">
+			Report
+		</span>
+	</a>
+	<ul id="reportMenu">
+		<!--
+		<li class="lev2">
+			<a id="repPosiz" class="test1 calcPage" href="/report/qa" title="Posizionamento progetto">								
+				<span class="marker"></span>
+				<span class="menuTxt" style="width: auto;">
+					Posizionamento progetto
+				</span>
+			</a>
+		</li>
+		-->
+		<!--
+		<li class="lev2">
+			<a id="repPiano" class="test1 calcPage" href="/report/bp" title="Piano economico">
+				<span class="marker"></span>
+				<span class="menuTxt">
+					Piano economico
+				</span>
+			</a>
+		</li>
+		-->
+		<li class="lev2">
+			<a id="repTesti" class="test1 calcPage" href="/report/testi" title="Testi">
+				<span class="marker"></span>
+				<span class="menuTxt">
+					Testi
+				</span>
+			</a>
+		</li>
+		<!--
+		<li class="lev2">
+			<a id="repProsp" class="test1 calcPage" href="/report/testo-prospetti" title="Sintesi progetto">
+				<span class="marker"></span>
+				<span class="menuTxt">
+					Sintesi progetto
+				</span>
+			</a>
+		</li>
+		-->
+		<li class="lev2">
+			<a id="repLeanus" class="test1 calcPage" href="/economics/analisi-leanus" title="Analisi Leanus">
+				<span class="marker"></span>
+				<span class="menuTxt">
+					Analisi Leanus
+				</span>
+			</a>
+		</li>
+
+	</ul>
+</li>
+
+
+				<!-- ** 6: DATI TESTUALI: Inserimento dati descrittivi dell'azienda ** ---------------->
+				<li class="lev1">
+					<a id="testuali" class="test1 expand" href="#testualiMenu">
+						<span class="marker float-left"></span>
+						<div class="infoContainer">
+							<snp_infoPopup class="infoMenu" data-pars="msg:='Visualizza i report'" />
+							<i class="chevrons fa fa-chevron-right"></i>
+						</div>
+						<span class="menuTxt">
+							Dati testuali
+						</span>
+					</a>
+					<!-- ** Submenu Livello 2 ** ------------------------------------------------------>
+					<ul id="testualiMenu">
+						<li class="lev2">
+							<a id="dtDescrizione" class="test1 calcPage" href="/testuali/descrizione-azienda" title="Descrizione azienda ed organizzazione">
+								<span class="marker"></span>
+								<span class="menuTxt">
+									Descrizione azienda
+								</span>
+							</a>
+						</li>
+						<li class="lev2">
+							<a id="dtProdotto" class="test1 calcPage" href="/testuali/prodotto-processo" title="Prodotto e processo">
+								<span class="marker"></span>
+								<span class="menuTxt">
+									Prodotto e processo
+								</span>
+							</a>
+						</li>
+						<li class="lev2">
+							<a id="dtMercato" class="test1 calcPage" href="/testuali/analisi-mercato" title="Analisi mercato, piano marketing e vendite">
+								<span class="marker"></span>
+								<span class="menuTxt">
+									Analisi mercato
+								</span>
+							</a>
+						</li>
+						<li class="lev2">
+							<a id="dtPosizione" class="test1 calcPage" href="/testuali/posizione-competitiva" title="Posizione competitiva, milesstones e analisi dei rischi">
+								<span class="marker"></span>
+								<span class="menuTxt">
+									Posizione competitiva
+								</span>
+							</a>
+						</li>
+						<li class="lev2">
+							<a id="dtManagement" class="test1 calcPage" href="/testuali/management" title="Management e organizzazione">
+								<span class="marker"></span>
+								<span class="menuTxt">
+									Management
+								</span>
+							</a>
+						</li>
+						<li class="lev2">
+							<a id="dtExecutive" class="test1 calcPage" href="/testuali/executive-summary" title="Executive summary">
+								<span class="marker"></span>
+								<span class="menuTxt">
+									Executive summary
+								</span>
+							</a>
+						</li>
+					</ul>
+					<!-- // Fine submenu liv. 2 ------------------------------------------------------->
+				</li>
+
+
+
+				<!-- 7: Valutazione -->
+				<li class="lev1">
+					<a id="messaggi" class="" href="/economics/messaggi">
+						<div class="infoContainer">
+							<snp_infoPopup class="infoMenu" data-pars="msg:='Richiesta di valutazione a leanus del Business Plan Visualizza <br>e<br> Visualizzazione dell'elenco messaggi <i>(errori e warning)</i> registrati nella compilazione del Piano Economico'" />
+						</div>
+						<span class="menuTxt">
+							Valutazione / Msg
+						</span>
+					</a>
+				</li>
+
+			
+				<!-- 7: Controllo di gestione -->
+				<li class="lev1">
+					<a id="controllo" class="test1 expand" href="#controlloMenu">
+						<span class="marker float-left"></span>
+						<div class="infoContainer">
+							<snp_infoPopup class="infoMenu" data-pars="msg:='Controllo di gestione'" />
+							<i class="chevrons fa fa-chevron-right"></i>
+						</div>
+						<span class="menuTxt">
+							<!--Controllo gestione-->
+							Controllo gest.
+						</span>
+					</a>
+					<ul id="controlloMenu">
+						<li class="lev2">
+							<a id="cdgCrea" class="test1 calcPage" href="/controllo/crea" title="Test">
+								<span class="marker"></span>
+								<span class="menuTxt">
+									Importa dati previsionali
+								</span>
+							</a>
+						</li>
+						<li class="lev2">
+							<a id="cdgDistribuzione" class="test1 calcPage" href="/controllo/distribuzione-mensile" title="Test">
+								<span class="marker"></span>
+								<span class="menuTxt">
+									Distribuzione mensile
+								</span>
+							</a>
+						</li>
+						<li class="lev2">
+							<a id="cdgImporta" class="test1 calcPage" href="/controllo/importa-consuntivo" title="Test">
+								<span class="marker"></span>
+								<span class="menuTxt">
+									Importa consuntivo
+								</span>
+							</a>
+						</li>
+						<li class="lev2">
+							<a id="cdgAnalisi" class="test1 calcPage" href="/controllo/analisi-indici" title="Test">
+								<span class="marker"></span>
+								<span class="menuTxt">
+									Analisi indici
+								</span>
+							</a>
+						</li>
+						<li class="lev2">
+							<a id="cdgScostamenti" class="test1 calcPage" href="/controllo/scostamenti" title="Test">
+								<span class="marker"></span>
+								<span class="menuTxt">
+									Scostamenti
+								</span>
+							</a>
+						</li>
+						<li class="lev2">
+							<a id="cdgForecast" class="test1 calcPage" href="/controllo/forecast" title="Test">
+								<span class="marker"></span>
+								<span class="menuTxt">
+									Forecast
+								</span>
+							</a>
+						</li>
+					</ul>
+				</li>
+
+
+				<!-- Esci -->
+				<li class="lev1">
+					<a id="esci" class="" href="#item" title="Esci">
+						<div class="infoContainer">
+							<i class="chevrons fa fa-sign-out-alt"></i>
+						</div>
+						<span class="menuTxt">
+							Esci
+							
+						</span>
+					</a>
+				</li>
+
+			</ul>
+
+
+
+
+
+				<!-- -- >
+				<li class="sslev1" style="background:#cc9">
+					<a id="xxx" href="#xxx">xxx</a>
+				</li>
+				<!-- -->
+				<!--<li id="bpval"></li>-->
+				<!-- Esci -->
+		</div>
+	</div>
+
+</div>

@@ -1,0 +1,79 @@
+﻿<reserved_header_section templateID="803"
+                         templateFile="welcome.html"
+                         templateDescription="HTML content template (welcome)">
+</reserved_header_section>
+
+<!-- *** HEADER *** -->
+<widget_pageHeader />
+
+
+
+
+<div class="container-fluid pageBody">
+
+    <div class="tabContent">
+			
+		<!-- 2: Selezione Mese -->
+        <div class="row justify-content-center margin-v-30">
+            <div class="col-12 col-md-10 col-lg-6">
+
+                <h4 id="titoloPeriodo" class="margin-b30">Selezione mese di competenza</h4>
+
+				<label id="tipoCons" class="df-label margin-t-15">Tipo consuntivo:</label>
+
+                <div class="itemContainer">
+                    <snp_label for="Mese" data-pars="text:='Seleziona il mese di appartenenza dei dati'" class="XML_label margin-t-20 margin-b-5" mandatory />
+	                <snp_dd_custom data-options="{'(Selezionare un mese)': 0, 'Gennaio': 1, 'Febbraio': 2, 'Marzo': 3, 'Aprile': 4, 'Maggio': 5, 'Giugno': 6, 'Luglio': 7, 'Agosto': 8, 'Settembre': 9, 'Ottobre': 10, 'Novembre': 11, 'Dicembre': 12}"
+                        id="UltimoMese" key="UltimoMese"
+                        data-pars="value:='0' || emptyItem:='none'"
+					/>
+                </div>
+
+            </div>
+        </div>
+
+
+		<!-- 2: Selezione file -->
+        <div class="row justify-content-center margin-v-30">
+            <div class="col-12 col-md-10 col-lg-6">
+
+                <h4 class="margin-b30">Selezione file da importare</h4>
+
+                <div class="itemContainer">
+                    <snp_label for="File" data-pars="text:='Seleziona il file da importare'" class="XML_label margin-t-20 margin-b-5" mandatory />
+                    <div class="input-group file">
+                        <a id="btn-browse" class="input-group-addon addon-left btn btn-action-light" href="#file" title="Scegli un file">
+                            <i class="margin-r-10 chevrons fa fa-file"></i> Scegli file
+                        </a>
+                        <input id="showFileName" type="text" class="form-control input_text cleanInput readonly-withe" readonly value="" ov="" placeholder="(Seleziona un file)">
+                    </div>
+                    <input 
+						id="fileName_XLS" class="hide" value="" type="file"
+						accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel"
+						placeholder="Seleziona file">
+                    <input 
+						id="fileName_CSV" class="hide" value="" type="file"
+						accept=".csv"
+						placeholder="Seleziona file">
+                </div>
+
+                <div class="itemContainer">
+					<a id="btn-import" class="float-right input-group-addon addon-left btn btn-action disabled" href="#file" title="Importa il file selezionato">
+                        <i class="margin-r-10 chevrons fa fa-sign-in-alt"></i> Importa il file 
+                    </a>
+                </div>
+
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <!-- *** CONSOLE *** -->
+    <widget_btnConsole_CDG />
+
+
+
+</div>

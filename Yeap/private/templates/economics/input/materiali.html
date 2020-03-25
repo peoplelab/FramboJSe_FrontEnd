@@ -1,0 +1,556 @@
+﻿<reserved_header_section
+	templateID="762"
+	templateFile="investimenti.html"
+	templateDescription="HTML content template (Economics)"
+></reserved_header_section>
+
+<!-- *** HEADER *** -->
+<widget_pageHeader />
+
+<div class="container-fluid pageBody">
+
+	<!-- *** SEZIONE "NASCOSTI" *** -->
+	<div class="card card-info hidden-context">
+		<div class="card-title" ref="Nascosti">
+			<a href="#btn" data-toggle="collapse" data-target="#Nascosti" aria-expanded="false">
+				<i class="fa fa-times-circle ico-error"></i>
+				<i class="fa fa-exclamation-circle ico-warning"></i>
+				<span class="text">
+					<i class="fa fa-puzzle-piece margin-r-5"></i>
+					Valori nascosti
+				</span>
+				<span class="ico">
+					<i class="fa fa-chevron-right ico-close"></i>
+					<i class="fa fa-chevron-down ico-open"></i>
+				</span>
+			</a>
+		</div>
+		<div id="Nascosti" class="collapse box_Lev_1">
+			<div class="card-body">
+
+				<div id="hiddenData" class="margin-v-10 box_Lev_2">
+					<div dsheader></div>
+
+					<h4 class="subsection">Set 1</h4>
+					<div class="row" dstable
+						data-method="2"
+						data-name="IM1_IvaCreditoPerc"
+						data-type="input"
+					></div>
+
+					<h4 class="subsection">Set 2</h4>
+					<div class="row" dstable
+						data-method="2"
+						data-name="IM2_IvaCreditoPerc"
+						data-type="input"
+					></div>
+
+					<h4 class="subsection">Set 3</h4>
+					<div class="row" dstable
+						data-method="2"
+						data-name="IM3_IvaCreditoPerc"
+						data-type="input"
+					></div>
+
+					<h4 class="subsection">Set 4</h4>
+					<div class="row" dstable
+						data-method="2"
+						data-name="IM4_IvaCreditoPerc"
+						data-type="input"
+					></div>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+	<!-- *** SEZIONE INPUT *** -->
+	<div class="card card-info input-context">
+		<div class="card-title" ref="Inseriti">
+			<a href="#btn" data-toggle="collapse" data-target="#Inseriti" aria-expanded="true">
+				<i class="fa fa-times-circle ico-error"></i>
+				<i class="fa fa-exclamation-circle ico-warning"></i>
+				<span class="text">
+					<i class="fa fa-pencil-alt margin-r-5"></i>
+					Dati da inserire
+				</span>
+				<span class="ico">
+					<i class="fa fa-chevron-right ico-close"></i>
+					<i class="fa fa-chevron-down ico-open"></i>
+				</span>
+			</a>
+		</div>
+		<div id="Inseriti" class="collapse box_Lev_1 show">
+			<div class="card-body">
+
+				<widget_drawerTitle data-pars="title:='Immob_Materiali_title1' || mode:= 'edit' || ref:='Inseriti_1' || fillerBtn:='true'" />
+				<div id="Inseriti_1" class="collapse clearfix margin-v-10 box_Lev_2">
+					<div dsheader></div>
+					<div class="row" dstable
+						data-method="2"
+						data-name="IM1_CapexNette"
+						data-type="input"
+						data-total="rows"
+					></div>
+					<div class="row" dstable
+						data-method="2"
+						data-name="IM1_AnniAmmortamento"
+						data-type="input"
+					></div>
+
+					<h4 class="subsection">
+						<snp_XML_label_economics data-pars="value:='Subtitle_Iperammortamento'" class="title" />
+					</h4>
+					<div class="row" dstable
+						data-method="2"
+						data-name="IM1_IperammortamentoPercAggiunta"
+						data-type="input"
+					></div>
+				</div>
+
+				<widget_drawerTitle data-pars="title:='Immob_Materiali_title2' || mode:= 'edit' || ref:='Inseriti_2' || fillerBtn:='true'" />
+				<div id="Inseriti_2" class="collapse clearfix margin-v-10 box_Lev_2">
+					<div dsheader></div>
+					<div class="row" dstable
+						data-method="2"
+						data-name="IM2_CapexNette"
+						data-type="input"
+						data-total="rows"
+					></div>
+					<div class="row" dstable
+						data-method="2"
+						data-name="IM2_AnniAmmortamento"
+						data-type="input"
+					></div>
+
+					<h4 class="subsection">
+						<snp_XML_label_economics data-pars="value:='Subtitle_Iperammortamento'" class="title" />
+					</h4>
+					<div class="row" dstable
+						data-method="2"
+						data-name="IM2_IperammortamentoPercAggiunta"
+						data-type="input"
+					></div>
+				</div>
+
+				<widget_drawerTitle data-pars="title:='Immob_Materiali_title3' || mode:= 'edit' || ref:='Inseriti_3' || fillerBtn:='true'" />
+				<div id="Inseriti_3" class="collapse clearfix margin-v-10 box_Lev_2">
+					<div dsheader></div>
+					<div class="row" dstable
+						data-method="2"
+						data-name="IM3_CapexNette"
+						data-type="input"
+						data-total="rows"
+					></div>
+					<div class="row" dstable
+						data-method="2"
+						data-name="IM3_AnniAmmortamento"
+						data-type="input"
+					></div>
+
+					<h4 class="subsection">
+						<snp_XML_label_economics data-pars="value:='Subtitle_Iperammortamento'" class="title" />
+					</h4>
+					<div class="row" dstable
+						data-method="2"
+						data-name="IM3_IperammortamentoPercAggiunta"
+						data-type="input"
+					></div>
+				</div>
+
+				<widget_drawerTitle data-pars="title:='Immob_Materiali_title4' || mode:= 'edit' || ref:='Inseriti_4' || fillerBtn:='true'" />
+				<div id="Inseriti_4" class="collapse clearfix margin-v-10 box_Lev_2">
+					<div dsheader></div>
+					<div class="row" dstable
+						data-method="2"
+						data-name="IM4_CapexNette"
+						data-type="input"
+						data-total="rows"
+					></div>
+					<div class="row" dstable
+						data-method="2"
+						data-name="IM4_AnniAmmortamento"
+						data-type="input"
+					></div>
+
+					<h4 class="subsection">
+						<snp_XML_label_economics data-pars="value:='Subtitle_Iperammortamento'" class="title" />
+					</h4>
+					<div class="row" dstable
+						data-method="2"
+						data-name="IM4_IperammortamentoPercAggiunta"
+						data-type="input"
+					></div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+	<!-- *** SEZIONE CALCOLATI *** -->
+	<div class="card card-info formula-context">
+		<div class="card-title" ref="Calcolati">
+			<a href="#btn" data-toggle="collapse" data-target="#Calcolati" aria-expanded="false">
+				<i class="fa fa-times-circle ico-error"></i>
+				<i class="fa fa-exclamation-circle ico-warning"></i>
+				<span class="text">
+					<i class="fa fa-cogs margin-r-5"></i>
+					Valori calcolati
+				</span>
+				<span class="ico">
+					<i class="fa fa-chevron-right ico-close"></i>
+					<i class="fa fa-chevron-down ico-open"></i>
+				</span>
+			</a>
+		</div>
+		<div id="Calcolati" class="collapse box_Lev_1">
+			<div class="card-body">
+
+				<widget_drawerTitle data-pars="title:='Immob_Materiali_title1' || mode:= 'calc' || ref:='Formule_1'" />
+				<div id="Formule_1" class="collapse clearfix margin-v-10 box_Lev_2">
+					<div dsheader></div>
+
+					<h4 class="subsection">
+						<snp_XML_label_economics data-pars="value:='Subtitle_InvestimentiNetti'" class="title" />
+					</h4>
+
+					<div class="row" dstable
+						data-method="8"
+						data-name="IM1_IvaCredito"
+						data-type="formula"
+						data-formula="[IM1_CapexNette] * [IM1_IvaCreditoPerc] / 100"
+						data-total="rows"
+					></div>
+					<div class="row" dstable
+						data-method="7"
+						data-name="IM1_InvestimentiTotali"
+						data-type="formula"
+						data-formula="[IM1_CapexNette] + [IM1_IvaCredito]"
+						data-total="rows"
+					></div>
+
+					<h4 class="subsection">
+						<snp_XML_label_economics data-pars="value:='Subtitle_Ammortamenti'" class="title" />
+					</h4>
+					<div class="row" dstable
+						data-name="IM1_QuotaAmmortamentoAnnuale"
+						data-type="formula"
+						data-formula="[IM1_CapexNette] / [IM1_AnniAmmortamento]"
+					></div>
+					<div class="row" dstable
+						data-name="IM1_AmmortamentoNuovoCumulato"
+						data-type="formulaComplex"
+						data-formula="AmmortamentoAnnuale([IM1_AnniAmmortamento] [IM1_QuotaAmmortamentoAnnuale])"
+					></div>
+					<div class="row" dstable
+						data-method="7"
+						data-name="IM1_AmmortamentoTotaleCumulato"
+						data-type="formulaComplex"
+						data-formula="AmmortamentoCumulato([IM1_AmmortamentoNuovoCumulato])"
+					></div>
+
+					<h4 class="subsection">
+						<snp_XML_label_economics data-pars="value:='Subtitle_IperammortamentiCalc'" class="title" />
+					</h4>
+					<div class="row" dstable
+						data-name="IM1_IperammortamentoTotale"
+						data-type="formula"
+						data-formula="[IM1_IperammortamentoPercAggiunta] + 100"
+					></div>
+					<div class="row" dstable
+						data-name="IM1_IperammortamentoIper"
+						data-type="formula"
+						data-formula="[IM1_QuotaAmmortamentoAnnuale] * [IM1_IperammortamentoTotale] / 100"
+					></div>
+					<div class="row" dstable
+						data-name="IM1_IperammortamentoAggiuntivo"
+						data-type="formula"
+						data-formula="[IM1_IperammortamentoIper] - [IM1_QuotaAmmortamentoAnnuale]"
+					></div>
+					<div class="row" dstable
+						data-name="IM1_IperammortamentoCumulato"
+						data-type="formulaComplex"
+						data-formula="AmmortamentoAnnuale([IM1_AnniAmmortamento] [IM1_IperammortamentoAggiuntivo])"
+					></div>
+
+					<h4 class="subsection">
+						<snp_XML_label_economics data-pars="value:='Subtitle_ValoriResidui'" class="title" />
+					</h4>
+					<div class="row hide" dstable
+						data-name="IM1_ResiduoCapexNuove"
+						data-type="formulaComplex"
+						data-formula="ResiduoCapexNuove([IM1_CapexNette] [IM1_AmmortamentoNuovoCumulato] [IM1_ResiduoCapexNuove])"
+						data-total="rows"
+					></div>
+					<div class="row" dstable
+						data-method="7"
+						data-name="IM1_Totali"
+						data-type="formula"
+						data-formula="[IM1_ResiduoCapexNuove]"
+					></div>
+				</div>
+
+
+				<widget_drawerTitle data-pars="title:='Immob_Materiali_title2' || mode:= 'calc' || ref:='Formule_2'" />
+				<div id="Formule_2" class="collapse clearfix margin-v-10 box_Lev_2">
+					<div dsheader></div>
+
+					<h4 class="subsection">
+						<snp_XML_label_economics data-pars="value:='Subtitle_InvestimentiNetti'" class="title" />
+					</h4>
+
+					<div class="row" dstable
+						data-method="8"
+						data-name="IM2_IvaCredito"
+						data-type="formula"
+						data-formula="[IM2_CapexNette] * [IM2_IvaCreditoPerc] / 100"
+						data-total="rows"
+					></div>
+					<div class="row" dstable
+						data-method="7"
+						data-name="IM2_InvestimentiTotali"
+						data-type="formula"
+						data-formula="[IM2_CapexNette] + [IM2_IvaCredito]"
+						data-total="rows"
+					></div>
+
+					<h4 class="subsection">
+						<snp_XML_label_economics data-pars="value:='Subtitle_Ammortamenti'" class="title" />
+					</h4>
+					<div class="row" dstable
+						data-name="IM2_QuotaAmmortamentoAnnuale"
+						data-type="formula"
+						data-formula="[IM2_CapexNette] / [IM2_AnniAmmortamento]"
+					></div>
+					<div class="row" dstable
+						data-name="IM2_AmmortamentoNuovoCumulato"
+						data-type="formulaComplex"
+						data-formula="AmmortamentoAnnuale([IM2_AnniAmmortamento] [IM2_QuotaAmmortamentoAnnuale])"
+					></div>
+					<div class="row" dstable
+						data-method="7"
+						data-name="IM2_AmmortamentoTotaleCumulato"
+						data-type="formulaComplex"
+						data-formula="AmmortamentoCumulato([IM2_AmmortamentoNuovoCumulato])"
+					></div>
+
+					<h4 class="subsection">
+						<snp_XML_label_economics data-pars="value:='Subtitle_IperammortamentiCalc'" class="title" />
+					</h4>
+					<div class="row" dstable
+						data-name="IM2_IperammortamentoTotale"
+						data-type="formula"
+						data-formula="[IM2_IperammortamentoPercAggiunta] + 100"
+					></div>
+					<div class="row" dstable
+						data-name="IM2_IperammortamentoIper"
+						data-type="formula"
+						data-formula="[IM2_QuotaAmmortamentoAnnuale] * [IM2_IperammortamentoTotale] / 100"
+					></div>
+					<div class="row" dstable
+						data-name="IM2_IperammortamentoAggiuntivo"
+						data-type="formula"
+						data-formula="[IM2_IperammortamentoIper] - [IM2_QuotaAmmortamentoAnnuale]"
+					></div>
+					<div class="row" dstable
+						data-name="IM2_IperammortamentoCumulato"
+						data-type="formulaComplex"
+						data-formula="AmmortamentoAnnuale([IM2_AnniAmmortamento] [IM2_IperammortamentoAggiuntivo])"
+					></div>
+
+					<h4 class="subsection">
+						<snp_XML_label_economics data-pars="value:='Subtitle_ValoriResidui'" class="title" />
+					</h4>
+					<div class="row hide" dstable
+						data-name="IM2_ResiduoCapexNuove"
+						data-type="formulaComplex"
+						data-formula="ResiduoCapexNuove([IM2_CapexNette] [IM2_AmmortamentoNuovoCumulato] [IM2_ResiduoCapexNuove])"
+						data-total="rows"
+					></div>
+					<div class="row" dstable
+						data-method="7"
+						data-name="IM2_Totali"
+						data-type="formula"
+						data-formula="[IM2_ResiduoCapexNuove]"
+					></div>
+				</div>
+
+				<widget_drawerTitle data-pars="title:='Immob_Materiali_title3' || mode:= 'calc' || ref:='Formule_3'" />
+				<div id="Formule_3" class="collapse clearfix margin-v-10 box_Lev_3">
+					<div dsheader></div>
+
+					<h4 class="subsection">
+						<snp_XML_label_economics data-pars="value:='Subtitle_InvestimentiNetti'" class="title" />
+					</h4>
+
+					<div class="row" dstable
+						data-method="8"
+						data-name="IM3_IvaCredito"
+						data-type="formula"
+						data-formula="[IM3_CapexNette] * [IM3_IvaCreditoPerc] / 100"
+						data-total="rows"
+					></div>
+					<div class="row" dstable
+						data-method="7"
+						data-name="IM3_InvestimentiTotali"
+						data-type="formula"
+						data-formula="[IM3_CapexNette] + [IM3_IvaCredito]"
+						data-total="rows"
+					></div>
+
+					<h4 class="subsection">
+						<snp_XML_label_economics data-pars="value:='Subtitle_Ammortamenti'" class="title" />
+					</h4>
+					<div class="row" dstable
+						data-name="IM3_QuotaAmmortamentoAnnuale"
+						data-type="formula"
+						data-formula="[IM3_CapexNette] / [IM3_AnniAmmortamento]"
+					></div>
+					<div class="row" dstable
+						data-name="IM3_AmmortamentoNuovoCumulato"
+						data-type="formulaComplex"
+						data-formula="AmmortamentoAnnuale([IM3_AnniAmmortamento] [IM3_QuotaAmmortamentoAnnuale])"
+					></div>
+					<div class="row" dstable
+						data-method="7"
+						data-name="IM3_AmmortamentoTotaleCumulato"
+						data-type="formulaComplex"
+						data-formula="AmmortamentoCumulato([IM3_AmmortamentoNuovoCumulato])"
+					></div>
+
+					<h4 class="subsection">
+						<snp_XML_label_economics data-pars="value:='Subtitle_IperammortamentiCalc'" class="title" />
+					</h4>
+					<div class="row" dstable
+						data-name="IM3_IperammortamentoTotale"
+						data-type="formula"
+						data-formula="[IM3_IperammortamentoPercAggiunta] + 100"
+					></div>
+					<div class="row" dstable
+						data-name="IM3_IperammortamentoIper"
+						data-type="formula"
+						data-formula="[IM3_QuotaAmmortamentoAnnuale] * [IM3_IperammortamentoTotale] / 100"
+					></div>
+					<div class="row" dstable
+						data-name="IM3_IperammortamentoAggiuntivo"
+						data-type="formula"
+						data-formula="[IM3_IperammortamentoIper] - [IM3_QuotaAmmortamentoAnnuale]"
+					></div>
+					<div class="row" dstable
+						data-name="IM3_IperammortamentoCumulato"
+						data-type="formulaComplex"
+						data-formula="AmmortamentoAnnuale([IM3_AnniAmmortamento] [IM3_IperammortamentoAggiuntivo])"
+					></div>
+
+					<h4 class="subsection">
+						<snp_XML_label_economics data-pars="value:='Subtitle_ValoriResidui'" class="title" />
+					</h4>
+					<div class="row hide" dstable
+						data-name="IM3_ResiduoCapexNuove"
+						data-type="formulaComplex"
+						data-formula="ResiduoCapexNuove([IM3_CapexNette] [IM3_AmmortamentoNuovoCumulato] [IM3_ResiduoCapexNuove])"
+						data-total="rows"
+					></div>
+					<div class="row" dstable
+						data-method="7"
+						data-name="IM3_Totali"
+						data-type="formula"
+						data-formula="[IM3_ResiduoCapexNuove]"
+					></div>
+				</div>
+
+				<widget_drawerTitle data-pars="title:='Immob_Materiali_title4' || mode:= 'calc' || ref:='Formule_4'" />
+				<div id="Formule_4" class="collapse clearfix margin-v-10 box_Lev_4">
+					<div dsheader></div>
+
+					<h4 class="subsection">
+						<snp_XML_label_economics data-pars="value:='Subtitle_InvestimentiNetti'" class="title" />
+					</h4>
+
+					<div class="row" dstable
+						data-method="8"
+						data-name="IM4_IvaCredito"
+						data-type="formula"
+						data-formula="[IM4_CapexNette] * [IM4_IvaCreditoPerc] / 100"
+						data-total="rows"
+					></div>
+					<div class="row" dstable
+						data-method="7"
+						data-name="IM4_InvestimentiTotali"
+						data-type="formula"
+						data-formula="[IM4_CapexNette] + [IM4_IvaCredito]"
+						data-total="rows"
+					></div>
+
+					<h4 class="subsection">
+						<snp_XML_label_economics data-pars="value:='Subtitle_Ammortamenti'" class="title" />
+					</h4>
+					<div class="row" dstable
+						data-name="IM4_QuotaAmmortamentoAnnuale"
+						data-type="formula"
+						data-formula="[IM4_CapexNette] / [IM4_AnniAmmortamento]"
+					></div>
+					<div class="row" dstable
+						data-name="IM4_AmmortamentoNuovoCumulato"
+						data-type="formulaComplex"
+						data-formula="AmmortamentoAnnuale([IM4_AnniAmmortamento] [IM4_QuotaAmmortamentoAnnuale])"
+					></div>
+					<div class="row" dstable
+						data-method="7"
+						data-name="IM4_AmmortamentoTotaleCumulato"
+						data-type="formulaComplex"
+						data-formula="AmmortamentoCumulato([IM4_AmmortamentoNuovoCumulato])"
+					></div>
+
+					<h4 class="subsection">
+						<snp_XML_label_economics data-pars="value:='Subtitle_IperammortamentiCalc'" class="title" />
+					</h4>
+					<div class="row" dstable
+						data-name="IM4_IperammortamentoTotale"
+						data-type="formula"
+						data-formula="[IM4_IperammortamentoPercAggiunta] + 100"
+					></div>
+					<div class="row" dstable
+						data-name="IM4_IperammortamentoIper"
+						data-type="formula"
+						data-formula="[IM4_QuotaAmmortamentoAnnuale] * [IM4_IperammortamentoTotale] / 100"
+					></div>
+					<div class="row" dstable
+						data-name="IM4_IperammortamentoAggiuntivo"
+						data-type="formula"
+						data-formula="[IM4_IperammortamentoIper] - [IM4_QuotaAmmortamentoAnnuale]"
+					></div>
+					<div class="row" dstable
+						data-name="IM4_IperammortamentoCumulato"
+						data-type="formulaComplex"
+						data-formula="AmmortamentoAnnuale([IM4_AnniAmmortamento] [IM4_IperammortamentoAggiuntivo])"
+					></div>
+
+					<h4 class="subsection">
+						<snp_XML_label_economics data-pars="value:='Subtitle_ValoriResidui'" class="title" />
+					</h4>
+					<div class="row hide" dstable
+						data-name="IM4_ResiduoCapexNuove"
+						data-type="formulaComplex"
+						data-formula="ResiduoCapexNuove([IM4_CapexNette] [IM4_AmmortamentoNuovoCumulato] [IM4_ResiduoCapexNuove])"
+						data-total="rows"
+					></div>
+					<div class="row" dstable
+						data-method="7"
+						data-name="IM4_Totali"
+						data-type="formula"
+						data-formula="[IM4_ResiduoCapexNuove]"
+					></div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- *** CONSOLE *** -->
+	<widget_btnConsole />
+
+</div>

@@ -1,0 +1,77 @@
+[2020-01-29 12:43:40] REQUEST POST - https://localhost:8082/public/aspx/Home.aspx
+[2020-01-29 12:43:40] ---- FROM  ::1 (WinNT)
+[2020-01-29 12:43:40] ---- BROWSER:  Firefox 72.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:72.0) Gecko/20100101 Firefox/72.0)
+[2020-01-29 12:43:40] ---- CONTENT: Token%3D11111121252221224308000011333382%26TokenApiRest%3DeyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvd3d3cy5kZXYteWVhcC5pdCIsImlhdCI6MTU0MjI5NDMyMSwibmJmIjoxNTQyMjk0MzIxLCJleHAiOjE1NDI4OTkxMjEsImRhdGEiOnsidXNlciI6eyJpZCI6IjQ0In19fQ.RCP5OeoGASxAyBw1MbMD4BFJAcDM5JIXqYXKBALZcJI%26Logo%3Dhttps%3A%2F%2Flocalhost%3A8082%2Fscratch%2Fpl_logo.png%26Title%3DBusiness+Plan+Test+nr.+1%26isODC%3D1%26ruolo%3D0%26trial_expired%3Dfalse=
+[2020-01-29 12:43:48] 302 - Found - text/html
+[2020-01-29 12:43:48] REQUEST GET - https://localhost:8082/home/welcome
+[2020-01-29 12:43:48] ---- FROM  ::1 (WinNT)
+[2020-01-29 12:43:48] ---- BROWSER:  Firefox 72.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:72.0) Gecko/20100101 Firefox/72.0)
+[2020-01-29 12:43:50] 200 - OK - text/html
+[2020-01-29 12:43:51] REQUEST POST - https://localhost:8082/public/ws/General.asmx/Set
+[2020-01-29 12:43:51] ---- FROM  ::1 (WinNT)
+[2020-01-29 12:43:51] ---- BROWSER:  Firefox 72.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:72.0) Gecko/20100101 Firefox/72.0)
+[2020-01-29 12:43:51] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20200129124351726'><General><Token>11111121252221224308000011333382</Token></General><Data><Nome>Business Plan Test nr. 1</Nome><Logo>https%3A%2F%2Flocalhost%3A8082%2Fscratch%2Fpl_logo.png</Logo></Data></Request>"}
+[2020-01-29 12:43:52] 200 - OK - application/json
+[2020-01-29 12:43:52] REQUEST POST - https://localhost:8082/public/ws/Config.asmx/Economics_Get
+[2020-01-29 12:43:52] ---- FROM  ::1 (WinNT)
+[2020-01-29 12:43:52] ---- BROWSER:  Firefox 72.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:72.0) Gecko/20100101 Firefox/72.0)
+[2020-01-29 12:43:52] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20200129124352186'><General><Token>11111121252221224308000011333382</Token></General><Data></Data></Request>"}
+[2020-01-29 12:43:52] 200 - OK - application/json
+[2020-01-29 12:43:52] REQUEST POST - https://localhost:8082/public/ws/Config.asmx/All_Get
+[2020-01-29 12:43:52] ---- FROM  ::1 (WinNT)
+[2020-01-29 12:43:52] ---- BROWSER:  Firefox 72.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:72.0) Gecko/20100101 Firefox/72.0)
+[2020-01-29 12:43:52] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20200129124352502'><General><Token>11111121252221224308000011333382</Token></General><Data></Data></Request>"}
+[2020-01-29 12:43:52] REQUEST POST - https://localhost:8082/public/ws/Economics.asmx/messaggi_summary
+[2020-01-29 12:43:52] ---- FROM  ::1 (WinNT)
+[2020-01-29 12:43:52] ---- BROWSER:  Firefox 72.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:72.0) Gecko/20100101 Firefox/72.0)
+[2020-01-29 12:43:52] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20200129124352591'><General><Token>11111121252221224308000011333382</Token></General><Data></Data></Request>"}
+[2020-01-29 12:43:52] REQUEST POST - https://localhost:8082/public/ws/Config.asmx/All_Get
+[2020-01-29 12:43:52] ---- FROM  ::1 (WinNT)
+[2020-01-29 12:43:52] ---- BROWSER:  Firefox 72.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:72.0) Gecko/20100101 Firefox/72.0)
+[2020-01-29 12:43:52] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20200129124352755'><General><Token>11111121252221224308000011333382</Token></General><Data></Data></Request>"}
+[2020-01-29 12:43:53] 200 - OK - application/json
+[2020-01-29 12:43:53] 200 - OK - application/json
+[2020-01-29 12:43:53] 200 - OK - application/json
+[2020-01-29 12:43:53] REQUEST POST - https://localhost:8082/public/ws/Config.asmx/All_Get
+[2020-01-29 12:43:53] ---- FROM  ::1 (WinNT)
+[2020-01-29 12:43:53] ---- BROWSER:  Firefox 72.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:72.0) Gecko/20100101 Firefox/72.0)
+[2020-01-29 12:43:53] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='2020012912435357'><General><Token>11111121252221224308000011333382</Token></General><Data></Data></Request>"}
+[2020-01-29 12:43:53] 200 - OK - application/json
+[2020-01-29 12:43:59] REQUEST GET - https://localhost:8082/economics/rendiconto-finanziario
+[2020-01-29 12:43:59] ---- FROM  ::1 (WinNT)
+[2020-01-29 12:43:59] ---- BROWSER:  Firefox 72.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:72.0) Gecko/20100101 Firefox/72.0)
+[2020-01-29 12:43:59] 200 - OK - text/html
+[2020-01-29 12:44:00] REQUEST POST - https://localhost:8082/public/ws/Economics.asmx/RendicontoFinanziario
+[2020-01-29 12:44:00] ---- FROM  ::1 (WinNT)
+[2020-01-29 12:44:00] ---- BROWSER:  Firefox 72.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:72.0) Gecko/20100101 Firefox/72.0)
+[2020-01-29 12:44:00] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20200129124400663'><General><Token>11111121252221224308000011333382</Token></General><Data></Data></Request>"}
+[2020-01-29 12:44:00] 200 - OK - application/json
+[2020-01-29 12:44:00] REQUEST POST - https://localhost:8082/public/ws/Config.asmx/All_Get
+[2020-01-29 12:44:00] ---- FROM  ::1 (WinNT)
+[2020-01-29 12:44:00] ---- BROWSER:  Firefox 72.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:72.0) Gecko/20100101 Firefox/72.0)
+[2020-01-29 12:44:00] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20200129124400932'><General><Token>11111121252221224308000011333382</Token></General><Data></Data></Request>"}
+[2020-01-29 12:44:01] REQUEST POST - https://localhost:8082/public/ws/Economics.asmx/messaggi_summary
+[2020-01-29 12:44:01] REQUEST GET - https://localhost:8082/public/ws/Resources.ashx/xml-economics/11111121252221224308000011333382
+[2020-01-29 12:44:01] ---- FROM  ::1 (WinNT)
+[2020-01-29 12:44:01] ---- BROWSER:  Firefox 72.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:72.0) Gecko/20100101 Firefox/72.0)
+[2020-01-29 12:44:01] ---- FROM  ::1 (WinNT)
+[2020-01-29 12:44:01] ---- BROWSER:  Firefox 72.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:72.0) Gecko/20100101 Firefox/72.0)
+[2020-01-29 12:44:01] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='2020012912440121'><General><Token>11111121252221224308000011333382</Token></General><Data></Data></Request>"}
+[2020-01-29 12:44:01] 200 - OK - application/json
+[2020-01-29 12:44:01] 200 - OK - application/json
+[2020-01-29 12:44:01] REQUEST POST - https://localhost:8082/public/ws/Config.asmx/All_Get
+[2020-01-29 12:44:01] ---- FROM  ::1 (WinNT)
+[2020-01-29 12:44:01] ---- BROWSER:  Firefox 72.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:72.0) Gecko/20100101 Firefox/72.0)
+[2020-01-29 12:44:01] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20200129124401218'><General><Token>11111121252221224308000011333382</Token></General><Data></Data></Request>"}
+[2020-01-29 12:44:01] 200 - OK - text/xml
+[2020-01-29 12:44:01] 200 - OK - application/json
+[2020-01-29 12:44:02] REQUEST POST - https://localhost:8082/public/ws/Config.asmx/All_Get
+[2020-01-29 12:44:02] ---- FROM  ::1 (WinNT)
+[2020-01-29 12:44:02] ---- BROWSER:  Firefox 72.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:72.0) Gecko/20100101 Firefox/72.0)
+[2020-01-29 12:44:02] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='20200129124402360'><General><Token>11111121252221224308000011333382</Token></General><Data></Data></Request>"}
+[2020-01-29 12:44:02] 200 - OK - application/json
+[2020-01-29 12:45:23] REQUEST POST - https://localhost:8082/public/ws/Reports.asmx/Economics
+[2020-01-29 12:45:23] ---- FROM  ::1 (WinNT)
+[2020-01-29 12:45:23] ---- BROWSER:  Firefox 72.0 (Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:72.0) Gecko/20100101 Firefox/72.0)
+[2020-01-29 12:45:23] ---- CONTENT: {data : "<?xml version='1.0' encoding='utf-8' ?><Request ID='2020012912452329'><General><Token>11111121252221224308000011333382</Token></General><Data><Format>5</Format></Data></Request>"}
+[2020-01-29 12:45:36] 200 - OK - application/json

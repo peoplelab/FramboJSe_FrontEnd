@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<routes>
+  <route>
+    <name>masterpage_home</name>
+    <virtual>home/{resource}</virtual>
+    <physical>~/private/aspx/home.aspx</physical>
+  </route>
+  <route>
+    <name>masterpage_QA</name>
+    <virtual>qa/{resource}</virtual>
+    <physical>~/private/aspx/qa.aspx</physical>
+  </route>
+  <route>
+    <name>masterpage_settings</name>
+    <virtual>settings/{resource}</virtual>
+    <physical>~/private/aspx/settings.aspx</physical>
+  </route>
+  <route>
+    <name>masterpage_economics</name>
+    <virtual>economics/{resource}</virtual>
+    <physical>~/private/aspx/economics.aspx</physical>
+    <!--<physical>~/private/aspx/economics.TestFramework.aspx</physical>-->
+  </route>
+  <route>
+    <name>masterpage_controllo</name>
+    <virtual>controllo/{resource}</virtual>
+    <physical>~/private/aspx/controllo.aspx</physical>
+  </route>
+  <route>
+    <name>masterpage_datiTestuali</name>
+    <virtual>testuali/{resource}</virtual>
+    <physical>~/private/aspx/testuali.aspx</physical>
+  </route>
+  <route>
+    <name>masterpage_risorseUmane_nl</name>
+    <virtual>hr-nl/{resource}</virtual>
+    <physical>~/private/aspx/master.risorseUmane.newLess.aspx</physical>
+  </route>
+</routes>

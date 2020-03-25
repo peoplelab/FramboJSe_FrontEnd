@@ -1,0 +1,112 @@
+﻿<reserved_header_section
+	templateID="708"
+	templateFile="fontiFinanziarie.html"
+	templateDescription="HTML content template (Economics)"
+></reserved_header_section>
+
+<!-- *** HEADER *** -->
+<widget_pageHeader />
+
+
+<div class="container-fluid pageBody">
+
+	<!-- *** Bollini qualità *** -->
+	<snp_qualityBadge />
+
+	<!-- *** FONTI FINANZIARIE *** -->
+	<div class="card card-info prospetti-context">
+		<div class="card-title" ref="Fonti">
+			<a href="#btn" data-toggle="collapse" data-target="#Fonti" aria-expanded="true">
+				<i class="fa fa-times-circle ico-error"></i>
+				<i class="fa fa-exclamation-circle ico-warning"></i>
+				<span class="text">
+					<i class="fa fa-list-alt margin-r-5"></i>
+					Fonti finanziarie
+				</span>
+				<span class="ico">
+					<i class="fa fa-chevron-right ico-close"></i>
+					<i class="fa fa-chevron-down ico-open"></i>
+				</span>
+			</a>
+		</div>
+		<div id="Fonti" class="collapse box_Lev_1 show">
+			<div class="card-body">
+
+				<widget_drawerTitle data-pars="title:='Fabbisogni_title' || mode:= 'prosp' || ref:='Formule_1'" />
+				<div id="Formule_1" class="collapse clearfix margin-v-10 box_Lev_2">
+					<div dsheader></div>
+					<div class="row" dstable
+						data-method="2"
+						data-name="FabbisognoInvestimenti"
+						data-total="rows"
+					></div>
+					<div class="row" dstable
+						data-method="2"
+						data-name="FabbisognoWC"
+						data-total="rows"
+					></div>
+					<div class="row" dstable
+						data-method="7"
+						data-name="FabbisognoTotaleImpieghi"
+						data-total="rows"
+					></div>
+				</div>
+
+				<widget_drawerTitle data-pars="title:='Capitale_title' || mode:= 'prosp' || ref:='Formule_2'" />
+				<div id="Formule_2" class="collapse clearfix margin-v-10 box_Lev_2">
+					<div dsheader></div>
+					<div class="row" dstable
+						data-method="2"
+						data-name="FontiAumentoCapitale"
+						data-total="rows"
+					></div>
+					<div class="row" dstable
+						data-method="2"
+						data-name="FontiFinanziamenti"
+						data-total="rows"
+					></div>
+					<div class="row" dstable
+						data-method="2"
+						data-name="FontiAltro"
+						data-total="rows"
+					></div>
+					<div class="row" dstable
+						data-method="2"
+						data-name="FontiLiquiditaAnnoPrec"
+					></div>
+					<div class="row" dstable
+						data-method="7"
+						data-name="FontiTotale"
+						data-total="rows"
+					></div>
+				</div>
+
+				<widget_drawerTitle data-pars="title:='CashFlow_title' || mode:= 'prosp' || ref:='Formule_3'" />
+				<div id="Formule_3" class="collapse clearfix margin-v-10 box_Lev_2">
+					<div dsheader></div>
+					<div class="row" dstable
+						data-method="2"
+						data-name="Freecashflow"
+						data-total="rows"
+					></div>
+					<div class="row" dstable
+						data-method="2"
+						data-name="RapportoImpieghiAnnuale"
+					></div>
+					<div class="row" dstable
+						data-method="2"
+						data-name="RapportoImpieghiCumulato"
+						data-total="division"
+						data-calc="(([FabbisognoTotaleImpieghi_totRow] < 0)? -([FabbisognoTotaleImpieghi_totRow]) : [FabbisognoTotaleImpieghi_totRow]) / [FontiTotale_totRow] * 100"
+					></div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+	<!-- *** CONSOLE *** -->
+	<widget_btnConsole />
+
+</div>

@@ -1,0 +1,505 @@
+﻿<reserved_header_section
+	templateID="767"
+	templateFile="annoPrecProspetto.html"
+	templateDescription="HTML content template (Economics)"
+></reserved_header_section>
+
+
+<!-- *** HEADER *** -->
+<widget_pageHeader />
+
+<div class="container-fluid pageBody">
+
+	<!-- *** SEZIONE QUADRATURA *** -->
+	<div class="card card-info formula-context">
+		<div class="card-title title-light" ref="Calcolati">
+			<a href="#btn" data-toggle="collapse" data-target="#Quadratura" aria-expanded="true">
+				<i class="fa fa-times-circle ico-error"></i>
+				<i class="fa fa-exclamation-circle ico-warning"></i>
+				<span class="text">
+					<i class="fa fa-cogs margin-r-5"></i>
+					<snp_XML_label_economics data-pars="value:='Subtitle_AP_Quadratura'" class="title" />
+				</span>
+				<span class="ico">
+					<i class="fa fa-chevron-right ico-close"></i>
+					<i class="fa fa-chevron-down ico-open"></i>
+				</span>
+			</a>
+		</div>
+		<div id="Quadratura" class="collapse box_Lev_1 show">
+			<div class="card-body">
+
+				<div class="row">
+					<div class="col-6 singleCol">
+
+						<widget_drawerTitle data-pars="title:='Subtitle_AP_Attivita' || mode:= 'edit' || ref:='Quadratura_1'" />
+						<div id="Quadratura_1" class="collapse clearfix margin-v-10 box_Lev_2">
+
+							<h4 class="subsection">
+								<snp_XML_label_economics data-pars="value:='Subtitle_AP_Immobilizzazioni'" class="title" />
+							</h4>
+							<div class="row" dstable
+								data-years="1"
+								data-method="3"
+								data-name="AP_QSP_ImmMateriali"
+								data-child="AP_QSP_ImmMateriali"
+								data-parent="Immobilizzazioni"
+								data-total="hide"
+							></div>
+							<div class="row" dstable
+								data-years="1"
+								data-method="3"
+								data-name="AP_QSP_ImmImmateriali"
+								data-child="AP_QSP_ImmImmateriali"
+								data-parent="Immobilizzazioni"
+								data-total="hide"
+							></div>
+							<div class="row" dstable
+								data-years="1"
+								data-method="3"
+								data-name="AP_QSP_ImmFinanziarie"
+								data-child="AP_QSP_ImmFinanziarie"
+								data-parent="Immobilizzazioni"
+								data-total="hide"
+							></div>
+							<div class="row" dstable
+								data-years="1"
+								data-method="3"
+								data-name="AP_QSP_Liquidita"
+								data-child="AP_QSP_Liquidita"
+								data-parent="Immobilizzazioni"
+								data-total="hide"
+							></div>
+
+							<h4 class="subsection">
+								<snp_XML_label_economics data-pars="value:='Subtitle_AP_CreditiClienti'" class="title" />
+							</h4>
+							<div class="row" dstable
+								data-years="1"
+								data-method="3"
+								data-name="AP_QSP_CreditiClienti"
+								data-child="AP_QSP_CreditiClienti"
+								data-parent="Crediti"
+								data-total="hide"
+							></div>
+							<div class="row" dstable
+								data-years="1"
+								data-method="3"
+								data-name="AP_QSP_CreditoIva"
+								data-child="AP_QSP_CreditoIva"
+								data-parent="Crediti"
+								data-total="hide"
+							></div>
+							<div class="row" dstable
+								data-years="1"
+								data-method="3"
+								data-name="AP_QSP_CreditiAltri"
+								data-child="AP_QSP_CreditiAltri"
+								data-parent="Crediti"
+								data-total="hide"
+							></div>
+							<div class="row" dstable
+								data-years="1"
+								data-method="3"
+								data-name="AP_QSP_Magazzino"
+								data-child="AP_QSP_Magazzino"
+								data-parent="Crediti"
+								data-total="hide"
+							></div>
+							<div class="row margin-t-15" dstable
+								data-years="1"
+								data-method="33"
+								data-name="AP_QSP_TotaleAttivita"
+								data-child="AP_QSP_TotaleAttivita"
+								data-parent="Attivita"
+								data-total="hide"
+							></div>
+						</div>
+
+					</div>
+					<div class="col-6 singleCol">
+
+						<widget_drawerTitle data-pars="title:='Subtitle_AP_Passivita' || mode:= 'edit' || ref:='Quadratura_2'" />
+						<div id="Quadratura_2" class="collapse clearfix margin-v-10 box_Lev_2">
+
+							<h4 class="subsection">
+								<snp_XML_label_economics data-pars="value:='Subtitle_AP_Breve'" class="title" />
+							</h4>
+							<div class="row" dstable
+								data-years="1"
+								data-method="3"
+								data-name="AP_QSP_DebitiBreveBanche"
+								data-child="AP_QSP_DebitiBreveBanche"
+								data-parent="PassivitaBreve"
+								data-total="hide"
+							></div>
+							<div class="row" dstable
+								data-years="1"
+								data-method="3"
+								data-name="AP_QSP_DebitiBreveFornitori"
+								data-child="AP_QSP_DebitiBreveFornitori"
+								data-parent="PassivitaBreve"
+								data-total="hide"
+							></div>
+							<div class="row" dstable
+								data-years="1"
+								data-method="3"
+								data-name="AP_QSP_DebitiBreve"
+								data-child="AP_QSP_DebitiBreve"
+								data-parent="PassivitaBreve"
+								data-total="hide"
+							></div>
+							<div class="row" dstable
+								data-years="1"
+								data-method="3"
+								data-name="AP_QSP_DebitiBreveAltri"
+								data-child="AP_QSP_DebitiBreveAltri"
+								data-parent="PassivitaBreve"
+								data-total="hide"
+							></div>
+							<div class="row" dstable
+								data-years="1"
+								data-method="3"
+								data-name="AP_QSP_TfrBreve"
+								data-child="AP_QSP_TfrBreve"
+								data-parent="PassivitaBreve"
+								data-total="hide"
+							></div>
+							<div class="row" dstable
+								data-years="1"
+								data-method="33"
+								data-name="AP_QSP_TotaleDebitiBreve"
+								data-child="AP_QSP_TotaleDebitiBreve"
+								data-parent="PassivitaBreve"
+								data-total="hide"
+							></div>
+
+							<h4 class="subsection">
+								<snp_XML_label_economics data-pars="value:='Subtitle_AP_MedioLungo'" class="title" />
+							</h4>
+							<div class="row" dstable
+								data-years="1"
+								data-method="3"
+								data-name="AP_QSP_DebitiMedioBanche"
+								data-child="AP_QSP_DebitiMedioBanche"
+								data-parent="PassivitaMedio"
+								data-total="hide"
+							></div>
+							<div class="row" dstable
+								data-years="1"
+								data-method="3"
+								data-name="AP_QSP_DebitiMedioAltri"
+								data-child="AP_QSP_DebitiMedioAltri"
+								data-parent="PassivitaMedio"
+								data-total="hide"
+							></div>
+							<div class="row" dstable
+								data-years="1"
+								data-method="33"
+								data-name="AP_QSP_TotaleDebitiMedio"
+								data-child="AP_QSP_TotaleDebitiMedio"
+								data-parent="PassivitaMedio"
+								data-total="hide"
+							></div>
+							<div class="row margin-t-15" dstable
+								data-years="1"
+								data-method="33"
+								data-name="AP_QSP_TotalePassivita"
+								data-child="AP_QSP_TotalePassivita"
+								data-parent="Passivita"
+								data-total="hide"
+							></div>
+						</div>
+
+					</div>
+					<div class="col-6 singleCol">
+
+						<widget_drawerTitle data-pars="title:='Subtitle_AP_PatrimonioNetto' || mode:= 'edit' || ref:='Quadratura_3'" />
+						<div id="Quadratura_3" class="collapse clearfix margin-v-10 box_Lev_2">
+
+							<div class="row" dstable
+								data-years="1"
+								data-method="3"
+								data-name="AP_QSP_CapitaleSociale"
+								data-child="AP_QSP_CapitaleSociale"
+								data-parent="Patrimonio"
+								data-total="hide"
+							></div>
+							<div class="row" dstable
+								data-years="1"
+								data-method="3"
+								data-name="AP_QSP_Riserve"
+								data-child="AP_QSP_Riserve"
+								data-parent="Patrimonio"
+								data-total="hide"
+							></div>
+							<div class="row" dstable
+								data-years="1"
+								data-method="3"
+								data-name="AP_QSP_UtiliPerdite"
+								data-child="AP_QSP_UtiliPerdite"
+								data-parent="Patrimonio"
+								data-total="hide"
+							></div>
+							<div class="row" dstable
+								data-years="1"
+								data-method="3"
+								data-name="AP_QSP_UtiliPerditePrecedenti"
+								data-child="AP_QSP_UtiliPerditePrecedenti"
+								data-parent="Patrimonio"
+								data-total="hide"
+							></div>
+							<div class="row" dstable
+								data-years="1"
+								data-method="33"
+								data-name="AP_QSP_TotalePatrimonio"
+								data-child="AP_QSP_TotalePatrimonio"
+								data-parent="Patrimonio"
+								data-total="hide"
+							></div>
+						</div>
+
+					</div>
+					<div class="col-6 singleCol">
+
+						<widget_drawerTitle data-pars="title:='Subtitle_AP_Totali' || mode:= 'edit' || ref:='Quadratura_4'" aria-expanded="false" />
+						<div id="Quadratura_4" class="collapse clearfix margin-v-10 box_Lev_2">
+							<div class="row" dstable
+								data-years="1"
+								data-method="2"
+								data-name="AP_QSP_TotaleAttivitaBis"
+								data-type="formula"
+								data-formula="[AP_QSP_TotaleAttivita]"
+								data-total="hide"
+							></div>
+							<div class="row" dstable
+								data-years="1"
+								data-method="2"
+								data-name="AP_QSP_TotalePassivitaBis"
+								data-type="formula"
+								data-formula="[AP_QSP_TotalePassivita]"
+								data-total="hide"
+							></div>
+							<div class="row" dstable
+								data-years="1"
+								data-method="2"
+								data-name="AP_QSP_TotalePatrimonioBis"
+								data-type="formula"
+								data-formula="[AP_QSP_TotalePatrimonio]"
+								data-total="hide"
+							></div>
+							<div class="row" dstable
+								data-years="1"
+								data-method="33"
+								data-name="AP_QSP_TotaleGenerale"
+								data-child="AP_QSP_TotaleGenerale"
+								data-parent="Quadratura"
+								data-total="hide"
+							></div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+		<!-- *** SEZIONE CALCOLATI *** -->
+		<div class="card card-info formula-context">
+			<div class="card-title" ref="Calcolati">
+				<a href="#btn" data-toggle="collapse" data-target="#Calcolati" aria-expanded="false">
+					<i class="fa fa-times-circle ico-error"></i>
+					<i class="fa fa-exclamation-circle ico-warning"></i>
+					<span class="text">
+						<i class="fa fa-cogs margin-r-5"></i>
+						<snp_XML_label_economics data-pars="value:='Subtitle_AP_RIsultatiCompilati'" class="title" />
+					</span>
+					<span class="ico">
+						<i class="fa fa-chevron-right ico-close"></i>
+						<i class="fa fa-chevron-down ico-open"></i>
+					</span>
+				</a>
+			</div>
+			<div id="Calcolati" class="collapse box_Lev_1">
+				<div class="card-body">
+
+
+					<widget_drawerTitle data-pars="title:='Subtitle_AP_Attivita' || mode:= 'edit' || ref:='Prospetto_1'" />
+					<div id="Prospetto_1" class="collapse clearfix margin-v-10 box_Lev_2">
+						<div dsheader></div>
+
+						<h4 class="subsection">
+							<snp_XML_label_economics data-pars="value:='Subtitle_AP_Immobilizzazioni'" class="title" />
+						</h4>
+						<div class="row" dstable
+							data-method="2"
+							data-name="AP_PC_ImmMateriali"
+						></div>
+						<div class="row" dstable
+							data-method="2"
+							data-name="AP_PC_ImmImmateriali"
+						></div>
+						<div class="row" dstable
+							data-method="2"
+							data-name="AP_PC_ImmFinanziarie"
+						></div>
+						<div class="row" dstable
+							data-method="2"
+							data-name="AP_PC_Liquidita"
+						></div>
+
+						<h4 class="subsection">
+							<snp_XML_label_economics data-pars="value:='Subtitle_AP_CreditiClienti'" class="title" />
+						</h4>
+						<div class="row" dstable
+							data-method="2"
+							data-name="AP_PC_CreditiClienti"
+						></div>
+						<div class="row" dstable
+							data-method="2"
+							data-name="AP_PC_CreditoIva"
+						></div>
+						<div class="row" dstable
+							data-method="2"
+							data-name="AP_PC_CreditiAltri"
+						></div>
+						<div class="row" dstable
+							data-method="2"
+							data-name="AP_PC_Magazzino"
+						></div>
+						<div class="row margin-t-15" dstable
+							data-method="7"
+							data-name="AP_PC_TotaleAttivita"
+						></div>
+					</div>
+
+
+					<widget_drawerTitle data-pars="title:='Subtitle_AP_Passivita' || mode:= 'edit' || ref:='Prospetto_2'" />
+					<div id="Prospetto_2" class="collapse clearfix margin-v-10 box_Lev_2">
+						<div dsheader></div>
+
+						<h4 class="subsection">
+							<snp_XML_label_economics data-pars="value:='Subtitle_AP_Breve'" class="title" />
+						</h4>
+						<div class="row" dstable
+							data-method="2"
+							data-name="AP_PC_DebitiBreveBanche"
+						></div>
+						<div class="row" dstable
+							data-method="2"
+							data-name="AP_PC_DebitiBreveFornitori"
+						></div>
+						<div class="row" dstable
+							data-method="2"
+							data-name="AP_PC_AltriDebitiBreve"
+						></div>
+						<div class="row" dstable
+							data-method="2"
+							data-name="AP_PC_TfrBreve"
+						></div>
+						<div class="row" dstable
+							data-method="7"
+							data-name="AP_PC_TotaleDebitiBreve"
+						></div>
+
+						<h4 class="subsection">
+							<snp_XML_label_economics data-pars="value:='Subtitle_AP_MedioLungo'" class="title" />
+						</h4>
+						<div class="row" dstable
+							data-method="2"
+							data-name="AP_PC_DebitiMedioBanche"
+						></div>
+						<div class="row" dstable
+							data-method="2"
+							data-name="AP_PC_AltriDebitiMedio"
+						></div>
+						<div class="row" dstable
+							data-method="7"
+							data-name="AP_PC_TotaleDebitiMedio"
+						></div>
+						<div class="row margin-t-30" dstable
+							data-method="7"
+							data-name="AP_PC_TotalePassivita"
+						></div>
+					</div>
+
+
+					<widget_drawerTitle data-pars="title:='Subtitle_AP_PatrimonioNetto' || mode:= 'edit' || ref:='Prospetto_3'" />
+					<div id="Prospetto_3" class="collapse clearfix margin-v-10 box_Lev_2">
+						<div dsheader></div>
+
+						<div class="row" dstable
+							data-method="2"
+							data-name="AP_PC_CapitaleSociale"
+						></div>
+						<div class="row" dstable
+							data-method="2"
+							data-name="AP_PC_Riserve"
+						></div>
+						<div class="row" dstable
+							data-method="2"
+							data-name="AP_PC_UtiliPerdite"
+						></div>
+						<div class="row" dstable
+							data-method="2"
+							data-name="AP_PC_UtiliPerditePrecedenti"
+						></div>
+						<div class="row" dstable
+							data-method="7"
+							data-name="AP_PC_TotalePatrimonio"
+						></div>
+					</div>
+
+
+					<widget_drawerTitle data-pars="title:='Subtitle_AP_Totali' || mode:= 'edit' || ref:='Prospetto_4'" aria-expanded="true" />
+					<div id="Prospetto_4" class="collapse clearfix margin-v-10 box_Lev_2 show">
+						<div dsheader></div>
+
+						<div class="row" dstable
+							data-method="7"
+							data-name="AP_PC_TotaleAttivitaBis"
+							data-type="formula"
+							data-formula="[AP_PC_TotaleAttivita]"
+						></div>
+						<div class="row margin-t-30" dstable
+							data-method="2"
+							data-name="AP_PC_TotalePassivitaBis"
+							data-type="formula"
+							data-formula="[AP_PC_TotalePassivita]"
+						></div>
+						<div class="row" dstable
+							data-method="2"
+							data-name="AP_PC_TotalePatrimonioBis"
+							data-type="formula"
+							data-formula="[AP_PC_TotalePatrimonio]"
+						></div>
+						<div class="row" dstable
+							data-method="7"
+							data-name="AP_PC_TotaleGenerale"
+						></div>
+
+						<div class="row margin-t-15" dstable
+							data-method="71"
+							data-name="AP_PC_Sbilancio"
+						></div>
+						<div class="row margin-t-15" dstable
+							data-method="33"
+							data-years="1"
+							data-name="AP_PC_LiquiditaCompensare"
+							data-child="AP_PC_LiquiditaCompensare"
+							data-parent="Esito"
+							data-total="hide"
+						></div>
+					</div>
+				</div>
+			</div>
+
+			<!-- *** CONSOLE *** -->
+			<widget_btnConsole />
+
+		</div>
+	</div>
+</div>

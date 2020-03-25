@@ -1,0 +1,64 @@
+﻿// -----------------------------------------------------------------------
+// NAME: costanti.less
+//
+// Definizione delle costanti per i fogli di stile dell'applicazione
+// Il file viene incluso in ogni file .LESS
+// -----------------------------------------------------------------------
+
+// ** IMPOSTAZIONI PRINCIPALI **
+
+// Breakpoints Bootstrap [ Es.: @media (min-width: @bp-sm){...} ]
+	@bp-sm:  576px;													// Breakpoint: min <-> sm
+	@bp-md:  768px;													// Breakpoint:  sm <-> md
+	@bp-lg:  992px;													// Breakpoint:  md <-> lg
+	@bp-xl: 1200px;													// Breakpoint:  lg <-> xl
+
+// Dichiarazione variabili e colori di sistema
+	@colorOK        : #009900;										// Testo OK
+	@bgColorOK      : lighten(@colorOK, 55);						// Sfondo OK
+	@colorKO        : #ff0000;										// Testo KO
+	@bgColorKO      : lighten(@colorKO, 41);						// Sfondo OK
+	@colorWarning   : #ffc107;										// Testo Warning (come Bootstrap)
+	@colorInfo      : #17a2b8;										// Testo Info (come Bootstrap)
+
+// Dichiarazione colori applicazione:
+	@main_orange    : #ffa500;										// Main orange color
+	@main_blue      : #395063;										// Main blue color
+	@main_forecolor : lightgray;									// Main forecolor (text color / label color)
+	@main_error	    : red;											// Main color for error 
+	@main_disabled  : #ccc;
+	@main_dark      : #333;
+
+// Principali tonalità di grigio
+	@grayBg_tone1   : #cccccc;
+	@grayBg_tone2   : #d8d8d8;
+	@grayBg_tone3   : #dddddd;
+	@grayBg_tone4   : #e4e4e4;
+	@grayBg_tone5   : #eeeeee;
+	@grayBg_tone6   : #f0f0f0;
+	@grayBg_tone7   : #f8f8f8;
+	@grayBg_tone8   : #ffffff;
+
+
+// ====================================
+//  Dichiarazione palette applicazione
+// ------------------------------------								// Colori principali:
+	@mainColor1    : @main_blue;									// 1°: background di navbar, footer, hover pulsanti default, ecc.
+	@mainColor2    : @main_orange;									// 2°: pulsanti di azione, bordi elementi strutturali, ecc.
+	@mainColor3    : white;											// 3°: link, hover pulsanti, ecc.
+	@mainColor4    : #999;											// 4°: link, link hover, inattivi, colore
+	@mainColor5    : @main_dark;									// 5°: secondo pulsante di azione
+
+//	@mainColor1    : #4b7;											// 1°: background di navbar, footer, hover pulsanti default, ecc.
+//	@mainColor2    : #609;											// 2°: pulsanti di azione, bordi elementi strutturali, ecc.
+//	@mainColor3    : #333;											// 3°: link, hover pulsanti, ecc.
+//	@mainColor4    : #f93;											// 4°: link, link hover, inattivi, colore
+//	@mainColor5    : #996;											// 5°: secondo pulsante di azione
+
+//	@mainColor1    : lime;											// Colore principale (background di navbar, footer, hover pulsanti default, ecc.)
+//	@mainColor2    : fuchsia;										// Secondo colore principale (pulsanti di azione, bordi elementi strutturali, ecc.)
+//	@mainColor3    : #0cf;											// Terzo colore principale (link, hover pulsanti, ecc.)
+//	@mainColor4    : #666;											// Quarto colore principale (link inattivi, colore)
+//	@mainColor5    : #093;											// Quarto colore principale (link inattivi, colore)
+
+	@stdBorder     : @grayBg_tone1;									// Colore del bordo standard

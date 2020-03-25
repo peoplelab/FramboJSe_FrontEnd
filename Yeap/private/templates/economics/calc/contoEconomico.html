@@ -1,0 +1,370 @@
+﻿<reserved_header_section 
+	templateID="705"
+	templateFile="contoEconomico.html"
+	templateDescription="HTML content template (Economics)"
+></reserved_header_section>
+
+<!-- *** HEADER *** -->
+<widget_pageHeader />
+
+
+<div class="container-fluid pageBody">
+
+	<!-- *** Bollini qualità *** -->
+	<snp_qualityBadge />
+
+	<!-- *** CONTO ECONOMICO *** -->
+	<div class="card card-info prospetti-context">
+		<div class="card-title" ref="Calcolati">
+			<a href="#btn" data-toggle="collapse" data-target="#Calcolati" aria-expanded="true">
+				<i class="fa fa-times-circle ico-error"></i>
+				<i class="fa fa-exclamation-circle ico-warning"></i>
+				<span class="text">
+					<i class="fa fa-list-alt margin-r-5"></i>
+					Conto economico
+				</span>
+				<span class="ico">
+					<i class="fa fa-chevron-right ico-close"></i>
+					<i class="fa fa-chevron-down ico-open"></i>
+				</span>
+			</a>
+		</div>
+		<div id="Calcolati" class="collapse box_Lev_1 show">
+			<div class="card-body">
+
+				<widget_drawerTitle data-pars="title:='Ricavi_CE_title' || mode:= 'prosp' || ref:='Formule_1'" />
+				<div id="Formule_1" class="collapse clearfix margin-v-10 box_Lev_2">
+					<div dsheader></div>
+					<div class="row" dstable
+						data-method="4"
+						data-name="Ricavi_CE"
+						data-rows="5"
+						data-total="rows"
+					></div>
+					<div class="row" dstable
+						data-method="6"
+						data-name="Ricavi_CE_TotaleNetto"
+						data-child="TotaleNetto"
+						data-parent="Ricavi_CE"
+						data-total="rows"
+					></div>
+				</div>
+
+				<!--acquisti prodotti finiti-->
+				<widget_drawerTitle data-pars="title:='CostiEsterni_CE_title' || mode:= 'prosp' || ref:='Formule_2'" />
+				<div id="Formule_2" class="collapse clearfix margin-v-10 box_Lev_2">
+					<div dsheader></div>
+
+					<h4 class="subsection">
+						<snp_XML_label_economics data-pars="value:='ProdottiFiniti'" class="title" />
+					</h4>
+					<div class="row" dstable
+						data-method="4"
+						data-name="CostiEsterniPF_CE"
+						data-rows="5"
+						data-total="rows"
+					></div>
+					<div class="row" dstable
+						data-method="6"
+						data-name="CostiEsterniPF_CE_TotaleNetto"
+						data-child="PF_TotaleNetto"
+						data-parent="CostiEsterniPF_CE"
+						data-total="rows"
+					></div>
+
+					<h4 class="subsection">
+						<snp_XML_label_economics data-pars="value:='MateriePrime'" class="title" />
+					</h4>
+					<div class="row" dstable
+						data-method="4"
+						data-name="CostiEsterniMP_CE"
+						data-rows="10"
+						data-total="rows"
+					></div>
+					<div class="row" dstable
+						data-method="6"
+						data-name="CostiEsterniMP_CE_TotaleNetto"
+						data-child="MP_TotaleNetto"
+						data-parent="CostiEsterniMP_CE"
+						data-total="rows"
+					></div>
+
+					<h4 class="subsection">
+						<snp_XML_label_economics data-pars="value:='Totali_CE_title'" class="title" />
+					</h4>
+					<div class="row" dstable
+						data-method="6"
+						data-name="CostiEsterni_CE_TotaleNetto"
+						data-child="TotaleNetto"
+						data-parent="CostiEsterni_CE"
+						data-total="rows"
+					></div>
+
+				</div>
+
+				<widget_drawerTitle data-pars="title:='Rimanenze_CE_title' || mode:= 'prosp' || ref:='Formule_2b'" />
+				<div id="Formule_2b" class="collapse clearfix margin-v-10 box_Lev_2">
+					<div dsheader></div>
+					<div class="row" dstable
+						data-method="6"
+						data-name="Rimanenze_CE_VariazioniPF"
+						data-child="TotaleNetto_ProdottiFiniti"
+						data-parent="Rimanenze_CE"
+						data-total="rows"
+					></div>
+					<div class="row" dstable
+						data-method="6"
+						data-name="Rimanenze_CE_VariazioniMP"
+						data-child="TotaleNetto_MateriePrime"
+						data-parent="Rimanenze_CE"
+						data-total="rows"
+					></div>
+					<div class="row" dstable
+						data-method="6"
+						data-name="Rimanenze_CE_TotaleNetto"
+						data-child="TotaleNetto"
+						data-parent="Rimanenze_CE"
+						data-total="rows"
+					></div>
+				</div>
+
+				<widget_drawerTitle data-pars="title:='CostiVariabili_CE_title' || mode:= 'prosp' || ref:='Formule_3'" />
+				<div id="Formule_3" class="collapse clearfix margin-v-10 box_Lev_2">
+					<div dsheader></div>
+					<div class="row" dstable
+						data-method="5"
+						data-name="CostiVariabili_CE_CostiVarComm"
+						data-child="CostiVarComm"
+						data-parent="CostiVariabili_CE"
+						data-total="rows"
+					></div>
+					<div class="row" dstable
+						data-method="5"
+						data-name="CostiVariabili_CE_CostiVarProd"
+						data-child="CostiVarProd"
+						data-parent="CostiVariabili_CE"
+						data-total="rows"
+					></div>
+					<div class="row" dstable
+						data-method="6"
+						data-name="CostiVariabili_CE_TotaleNetto"
+						data-child="TotaleNetto"
+						data-parent="CostiVariabili_CE"
+						data-total="rows"
+					></div>
+
+				</div>
+
+				<widget_drawerTitle data-pars="title:='MargineContribuzione_CE_title' || mode:= 'prosp' || ref:='Formule_4'" />
+				<div id="Formule_4" class="collapse clearfix margin-v-10 box_Lev_2">
+					<div dsheader></div>
+					<div class="row" dstable
+						data-method="5"
+						data-name="MargineContribuzione_CE_ValoreEuro"
+						data-child="ValoreEuro"
+						data-parent="MargineContribuzione_CE"
+						data-total="rows"
+					></div>
+					<div class="row" dstable
+						data-method="5"
+						data-name="MargineContribuzione_CE_ValorePerc"
+						data-child="ValorePerc"
+						data-parent="MargineContribuzione_CE"
+						data-total="division"
+						data-calc="[MargineContribuzione_CE_ValoreEuro_totRow] / [Ricavi_CE_TotaleNetto_totRow] * 100"
+					></div>
+				</div>
+
+				<widget_drawerTitle data-pars="title:='CostiInterni_CE_title' || mode:= 'prosp' || ref:='Formule_5'" />
+				<div id="Formule_5" class="collapse clearfix margin-v-10 box_Lev_2">
+					<div dsheader></div>
+					<div class="row" dstable
+						data-method="5"
+						data-name="CostiInterni_CE_CostiMrkt"
+						data-child="CostiMrkt"
+						data-parent="CostiInterni_CE"
+						data-total="rows"
+					></div>
+					<div class="row" dstable
+						data-method="5"
+						data-name="CostiInterni_CE_CostiStruttura"
+						data-child="CostiStruttura"
+						data-parent="CostiInterni_CE"
+						data-total="rows"
+					></div>
+					<div class="row" dstable
+						data-method="5"
+						data-name="CostiInterni_CE_CostiInfrastruttura"
+						data-child="CostiInfrastruttura"
+						data-parent="CostiInterni_CE"
+						data-total="rows"
+					></div>
+					<div class="row" dstable
+						data-method="5"
+						data-name="CostiInterni_CE_CostiHR"
+						data-child="CostiHR"
+						data-parent="CostiInterni_CE"
+						data-total="rows"
+					></div>
+					<div class="row" dstable
+						data-method="5"
+						data-name="CostiInterni_CE_CostiAmministrativi"
+						data-child="CostiAmministrativi"
+						data-parent="CostiInterni_CE"
+						data-total="rows"
+						></div>
+					<div class="row" dstable
+						data-method="5"
+						data-name="CostiInterni_CE_CostiAltri"
+						data-child="CostiAltri"
+						data-parent="CostiInterni_CE"
+						data-total="rows"
+						></div>
+					<div class="row" dstable
+						data-method="6"
+						data-name="CostiInterni_CE_TotaleNetto"
+						data-child="TotaleNetto"
+						data-parent="CostiInterni_CE"
+						data-total="rows"
+					></div>
+
+				</div>
+
+				<widget_drawerTitle data-pars="title:='Ebitda_CE_title' || mode:= 'prosp' || ref:='Formule_6'" />
+				<div id="Formule_6" class="collapse clearfix margin-v-10 box_Lev_2">
+					<div dsheader></div>
+					<div class="row" dstable
+						data-method="5"
+						data-name="Ebitda_CE_ValoreEuro"
+						data-child="ValoreEuro"
+						data-parent="Ebitda_CE"
+						data-total="rows"
+					></div>
+					<div class="row" dstable
+						data-method="5"
+						data-name="Ebitda_CE_ValorePerc"
+						data-child="ValorePerc"
+						data-parent="Ebitda_CE"
+						data-total="division"
+						data-calc="[Ebitda_CE_ValoreEuro_totRow] / [Ricavi_CE_TotaleNetto_totRow] * 100"
+					></div>
+				</div>
+
+				<widget_drawerTitle data-pars="title:='Ammortamenti_CE_1' || mode:= 'prosp' || ref:='Formule_6b'" />
+				<div id="Formule_6b" class="collapse clearfix margin-v-10 box_Lev_2">
+					<div dsheader></div>
+					<div class="row" dstable
+						data-method="2"
+						data-name="Ammortamenti_CE"
+						data-total="rows"
+					></div>
+					<div class="row" dstable
+						data-method="2"
+						data-name="Svalutazioni_CE"
+						data-total="rows"
+					></div>
+				</div>
+
+				<widget_drawerTitle data-pars="title:='Ebit_CE_title' || mode:= 'prosp' || ref:='Formule_7'" />
+				<div id="Formule_7" class="collapse clearfix margin-v-10 box_Lev_2">
+					<div dsheader></div>
+					<div class="row" dstable
+						data-method="5"
+						data-name="Ebit_CE_ValoreEuro"
+						data-child="ValoreEuro"
+						data-parent="Ebit_CE"
+						data-total="rows"
+					></div>
+					<div class="row" dstable
+						data-method="5"
+						data-name="Ebit_CE_ValorePerc"
+						data-child="ValorePerc"
+						data-parent="Ebit_CE"
+						data-total="division"
+						data-calc="[Ebit_CE_ValoreEuro_totRow] / [Ricavi_CE_TotaleNetto_totRow] * 100"
+					></div>
+				</div>
+
+				<widget_drawerTitle data-pars="title:='OneriGestioneFinanziaria_CE_1' || mode:= 'prosp' || ref:='Formule_7b'" />
+				<div id="Formule_7b" class="collapse clearfix margin-v-10 box_Lev_2">
+					<div dsheader></div>
+					<div class="row" dstable
+						data-method="2"
+						data-name="OneriGestioneFinanziaria_CE"
+						data-total="rows"
+					></div>
+					<div class="row" dstable
+						data-method="2"
+						data-name="OneriGestioneStraordinaria_CE"
+						data-total="rows"
+					></div>
+				</div>
+
+				<widget_drawerTitle data-pars="title:='Ebt_CE_title' || mode:= 'prosp' || ref:='Formule_8'" />
+				<div id="Formule_8" class="collapse clearfix margin-v-10 box_Lev_2">
+					<div dsheader></div>
+					<div class="row" dstable
+						data-method="5"
+						data-name="Ebt_CE_ValoreEuro"
+						data-child="ValoreEuro"
+						data-parent="Ebt_CE"
+						data-total="rows"
+					></div>
+					<div class="row" dstable
+						data-method="5"
+						data-name="Ebt_CE_ValorePerc"
+						data-child="ValorePerc"
+						data-parent="Ebt_CE"
+						data-total="division"
+						data-calc="[Ebt_CE_ValoreEuro_totRow] / [Ricavi_CE_TotaleNetto_totRow] * 100"
+					></div>
+				</div>
+
+				<widget_drawerTitle data-pars="title:='Tasse_CE_1' || mode:= 'prosp' || ref:='Formule_8b'" />
+				<div id="Formule_8b" class="collapse clearfix margin-v-10 box_Lev_2">
+					<div dsheader></div>
+					<div class="row" dstable
+						data-method="2"
+						data-name="Tasse_CE"
+						data-total="rows"
+					></div>
+				</div>
+
+				<widget_drawerTitle data-pars="title:='Eat_CE_title' || mode:= 'prosp' || ref:='Formule_9'" />
+				<div id="Formule_9" class="collapse clearfix margin-v-10 box_Lev_2">
+					<div dsheader></div>
+					<div class="row" dstable
+						data-method="5"
+						data-name="Eat_CE_ValoreEuro"
+						data-child="ValoreEuro"
+						data-parent="Eat_CE"
+						data-total="rows"
+					></div>
+					<div class="row" dstable
+						data-method="5"
+						data-name="Eat_CE_ValorePerc"
+						data-child="ValorePerc"
+						data-parent="Eat_CE"
+						data-total="division"
+						data-calc="[Eat_CE_ValoreEuro_totRow] / [Ricavi_CE_TotaleNetto_totRow] * 100"
+					></div>
+				</div>
+
+				<widget_drawerTitle data-pars="title:='Personale_1' || mode:= 'prosp' || ref:='Formule_9b'" />
+				<div id="Formule_9b" class="collapse clearfix margin-v-10 box_Lev_2">
+					<div dsheader></div>
+					<div class="row" dstable
+						data-method="2"
+						data-name="Personale"
+					></div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+	<!-- *** CONSOLE *** -->
+	<widget_btnConsole />
+
+</div>

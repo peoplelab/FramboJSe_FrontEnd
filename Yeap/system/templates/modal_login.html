@@ -1,0 +1,50 @@
+﻿<reserved_header_section templateID="1004"
+                         templateFile="modal_login.html"
+                         templateDescription="template for 'login' modal window">
+</reserved_header_section>
+
+<div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <button type="button" id="loginWindowCloseButton" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title" id="myModalLabel">Accedi a People Manager</h4>
+            </div>
+            <!-- /.modal-header -->
+
+            <div class="modal-body">
+                <form role="form">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="txtUsername" placeholder="Login" style="top: 1px;" />
+                            <label for="txtUsername" class="input-group-addon glyphicon glyphicon-user"></label>
+                        </div>
+                    </div>
+                    <!-- /.form-group -->
+
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input type="password" class="form-control" id="txtPassword" value=" " placeholder="Password" style="top: 1px;" />
+                            <label for="txtPassword" class="input-group-addon glyphicon glyphicon-lock"></label>
+                        </div>
+                        <!-- /.input-group -->
+                    </div>
+                    <!-- /.form-group -->
+                </form>
+                <div>
+                    <h5 id="loginErrorLabel" class="text-danger">&nbsp;</h5>
+                </div>
+            </div>
+            <!-- /.modal-body -->
+
+            <div class="modal-footer">
+                <button class="form-control btn btn-primary" id="confirmLoginButton">Ok</button>
+            </div>
+            <!-- /.modal-footer -->
+
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>

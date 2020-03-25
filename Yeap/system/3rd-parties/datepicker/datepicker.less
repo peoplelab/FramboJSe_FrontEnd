@@ -1,0 +1,404 @@
+﻿// --
+// SETUP: dichiarazione colori e impostazioni grafiche
+// --
+
+//-- Definizione colori standard
+@none						: transparent;
+@auto						: auto;
+@defaultHover_sfondo		: #d8d8ff;
+@blue						: #395063;												// Main blue color
+@orange						: #ffa500;
+@white						: #fff;
+@grayLight					: #999;
+@grayLighter				: #d8d8ff;
+//-- Datepicker
+@datepicker_colore			: #666;
+@datepicker_sfondo			: #fff; //rgba(255,255,155,1);
+@datepickerTitolo_colore	: darken(@orange,5%);
+@datepickerTitolo_sfondo	: @none;
+@datepickerNav_colore		: @orange;
+@datepickerNav_sfondo		: @none;
+@datepickerNavHover_colore	: @auto;
+@datepickerNavHover_sfondo	: rgba(255,255,155,1);
+@nomeGiorno_colore			: #369;
+@nomeGiorno_sfondo			: @none;
+@nomeMese_colore			: @nomeGiorno_colore;
+@nomeMese_sfondo			: @nomeGiorno_sfondo;
+@evidenziato_colore			: @auto;
+@evidenziato_sfondo			: @defaultHover_sfondo;
+//-- Giorni
+@giorno_colore				: @datepicker_colore;
+@giorno_sfondo				: @datepicker_sfondo;
+@giornoEsterno_colore		: #bbb;
+@giornoEsterno_sfondo		: @none;
+@giornoHover_colore			: #fff;
+@giornoHover_sfondo			: #d8d8ff;
+@giornoCorrente_colore		: #fff;
+@giornoCorrente_sfondo		: #5f84a3;
+@giornoSelected_colore		: #fff;
+@giornoSelected_sfondo		: @orange;
+
+@raggioBordo_default		: 18px;
+@datepicker_raggioBordo		: 15px;
+
+
+@baseLineHeight      : 20px;
+@btnPrimaryBackground: #f00;
+@infoBackground      : #0f0;
+@todayBackground     : #fcc245;
+
+
+.border-radius(@borderRadius) {
+  -webkit-border-radius: @borderRadius;
+  -moz-border-radius: @borderRadius;
+  border-radius: @borderRadius;
+}
+.buttonBackground(@var1, @var2){};		// Dummy
+
+
+
+
+// --
+// ** Stili DatePicker **
+// --
+.datepicker {
+
+	font-family: Helvetica, Arial;
+	font-size : 14px;
+	color     : @datepicker_colore;
+	background: fade(@datepicker_sfondo, 100%);
+	&:not([type=text]) {
+		box-shadow: 0 6px 12px rgba(0,0,0,.175);
+	}
+
+	padding: 10px;
+	border-radius: @datepicker_raggioBordo;
+	&-inline {
+		width: 220px;
+	}
+
+	direction: ltr;
+	&-rtl {
+		direction: rtl;
+		&.dropdown-menu { left: auto; }
+		table tr td span {
+			float: right;
+		}
+	}
+	&-dropdown {
+		top: 0;
+		left: 0;
+
+		// Corner styles
+		@cornerShift : 30px;
+		@cornerWidth : 10px;
+		@cornerHeight: 12px; 
+
+		&:before {
+			content: '';
+			display: inline-block;
+			border-left:   @cornerWidth solid transparent;
+			border-right:  @cornerWidth solid transparent;
+			border-bottom: @cornerWidth solid @grayLight;
+			border-top:    0;
+			border-bottom-color: rgba(0,0,0,.2);
+			position: absolute;
+		}
+		&:after {
+			content: '';
+			display: inline-block;
+			border-left:   (@cornerWidth - 1) solid transparent;
+			border-right:  (@cornerWidth - 1) solid transparent;
+			border-bottom: (@cornerWidth - 1) solid @datepicker_sfondo;
+			border-top:    0;
+			position: absolute;
+		}
+
+		&.datepicker-orient-left {
+			&:before {left:  @cornerShift - 1;}
+			&::after {left:  @cornerShift;}
+		}
+		&.datepicker-orient-right {
+			&:before {right: @cornerShift - 1;}
+			&::after {right: @cornerShift;}
+		}
+		&.datepicker-orient-top {
+			&:before {
+				bottom: -@cornerHeight;
+				border-bottom: 0;
+				border-top: @cornerHeight solid @grayLight;
+			}
+			&:after {
+				bottom: -@cornerHeight + 1;
+				border-bottom: 0;
+				border-top: (@cornerHeight - 1) solid @datepicker_sfondo;
+			}
+		}
+		&.datepicker-orient-bottom {
+			&:before {
+				top: -@cornerHeight ;
+				border-top: 0;
+				border-bottom: @cornerHeight solid @grayLight;
+			}
+			&:after {
+				top: -@cornerHeight + 1;
+				border-top: 0;
+				border-bottom: (@cornerHeight - 1) solid @datepicker_sfondo;
+			}
+		}
+	}
+
+	table {
+		margin: 0;
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+	}
+	td, th {
+		text-align: center;
+		width: 30px;
+		height: 28px;
+		.border-radius(@raggioBordo_default);
+		border: none;
+	}
+	th {
+		//color: #f00;
+		&.dow {
+			color     : @nomeGiorno_colore;
+			background: @nomeGiorno_sfondo;
+		}
+		&.next, &.prev {
+			color     : @datepickerNav_colore;
+			background: @datepickerNav_sfondo;
+			&:hover {
+				background: @datepickerNavHover_sfondo
+			}
+		}
+	}
+
+	// Inline display inside a table presents some problems with
+	// border and background colors.
+	.table-striped & table tr {
+		td, th {
+			background-color: transparent;
+		}
+	}
+	table tr td {
+		&.day:hover,
+		&.day.focused {
+			color     : @giornoHover_colore;
+			background: @giornoHover_sfondo;
+			cursor: pointer;
+		}
+		&.old,
+		&.new {
+			color     : @giornoEsterno_colore;
+			background: @giornoEsterno_sfondo;
+			&:hover {
+				color     : mix(@giorno_colore, @giornoHover_colore, 50%);
+				background: mix(@giornoEsterno_sfondo, @giornoHover_sfondo, 75%);
+			}
+		}
+		&.disabled,
+		&.disabled:hover {
+			background: none;
+			color: @grayLight;
+			cursor: default;
+		}
+		&.highlighted {
+			background: @infoBackground;
+			.border-radius(0);
+		}
+		&.today {
+			color     : @giornoCorrente_colore;
+			background: @giornoCorrente_sfondo;
+			&:hover {
+				color     : mix(@giornoCorrente_colore, @giornoHover_colore, 50%);
+				background: mix(@giornoCorrente_sfondo, @giornoHover_sfondo, 50%);
+			}
+			/*--
+			&.today:hover,
+			&.today.disabled,
+			&.today.disabled:hover {
+				color: @giornoCorrente_colore;
+				background-color: @giornoCorrente_sfondo;
+				color: #000;
+			}
+			&.today:hover:hover { // Thank bootstrap 2.0 for this selector...
+				// TODO: Bump min BS to 2.1, use @textColor in buttonBackground above
+				color: #000;
+			}
+			&.today.active:hover {
+				color: #fff;
+			}
+			--*/
+		}
+
+
+
+		&.range,
+		&.range:hover,
+		&.range.disabled,
+		&.range.disabled:hover {
+			background: @grayLighter;
+			.border-radius(0);
+		}
+		&.range.today,
+		&.range.today:hover,
+		&.range.today.disabled,
+		&.range.today.disabled:hover {
+			@todayBackground: mix(@orange, @grayLighter, 50%);
+			.buttonBackground(@todayBackground, spin(@todayBackground, 20));		// Dummy
+			.border-radius(0);
+		}
+		&.selected,
+		&.selected:hover,
+		&.selected.disabled,
+		&.selected.disabled:hover {
+			.buttonBackground(lighten(@grayLight, 10), darken(@grayLight, 10));		// Dummy
+			color: #fff;
+		}
+		&.active {
+			color     : @giornoSelected_colore;
+			background: @giornoSelected_sfondo;
+			&:hover {
+				color     : mix(@giornoSelected_colore, @giornoHover_colore, 50%);
+				background: mix(@giornoSelected_sfondo, @giornoHover_sfondo, 50%);
+			}
+		/*
+		&.active:hover,
+		&.active.disabled,
+		&.active.disabled:hover {
+			.buttonBackground(@btnPrimaryBackground, spin(@btnPrimaryBackground, 20));		// Dummy
+			background-color: @orange;
+			color: #fff;
+			//text-shadow: 0 -1px 0 rgba(0,0,0,.25);
+		*/
+		}
+		span {
+			display: block;
+			width: 23%;
+			height: 54px;
+			line-height: 54px;
+			float: left;
+			margin: 1%;
+			cursor: pointer;
+			.border-radius(4px);
+			&:hover,
+			&.focused {
+				color     : @evidenziato_colore;
+				background: @evidenziato_sfondo;
+			}
+			&.disabled,
+			&.disabled:hover {
+				background: none;
+				color: @grayLight;
+				cursor: default;
+			}
+			&.active,
+			&.active:hover,
+			&.active.disabled,
+			&.active.disabled:hover {
+				.buttonBackground(@btnPrimaryBackground, spin(@btnPrimaryBackground, 20));		// Dummy
+				color: #fff;
+			}
+			&.old,
+			&.new {
+				color: @giornoEsterno_colore;
+				background: @giornoEsterno_sfondo;
+				&:hover {
+					color     : mix(@giorno_colore, @giornoHover_colore, 50%);
+					background: mix(@giornoEsterno_sfondo, @giornoHover_sfondo, 75%);
+				}
+			}
+			&.month, &.year:not(.new):not(.old) {
+				
+				font-weight: bold;
+				color     : @nomeMese_colore;
+				background: @nomeMese_sfondo;
+				&.focused {
+					color     : @evidenziato_colore;
+					background: @evidenziato_sfondo;
+				}
+				&:hover {
+					color     : mix(@nomeMese_colore, @giornoHover_colore, 75%);
+					background: mix(@nomeMese_sfondo, @giornoHover_sfondo, 50%);
+				}
+			}
+		}
+	}
+
+	.datepicker-switch {
+		width: 145px;
+		color     : @datepickerTitolo_colore;
+		background: @datepickerTitolo_sfondo;
+		.border-radius(@raggioBordo_default);
+		&:hover {
+			background: @datepickerNavHover_sfondo;
+		}
+	}
+
+	//.datepicker-switch,
+	.prev,
+	.next,
+	tfoot tr th {
+		cursor: pointer;
+		&:hover {
+			background: @grayLighter;
+		}
+	}
+
+	.prev, .next {
+		&.disabled {
+			visibility: hidden;
+		}
+	}
+
+	// Basic styling for calendar-week cells
+	.cw {
+		font-size: 10px;
+		width: 12px;
+		padding: 0 2px 0 5px;
+		vertical-align: middle;
+	}
+}
+.input-append,
+.input-prepend {
+	&.date .add-on {
+		cursor: pointer;
+
+		i {
+			margin-top: 3px;
+		}
+	}
+}
+
+.input-daterange {
+	input {
+		text-align:center;
+	}
+	input:first-child {
+		.border-radius(3px 0 0 3px);
+	}
+	input:last-child {
+		.border-radius(0 3px 3px 0);
+	}
+	.add-on {
+		display: inline-block;
+		width: auto;
+		min-width: 16px;
+		height: @baseLineHeight;
+		padding: 4px 5px;
+		font-weight: normal;
+		line-height: @baseLineHeight;
+		text-align: center;
+		vertical-align: middle;
+		background-color: @grayLighter;
+		border: 1px solid #ccc;
+		margin-left: -5px;
+		margin-right: -5px;
+	}
+}

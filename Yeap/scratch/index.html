@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html>
+<html lang="it">
+<head>
+
+    <title>Yeap! - Pagina scratch</title>
+
+    <script type="text/javascript" src="../System/3rd-parties/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="../System/3rd-parties/jquery-ui/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../System/3rd-parties/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="../System/3rd-parties/jquery-ui/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="../System/3rd-parties/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../System/3rd-parties/bootstrap/css/bootstrap-directional-buttons.min.css">
+    <link rel="stylesheet" type="text/css" href="../System/3rd-parties/fontawesome/css/fa-svg-with-js.css">
+
+    <script type="text/javascript" src="./script_costruttori.js"></script>
+    <script type="text/javascript" src="./script_gestori.js"></script>
+    <script type="text/javascript" src="./script_tools.js"></script>
+    <script type="text/javascript" src="./script.js"></script>
+    <!-- <script type="text/javascript" src="./script2.js"></script> -->
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+
+</head>
+<body>
+	<section id="test">
+	
+		<input id="nColonne" type="hidden" value="3">
+		
+		<div class="container-fluid">
+<a href="#a" onclick="test()">Exit</a>
+			<h1>Yeap! - Pagina scratch:</h1>
+
+			<h3>Quantità</h3>
+			<div class="row" dstable
+				data-name="quantita"
+				data-type="input"
+				data-rows="2"
+				data-cols=""
+				data-total="cols ttot rows"
+				data-onchange="gridProduct({target: 'ricavo'}); sumByCols(); sumByRows(); sumByGrid(); formula({target: 'provabis prova '});"
+				data-onclick="alert('Non puoi');"
+			></div>
+
+			<h3>Prezzo</h3>
+			<div class="row" dstable
+				data-name="prezzo"
+				data-type="input"
+				data-rows="3"
+				data-cols=""
+				data-total="cols rows"
+				data-onchange="gridProduct({target: 'ricavo'}); sumByCols(); sumByRows(); formula({target: 'prova provabis'});"
+				data-onclick="alert('Non puoi');"
+			></div>
+
+			<h3>Formula 2</h3>
+			<label>quantita_totale * prezzo_totale * _iva / extra</label>
+			<div class="row" dstable
+				data-name="provabis"
+				data-type="formula"
+				data-sources="quantita_totale prezzo_totale extra"
+				data-constants="{_iva: 0.2, _costofisso: 100}"
+				data-formula="quantita_totale * prezzo_totale * (1 + _iva) / extra"
+				data-rows="1"
+				data-cols=""
+				data-onchange=""
+				data-total=""
+			></div>
+
+			<h3>Extra</h3>
+			<div class="row" dstable
+				data-name="extra"
+				data-type="input"
+				data-rows="3"
+				data-cols=""
+				data-total="cols rows"
+				data-onchange="gridProduct({target: 'ricavo'}); sumByCols(); sumByRows(); formula({target: 'prova provabis'});"
+				data-onclick="alert('Non puoi');"
+			></div>
+
+			<h3>Ricavo</h3>
+			(quantita * prezzo * extra)
+			<div class="row" dstable
+				data-name="ricavo"
+				data-type="calculated"
+				data-sources="quantita prezzo extra"
+				data-rows="3"
+				data-cols=""
+				data-onchange="sumByCols({names: 'ricavo'}); sumByRows({names: 'ricavo'});"
+				data-total="cols rows"
+			></div>
+			
+			<h3>Formula</h3>
+			<label> data-formula="(quantita * prezzo + extra) * _iva + _costofisso" - {_iva: 0.2, _costofisso: 100}</label>
+			<div class="row" dstable
+				data-name="prova"
+				data-type="formula"
+				data-sources="quantita prezzo extra"
+				data-constants="{_iva: 0.2, _costofisso: 100}"
+				data-formula="(quantita * prezzo + extra) * _iva + _costofisso"
+				data-rows="3"
+				data-cols=""
+				data-onchange="sumByCols({names: 'prova'}); sumByRows({names: 'prova'});"
+				data-total="cols "
+			></div>
+			
+			<hr>
+		</div>
+	</section>
+</body>
+</html>
