@@ -15,7 +15,7 @@ define([
 	var _onInit     = true;														// Monitoring first time executing code...
 	var _pageID     = '';														// Page ID (for presenter)
 	var _templateID = '';														// ID of the page template
-	var _checkYeap_FrontEnd	= '';														// Flag per identificare se arrivo da Yeap_FrontEnd o da navigazione interna
+	var _checkYeap	= '';														// Flag per identificare se arrivo da Yeap o da navigazione interna
 	var _initPars   = '';														// Set dei parametri iniziali della Setup (usati per il re-setup dopo il save)
 
 	return {
@@ -25,7 +25,7 @@ define([
 
 			_initPars = initPars;
 
-			if (checkForYeap_FrontEndAccess()) {											// Verifica modalità di ingresso
+			if (checkForYeapAccess()) {											// Verifica modalità di ingresso
 				model.SaveSettings({											// Invia richiesta a SAAS
                     token    : __WACookie.Token,
                     tc       : 0,
@@ -46,13 +46,13 @@ define([
 	}
 
 
-	// FUNCTION: checkForYeap_FrontEndAccess
-	//  Verifica se l'accesso alla pagina ariva da Yeap_FrontEnd o internamente
+	// FUNCTION: checkForYeapAccess
+	//  Verifica se l'accesso alla pagina ariva da Yeap o internamente
 	// PARAMS:
 	//  params.pageID : page ID
 	// RETURN:
 	//  none
-	function checkForYeap_FrontEndAccess(params) {
+	function checkForYeapAccess(params) {
         var qs = Cookies.get('Redirect_cookie');                                 //va a leggere la querystring dal cookies 
         //if (location.search != '')
         if (qs != null) {
@@ -81,17 +81,17 @@ define([
 
 			//qsPars.isODC    = true;
 
-            Cookies.set('Yeap_FrontEndWAPars', JSON.stringify(qsPars), { expires: 1 });;
+            Cookies.set('YeapWAPars', JSON.stringify(qsPars), { expires: 1 });;
 			__WACookie = qsPars;												// Aggiorna il cookie globale di sistema
-			_checkYeap_FrontEnd = true;
+			_checkYeap = true;
 
 		} else {
 
-			_checkYeap_FrontEnd = false;
+			_checkYeap = false;
 
 		}
 
-		return _checkYeap_FrontEnd;
+		return _checkYeap;
 	}
 
 

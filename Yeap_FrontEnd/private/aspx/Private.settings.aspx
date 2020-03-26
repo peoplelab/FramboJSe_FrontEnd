@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/private/aspx/Private.Master" AutoEventWireup="true" CodeBehind="Private.settings.aspx.cs" Inherits="Yeap.Pages.Private_settings" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/private/aspx/Private.Master" AutoEventWireup="true" CodeBehind="Private.settings.aspx.cs" Inherits="Yeap_FrontEnd.Pages.Private_settings" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="cph_head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="cph_sitemap" runat="server">

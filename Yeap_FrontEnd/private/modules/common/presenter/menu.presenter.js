@@ -148,7 +148,7 @@ define([
 				choose: [{
 					label: 'Sì',
 					exec: function () {
-						Cookies.remove('Yeap_FrontEndWAPars');													// Distrugge il cookie temporaneo
+						Cookies.remove('YeapWAPars');													// Distrugge il cookie temporaneo
 						window.close();
 					}
 				}, { label: 'No', exec: '' }
@@ -690,7 +690,7 @@ define([
 
 
 	// FUNCTION: sendStatusToWordpress
-	//  Invia a Yeap_FrontEnd/Wordpress gli stati aggiornati del Business Plan
+	//  Invia a Yeap/Wordpress gli stati aggiornati del Business Plan
 	// PARAMS:
 	//  params.token     : Token del business plan richiesto ([* si preferisce mandarlo come parametro anziché prenderlo dal cookie per poter usare la funzione anche su altri BP a richiesta *])
 	//  params.bearer    : TokenApiRest del business plan corrente

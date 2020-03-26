@@ -16,7 +16,7 @@ define([
 	var _onInit     = true;														// Monitoring first time executing code...
 	var _pageID     = '';														// Page ID (for presenter)
 	var _templateID = '';														// ID of the page template
-	var _checkYeap_FrontEnd	= '';														// Flag per identificare se arrivo da Yeap_FrontEnd o da navigazione interna
+	var _checkYeap	= '';														// Flag per identificare se arrivo da Yeap o da navigazione interna
 	var _initPars   = '';														// Set dei parametri iniziali della Setup (usati per il re-setup dopo il save)
 	var _renderPars = {};														// JSON dei parametri da passare alla funzione Render page
 

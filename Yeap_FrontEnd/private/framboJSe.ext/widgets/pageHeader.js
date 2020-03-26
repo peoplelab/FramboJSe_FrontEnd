@@ -154,7 +154,7 @@ define([], function () {
 	//	Elenco delle definizioni
 	function buildPageList() {
 
-		var pathGuida     = '/private/resources/pdf/manualeYeap_FrontEnd.pdf';									// Path dei file del manuale (HTML)
+		var pathGuida     = '/private/resources/pdf/manualeYeap.pdf';									// Path dei file del manuale (HTML)
 		var pathVideo     = '/video/';																	// Path dei video tutorial
 		var menuGroup_1   = 'Dati Previsionali';														// Scorciatoie: nomi dei gruppi dei menu
 		var menuGroup_2   = 'Prospetti';

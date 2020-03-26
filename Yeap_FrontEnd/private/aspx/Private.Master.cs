@@ -72,7 +72,7 @@ namespace Yeap_FrontEnd.MasterPages
 			"/private/resources/css/tipografici.pvt.min.css",
 			"/private/resources/css/strutturali.pvt.min.css",
 			"/private/resources/css/graphics.pvt.min.css",
-			"/private/resources/css/fromYeap_FrontEnd.pvt.min.css",
+			"/private/resources/css/fromYeap.pvt.min.css",
 		};
 
 		#endregion

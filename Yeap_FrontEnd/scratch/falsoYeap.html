@@ -3,7 +3,7 @@
 <html lang="it">
 <head>
 
-	<title>Yeap_FrontEnd! - Fac simile</title>
+	<title>Yeap! - Fac simile</title>
 	<script type="text/javascript" src="../System/3rd-parties/jquery/jquery.min.js"></script>
 	<script type="text/javascript" src="../System/3rd-parties/jquery-ui/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="../System/3rd-parties/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -28,7 +28,7 @@
 	<script>
 		var token_y = '50000139460000093014814142501422';
 		var xhr = new XMLHttpRequest();
-		var Yeap_FrontEnd_token = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvd3d3cy5kZXYteWVhcC5pdCIsImlhdCI6MTU0MTYwMDEyNSwibmJmIjoxNTQxNjAwMTI1LCJleHAiOjE1NDIyMDQ5MjUsImRhdGEiOnsidXNlciI6eyJpZCI6IjQ0In19fQ.uWL_N8TpiABYnCtWc1ivcORg0Is1DQRPOCPE1S8JZQg';
+		var Yeap_token = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvd3d3cy5kZXYteWVhcC5pdCIsImlhdCI6MTU0MTYwMDEyNSwibmJmIjoxNTQxNjAwMTI1LCJleHAiOjE1NDIyMDQ5MjUsImRhdGEiOnsidXNlciI6eyJpZCI6IjQ0In19fQ.uWL_N8TpiABYnCtWc1ivcORg0Is1DQRPOCPE1S8JZQg';
 
 		function testGiorgio() {
 			jQuery.ajax({
@@ -37,7 +37,7 @@
 				contentType: 'application/json',
 				processData: false,
 				beforeSend: function (xhr) {
-					xhr.setRequestHeader('Authorization', 'Bearer' + Yeap_FrontEnd_token);
+					xhr.setRequestHeader('Authorization', 'Bearer' + Yeap_token);
 				},
 				success: function (responseSuccess) {
 					var str = JSON.stringify(responseSuccess);
@@ -53,7 +53,7 @@
 	</script>
 	<style>
 		body {
-			background: url('sfondoYeap_FrontEnd.png') top center no-repeat #fff;
+			background: url('sfondoYeap.png') top center no-repeat #fff;
 		}
 
 		#mainIframe {

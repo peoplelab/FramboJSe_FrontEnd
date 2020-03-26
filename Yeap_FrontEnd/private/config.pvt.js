@@ -6,7 +6,7 @@
 //----------------------------------------------------------------------------------------
 
 	// ** Loads cookie and converts data in JSON format **
-	cookieRaw = Cookies.get('Yeap_FrontEndWAPars');
+	cookieRaw = Cookies.get('YeapWAPars');
 	var __WACookie = (cookieRaw == undefined || cookieRaw == '')? '' : $.parseJSON(cookieRaw);
 
 	// ** Declare external site URL

@@ -367,7 +367,7 @@ define([
 						tipo = (_pageID == 'annoPrecInsert') ? 'Precomp_AP' : 'Precomp_DP';				// Determina il tipo chiamata al SaaS
 						compileCBack({ type: tipo });													// Callback per compilazione.
 						__WACookie.showErr = true;
-						Cookies.set('Yeap_FrontEndWAPars', JSON.stringify(__WACookie), { expires: 1 });
+						Cookies.set('YeapWAPars', JSON.stringify(__WACookie), { expires: 1 });
 					});
 
 
@@ -376,7 +376,7 @@ define([
 
 						compileCBack({ type: 'Compile' });												// Callback per compilazione.
 						__WACookie.showErr = true;
-						Cookies.set('Yeap_FrontEndWAPars', JSON.stringify(__WACookie), { expires: 1 });
+						Cookies.set('YeapWAPars', JSON.stringify(__WACookie), { expires: 1 });
 					});
 
 
@@ -385,7 +385,7 @@ define([
 
 						compileCBack({ type: 'JustConfirm' });												// Callback per compilazione.
 						__WACookie.showErr = true;
-						Cookies.set('Yeap_FrontEndWAPars', JSON.stringify(__WACookie), { expires: 1 });
+						Cookies.set('YeapWAPars', JSON.stringify(__WACookie), { expires: 1 });
 					});
 
 				//	$('#btn-Confirm').click(function (e) {												// Pulsante "Compila"
@@ -393,7 +393,7 @@ define([
 				//
 				//		compileCBack({ type: 'Confirm' });												// Callback per compilazione.
 				//		__WACookie.showErr = true;
-				//		Cookies.set('Yeap_FrontEndWAPars', JSON.stringify(__WACookie), { expires: 1 });
+				//		Cookies.set('YeapWAPars', JSON.stringify(__WACookie), { expires: 1 });
 				//	});
 					break;
 

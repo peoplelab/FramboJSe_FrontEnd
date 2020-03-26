@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/private/aspx/Private.Master" AutoEventWireup="true" CodeBehind="qa.aspx.cs" Inherits="Yeap.Pages.qa" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/private/aspx/Private.Master" AutoEventWireup="true" CodeBehind="qa.aspx.cs" Inherits="Yeap_FrontEnd.Pages.qa" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="cph_head" runat="server">
 
     <%-- Script personalizzati --%>

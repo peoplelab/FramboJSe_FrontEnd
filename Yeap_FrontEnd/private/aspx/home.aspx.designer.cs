@@ -7,9 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Yeap_FrontEnd.Pages {
-    
-    
-    public partial class home {
-    }
+namespace Yeap_FrontEnd.Pages
+{
+
+
+	public partial class home
+	{
+	}
 }

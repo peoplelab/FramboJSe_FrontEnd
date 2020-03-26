@@ -7,9 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Yeap_FrontEnd.Pages {
-    
-    
-    public partial class qa {
-    }
+namespace Yeap_FrontEnd.Pages
+{
+
+
+	public partial class qa
+	{
+	}
 }

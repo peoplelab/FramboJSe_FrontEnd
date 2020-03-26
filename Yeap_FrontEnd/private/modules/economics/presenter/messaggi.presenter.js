@@ -244,7 +244,7 @@ if(mess.codiceCampo=='4440'){
 			var mailLink = '';
 			var re = new RegExp('\\+', 'g');
 
-			mailLink += 'mailto:gestione-ordine@Yeap_FrontEnditaly.it?';
+			mailLink += 'mailto:gestione-ordine@Yeapitaly.it?';
 		//	mailLink += 'subject=' + encodeURIComponent('Richiesta analisi dettagliata BP: "' + __WACookie.Title.replace(re, ' ') + '"');
 			mailLink += 'subject=Richiesta analisi dettagliata BP: "' + __WACookie.Title.replace(re, ' ') + '"';
 			mailLink += '&body=' + encodeURIComponent('Buongiorno.\n\nDesidero ricevere il documento di analisi dettagliata del mio Business Plan al seguente indirizzo email: (scrivere qui) ');
@@ -315,7 +315,7 @@ if(mess.codiceCampo=='4440'){
 							$('.hasHiddenWarning').removeClass('hasHiddenWarning').addClass('hasWarning');
 						}
 						__WACookie.showErr = c;
-		                Cookies.set('Yeap_FrontEndWAPars', JSON.stringify(__WACookie), { expires: 1 });
+		                Cookies.set('YeapWAPars', JSON.stringify(__WACookie), { expires: 1 });
 					});
 
 					// Abilitazione Leanus

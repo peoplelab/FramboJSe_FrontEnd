@@ -43,26 +43,26 @@
 	@grayBg_tone8   : #ffffff;
 
 
-// Yeap_FrontEnd
+// Yeap
 // §§ NOTA: vedi quanto detto sopra per "Dichiarazione colori applicazione"
-	@Yeap_FrontEndMainBgCol: #fff;
+	@YeapMainBgCol: #fff;
 
-	@Yeap_FrontEndBlue1: #037ac5;
-	@Yeap_FrontEndBlue3: lighten(desaturate(@Yeap_FrontEndBlue1, 55%), 20%);			//#6ba2c5;
+	@YeapBlue1: #037ac5;
+	@YeapBlue3: lighten(desaturate(@YeapBlue1, 55%), 20%);			//#6ba2c5;
 	
-	@Yeap_FrontEndGrey0: #f4f4f4;
-	@Yeap_FrontEndGrey1: #eeeeee;
-	@Yeap_FrontEndGrey2: #e0e0e0;
-	@Yeap_FrontEndGrey3: #ccc;
-	@Yeap_FrontEndGrey4: #666;
-	@Yeap_FrontEndGrey5: #555;
+	@YeapGrey0: #f4f4f4;
+	@YeapGrey1: #eeeeee;
+	@YeapGrey2: #e0e0e0;
+	@YeapGrey3: #ccc;
+	@YeapGrey4: #666;
+	@YeapGrey5: #555;
 
 	
 // ====================================
 //  Dichiarazione palette applicazione
 // ------------------------------------								// Colori principali:
 	@mainColor1    : @main_blue;									// 1°: background di navbar, footer, hover pulsanti default, ecc.
-	@mainColor2    : @Yeap_FrontEndBlue1;									// 2°: pulsanti di azione, bordi elementi strutturali, ecc.
+	@mainColor2    : @YeapBlue1;									// 2°: pulsanti di azione, bordi elementi strutturali, ecc.
 	@mainColor3    : white;											// 3°: link, hover pulsanti, ecc.
 	@mainColor4    : #999;											// 4°: link, link hover, inattivi, colore
 	@mainColor5    : @main_dark;									// 5°: secondo pulsante di azione
@@ -71,50 +71,50 @@
 
 
 // ====================================
-//  Dichiarazione palette da Yeap_FrontEnd
+//  Dichiarazione palette da Yeap
 // ------------------------------------
-	@blueMenu_100: mix(@Yeap_FrontEndBlue1, @Yeap_FrontEndMainBgCol, 100%);
-	@blueMenu_90 : mix(@Yeap_FrontEndBlue1, @Yeap_FrontEndMainBgCol,  90%);
-	@blueMenu_80 : mix(@Yeap_FrontEndBlue1, @Yeap_FrontEndMainBgCol,  80%);
-	@blueMenu_70 : mix(@Yeap_FrontEndBlue1, @Yeap_FrontEndMainBgCol,  70%);
-	@blueMenu_60 : mix(@Yeap_FrontEndBlue1, @Yeap_FrontEndMainBgCol,  60%);
-	@blueMenu_50 : mix(@Yeap_FrontEndBlue1, @Yeap_FrontEndMainBgCol,  50%);
-	@blueMenu_40 : mix(@Yeap_FrontEndBlue1, @Yeap_FrontEndMainBgCol,  40%);
-	@blueMenu_30 : mix(@Yeap_FrontEndBlue1, @Yeap_FrontEndMainBgCol,  30%);
-	@blueMenu_20 : mix(@Yeap_FrontEndBlue1, @Yeap_FrontEndMainBgCol,  20%);
-	@blueMenu_10 : mix(@Yeap_FrontEndBlue1, @Yeap_FrontEndMainBgCol,  10%);
-	@blueMenu_05 : mix(@Yeap_FrontEndBlue1, @Yeap_FrontEndMainBgCol,   5%);
-	@blueMenu_00 : mix(@Yeap_FrontEndBlue1, @Yeap_FrontEndMainBgCol,   0%);
+	@blueMenu_100: mix(@YeapBlue1, @YeapMainBgCol, 100%);
+	@blueMenu_90 : mix(@YeapBlue1, @YeapMainBgCol,  90%);
+	@blueMenu_80 : mix(@YeapBlue1, @YeapMainBgCol,  80%);
+	@blueMenu_70 : mix(@YeapBlue1, @YeapMainBgCol,  70%);
+	@blueMenu_60 : mix(@YeapBlue1, @YeapMainBgCol,  60%);
+	@blueMenu_50 : mix(@YeapBlue1, @YeapMainBgCol,  50%);
+	@blueMenu_40 : mix(@YeapBlue1, @YeapMainBgCol,  40%);
+	@blueMenu_30 : mix(@YeapBlue1, @YeapMainBgCol,  30%);
+	@blueMenu_20 : mix(@YeapBlue1, @YeapMainBgCol,  20%);
+	@blueMenu_10 : mix(@YeapBlue1, @YeapMainBgCol,  10%);
+	@blueMenu_05 : mix(@YeapBlue1, @YeapMainBgCol,   5%);
+	@blueMenu_00 : mix(@YeapBlue1, @YeapMainBgCol,   0%);
 	
-	@blueGrid_100: mix(@Yeap_FrontEndBlue3, @Yeap_FrontEndMainBgCol, 100%);
-	@blueGrid_90 : mix(@Yeap_FrontEndBlue3, @Yeap_FrontEndMainBgCol,  90%);
-	@blueGrid_80 : mix(@Yeap_FrontEndBlue3, @Yeap_FrontEndMainBgCol,  80%);
-	@blueGrid_70 : mix(@Yeap_FrontEndBlue3, @Yeap_FrontEndMainBgCol,  70%);
-	@blueGrid_60 : mix(@Yeap_FrontEndBlue3, @Yeap_FrontEndMainBgCol,  60%);
-	@blueGrid_50 : mix(@Yeap_FrontEndBlue3, @Yeap_FrontEndMainBgCol,  50%);
-	@blueGrid_40 : mix(@Yeap_FrontEndBlue3, @Yeap_FrontEndMainBgCol,  40%);
-	@blueGrid_35 : mix(@Yeap_FrontEndBlue3, @Yeap_FrontEndMainBgCol,  35%);
-	@blueGrid_30 : mix(@Yeap_FrontEndBlue3, @Yeap_FrontEndMainBgCol,  30%);
-	@blueGrid_25 : mix(@Yeap_FrontEndBlue3, @Yeap_FrontEndMainBgCol,  25%);
-	@blueGrid_20 : mix(@Yeap_FrontEndBlue3, @Yeap_FrontEndMainBgCol,  20%);
-	@blueGrid_10 : mix(@Yeap_FrontEndBlue3, @Yeap_FrontEndMainBgCol,  10%);
-	@blueGrid_05 : mix(@Yeap_FrontEndBlue3, @Yeap_FrontEndMainBgCol,   5%);
-	@blueGrid_00 : mix(@Yeap_FrontEndBlue3, @Yeap_FrontEndMainBgCol,   0%);
+	@blueGrid_100: mix(@YeapBlue3, @YeapMainBgCol, 100%);
+	@blueGrid_90 : mix(@YeapBlue3, @YeapMainBgCol,  90%);
+	@blueGrid_80 : mix(@YeapBlue3, @YeapMainBgCol,  80%);
+	@blueGrid_70 : mix(@YeapBlue3, @YeapMainBgCol,  70%);
+	@blueGrid_60 : mix(@YeapBlue3, @YeapMainBgCol,  60%);
+	@blueGrid_50 : mix(@YeapBlue3, @YeapMainBgCol,  50%);
+	@blueGrid_40 : mix(@YeapBlue3, @YeapMainBgCol,  40%);
+	@blueGrid_35 : mix(@YeapBlue3, @YeapMainBgCol,  35%);
+	@blueGrid_30 : mix(@YeapBlue3, @YeapMainBgCol,  30%);
+	@blueGrid_25 : mix(@YeapBlue3, @YeapMainBgCol,  25%);
+	@blueGrid_20 : mix(@YeapBlue3, @YeapMainBgCol,  20%);
+	@blueGrid_10 : mix(@YeapBlue3, @YeapMainBgCol,  10%);
+	@blueGrid_05 : mix(@YeapBlue3, @YeapMainBgCol,   5%);
+	@blueGrid_00 : mix(@YeapBlue3, @YeapMainBgCol,   0%);
 	
-	@greyMenu_100: mix(@Yeap_FrontEndGrey5, @Yeap_FrontEndMainBgCol, 100%);
-	@greyMenu_90 : mix(@Yeap_FrontEndGrey5, @Yeap_FrontEndMainBgCol,  90%);
-	@greyMenu_80 : mix(@Yeap_FrontEndGrey5, @Yeap_FrontEndMainBgCol,  80%);
-	@greyMenu_70 : mix(@Yeap_FrontEndGrey5, @Yeap_FrontEndMainBgCol,  70%);
-	@greyMenu_60 : mix(@Yeap_FrontEndGrey5, @Yeap_FrontEndMainBgCol,  60%);
-	@greyMenu_50 : mix(@Yeap_FrontEndGrey5, @Yeap_FrontEndMainBgCol,  50%);
-	@greyMenu_40 : mix(@Yeap_FrontEndGrey5, @Yeap_FrontEndMainBgCol,  40%);
-	@greyMenu_35 : mix(@Yeap_FrontEndGrey5, @Yeap_FrontEndMainBgCol,  35%);
-	@greyMenu_30 : mix(@Yeap_FrontEndGrey5, @Yeap_FrontEndMainBgCol,  30%);
-	@greyMenu_25 : mix(@Yeap_FrontEndGrey5, @Yeap_FrontEndMainBgCol,  25%);
-	@greyMenu_20 : mix(@Yeap_FrontEndGrey5, @Yeap_FrontEndMainBgCol,  20%);
-	@greyMenu_10 : mix(@Yeap_FrontEndGrey5, @Yeap_FrontEndMainBgCol,  10%);
-	@greyMenu_05 : mix(@Yeap_FrontEndGrey5, @Yeap_FrontEndMainBgCol,   5%);
-	@greyMenu_00 : mix(@Yeap_FrontEndGrey5, @Yeap_FrontEndMainBgCol,   0%);
+	@greyMenu_100: mix(@YeapGrey5, @YeapMainBgCol, 100%);
+	@greyMenu_90 : mix(@YeapGrey5, @YeapMainBgCol,  90%);
+	@greyMenu_80 : mix(@YeapGrey5, @YeapMainBgCol,  80%);
+	@greyMenu_70 : mix(@YeapGrey5, @YeapMainBgCol,  70%);
+	@greyMenu_60 : mix(@YeapGrey5, @YeapMainBgCol,  60%);
+	@greyMenu_50 : mix(@YeapGrey5, @YeapMainBgCol,  50%);
+	@greyMenu_40 : mix(@YeapGrey5, @YeapMainBgCol,  40%);
+	@greyMenu_35 : mix(@YeapGrey5, @YeapMainBgCol,  35%);
+	@greyMenu_30 : mix(@YeapGrey5, @YeapMainBgCol,  30%);
+	@greyMenu_25 : mix(@YeapGrey5, @YeapMainBgCol,  25%);
+	@greyMenu_20 : mix(@YeapGrey5, @YeapMainBgCol,  20%);
+	@greyMenu_10 : mix(@YeapGrey5, @YeapMainBgCol,  10%);
+	@greyMenu_05 : mix(@YeapGrey5, @YeapMainBgCol,   5%);
+	@greyMenu_00 : mix(@YeapGrey5, @YeapMainBgCol,   0%);
 
 	@greyGrid_100: mix(@greyMenu_100, @blueGrid_100);
 	@greyGrid_90 : mix(@greyMenu_90 , @blueGrid_90 );

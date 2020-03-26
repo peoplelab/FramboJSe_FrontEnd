@@ -1,5 +1,5 @@
 
-// Script samples: test per preparare gli snippet di Yeap_FrontEnd
+// Script samples: test per preparare gli snippet di Yeap
 
 
 	//// Detect: iframe o no?

@@ -30,7 +30,7 @@ $(document).ready(function(){
 
         var token = ref.split("\?");
         var mapForm = document.createElement("form");
-        mapForm.target = "Yeap_FrontEnd";
+        mapForm.target = "Yeap";
         mapForm.method = "POST"; // or "post" if appropriate
         mapForm.action = token[0];
         var mapInput = document.createElement("input");
@@ -40,7 +40,7 @@ $(document).ready(function(){
 
         document.body.appendChild(mapForm);
 
-        map = window.open("", "Yeap_FrontEnd");
+        map = window.open("", "Yeap");
 
         if (map) {
             mapForm.submit();

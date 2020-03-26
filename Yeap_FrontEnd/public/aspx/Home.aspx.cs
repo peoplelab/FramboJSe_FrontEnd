@@ -76,7 +76,7 @@ namespace Yeap_FrontEnd.Pages
         }
         private void setUserToken(string tokenSerialized, string token)
         {
-            //   Yeap_FrontEnd.App_Code.Common.Settings.ApplicationSettings sett = Yeap_FrontEnd.App_Code.Common.Settings.ApplicationSettings.GetInstance();
+            //   Yeap.App_Code.Common.Settings.ApplicationSettings sett = Yeap.App_Code.Common.Settings.ApplicationSettings.GetInstance();
             // il timeout del cookie viene preso dal web.config (impostazione classica)
             //  int timeout = sett.AuthenticationFormsDefaultTimeout; // legge il valore del timeout dal web.config
             int timeout = 30;// è il timeout del token(in realtà  si trova nel file web.config, ma siccome adesso non leggo il file web.config da questa class, è stato messo a mano).

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/private/aspx/Private.Master" AutoEventWireup="true" CodeBehind="economics.aspx.cs" Inherits="Yeap.Pages.economics" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/private/aspx/Private.Master" AutoEventWireup="true" CodeBehind="economics.aspx.cs" Inherits="Yeap_FrontEnd.Pages.economics" %>
 <asp:Content ID="Content6" ContentPlaceHolderID="cph_head" runat="server">
 
     <%-- Script personalizzati --%>

@@ -152,7 +152,7 @@ define([
 					annoPrec  : aPre,
 					CF_Piva   : CF,
 				});
-				Cookies.set('Yeap_FrontEndWAPars', JSON.stringify(__WACookie), { expires: 1 });
+				Cookies.set('YeapWAPars', JSON.stringify(__WACookie), { expires: 1 });
 
 			}
 		});
@@ -163,13 +163,13 @@ define([
 
 			$('#logoODC').remove();
 			$('#footerODC').remove();
-			$('#logoYeap_FrontEnd').show();				// Nota: i div esistono già nel DOM (da Private.Master)
-			$('#footerYeap_FrontEnd').show();
+			$('#logoYeap').show();				// Nota: i div esistono già nel DOM (da Private.Master)
+			$('#footerYeap').show();
 
 		} else {
 
-			$('#logoYeap_FrontEnd').remove();
-			$('#footerYeap_FrontEnd').remove();
+			$('#logoYeap').remove();
+			$('#footerYeap').remove();
 			$('#logoODC').show();				// Nota: i div esistono già nel DOM (da Private.Master)
 			$('#footerODC').show();
 

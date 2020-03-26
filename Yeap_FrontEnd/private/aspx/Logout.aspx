@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/private/aspx/Private.Master" AutoEventWireup="true" CodeBehind="Logout.aspx.cs" Inherits="Yeap.Pages.Logout" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/private/aspx/Private.Master" AutoEventWireup="true" CodeBehind="Logout.aspx.cs" Inherits="Yeap_FrontEnd.Pages.Logout" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="cph_head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="cph_sitemap" runat="server">
