@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/private/aspx/Private.Master" AutoEventWireup="true" CodeBehind="home.aspx.cs" Inherits="Yeap.Pages.home" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/private/aspx/Private.Master" AutoEventWireup="true" CodeBehind="home.aspx.cs" Inherits="Yeap_FrontEnd.Pages.home" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="cph_head" runat="server">
     <script type="text/javascript">
 

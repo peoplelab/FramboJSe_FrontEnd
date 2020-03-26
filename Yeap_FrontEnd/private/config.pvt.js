@@ -10,22 +10,22 @@
 	var __WACookie = (cookieRaw == undefined || cookieRaw == '')? '' : $.parseJSON(cookieRaw);
 
 	// ** Declare external site URL
-	//		Sviluppo: https://wwws.dev-Yeap_FrontEnd.it		(hostname: "localhost")
-	//		Test	: https://wwws.dev-Yeap_FrontEnd.it		(hostname: "wwws.dev-Yeap_FrontEnd.it")
-	//		Prod:	: https://www.Yeap_FrontEnditaly.it		(hostname: "www.Yeap_FrontEnditaly.it")
+	//		Sviluppo: https://wwws.dev-yeap.it		(hostname: "localhost")
+	//		Test	: https://wwws.dev-yeap.it		(hostname: "wwws.dev-yeap.it")
+	//		Prod:	: https://www.yeapitaly.it		(hostname: "www.yeapitaly.it")
 
 	var __WPressSiteURL = '';
 	var hostname = location.hostname;
 
 	switch (location.hostname) {
 		case "localhost":
-		case "wwws.dev-Yeap_FrontEnd.it":
-		case "test-Yeap_FrontEnd.people-manager.it":
-			__WPressSiteURL = 'https://wwws.dev-Yeap_FrontEnd.it';
+		case "wwws.dev-yeap.it":
+		case "test-yeap.people-manager.it":
+			__WPressSiteURL = 'https://wwws.dev-yeap.it';
 			break;
-		case "www.Yeap_FrontEnditaly.it":
-		case "Yeap_FrontEnd.people-manager.it":
-			__WPressSiteURL = 'https://www.Yeap_FrontEnditaly.it';
+		case "www.yeapitaly.it":
+		case "yeap.people-manager.it":
+			__WPressSiteURL = 'https://www.yeapitaly.it';
 			break;
 	}
 
